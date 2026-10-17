@@ -1,0 +1,8 @@
+[
+  { "tool": "open_binary", "args": { "path": "H:\\SA_Analysis\\target\\suddenattack.exe", "snapshot_path": "H:\\SA_Analysis\\evidence\\sa_snapshot15.bin" }, "timeoutMs": 1800000 },
+  { "tool": "xrefs", "args": { "address": "0x1402b1b50" }, "timeoutMs": 600000 },
+  { "tool": "search_strings", "args": { "pattern": "SnowCipher", "mode": "literal" }, "timeoutMs": 600000 },
+  { "tool": "search_strings", "args": { "pattern": "CipherStream", "mode": "literal" }, "timeoutMs": 600000 },
+  { "tool": "search_procedures", "args": { "pattern": "Snow", "mode": "literal" }, "timeoutMs": 600000 },
+  { "tool": "close_binary", "args": { "snapshot_path": "H:\\SA_Analysis\\evidence\\sa_snapshot16.bin" }, "timeoutMs": 600000 }
+]

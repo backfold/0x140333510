@@ -131,3 +131,61 @@ s10	close_binary	{"snapshot_path":"H:\\SA_Analysis\\evidence\\cshell_snapshot1.b
 s15	open_binary	{"path":"H:\\SA_Analysis\\target\\suddenattack.exe","snapshot_path":"H:\\SA_Analysis\\evidence\\sa_snapshot14.bin"}	
 s15	batch_decompile	{"addresses":["0x1402b14d0","0x1402b1490","0x1402b1b50","0x1402b17f0","0x1402a8600"]}	ev_43b19c3161cf2afaaffe93c9272f0587c71ebe02245b1f57f45e26482d306ad8
 s15	close_binary	{"snapshot_path":"H:\\SA_Analysis\\evidence\\sa_snapshot15.bin"}	
+
+s16	open_binary	{"path":"H:\\SA_Analysis\\target\\suddenattack.exe","snapshot_path":"H:\\SA_Analysis\\evidence\\sa_snapshot15.bin"}	
+s16	xrefs	{"address":"0x1402b1b50"}	ev_2e4eeb6dca0e261555d67657253129a27cc7df75629fe6f60c7dc46c016618fc
+s16	search_strings	{"pattern":"SnowCipher","mode":"literal"}	ev_1781836ba79e7cd5b237c610564ecf9aa7b702d6de9280df7c15d9d54e581c
+s16	search_strings	{"pattern":"CipherStream","mode":"literal"}	ev_fddec8806b109af677a8b03d362e6c51b9a2639aa6c55a9a4b52eee901dfc2db
+s16	search_procedures	{"pattern":"Snow","mode":"literal"}	ev_91b60416a6940de0f873fbc0162025172fa89f177344c05ed367d878fe8296c6
+s16	close_binary	{"snapshot_path":"H:\\SA_Analysis\\evidence\\sa_snapshot16.bin"}	
+
+s17	open_binary	{"path":"H:\\SA_Analysis\\target\\suddenattack.exe","snapshot_path":"H:\\SA_Analysis\\evidence\\sa_snapshot16.bin"}	
+s17	list_names	{"pattern":"SnowCipher"}	<Input validation error: Unrecognized key: pattern>
+s17	list_names	{"pattern":"PackageHeader"}	<Input validation error: Unrecognized key: pattern>
+s17	list_names	{"pattern":"CipherStream"}	<Input validation error: Unrecognized key: pattern>
+s18	open_binary	{"path":"H:\\SA_Analysis\\target\\suddenattack.exe","snapshot_path":"H:\\SA_Analysis\\evidence\\sa_snapshot16.bin"}	
+s18	procedure_assembly	{"procedure":"0x1402b14d0"}	ev_a482385162f034f223af2aeea0afc551e45dcbc5163effc4130242137960ea0a
+s18	procedure_assembly	{"procedure":"0x1402b1490"}	ev_afc56c8be22bce406f6a951df83a9eb1c012102c719ea448d5bc582f6d03d936
+s18	close_binary	{"snapshot_path":"H:\\SA_Analysis\\evidence\\sa_snapshot18.bin"}	
+
+s19	open_binary	{"path":"H:\\SA_Analysis\\target\\suddenattack.exe","snapshot_path":"H:\\SA_Analysis\\evidence\\sa_snapshot18.bin"}	
+s19	read_bytes	{"address":"0x140333b50","length":48}	ev_dfa6cfe981b25dca5e59ef3fd2808bed3f566505882dad1e37f6d47e97006863
+s19	read_bytes	{"address":"0x140333b80","length":48}	ev_c5c2c3108b761cf298d1ed7e4cf59d1d28c1fe7d6ae86438d8df407a6f43ebe0
+s19	close_binary	{"snapshot_path":"H:\\SA_Analysis\\evidence\\sa_snapshot19.bin"}	
+
+s20	open_binary	{"path":"H:\\SA_Analysis\\target\\suddenattack.exe","snapshot_path":"H:\\SA_Analysis\\evidence\\sa_snapshot19.bin"}	
+s20	batch_decompile	{"addresses":["0x1402b1d40","0x1402b1fe0","0x1402b1d00","0x1402b1dc0","0x1402b1560","0x1402b1b10","0x1402b1b00"]}	ev_ebb9b545b6d72b7ea2ebd0afa38a56be1b97bc990f302d55e04bb297ceb4af06
+s20	close_binary	{"snapshot_path":"H:\\SA_Analysis\\evidence\\sa_snapshot20.bin"}	
+
+s21	open_binary	{"path":"H:\\SA_Analysis\\target\\suddenattack.exe","snapshot_path":"H:\\SA_Analysis\\evidence\\sa_snapshot20.bin"}	
+s21	xrefs	{"address":"0x1402a9fc0"}	ev_e5e47dc017a2ed259cc34bff9b5559e0c0651eb72e5302806a41dbe5f9ade7e6
+s21	xrefs	{"address":"0x1402a95f0"}	ev_c096bd8f20a5e9fcff1758c7e3113042516440f62a6d02ab0342fe734948f844
+s21	xrefs	{"address":"0x1402a9820"}	ev_7c1e9e5590d4c3cc08af6c5e6469cac39427d79ce06b9cba17527d070f52d4cb
+s21	xrefs	{"address":"0x1402aa3d0"}	ev_9c4fd05f15becd6edb8431616fc0ee1da7c4cd66790818c0bd92743104db6eaf
+s21	close_binary	{"snapshot_path":"H:\\SA_Analysis\\evidence\\sa_snapshot21.bin"}	
+
+s22	open_binary	{"path":"H:\\SA_Analysis\\target\\suddenattack.exe","snapshot_path":"H:\\SA_Analysis\\evidence\\sa_snapshot21.bin"}	
+s22	resolve_containing_procedure	{"address":"0x1402aa7f9"}	ev_eee4f4c07065e7b33affe072adb07407b54cf46d9c1dfe737477822bfc10eb25
+s22	resolve_containing_procedure	{"address":"0x14029baa8"}	ev_678322b59510f75999de6b3f7b71012f1d21c28d7a530a8a200bd20b0bd9f746
+s22	close_binary	{"snapshot_path":"H:\\SA_Analysis\\evidence\\sa_snapshot22.bin"}	
+
+s23	open_binary	{"path":"H:\\SA_Analysis\\target\\suddenattack.exe","snapshot_path":"H:\\SA_Analysis\\evidence\\sa_snapshot22.bin"}	
+s23	batch_decompile	{"addresses":["0x1402aa700","0x14029ba50"]}	ev_be2d39257eac78f66c2e051c28a34af2f5a9bf46e8f1c6c7b46707dbc9e00953
+s23	close_binary	{"snapshot_path":"H:\\SA_Analysis\\evidence\\sa_snapshot23.bin"}	
+
+s24	open_binary	{"path":"H:\\SA_Analysis\\target\\suddenattack.exe","snapshot_path":"H:\\SA_Analysis\\evidence\\sa_snapshot23.bin"}	
+s24	batch_decompile	{"addresses":["0x1402abee0","0x1402ace20","0x14029f470","0x14029f6b0","0x14029fa20","0x14029f920","0x14029aba0"]}	ev_73600eb721c3f77444a4051a0af223dc783e1f904d5f38daece9c57e7e0c77db
+s24	close_binary	{"snapshot_path":"H:\\SA_Analysis\\evidence\\sa_snapshot24.bin"}	
+s25	open_binary	{"path":"H:\\SA_Analysis\\target\\suddenattack.exe","snapshot_path":"H:\\SA_Analysis\\evidence\\sa_snapshot24.bin"}	True
+s25	read_bytes	{"address":"0x1403ef1a0","length":32}	True
+s25	read_bytes	{"address":"0x1403ef5a0","length":32}	True
+s25	read_bytes	{"address":"0x1403ef9a0","length":32}	True
+s25	read_bytes	{"address":"0x1403efda0","length":32}	True
+s25	read_bytes	{"address":"0x1403f01a0","length":32}	True
+s25	read_bytes	{"address":"0x1403f05a0","length":32}	True
+s25	read_bytes	{"address":"0x1403f09a0","length":32}	True
+s25	batch_decompile	{"addresses":["0x1402ad020","0x1402acd10"]}	True
+s25	close_binary	{"snapshot_path":"H:\\SA_Analysis\\evidence\\sa_snapshot25.bin"}	True
+s26	open_binary	{"path":"H:\\SA_Analysis\\target\\suddenattack.exe","snapshot_path":"H:\\SA_Analysis\\evidence\\sa_snapshot25.bin"}	True
+s26	batch_decompile	{"addresses":["0x140290e00","0x1402b18c0","0x1402b2480","0x1402b15b0"]}	True
+s26	close_binary	{"snapshot_path":"H:\\SA_Analysis\\evidence\\sa_snapshot26.bin"}	True

@@ -23,21 +23,31 @@
   NOLF2 mission text in `cres.dll`) with a Nexon package layer used for the encrypted `.pkg`
   game resources. Renderer is **DirectX 9** (`Direct3DCreate9Ex`, `RenderDll d3d.ren`,
   CD3D* classes). The client shell (`cshell.dll`) is MD5-verified before load.
-- **`.pkg` resource layer (sessions 11–15)**: the loader is the Nexon-internal **lapacker**
-  library statically linked into `suddenattack.exe` (`Lambda` namespace). `OpenFile`
-  memory-maps the package; the container stack is mask (`byte >> 1`, format check
-  `(first>>1)^last == 3`) → **SnowCipher** stream cipher → **zlib 1.2.11** (statically
-  linked, version string at `inflateInit_`). Index table: 32-byte entries, file count at
-  header +0x34. Full key schedule: pending (session 15).
+- **`.pkg` resource layer (sessions 11–26) — CRACKED**: the loader is the Nexon-internal
+  **lapacker** library statically linked into `suddenattack.exe` (`Lambda` namespace).
+  `Lambda::SnowCipher` is the Nexon **Snow2** stream cipher (SNOW 2.0 with AES T-tables —
+  the same primitive as MapleStory `.ms` v2; all 6 cipher tables in the exe are byte-exact
+  vs MapleLib). Complete v1 container reversed **and validated with a standalone parser**
+  (`scripts/pkg-parse.js`): path-derived sizes `N1 = Σchars mod 312 + 30`,
+  `N2 = 3·Σchars mod 212 + 33`; masked in-file key (`byte >> 1` sar, check
+  `(first>>1)^version == 3`); cycling-XOR header string (fixed salt `!dlstps20djr@`);
+  two Snow2 streams with keys `key1[i] = (i + concat[i mod L]) & 0xff` /
+  `key2[i] = (concat[L−(i mod L)−1]·((i mod 3)+2) + i) & 0xff` over `concat = path +
+  headerString`; data region head `[checksum][count]`; index region at
+  `dataStart + N2 + 8` with length-prefixed UTF-16LE filenames —
+  `global_00000.pkg` (6/6 entries, `global/models/*.ltb/.ltc`) and
+  `texturescripts_00000.pkg` (16/16, `*.tfs/.txt`) parse 100%. Remaining: per-file
+  data-block addressing (index `field[3]/[4]`), v2 header variant unsampled.
 - **cshell.dll (session 10)**: 33 MB, VLizer VM sections (`.vm_sec`/`.vlizer`) but intact
   21 MB `.text` — Ghidra recovers 74,642 procedures. Drives the EAC/EOS anti-cheat client
   session, game socket I/O (WS2_32), and `CSAGameClientShell` game logic. No plaintext
   `CMSG_*` network message names.
 - OEP chain (statically identified): Themida stub (entry `0x140ab3058`) →
   `mainCRTStartup` `0x1402644b8` → `WinMain` `0x14007acf0`.
-- Full evidence trail: `evidence\session1..15.jsonl` (REA MCP raw results),
-  `evidence\evidence_index.tsv` (tool call → evidence_id index), decompiled functions in
-  `decompiled\`, scripts in `scripts\`.
+- Full evidence trail: `evidence\session1..26.jsonl` (REA MCP raw results),
+  `evidence\evidence_index.tsv` (tool call → evidence_id index),
+  `evidence\snow2_identification.md` (cipher/container validation), decompiled
+  functions in `decompiled\`, scripts in `scripts\`.
 
 ## 2. Target & Environment
 
@@ -375,6 +385,79 @@ entries). Still open (Q3 remainder): whether the *file data* blocks use the same
 cycling-XOR (the `SnowCipher` name) or a different `CipherStream<SnowCipher>` stage,
 and the exact `PackageHeader` field map.
 
+Update (2026-10-18, REA sessions 16–23 — **SnowCipher usage resolved**):
+
+- `FUN_1402b1b50` (the 16-bit XOR) has exactly **one** caller — `LoadMaskedData` —
+  so it is header-only (ev_2e4eeb6dca0e…). The file-data and index-table regions are
+  decrypted by **`Lambda::SnowCipher`** stream objects (RTTI
+  `.?AV?$CipherStream@VSnowCipher@Lambda@@@Lambda@@` @`0x1403f73c0`).
+- **`FUN_1402aa700` = the package-open orchestrator** (vftable symbols
+  `Lambda::SnowCipher::vftable` appear in its decompile, ev_be2d39257eac…). Flow:
+  1. Masked-key byte count comes from the loader object
+     (`FUN_14029fa20(param_1+0x20)`), not from the file header.
+  2. `LoadMaskedData` → decrypted header string (the cycling-XOR result).
+  3. **Key derivation** `FUN_14029f470` produces a **128-byte (0x80) key** from the
+     decrypted header string; `FUN_1402abee0(cipher, key, 0x80, 0)` initializes
+     SnowCipher instance #1 and `FUN_1402ace20(cipher, pos)` sets a position counter
+     (`param_4 / 4`).
+  4. `LoadEncryptData` reads through **SnowCipher stream #1** (CipherStream
+     constructor `FUN_14029aba0`).
+  5. A **second** 128-byte key is derived (`FUN_14029f6b0`) for SnowCipher instance
+     #2, and `LoadIndexTable` reads through it.
+  6. The consumed region is rounded up to **0x400 (1024-byte) alignment**
+     (`*(param_1+0xf8)` end-offset handling).
+- Remaining for a standalone parser: the SnowCipher core itself
+  (`FUN_1402abee0` key schedule / `FUN_1402ace20` position set) and the two
+  key-derivation functions — session 24 in flight. *(fact up to here; cipher
+  internals pending)*
+
+Update (2026-10-18, REA sessions 24–26 — **SnowCipher identified and the whole
+`.pkg` container decrypted**; details in `evidence/snow2_identification.md`):
+
+- **`Lambda::SnowCipher` = Nexon "Snow2"** — the SNOW 2.0-derived stream cipher
+  also used for MapleStory `.ms` v2 containers (MapleLib/WzComparerR2
+  `Snow2CryptoTransform`). Proof: all six 256-entry cipher tables in the exe's
+  `.rdata` are **byte-exact** matches of the MapleLib tables
+  (`scripts/extract-tables.js` → `evidence/snow_tables_from_exe.json`,
+  `all_tables_match_maplelib: true`): `snow_alpha_mul`@`0x1403ef1a0`,
+  `snow_alphainv_mul`@`0x1403ef5a0`, `snow_T0..T3`@`0x1403ef9a0/fda0/f01a0/f05a0`
+  (snow_T0..T3 are the AES T-tables Te0..Te3 — independently regenerated by
+  `scripts/verify-cipher-tables.js`). `FUN_1402abee0` implements the MapleLib
+  `LoadKey` structure (key+complements into s15..s0, IV XOR into s15/s12/s10/s9,
+  2×16 unrolled init clockings using a_mul/ainv_mul/Te tables). *(fact)*
+- **Key-derivation formulas** (session 24 decompiles, confirmed by validation):
+  path string = package file name as opened (e.g. `global_00000.pkg`);
+  `concat = path + headerString` (UTF-16), `L = char count`;
+  `N1 = (Σ chars) mod 312 + 30` (`FUN_14029fa20`),
+  `N2 = (3·Σ chars) mod 212 + 33` (`FUN_14029f920`),
+  `key1[i] = (i + concat[i mod L]) mod 256` (`FUN_14029f470`),
+  `key2[i] = (concat[L−(i mod L)−1]·((i mod 3)+2) + i) mod 256` (`FUN_14029f6b0`).
+  SnowCipher instances use the first **16 bytes** of each 128-byte derived key,
+  IV = 0, position = byteOffset/4 (`FUN_1402ace20`; the 0x94-byte state
+  snapshots appended at +0xa0 by `FUN_1402ad020` are keystream checkpoints for
+  random access). *(fact)*
+- **Standalone parser works** (`scripts/pkg-parse.js`). Both validation samples
+  parse end-to-end — `global_00000.pkg`: header string `!dlstps20djr@`, data
+  head `[checksum=524325, count=6]`, index @350 = dataStart(141)+N2(201)+8,
+  6/6 entries (`global/models/*.ltb/.ltc`); `texturescripts_00000.pkg`:
+  `[393435, 16]`, index @190 (predicted before scanning, then hit), 16/16
+  entries (`texturescripts/*.tfs/.txt`). The header string is a **fixed salt**
+  (`!dlstps20djr@` on both files); the path only feeds N1/N2/key derivation.
+  *(fact)*
+- **Index entry format** (`FUN_140290e00`/`FUN_1402b18c0`, session 26):
+  `[u32 strlen][strlen×2 UTF-16LE name][6×u32][u32 n][n×16B][16B tail]`
+  plus 32 more bytes when `field[1] & 0x10`. Field semantics (inference):
+  `field[0]` 16-bit checksum, `field[1]` flags (6/7), `field[2]` sequence
+  index, `field[3]/[4]` data-region coordinates, `tail16` per-entry MAC/IV.
+  *(format = fact; field meanings = inference)*
+- **Still open (Q3 remainder)**: where per-file data physically lives and how
+  `field[3]/[4]` address it — the tail after the index decrypts to
+  high-entropy noise under a position-0 key1 stream (no LithTech signature;
+  `scripts/pkg-scan-data.js`), consistent with per-file random access through
+  the checkpoint vector rather than one linear stream. Next experiment:
+  decompile the file-read path (CipherStream::Read / callers of
+  `FUN_1402a95f0`). The v2 (PackageHeader2) variant has no sample. *(unknown)*
+
 ### 6.6 Input / sound / misc
 
 - Sound: `+sounddll` command-line (engine init), `snddrv.dll` present in install. *(fact)*
@@ -603,7 +686,7 @@ an anti-debug check. *(correction, documented to keep the evidence trail honest)
 |---|---|---|---|
 | Q1 | ~~`cshell.dll` / `cres.dll` / `ClientFX.fxd` acquisition~~ **RESOLVED** (2026-10-18 02:56) | User launched the game; the watcher captured all three files to `target\` (hash-verified vs. live: cshell.dll `82F0F4E40A21EFCF…`, cres.dll `F17689E3AF722496…`). Deep REA analysis of cshell.dll started (§6.10, session 10) | Continue sessions on cshell.dll / ClientFX.fxd as needed |
 | Q2 | Runtime IAT reconstruction (real import list) | Would require running the client under a debugger (dynamic dump, §5.2) — deliberately not done on this machine to avoid anti-cheat entanglement | Disposable VM + hardware breakpoint on `.rdata` IAT region; dump with Scylla at OEP `0x1402644b8` |
-| Q3 | `.pkg` (SnowCipher) container format | **Header layer reversed (2026-10-18, sessions 12–15, §6.5)**: loader is the Nexon "lapacker" library in the exe; `OpenFile` memory-maps, masked in-file key (`byte>>1`), 16-bit cycling-XOR header decrypt, `PackageHeader`/`PackageHeader2` versioning, 32-byte index entries. **Still open**: whether file-data blocks use the same cipher (`SnowCipher` proper / `CipherStream<SnowCipher>`), and the full header field map | Decompile the data-block read path (`FUN_1402b1b50` callers beyond the header, `CipherStream` vtables) and validate against a real `.pkg` file |
+| Q3 | ~~`.pkg` (SnowCipher) container format~~ **RESOLVED for v1** (2026-10-18, sessions 12–26, §6.5) | Cipher identified as Nexon **Snow2** (MapleStory `.ms` v2 primitive; 6/6 tables byte-exact vs MapleLib). Full v1 container model reversed and **validated with a standalone parser** (`scripts/pkg-parse.js`) on two real packages: masked-key region (`N1 = Σchars mod 312 + 30`) → version byte → length-obfuscated, cycling-XOR-encrypted header string (fixed salt `!dlstps20djr@`) → Snow2 data region (key1, head = `[checksum][count]`) → index region at `dataStart + N2 + 8` (key2), entries `[u32 strlen][UTF-16LE name][6×u32][n×16B][16B]`(+32B if flag&0x10). Both samples parse 100% (6/6 + 16/16 entries, clean filenames). Remaining: per-file data addressing (`field[3]/[4]`, `tail16`) — index parses but data-block layout unconfirmed; v2 header variant has no sample | Decompile the file-read path (CipherStream::Read / `FUN_1402a95f0` callers) to map index fields to absolute data offsets; obtain a v2 sample if one exists in the install |
 
 | Q4 | ~~`engine.rez` header obfuscation~~ **RESOLVED** (see §6.8) | Initial "obfuscated header" hypothesis refuted — it is the standard RezMgr SA-variant layout, fully parseable | Done: `node scripts\rez-parse.js target\engine.rez` |
 | Q5 | Exact Themida version / VM handler layout | No version resource; full VM devirtualization out of scope | Compare `.boot` stub bytes against Oreans SDK samples; or devirtualize the stub's dispatch loop |
@@ -617,8 +700,10 @@ an anti-debug check. *(correction, documented to keep the evidence trail honest)
 
 - Every REA tool call has a SHA-256-style `evidence_id`; the complete mapping
   (session → tool → args → evidence_id) is `evidence\evidence_index.tsv`, built from
-  `evidence\session1..9.jsonl` (raw JSONL of every MCP exchange, including the full raw
-  results). Snapshots of each closed session: `evidence\sa_snapshot{,1..8}.bin`.
+  `evidence\session1..26.jsonl` (raw JSONL of every MCP exchange, including the full raw
+  results). Snapshots of each closed session: `evidence\sa_snapshot{,1..26}.bin`.
+  The Snow2/cipher identification and container validation are summarized in
+  `evidence\snow2_identification.md`.
 - Non-REA observations (PE parsing, entropy, strings, hashes, Authenticode, rez parsing)
   come from the local scripts in `scripts\` with outputs in `evidence\`
   (`sa_exe_triage.json`, `sa_exe_strings.txt`, `ghsalncr_strings.txt`,
@@ -727,7 +812,28 @@ Environment: Windows x64, Node 22.19+/24.11+, PowerShell 5.1+, ~10 GB free disk.
     ```
     Sessions 12–15 restore the previous session's snapshot (`sa_snapshot11/12/13/14.bin`)
     instead of re-analyzing from scratch.
-12. **Verify the deliverable chain**: every claim in Sections 4–9 cites either an
+12. **SnowCipher sessions (16–26)** (same env var; snapshots chain
+    `sa_snapshot15/…/25.bin`): decompiles of the Snow2 key schedule
+    (`FUN_1402abee0`), position setter, key derivations (`FUN_14029f470/f6b0/
+    f920/fa20`), orchestrator (`FUN_1402aa700`), and index readers
+    (`FUN_140290e00`/`FUN_1402b18c0`, session 26):
+    ```powershell
+    $env:REA_GHIDRA_STARTUP_TIMEOUT_MS='3600000'
+    node scripts\mcp-client.js scripts\cmds-session26.json   # index readers (§6.5)
+    ```
+13. **Cipher-table extraction & container parsing** (no Ghidra needed):
+    ```powershell
+    node scripts\extract-tables.js        # 6 Snow2 tables vs MapleLib → evidence/snow_tables_from_exe.json
+    node scripts\verify-cipher-tables.js  # AES Te0/Te2 cross-check of snow_T0..T3
+    Copy-Item 'H:\Program Files\Nexon\SuddenAttack\game\global_00000.pkg' target\pkg_samples\
+    Copy-Item 'H:\Program Files\Nexon\SuddenAttack\game\texturescripts_00000.pkg' target\pkg_samples\
+    node scripts\pkg-parse.js target\pkg_samples\global_00000.pkg
+    node scripts\pkg-parse.js target\pkg_samples\texturescripts_00000.pkg
+    ```
+    Expected: both files report header string `!dlstps20djr@`, a plausible
+    `[checksum][count]` data head, and 6/6 + 16/16 index entries with clean
+    filenames (`evidence\pkg_index_dump.json`).
+14. **Verify the deliverable chain**: every claim in Sections 4–9 cites either an
    `ev_…` evidence_id (resolvable in `evidence_index.tsv` → session JSONL → raw result) or
    a named script output file. To audit, open `evidence\session<N>.jsonl`, find the
    `evidence_id`, and compare the `raw_result` against the README statement.
@@ -735,4 +841,6 @@ Environment: Windows x64, Node 22.19+/24.11+, PowerShell 5.1+, ~10 GB free disk.
 ---
 
 *Analysis performed 2026-10-17/18 by Claude Code using the REA (reverse-engineer-anything)
-skill workflow. All artifacts local to `H:\SA_Analysis\`; nothing distributed.*
+skill workflow. This analysis and the game binaries were published with the owner's
+authorization at github.com/backfold/0x140333510 (see repo); SessionID/NexonSN and other
+personal identifiers are excluded from all published artifacts.*

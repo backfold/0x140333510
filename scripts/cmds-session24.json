@@ -1,0 +1,5 @@
+[
+  { "tool": "open_binary", "args": { "path": "H:\\SA_Analysis\\target\\suddenattack.exe", "snapshot_path": "H:\\SA_Analysis\\evidence\\sa_snapshot23.bin" }, "timeoutMs": 1800000 },
+  { "tool": "batch_decompile", "args": { "addresses": ["0x1402abee0", "0x1402ace20", "0x14029f470", "0x14029f6b0", "0x14029fa20", "0x14029f920", "0x14029aba0"] }, "timeoutMs": 1800000 },
+  { "tool": "close_binary", "args": { "snapshot_path": "H:\\SA_Analysis\\evidence\\sa_snapshot24.bin" }, "timeoutMs": 600000 }
+]

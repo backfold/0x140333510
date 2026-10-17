@@ -1,0 +1,8 @@
+[
+  { "tool": "open_binary", "args": { "path": "H:\\SA_Analysis\\target\\suddenattack.exe", "snapshot_path": "H:\\SA_Analysis\\evidence\\sa_snapshot20.bin" }, "timeoutMs": 1800000 },
+  { "tool": "xrefs", "args": { "address": "0x1402a9fc0" }, "timeoutMs": 600000 },
+  { "tool": "xrefs", "args": { "address": "0x1402a95f0" }, "timeoutMs": 600000 },
+  { "tool": "xrefs", "args": { "address": "0x1402a9820" }, "timeoutMs": 600000 },
+  { "tool": "xrefs", "args": { "address": "0x1402aa3d0" }, "timeoutMs": 600000 },
+  { "tool": "close_binary", "args": { "snapshot_path": "H:\\SA_Analysis\\evidence\\sa_snapshot21.bin" }, "timeoutMs": 600000 }
+]
