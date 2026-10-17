@@ -1,4 +1,4 @@
-s1	open_binary	{"path":"H:\\SA_Analysis\\target\\suddenattack.exe"}	
+﻿s1	open_binary	{"path":"H:\\SA_Analysis\\target\\suddenattack.exe"}	
 s1	binary_session		
 s1	procedure_info	{"procedure":"0x140ab3058"}	ev_c72654d79c1dedbc15644e55a3ad7c71c36e8f80a904a03ce67fe6cfd4c04278
 s1	procedure_assembly	{"procedure":"0x140ab3058"}	ev_d1fe6a116b0756cd69863c84d310cdcd35191104456e8910dd20a7c173586220
@@ -189,3 +189,15 @@ s25	close_binary	{"snapshot_path":"H:\\SA_Analysis\\evidence\\sa_snapshot25.bin"
 s26	open_binary	{"path":"H:\\SA_Analysis\\target\\suddenattack.exe","snapshot_path":"H:\\SA_Analysis\\evidence\\sa_snapshot25.bin"}	True
 s26	batch_decompile	{"addresses":["0x140290e00","0x1402b18c0","0x1402b2480","0x1402b15b0"]}	True
 s26	close_binary	{"snapshot_path":"H:\\SA_Analysis\\evidence\\sa_snapshot26.bin"}	True
+s27	open_binary	{"path":"H:\\SA_Analysis\\target\\cshell.dll","snapshot_path":"H:\\SA_Analysis\\evidence\\cshell_snapshot1.bin"}	True
+s27	search_strings	{"pattern":"LoginEncrypt","mode":"literal"}	False
+s27	search_strings	{"pattern":"CStreamCryptor","mode":"literal"}	True
+s27	search_strings	{"pattern":"CPHObject","mode":"literal"}	True
+s27	search_procedures	{"pattern":"Cryptor","mode":"literal"}	True
+s27	close_binary	{"snapshot_path":"H:\\SA_Analysis\\evidence\\cshell_snapshot27.bin"}	True
+s28	open_binary	{"path":"H:\\SA_Analysis\\target\\cshell.dll","snapshot_path":"H:\\SA_Analysis\\evidence\\cshell_snapshot27.bin"}	True
+s28	xrefs	{"address":"0x181602ed0"}	False
+s28	xrefs	{"address":"0x180d5ef00"}	True
+s28	xrefs	{"address":"0x180d5e9c0"}	True
+s28	batch_decompile	{"addresses":["0x180d5ef00","0x180d5e9c0","0x180d5e0e0","0x180d5e2e0","0x181272da0","0x181272db0","0x181273710","0x1812736f0","0x1812736d0","0x1812736b0","0x181272fa0","0x181272e40"]}	True
+s28	close_binary	{"snapshot_path":"H:\\SA_Analysis\\evidence\\cshell_snapshot28.bin"}	True

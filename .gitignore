@@ -1,2 +1,5 @@
 # Toolchain installs and download archives (Ghidra, JDK, MinGit, gh CLI)
 /tools/
+logs/
+*.log
+evidence/*_snapshot*.bin

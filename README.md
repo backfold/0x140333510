@@ -38,15 +38,23 @@
   `global_00000.pkg` (6/6 entries, `global/models/*.ltb/.ltc`) and
   `texturescripts_00000.pkg` (16/16, `*.tfs/.txt`) parse 100%. Remaining: per-file
   data-block addressing (index `field[3]/[4]`), v2 header variant unsampled.
+- **Network crypto (sessions 27–28) — FOUND & DECODED** (in `cshell.dll`, §9):
+  `CStreamCryptor_v1` packet obfuscation = rolling XOR with a **per-packet random
+  15-bit key that ships inside the packet** + whole-block reversal + u16 checksum
+  (self-describing → proxy-side decryption with zero prior knowledge), plus an
+  XTEA-32 value codec with hardcoded key `"156def789023abc4"` (hex+`"SA"` wrapper),
+  plus `CPHObject` header XORs. Working decryptors (Python+Node, KAT-verified) and a
+  MITM capture proxy with automatic de-obfuscation logging under `scripts\py\`.
 - **cshell.dll (session 10)**: 33 MB, VLizer VM sections (`.vm_sec`/`.vlizer`) but intact
   21 MB `.text` — Ghidra recovers 74,642 procedures. Drives the EAC/EOS anti-cheat client
   session, game socket I/O (WS2_32), and `CSAGameClientShell` game logic. No plaintext
   `CMSG_*` network message names.
 - OEP chain (statically identified): Themida stub (entry `0x140ab3058`) →
   `mainCRTStartup` `0x1402644b8` → `WinMain` `0x14007acf0`.
-- Full evidence trail: `evidence\session1..26.jsonl` (REA MCP raw results),
+- Full evidence trail: `evidence\session1..28.jsonl` (REA MCP raw results),
   `evidence\evidence_index.tsv` (tool call → evidence_id index),
-  `evidence\snow2_identification.md` (cipher/container validation), decompiled
+  `evidence\snow2_identification.md` (cipher/container validation),
+  `evidence\network_crypto_identification.md` (wire crypto), decompiled
   functions in `decompiled\`, scripts in `scripts\`.
 
 ## 2. Target & Environment
@@ -677,8 +685,32 @@ an anti-debug check. *(correction, documented to keep the evidence trail honest)
 - Message names visible in strings (e.g. `CMSG_CONNECTSTAGE`) indicate a LithTech-style
   message-ID protocol for connection staging. *(fact that the string exists; protocol
   semantics unknown)*
-- No packet capture, no protocol field map, no crypto/obfuscation of the wire format
-  identified — **open** (Section 10). Everything here needs `cshell.dll` or a live capture.
+- **Wire crypto found and reversed in `cshell.dll`** (sessions 27–28,
+  `evidence/network_crypto_identification.md`):
+  - `CStreamCryptor` RTTI hierarchy — base (pure-virtual) + `v0` (pass-through:
+    tag getters return 0) + `v1` (real codec). vftables 0x181658f58 / f98 / fd8.
+  - **v1 packet obfuscation** (`FUN_181272e40` enc / `FUN_181272fa0` dec,
+    vtable +0x08/+0x10): header `{rand8, tag8, rand8, key32(15-bit rand), rand8}`
+    + payload rolling-XOR (`c[i] = key ^ p[i] ^ c[i-1]`) → whole block **reversed**
+    → u16 checksum appended. **The key travels inside the packet**, so a
+    capture-side proxy can decrypt with zero prior knowledge. *(fact from
+    decompile; checksum fn 0x181272bc0 body + live-wire usage pending session 29)*
+  - **XTEA-32 with a hardcoded key** `"156def789023abc4"` (u32s
+    0x64363531/0x38376665/0x33323039/0x34636261) on an 8-byte block
+    (enc `FUN_180d5ef00`, dec `FUN_180d5e9c0`), wrapped as uppercase-hex + `"SA"`
+    suffix (`FUN_180d5e0e0/2e0`) — value-level obfuscation, login-flow related
+    *(inference)*. Also invoked from the VM-protected `.vlizer` region
+    (0x18215b904/910). *(fact)*
+  - `CPHObject` header de-obfuscators: XOR_1 `[this+0x38]^[this+0x30]^[this+8]`,
+    XOR_2 `[this+0x40]^[this+0x38]^[this+8]` (raw machine-code read). *(fact)*
+  - Correction: the earlier "XXTEA" identification was wrong — the constant +
+    unroll pattern is textbook **XTEA** on a 64-bit block.
+- Working Python/Node implementations + KAT: `scripts/py/sa_net_crypto.py`
+  (validated via Node mirror, `scripts/py/sa-proxy.js --selftest`), and a
+  capture proxy with automatic de-obfuscation logging:
+  `scripts/py/sa_proxy.py` / `sa-proxy.js` (usage: `scripts/py/PROXY_USAGE.md`).
+  Launch endpoint observed from a user-supplied `ngm://` URL:
+  `175.207.21.11:12000` (`evidence/ngm_launch_args.md`, token redacted).
 
 ## 10. Open Questions
 
@@ -693,6 +725,7 @@ an anti-debug check. *(correction, documented to keep the evidence trail honest)
 | Q6 | PDB symbols | Referenced PDB `SuddenAttack.pdb` GUID 6c56246a-9feb-4a5e-b74a-c9543885c781 not on disk; symbol servers are public infrastructure, not used here (local-only rule) | None planned (would require network symbol lookup, outside the local-only constraint if interpreted strictly) |
 | Q7 | ~~Anti-cheat interaction order/IPC at runtime~~ **largely RESOLVED statically** (§6.10) | cshell.dll's import table shows it drives the EOS/EAC anti-cheat client session + machine-ID + socket I/O, while the exe starts NGS. Exact call ordering still needs runtime/decompile follow-up. External module enumeration of the live process returns 0 modules (protection blocks handle queries — observed during the 2026-10-18 launch) | Optional: decompile the `EOS_AntiCheatClient_*` call sites in cshell.dll |
 | Q8 | ~~Role confirmation for support DLLs~~ **largely RESOLVED** (see §6.9) | Roles identified via strings/PDB paths + REA session 9 (machineidlib); deep REA passes on the remaining modules not done | Optional: full `open_binary` → pseudo-code workflow per module as needed |
+| Q9 | ~~TCP message crypto location~~ **RESOLVED** (2026-10-18, sessions 27–28, §9) | Located in `cshell.dll` (not the exe): `CStreamCryptor` v1 packet obfuscation (rolling XOR + reverse + u16 cksum, **key embedded per packet**) + XTEA-32 fixed-key `"156def789023abc4"` value codec + CPHObject header XORs. Ready-made decryptors + MITM capture proxy under `scripts/py/`. Remaining: checksum body (0x181272bc0), v1 tag byte, and confirmation of which codec is actually used on the 175.207.21.11:12000 wire | Session 29 decompiles + first live proxy capture; optionally decompile the `.vlizer` callers |
 
 ## 11. Evidence & Limitations
 
@@ -833,7 +866,24 @@ Environment: Windows x64, Node 22.19+/24.11+, PowerShell 5.1+, ~10 GB free disk.
     Expected: both files report header string `!dlstps20djr@`, a plausible
     `[checksum][count]` data head, and 6/6 + 16/16 index entries with clean
     filenames (`evidence\pkg_index_dump.json`).
-14. **Verify the deliverable chain**: every claim in Sections 4–9 cites either an
+14. **Network-crypto sessions (27–28)** (cshell.dll, same env var as step 10; snapshots
+    chain `cshell_snapshot27/28.bin`): local triage first —
+    `node scripts\crypto-constants-scan.js target\cshell.dll`,
+    `node scripts\rtti-locate.js target\cshell.dll`, `node scripts\pdata-funcs.js …`,
+    `node scripts\callers-scan.js …` — then `node scripts\mcp-client.js
+    scripts\cmds-session28.json` decompiles the XTEA pair, wrappers, and
+    CStreamCryptor v1 enc/dec. Deliverables: `evidence\network_crypto_identification.md`,
+    `scripts\py\sa_net_crypto.py`.
+15. **Capture proxy** (self-contained, no Ghidra):
+    ```powershell
+    node scripts\py\sa-proxy.js --selftest                                  # pipeline + crypto KAT
+    node scripts\py\sa-proxy.js --listen 127.0.0.1:12000 --upstream 175.207.21.11:12000
+    powershell -File scripts\py\launch-via-proxy.ps1   # ngm:// URL (clipboard) → passarg IP 교체 실행
+    ```
+    Logs land in `H:\SA_Analysis\logs\<session>\` (raw streams, events.jsonl,
+    packets.log with automatic v1 de-obfuscation, strings.log). `logs/` is
+    git-ignored (may contain account data). Usage details: `scripts\py\PROXY_USAGE.md`.
+16. **Verify the deliverable chain**: every claim in Sections 4–9 cites either an
    `ev_…` evidence_id (resolvable in `evidence_index.tsv` → session JSONL → raw result) or
    a named script output file. To audit, open `evidence\session<N>.jsonl`, find the
    `evidence_id`, and compare the `raw_result` against the README statement.

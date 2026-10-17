@@ -1,0 +1,8 @@
+[
+  { "tool": "open_binary", "args": { "path": "H:\\SA_Analysis\\target\\cshell.dll", "snapshot_path": "H:\\SA_Analysis\\evidence\\cshell_snapshot1.bin" }, "timeoutMs": 3600000 },
+  { "tool": "search_strings", "args": { "pattern": "LoginEncrypt", "mode": "literal" }, "timeoutMs": 600000 },
+  { "tool": "search_strings", "args": { "pattern": "CStreamCryptor", "mode": "literal" }, "timeoutMs": 600000 },
+  { "tool": "search_strings", "args": { "pattern": "CPHObject", "mode": "literal" }, "timeoutMs": 600000 },
+  { "tool": "search_procedures", "args": { "pattern": "Cryptor", "mode": "literal" }, "timeoutMs": 600000 },
+  { "tool": "close_binary", "args": { "snapshot_path": "H:\\SA_Analysis\\evidence\\cshell_snapshot27.bin" }, "timeoutMs": 600000 }
+]
