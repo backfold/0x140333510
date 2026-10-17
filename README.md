@@ -1,8 +1,9 @@
 # SuddenAttack Client — Reverse-Engineering Analysis (REA)
 
-> Personal, local analysis for study/interop only. Nothing in `H:\SA_Analysis\` has been
-> uploaded or distributed anywhere. All work was done on **copies** in `H:\SA_Analysis\target\`;
-> the live install at `H:\Program Files\Nexon\SuddenAttack` was only read from.
+> Personal analysis for study/interop. All work was done on **copies** in
+> `H:\SA_Analysis\target\`; the live install at `H:\Program Files\Nexon\SuddenAttack` was
+> only read from. With the owner's authorization (2026-10-18), this analysis output and the
+> captured binaries are published to the analysis repo `github.com/backfold/0x140333510`.
 
 ## 1. TL;DR
 
@@ -18,13 +19,23 @@
   `HackShield` returns zero hits in the client. The actual anti-cheat stack is
   **Easy Anti-Cheat (EOS variant)** + **Nexon NGS (BlackCat2.sys)** + **nProtect BlackCipher**
   (encrypted `.aes` modules, incl. `NGClient64.aes` imported by the client by ordinal 2).
-- **Engine: LithTech-derived** (confirmed by build strings, RTTI, rez handling) with a Nexon
-  package layer (`Lambda` namespace: SnowCipher stream cipher + zlib) used for the encrypted
-  `.pkg` game resources. Renderer is **DirectX 9** (`Direct3DCreate9Ex`, `RenderDll d3d.ren`,
+- **Engine: LithTech-derived** (confirmed by build strings, RTTI, rez handling, and embedded
+  NOLF2 mission text in `cres.dll`) with a Nexon package layer used for the encrypted `.pkg`
+  game resources. Renderer is **DirectX 9** (`Direct3DCreate9Ex`, `RenderDll d3d.ren`,
   CD3D* classes). The client shell (`cshell.dll`) is MD5-verified before load.
+- **`.pkg` resource layer (sessions 11–15)**: the loader is the Nexon-internal **lapacker**
+  library statically linked into `suddenattack.exe` (`Lambda` namespace). `OpenFile`
+  memory-maps the package; the container stack is mask (`byte >> 1`, format check
+  `(first>>1)^last == 3`) → **SnowCipher** stream cipher → **zlib 1.2.11** (statically
+  linked, version string at `inflateInit_`). Index table: 32-byte entries, file count at
+  header +0x34. Full key schedule: pending (session 15).
+- **cshell.dll (session 10)**: 33 MB, VLizer VM sections (`.vm_sec`/`.vlizer`) but intact
+  21 MB `.text` — Ghidra recovers 74,642 procedures. Drives the EAC/EOS anti-cheat client
+  session, game socket I/O (WS2_32), and `CSAGameClientShell` game logic. No plaintext
+  `CMSG_*` network message names.
 - OEP chain (statically identified): Themida stub (entry `0x140ab3058`) →
   `mainCRTStartup` `0x1402644b8` → `WinMain` `0x14007acf0`.
-- Full evidence trail: `evidence\session1..9.jsonl` (REA MCP raw results),
+- Full evidence trail: `evidence\session1..15.jsonl` (REA MCP raw results),
   `evidence\evidence_index.tsv` (tool call → evidence_id index), decompiled functions in
   `decompiled\`, scripts in `scripts\`.
 
@@ -431,7 +442,30 @@ without runtime analysis.)*
 So the anti-cheat division of labor is: **suddenattack.exe starts NGS** (WinMain "Init 2 —
 NGS Start"), while **cshell.dll runs the EAC/EOS anti-cheat client session** (Begin/EndSession,
 integrity-violation notifications) and the actual game socket I/O. *(derivation from imports;
-exact call sites pending session-10+ decompiles.)*
+exact call sites pending further decompiles.)*
+
+**REA session 10 (executed 2026-10-18, Ghidra deep-dive on the 33 MB DLL; evidence rows
+s10 in `evidence_index.tsv`)**:
+
+- **Full Ghidra layout (fact)** — image base `0x180000000`, 10 segments:
+  `.text` `0x180001000`–`0x181438000` (21,196,800 B), `.rdata` 4.7 MB, `.data` 2.2 MB,
+  `.pdata` 1.0 MB, `.vm_sec` 49,664 B @`0x181c14000`, `.vlizer` 5,920,256 B @`0x181c21000`,
+  plus a `tdb` block at `0xff00000000` (Ghidra memory-block artifact, not file data).
+  Ghidra recovered **74,642 procedures** and 32,020 defined strings from the intact
+  `.text` (ev_35fb49477ec8…). Confirms the earlier triage: VLizer VM sections exist but
+  the bulk of cshell is statically analyzable.
+- **Client-shell classes (fact)** — `CSAGameClientShell` @`0x181502b88` (the
+  Sudden-Attack-specific subclass), `CGameClientShell::OnEngineInitialized` log string
+  @`0x1815e84a8`, RTTI for `CGameClientShell` plus its hook-data objects
+  (`KeyDownHookDataObject`, `LButtonUpHookDataObject`,
+  `Before/AfterHandleWeaponPickupHookDataObject`) @`0x18190b148`–`0x18191c2f0`
+  (ev_5d2ac743f3b1…). Input and weapon-pickup events flow through LithTech shell hooks.
+- **Negative findings (fact from absence)** — `CMSG_`-prefixed strings: **0 hits**
+  (ev_755774f5da20…); `VLizer` as a literal: 0 hits; procedure name `ShellInit`: 0
+  hits. So network message type names are **not** stored as plain `CMSG_*` literals in
+  cshell.dll — they are either constructed dynamically or live in the `.pkg` script
+  resources (see §6.5). The earlier "VLizer" attribution rests on the section names and
+  the @0x378 marker string, not on a readable "VLizer" string in defined data.
 
 **Game-logic strings (fact, samples)**: `[SurvivalMode] inventory PacketRecv false : %d`,
 `DoorPointDoorServerActionPacketEvent%d`, `ActionPacketID%d`, and hundreds of
