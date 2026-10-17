@@ -759,6 +759,13 @@ an anti-debug check. *(correction, documented to keep the evidence trail honest)
   `scripts/py/sa_proxy.py` / `sa-proxy.js` (usage: `scripts/py/PROXY_USAGE.md`).
   Launch endpoint observed from a user-supplied `ngm://` URL:
   `175.207.21.11:12000` (`evidence/ngm_launch_args.md`, token redacted).
+  Shim teardown (restore the original ngm:// handling): create the bypass file
+  `H:\SA_Analysis\logs\ngm-shim-off` (pass-through without rewrite), or remove
+  the override entirely with
+  `Remove-Item -Recurse HKCU:\Software\Classes\ngm` — after that the HKLM
+  handler (`C:\ProgramData\Nexon\NGM\NGM64.exe`) serves ngm:// URLs directly
+  again. The shim itself never modifies the live install (`scripts/py/ngm-shim.ps1`
+  only rewrites the first `-passarg` IP token).
 - **Inner payload layer — SOLVED (sessions 31–33)**. After the obf layer, the
   payload is `P[i] = C[i] ⊕ M_dir[i % 16]` — a **session-scoped 16-byte mask
   per direction**, absolute alignment at payload offset 0, period 16, constant
