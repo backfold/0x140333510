@@ -327,10 +327,11 @@ Update (2026-10-18, REA session 14 — `batch_decompile` of the seven functions,
   messages cite `PackageLoader.cpp` lines 0xc2/0xc6/0xcd/0xd3. *(fact)*
 - **`FUN_1402a9fc0` = `PackageHeaderLoader::LoadMaskedData`** — reads `*param_4` bytes
   one at a time; format check `(first_byte >> 1) ^ last_byte == 3`; if it passes, each
-  stored byte is **un-masked by `>> 1`** before use, and a cipher-stream object is
-  constructed (`FUN_1402b14d0`), otherwise a plain stream (`FUN_1402b1490`) plus a
-  seek(-1, cur). Then virtual `+0x18` loads the buffer and `FUN_1402b1b50` expands it.
-  *(fact)*
+  stored byte is **un-masked by `>> 1`** before use, and a `Lambda::PackageHeader`
+  object is constructed (`FUN_1402b14d0`), otherwise a `Lambda::PackageHeader2`
+  (`FUN_1402b1490`) plus a seek(-1, cur). Then virtual `+0x18` loads the buffer and
+  `FUN_1402b1b50` decrypts it. *(fact; object identities confirmed by vftable symbols in
+  session 15 — see below)*
 - **`FUN_1402a95f0` = `PackageHeaderLoader::LoadEncryptData`** — reads the encrypted
   block through stream virtuals (+0x20 read, +0x10 status) with a size assertion against
   `FUN_1402b17f0` (`PackageLoader.cpp` lines 0xae/0xb3). *(fact)*
@@ -341,6 +342,38 @@ Update (2026-10-18, REA session 14 — `batch_decompile` of the seven functions,
 The SnowCipher key schedule itself is still open: the cipher-stream constructors
 `FUN_1402b14d0` / `FUN_1402b1490` and the expander `FUN_1402b1b50` are the next
 decompile targets (session 15, Q3, Section 10).
+
+Update (2026-10-18, REA session 15 — `batch_decompile`,
+`ev_43b19c3161cf2afaaffe93c9272f0587c71ebe02245b1f57f45e26482d306ad8`; pseudocode in
+`decompiled\FUN_1402b*_lapacker.c`). **The `.pkg` header decryption is now reversed:**
+
+- **`FUN_1402b14d0` = `Lambda::PackageHeader` constructor, `FUN_1402b1490` =
+  `Lambda::PackageHeader2` constructor** — Ghidra resolved the vftable symbols
+  (`Lambda::PackageHeader::vftable` / `Lambda::PackageHeader2::vftable`) from the RTTI
+  in the binary. So the mask check in `LoadMaskedData` selects the header *version*
+  (PackageHeader vs PackageHeader2), not a cipher choice. This corrects the session-14
+  reading above. *(fact)*
+- **`FUN_1402b1b50` = header decryptor** — the decrypted output is built 16 bits at a
+  time: `out16[i] = in16[i] ^ keyBytes[i % keyLen]`, where `in16` is the encrypted
+  header blob (an SSO string at header+0x10, word count at header+0x20) and
+  `keyBytes` is the **in-file un-masked key vector** (`local_180` from
+  `LoadMaskedData` after the `>> 1` pass). The key is therefore **per-package and
+  stored inside the `.pkg` file itself** — not the `"1234567890"` candidate
+  (hypothesis from §6.5 strings now considered unlikely for the header layer). *(fact
+  from decompile; "which bytes are the key blob vs. the encrypted blob" is fully
+  determined by `FUN_1402a9fc0` + this function)*
+- **`FUN_1402b17f0` = header size/checksum accumulator** — sums the header blob as
+  16-bit words (8-way unrolled) plus fields at +0xc, +0x8 (byte), +0x34; this is the
+  value `LoadEncryptData` asserts against. *(fact)*
+- **`FUN_1402a8600`** — trivial forwarder to `FUN_1402a82f0` (string helper). *(fact)*
+
+Net container model (header layer, **fact**): `OpenFile` memory-maps the `.pkg` →
+read masked key bytes → verify `(first>>1)^last == 3` (version select) → un-mask
+(`byte >> 1`) → XOR-decrypt the header blob as 16-bit words with the cycling key →
+`PackageHeader`/`PackageHeader2` fields → `LoadIndexTable` (count at +0x34, 32-byte
+entries). Still open (Q3 remainder): whether the *file data* blocks use the same
+cycling-XOR (the `SnowCipher` name) or a different `CipherStream<SnowCipher>` stage,
+and the exact `PackageHeader` field map.
 
 ### 6.6 Input / sound / misc
 
@@ -570,7 +603,8 @@ an anti-debug check. *(correction, documented to keep the evidence trail honest)
 |---|---|---|---|
 | Q1 | ~~`cshell.dll` / `cres.dll` / `ClientFX.fxd` acquisition~~ **RESOLVED** (2026-10-18 02:56) | User launched the game; the watcher captured all three files to `target\` (hash-verified vs. live: cshell.dll `82F0F4E40A21EFCF…`, cres.dll `F17689E3AF722496…`). Deep REA analysis of cshell.dll started (§6.10, session 10) | Continue sessions on cshell.dll / ClientFX.fxd as needed |
 | Q2 | Runtime IAT reconstruction (real import list) | Would require running the client under a debugger (dynamic dump, §5.2) — deliberately not done on this machine to avoid anti-cheat entanglement | Disposable VM + hardware breakpoint on `.rdata` IAT region; dump with Scylla at OEP `0x1402644b8` |
-| Q3 | `.pkg` (SnowCipher) container format | Loader located (2026-10-18): Nexon "lapacker" library linked into the exe — `Lambda::PackageHeaderLoader::LoadIndexTable/LoadEncryptData/LoadMaskedData`, `PackageLoader::OpenFile`, source `C:\Git\lapacker\lib\FileSystemLib\*.cpp` (§6.5). Key schedule / header field map still unextracted; cshell.dll ruled out as the loader (no Lambda strings in it) | REA session on the exe (snapshot-restoreable): search string `LoadIndexTable` → xrefs → decompile the `PackageHeaderLoader` methods and the `SnowCipher` constructor |
+| Q3 | `.pkg` (SnowCipher) container format | **Header layer reversed (2026-10-18, sessions 12–15, §6.5)**: loader is the Nexon "lapacker" library in the exe; `OpenFile` memory-maps, masked in-file key (`byte>>1`), 16-bit cycling-XOR header decrypt, `PackageHeader`/`PackageHeader2` versioning, 32-byte index entries. **Still open**: whether file-data blocks use the same cipher (`SnowCipher` proper / `CipherStream<SnowCipher>`), and the full header field map | Decompile the data-block read path (`FUN_1402b1b50` callers beyond the header, `CipherStream` vtables) and validate against a real `.pkg` file |
+
 | Q4 | ~~`engine.rez` header obfuscation~~ **RESOLVED** (see §6.8) | Initial "obfuscated header" hypothesis refuted — it is the standard RezMgr SA-variant layout, fully parseable | Done: `node scripts\rez-parse.js target\engine.rez` |
 | Q5 | Exact Themida version / VM handler layout | No version resource; full VM devirtualization out of scope | Compare `.boot` stub bytes against Oreans SDK samples; or devirtualize the stub's dispatch loop |
 | Q6 | PDB symbols | Referenced PDB `SuddenAttack.pdb` GUID 6c56246a-9feb-4a5e-b74a-c9543885c781 not on disk; symbol servers are public infrastructure, not used here (local-only rule) | None planned (would require network symbol lookup, outside the local-only constraint if interpreted strictly) |

@@ -127,3 +127,7 @@ s10	search_strings	{"pattern":"GameClientShell","mode":"literal"}	ev_5d2ac743f3b
 s10	search_strings	{"pattern":"VLizer","mode":"literal"}	ev_5a1f430f55b27e91ece392d9699e4581056763a34da6e5402e9777b173fd2e32
 s10	search_procedures	{"pattern":"ShellInit","mode":"literal"}	ev_065a051dfc6208ccb7efce2ed360927512fb720f7294484f6873980755c0063d
 s10	close_binary	{"snapshot_path":"H:\\SA_Analysis\\evidence\\cshell_snapshot1.bin"}	
+
+s15	open_binary	{"path":"H:\\SA_Analysis\\target\\suddenattack.exe","snapshot_path":"H:\\SA_Analysis\\evidence\\sa_snapshot14.bin"}	
+s15	batch_decompile	{"addresses":["0x1402b14d0","0x1402b1490","0x1402b1b50","0x1402b17f0","0x1402a8600"]}	ev_43b19c3161cf2afaaffe93c9272f0587c71ebe02245b1f57f45e26482d306ad8
+s15	close_binary	{"snapshot_path":"H:\\SA_Analysis\\evidence\\sa_snapshot15.bin"}	
