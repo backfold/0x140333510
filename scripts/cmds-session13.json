@@ -1,0 +1,13 @@
+[
+  { "tool": "open_binary", "args": { "path": "H:\\SA_Analysis\\target\\suddenattack.exe", "snapshot_path": "H:\\SA_Analysis\\evidence\\sa_snapshot12.bin" }, "timeoutMs": 1800000 },
+  { "tool": "resolve_containing_procedure", "args": { "address": "0x1402a61a9" }, "timeoutMs": 600000 },
+  { "tool": "resolve_containing_procedure", "args": { "address": "0x1402a6624" }, "timeoutMs": 600000 },
+  { "tool": "resolve_containing_procedure", "args": { "address": "0x1402a969b" }, "timeoutMs": 600000 },
+  { "tool": "resolve_containing_procedure", "args": { "address": "0x1402a9c9d" }, "timeoutMs": 600000 },
+  { "tool": "resolve_containing_procedure", "args": { "address": "0x1402a9f16" }, "timeoutMs": 600000 },
+  { "tool": "resolve_containing_procedure", "args": { "address": "0x1402aa32b" }, "timeoutMs": 600000 },
+  { "tool": "resolve_containing_procedure", "args": { "address": "0x1402aa4e1" }, "timeoutMs": 600000 },
+  { "tool": "resolve_containing_procedure", "args": { "address": "0x1402aa66b" }, "timeoutMs": 600000 },
+  { "tool": "resolve_containing_procedure", "args": { "address": "0x1402dd745" }, "timeoutMs": 600000 },
+  { "tool": "close_binary", "args": { "snapshot_path": "H:\\SA_Analysis\\evidence\\sa_snapshot13.bin" }, "timeoutMs": 600000 }
+]

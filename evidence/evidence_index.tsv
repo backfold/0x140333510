@@ -93,3 +93,29 @@ s11	search_strings	{"pattern":"OpenFile","mode":"literal"}	ev_8a88d5ff3287b928de
 s11	search_strings	{"pattern":"invalid package file data","mode":"literal"}	ev_38b68ff0100a1e5b945c52b49704a1390e852c990a32478b24463170f0aded39
 s11	search_strings	{"pattern":"sa_text_00000","mode":"literal"}	ev_8ed659c14166a49c91ce039f29db886fce04ab7e84e33a04e636b8d779cf17c1
 s11	search_procedures	{"pattern":"Package","mode":"literal"}	ev_c2ef72daae989e2e422cdbd1257f581dcad271fb219259c13248f210b326b554
+
+s12	open_binary	{"path":"H:\\SA_Analysis\\target\\suddenattack.exe","snapshot_path":"H:\\SA_Analysis\\evidence\\sa_snapshot11.bin"}	
+s12	xrefs	{"address":"0x140333750"}	ev_1db610daab59cc65a5f9eca81e97a30e383280b0c60cf312395340fc3fa5f7d1
+s12	xrefs	{"address":"0x1403336e0"}	ev_857593f3335f595ff1a1856ffe53695bc7a993dfe5ca81e69beba065d0540d87
+s12	xrefs	{"address":"0x140333680"}	ev_51478c3013708b62cb2121c04aff8837f46ff001e2013f278dac3a2a7bfd5df7
+s12	xrefs	{"address":"0x1403335c0"}	ev_58702bbf7ca81bba98dbeaa89f0e9baad12afd7ce93f9ccbf1dfbf54ddc79db4
+s12	xrefs	{"address":"0x140333510"}	ev_aed29cb6aa6d3e319f011b505b35871dedb60ce2b8f2cfb2dff7d3301443ad78
+s12	xrefs	{"address":"0x14030d440"}	ev_f2d4f60248e2ccb7614104abb07c9d9d63c21d64fcf57b6930ce34c2cb15c53a
+s12	close_binary	{"snapshot_path":"H:\\SA_Analysis\\evidence\\sa_snapshot12.bin"}	
+
+s13	open_binary	{"path":"H:\\SA_Analysis\\target\\suddenattack.exe","snapshot_path":"H:\\SA_Analysis\\evidence\\sa_snapshot12.bin"}	
+s13	resolve_containing_procedure	{"address":"0x1402a61a9"}	ev_673788e7b13d514f5bbebc2b0d8fcc7c0bda4fe5f3866ae162d2a31a44de942b
+s13	resolve_containing_procedure	{"address":"0x1402a6624"}	ev_99a38236375168ebd76c8e5ea83a71d13e738a0536076ece92ba34311ff003ed
+s13	resolve_containing_procedure	{"address":"0x1402a969b"}	ev_b0a0da198d4d575c1ba7de14aac9f479e11148d5bb553ee2ccc4ee6a0fd0fd5d
+s13	resolve_containing_procedure	{"address":"0x1402a9c9d"}	ev_b56771239db7cfc0fc2baf0579dfdb9a816dd0bc7c1049289093dc7bd79840fd
+s13	resolve_containing_procedure	{"address":"0x1402a9f16"}	ev_eb7db6898ddc0bcd06fc775612ee5145ebcf1ed0ffdab2c997a8d79bf27c668d
+s13	resolve_containing_procedure	{"address":"0x1402aa32b"}	ev_29811467c2a8b200cead85c8259b4bc702724f7012a20d8114092c301d883f9f
+s13	resolve_containing_procedure	{"address":"0x1402aa4e1"}	ev_ab7525c2e36d3885cfd294aef697a930858d1e57bc54383f71ec5c2ac42c8ef7
+s13	resolve_containing_procedure	{"address":"0x1402aa66b"}	ev_8b6bae7d3b2e7e4db6ba3606299509e8c2fb629d9f0ea0c060bd8381a94895d3
+s13	resolve_containing_procedure	{"address":"0x1402dd745"}	ev_a19a6b8826bc143f8bf1e32a95e6a5acd6e4f58ab15074082c68ebc2187f68a0
+s13	close_binary	{"snapshot_path":"H:\\SA_Analysis\\evidence\\sa_snapshot13.bin"}	
+
+s14	open_binary	{"path":"H:\\SA_Analysis\\target\\suddenattack.exe","snapshot_path":"H:\\SA_Analysis\\evidence\\sa_snapshot13.bin"}	
+s14	batch_decompile	{"addresses":["0x1402a60a0","0x1402a6340","0x1402a95f0","0x1402a9820","0x1402a9fc0","0x1402aa3d0","0x1402dd700"]}	
+ev_71f96c14f948af4064770d364291b651a21fd9e1f37e6d963247b681a423d0e5
+s14	close_binary	{"snapshot_path":"H:\\SA_Analysis\\evidence\\sa_snapshot14.bin"}	

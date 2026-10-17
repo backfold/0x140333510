@@ -276,10 +276,60 @@ the package loader is a Nexon-internal library called **lapacker**, and its code
   cshell sees resources through the exe's filesystem abstraction. *(fact from absence in
   `evidence\cshell_strings.txt`)*
 
-The `.pkg`/SnowCipher format itself is still **not** reversed (no key schedule / header field
-map), but the loader code is now located in the exe's intact `.text`, so
-`Lambda::PackageHeaderLoader::LoadIndexTable` / `LoadEncryptData` / `LoadMaskedData`
-decompiles are the direct path (Q3, Section 10).
+Update (2026-10-18, REA sessions 12–13 — xrefs + containing-procedure resolution):
+the lapacker implementation is confirmed to be a compact code region in the exe's `.text`,
+and the consuming functions are now identified:
+
+| String (VA) | Referenced from | Containing function |
+|---|---|---|
+| `"Lambda::PackageHeaderLoader::LoadIndexTable"` (`0x140333750`) | `0x1402a9c9d`/`0x1402a9d6e`/`0x1402a9e45`/`0x1402a9f16` | `FUN_1402a9820` (`0x1402a9820`) |
+| `"Lambda::PackageHeaderLoader::LoadEncryptData"` (`0x1403336e0`) | `0x1402a969b`/`0x1402a9775` | `FUN_1402a95f0` (`0x1402a95f0`) |
+| `"Lambda::PackageHeaderLoader::LoadMaskedData"` (`0x140333680`) | `0x1402aa32b` | `FUN_1402a9fc0` (`0x1402a9fc0`) |
+| `"Lambda::PackageLoader::OpenFile"` (`0x1403335c0`) | `0x1402aa4e1`/`0x1402aa5a6`/`0x1402aa66b` | `FUN_1402aa3d0` (`0x1402aa3d0`) |
+| `"zlib inflate() error. invalid package file data."` (`0x140333510`) | `0x1402a61a9`/`0x1402a61b7`/`0x1402a6624`/`0x1402a6632` | `FUN_1402a60a0`, `FUN_1402a6340` (zlib inflate wrappers) |
+| `"game\sa_text_00000.pkg"` (`0x14030d440`) | `0x1402dd745` | `FUN_1402dd700` (game-side text-package consumer) |
+
+*(fact — `evidence\session12.jsonl`, `evidence\session13.jsonl`; evidence IDs in
+`evidence\evidence_index.tsv` rows s12/s13)*. All references cluster inside
+`0x1402a6000`–`0x1402ab000`, consistent with a single linked lapacker translation-unit
+group.
+
+Update (2026-10-18, REA session 14 — `batch_decompile` of the seven functions,
+`ev_71f96c14f948af4064770d364291b651a21fd9e1f37e6d963247b681a423d0e5`; pseudocode in
+`decompiled\FUN_1402a*_lapacker.c`):
+
+- **`FUN_1402aa3d0` = `Lambda::PackageLoader::OpenFile`** — opens the `.pkg` with a
+  three-call memory-map sequence: open (`GENERIC_READ` `0x80000000`, share=1),
+  `CreateFileMappingW` (`PAGE_READONLY` = 2), `MapViewOfFile` (`FILE_MAP_READ` = 4);
+  handle/section/view stored at object +0xE0/+0xE8/+0xF0. Failure asserts reference
+  `PackageLoader.cpp` lines 0x37/0x3d/0x43. The package is read as a memory-mapped
+  image. *(fact from decompile)*
+- **`FUN_1402a6340` = `ZlibStream` inflate driver** — manages a `z_stream` at
+  object+0x20 and calls `inflateInit_(&s, "1.2.11", 0x58)`: the exe **statically links
+  zlib 1.2.11** (version string passed to `inflateInit_`, sizeof(z_stream)=0x58).
+  Inflate errors throw `"zlib inflate() error. invalid package file data."`
+  (seen live at the error site, matching the s12 xrefs). *(fact)*
+- **`FUN_1402a9820` = `PackageHeaderLoader::LoadIndexTable`** — loops
+  `*(uint*)(packageHeader + 0x34)` times (per-file count in `PackageHeader` at offset
+  0x34); each iteration reads a length-prefixed name string and appends a **32-byte
+  (0x20) index entry** to a vector (entries copied at granularity `>> 5`). Assert
+  messages cite `PackageLoader.cpp` lines 0xc2/0xc6/0xcd/0xd3. *(fact)*
+- **`FUN_1402a9fc0` = `PackageHeaderLoader::LoadMaskedData`** — reads `*param_4` bytes
+  one at a time; format check `(first_byte >> 1) ^ last_byte == 3`; if it passes, each
+  stored byte is **un-masked by `>> 1`** before use, and a cipher-stream object is
+  constructed (`FUN_1402b14d0`), otherwise a plain stream (`FUN_1402b1490`) plus a
+  seek(-1, cur). Then virtual `+0x18` loads the buffer and `FUN_1402b1b50` expands it.
+  *(fact)*
+- **`FUN_1402a95f0` = `PackageHeaderLoader::LoadEncryptData`** — reads the encrypted
+  block through stream virtuals (+0x20 read, +0x10 status) with a size assertion against
+  `FUN_1402b17f0` (`PackageLoader.cpp` lines 0xae/0xb3). *(fact)*
+- **`FUN_1402dd700`** — game-side error handler: logs `"PKG File open Error ( %ls : %s )"`
+  and registers `game\sa_text_00000.pkg`, `game\sa_scripts_00000.pkg`,
+  `game\sa_charactersc_00000.pkg` on first failure. *(fact)*
+
+The SnowCipher key schedule itself is still open: the cipher-stream constructors
+`FUN_1402b14d0` / `FUN_1402b1490` and the expander `FUN_1402b1b50` are the next
+decompile targets (session 15, Q3, Section 10).
 
 ### 6.6 Input / sound / misc
 
@@ -599,7 +649,17 @@ Environment: Windows x64, Node 22.19+/24.11+, PowerShell 5.1+, ~10 GB free disk.
     node scripts\mcp-client.js scripts\cmds-session11.json   # exe, lapacker strings (§6.5)
     ```
     (sessions 1–9 do not need the env var; the exe's ~140 s import fits the default).
-11. **Verify the deliverable chain**: every claim in Sections 4–9 cites either an
+11. **lapacker xrefs & decompiles (sessions 12–15)** (same env var as step 10):
+    ```powershell
+    $env:REA_GHIDRA_STARTUP_TIMEOUT_MS='3600000'
+    node scripts\mcp-client.js scripts\cmds-session12.json   # exe, xrefs to lapacker strings (§6.5)
+    node scripts\mcp-client.js scripts\cmds-session13.json   # exe, resolve containing procedures (§6.5)
+    node scripts\mcp-client.js scripts\cmds-session14.json   # exe, batch_decompile of the 7 lapacker functions (§6.5)
+    node scripts\mcp-client.js scripts\cmds-session15.json   # exe, cipher-stream constructors (§6.5)
+    ```
+    Sessions 12–15 restore the previous session's snapshot (`sa_snapshot11/12/13/14.bin`)
+    instead of re-analyzing from scratch.
+12. **Verify the deliverable chain**: every claim in Sections 4–9 cites either an
    `ev_…` evidence_id (resolvable in `evidence_index.tsv` → session JSONL → raw result) or
    a named script output file. To audit, open `evidence\session<N>.jsonl`, find the
    `evidence_id`, and compare the `raw_result` against the README statement.
