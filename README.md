@@ -818,13 +818,44 @@ an anti-debug check. *(correction, documented to keep the evidence trail honest)
   proxy's framer logic over the raw `s2c.bin` (17,236,137 B) consumes
   **83,117 frames with zero desyncs** — only a 58-byte truncated tail where
   the capture was cut. The previously-suspected "framing break" was a log-file
-  artifact. The LEN=208 (plen=198) units that dominate S2C traffic carry an
-  **inner `[u16le sublen]` message stream** (e.g. `03 00 ad dd 46 e0…` =
-  3-byte inner messages, byte-identical across the session) — that is the
-  layer-3 bulk segmentation. (Also: `c2s.bin`/`s2c.bin` were always written —
+  artifact. (Also: `c2s.bin`/`s2c.bin` were always written —
   PowerShell directory listings show stale 0-byte sizes while the proxy holds
   the handles open; `fs.statSync` shows the real sizes matching the chunk
   offsets in `events.jsonl`.)
+- **Correction + layer-3 deep dive on the LEN=208 bulk** (2026-10-18, later
+  pass): the "inner `[u16le sublen]` stream" seen in one raw frame is **not a
+  general format** — parsing 0x8e plen=198 payloads as `[u16 sublen]` chains
+  fails on 500/500 frames (323 short messages then break). The real picture
+  (`scripts/py/inner-parse*.js`, `layer3-classify.js`, full table in
+  `logs/layer3-classify.txt`, notes in `evidence/notes/protocol-layer3.md`):
+  - **Session profile (fact)**: login handshake is frames #1–#16; from #17 to
+    #83012 the client sends exactly **one** C2S frame — the server pushes a
+    one-way state stream the whole time (lobby idle). 0x8e = 54,092 frames
+    (65% of all traffic), 53,670 of them plen=198.
+  - **198B padding structure (fact)**: plain-family 198B payloads = [small
+    variable head (first nonzero at offsets 2–31)][per-type filler of short
+    period-2/3 runs (`6666…`, `EEEE…`, `TUUTUU`, `GFFGFF`, `RSSRSS`,
+    `HIIHII`, `100100`…)]. 0xbe top trigrams are `30 30 30`/`45 45 45` —
+    triple-identical chars from the filler. *Inference*: most messages are
+    padded to the 198B fixed size (238B variants exist, so not strict).
+  - **0x8e/198 detail (fact)**: 85% (45,736/53,670) end with `c8 c8 01 49 7f`
+    at 193..197, byte 192 varies (no sum/xor/±checksum relation holds);
+    byte-0 distribution bifurcates by trailer presence (0x25-family vs
+    0x2c/0x41/0x34-family) → two sub-classes. Non-198 variants (46/110/150B…)
+    are high-entropy 8-byte records (`[var][0e b1][3B][92][3?][var]`) that
+    differ only in the first byte — stateless per-record encoding.
+  - **0xbe records (fact)**: fixed template + variable field, e.g. #531
+    `^,g==00000440~''` + 6 chars (`I70504`/`O10504`/`N99742`…), #513
+    `n44999999==w..` + `G::>9?`/`0004=`. Early frame #14 carries clean text
+    (`-10;6713`, `(9,-1,+422` — coordinate-like). *Hypothesis*: chars ≥ '0'
+    (like `:` `>` `?`) encode values > 9 — an extended-decimal or
+    printable-nibble encoding, unverified.
+  - **Type families (fact)**: 0xb6–0xbe share one template
+    (`.9966666666…d%w55xx44.6Hx`), 0x34/0x4b/0x54/0xac share `mHIIHII…`
+    (the 2nd-stage encrypted class), 0xc3/0xdd/0xde share `EEEE…`,
+    0x88/0x8a `GFFGFF…`, 0x89/0x8b `RSSRSS…`, 0xcc/0xd4 `PPPP…`.
+  - Record semantics stay undecoded without the client parser (VM-only,
+    consistent with the callsite census above).
 
 ## 10. Open Questions
 
