@@ -51,7 +51,12 @@
   traffic. Wire framing `[u16le LEN][BODY]` chain-validated; the port-12000 codec is
   a **VM-dispatched variant** of the v1 core (per-packet TYPE byte, constant
   `0x1010` trailer, rolling-XOR key still travels in-packet — proxy decrypts
-  160,192 frames). Inner payload layer remains unsolved (§9, Q10).
+  160,192 frames). Inner payload layer **SOLVED** (sessions 31–33, §9): a
+  session-scoped 16-byte XOR mask per direction
+  (`M_c2s=85a3520d…7c03`, `M_s2c=f2596446…dc46`), and the cipher behind the
+  suite is **KISA SEED (RFC 4269)** — SS-boxes byte-exact in `cshell.dll`
+  `.rdata`, JS reimplementation KAT-clean (4/4 RFC vectors). Full-decode log
+  of all 83,071 frames produced (`scripts/py/decode-all.js`).
 - **cshell.dll (session 10)**: 33 MB, VLizer VM sections (`.vm_sec`/`.vlizer`) but intact
   21 MB `.text` — Ghidra recovers 74,642 procedures. Drives the EAC/EOS anti-cheat client
   session, game socket I/O (WS2_32), and `CSAGameClientShell` game logic. No plaintext
@@ -737,6 +742,43 @@ an anti-debug check. *(correction, documented to keep the evidence trail honest)
   `scripts/py/sa_proxy.py` / `sa-proxy.js` (usage: `scripts/py/PROXY_USAGE.md`).
   Launch endpoint observed from a user-supplied `ngm://` URL:
   `175.207.21.11:12000` (`evidence/ngm_launch_args.md`, token redacted).
+- **Inner payload layer — SOLVED (sessions 31–33)**. After the obf layer, the
+  payload is `P[i] = C[i] ⊕ M_dir[i % 16]` — a **session-scoped 16-byte mask
+  per direction**, absolute alignment at payload offset 0, period 16, constant
+  across the whole session (proven three ways: per-position byte modes over all
+  83k frames; per-tag constant padding — `mode(tag) ⊕ M ∈ {0x00,'0','H','8'}` —
+  and heartbeats #16/#27 with different key32 but identical decoded payload
+  structure). **`M_c2s = 85a3520d83db99b93ae96247c74f7c03`,
+  `M_s2c = f2596446d34b7b6469cc4ef7ca42dc46`** (this capture). Decoded content:
+  heartbeats `[0xda/0x24/0x25][zero or 0xfe fill]`; bulk 0xb6–0xe0 tags carry a
+  pipe-separated text protocol (`04z~~CA|00|00|01}01}00|ut@A|…`, 230 distinct
+  tags); login 0x3d has `'8'`(0x38) padding + a 16-byte blob at ~0x86
+  (`c0e98d1f c0479aff c0319038…` — session-key candidate); 0x42/0x51 and the
+  post-login 0x34/0xbf/0x8e frames remain opaque (second crypto stage).
+  Full-session decoder: `scripts/py/decode-all.js` →
+  `logs/run1/decoded.log` (83,071 frames, 75.9 MB, git-ignored).
+- **The cipher is KISA SEED (RFC 4269)** — identified by table match: the four
+  1 KiB tables at `0x1814967b0/0x181496bb0/0x181496fb0/0x1814973b0` in
+  `cshell.dll` `.rdata` are byte-exact SS0..SS3 (Oryx CycloneCRYPTO `seed.c`
+  lineage). Suite map (`evidence/notes/cipher-suite-map.md`):
+  `0x180330d10` block-ENCRYPT, `0x180331bb0` block-DECRYPT,
+  `0x1803333f0` **seedInit** (ctx: id@0, IV16@4, 32×u32 round keys@0x14,
+  feedback state@0x94, len@0xA4), `0x180333250` **streaming CFB-family
+  method** (id==1: `c=D(K,p⊕mask)`, mask←c; id≠1: `c=E(K,p)⊕mask`, mask←p —
+  plaintext-feedback CFB; IV persists across calls), `0x180333ff0` mode
+  pre-processor (len%4), ctors `0x180334060/0d0/180/220`. Local
+  e8/e9-rel32 callsite scan (Ghidra xrefs times out on this 33 MB binary):
+  the **entire SEED suite has exactly two external callers** —
+  `0x1801aa456` (in `0x1801a9fa0`, → wrapper `0x180332ee0`) and
+  `0x18018ae96` (in `0x180189760`, → ctor `0x1803340d0`). The two ~900-byte
+  self-contained wrappers `0x180332b40`/`0x180332ee0` call seedInit directly
+  and are the wire-codec candidates. The wire's constant-mask XOR does **not**
+  match 0x180333250's per-block chaining (S2C heartbeat #16 shows 12+ blocks
+  of constant mask), so the wrappers implement the per-packet reset path —
+  key/mask source pending their decompile (session 33). Mask-derivation
+  hypotheses from key32 alone (SEED/XTEA/RC4/hash battery, 800+ combos incl.
+  fixed key `"156def789023abc4"`) are all eliminated — the mask is
+  session-state-derived.
 
 ## 10. Open Questions
 
@@ -752,7 +794,7 @@ an anti-debug check. *(correction, documented to keep the evidence trail honest)
 | Q7 | ~~Anti-cheat interaction order/IPC at runtime~~ **largely RESOLVED statically** (§6.10) | cshell.dll's import table shows it drives the EOS/EAC anti-cheat client session + machine-ID + socket I/O, while the exe starts NGS. Exact call ordering still needs runtime/decompile follow-up. External module enumeration of the live process returns 0 modules (protection blocks handle queries — observed during the 2026-10-18 launch) | Optional: decompile the `EOS_AntiCheatClient_*` call sites in cshell.dll |
 | Q8 | ~~Role confirmation for support DLLs~~ **largely RESOLVED** (see §6.9) | Roles identified via strings/PDB paths + REA session 9 (machineidlib); deep REA passes on the remaining modules not done | Optional: full `open_binary` → pseudo-code workflow per module as needed |
 | Q9 | ~~TCP message crypto location~~ **RESOLVED, then refined by live capture** (sessions 27–30, §9) | Located in `cshell.dll` (not the exe): `CStreamCryptor` v1 packet obfuscation (rolling XOR + reverse + u16 cksum, **key embedded per packet**) + XTEA-32 fixed-key `"156def789023abc4"` value codec + CPHObject header XORs. Sessions 29–30 added the checksum decompile (`FUN_181272bc0` = SIMD add+xor fold), the v1 tag getter (`return 1`), and a **17 MB live MITM capture**: the port-12000 wire uses the v1 rolling-XOR core but a **VM-dispatched variant** (per-packet TYPE byte at H[1], constant `0x1010` trailer — v1's tag/checksum don't fit; dispatcher = `.rdata` VM bytecode 0x18188be20+ referencing 0x181272bc0/0x181272fa0). Inner payload layer unresolved | Recapture a longer session; decode the VM bytecode at 0x18188be20+ |
-| Q10 | Inner payload layer of port-12000 frames | Obf-deobfuscated payloads still show 16-byte quasi-periodic structure with per-position variations; XTEA-ECB (fixed key) and 16-byte XOR-keystream hypotheses both tested against captured login/heartbeat packets and **not confirmed** (no tokens/ASCII structure emerged) | Longer capture through login→lobby; or devirtualize the VM dispatcher; S2C frame #0 (38 B) may carry a session seed |
+| Q10 | ~~Inner payload layer of port-12000 frames~~ **RESOLVED** (sessions 31–33, §9) | Layer 2 = session-scoped 16-byte directional XOR masks (values + proof in §9); layer 3 content now readable (pipe-text protocol, heartbeats, login structure). Cipher behind the suite = KISA SEED (RFC 4269), suite mapped, two external callers located. Remaining opaque: 0x42/0x51 + post-login 0x34/0xbf/0x8e frames (2nd stage, likely the CFB path) and the mask/session-key derivation (handshake 0xbe/0xbc + login 0x3d blob) | Decompile wrappers `0x180332b40/0x180332ee0` (session 33 in flight) and their callers `0x1801a9fa0`/`0x180189760` (session 34) |
 
 ## 11. Evidence & Limitations
 
