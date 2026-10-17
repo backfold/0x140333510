@@ -814,6 +814,17 @@ an anti-debug check. *(correction, documented to keep the evidence trail honest)
   **base64 encoder** (3→4 bit packing, alphabet-global lookups), so
   `0x1801a9fa0(in) = b64encode(SEED-CFB-Dec(key=73dc7ace…, IV="SDAT.NEXON.COM..", in))`
   — a static-key string-decrypt helper, proven unrelated to the wire.
+- **Raw-stream framing verified clean** (follow-up): replaying the capture
+  proxy's framer logic over the raw `s2c.bin` (17,236,137 B) consumes
+  **83,117 frames with zero desyncs** — only a 58-byte truncated tail where
+  the capture was cut. The previously-suspected "framing break" was a log-file
+  artifact. The LEN=208 (plen=198) units that dominate S2C traffic carry an
+  **inner `[u16le sublen]` message stream** (e.g. `03 00 ad dd 46 e0…` =
+  3-byte inner messages, byte-identical across the session) — that is the
+  layer-3 bulk segmentation. (Also: `c2s.bin`/`s2c.bin` were always written —
+  PowerShell directory listings show stale 0-byte sizes while the proxy holds
+  the handles open; `fs.statSync` shows the real sizes matching the chunk
+  offsets in `events.jsonl`.)
 
 ## 10. Open Questions
 
