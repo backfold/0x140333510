@@ -1,0 +1,19 @@
+﻿=== open_binary {"path":"H:\\SA_Analysis\\target\\suddenattack.exe"} ok=True ev=
+(no raw_result)
+
+=== xrefs {"address":"0x140354880"} ok=True ev=ev_dd2c1440691851d37b7699130a39811236c8d6f16192c9ebdca7cda9e2a6b656
+"0x1400015e8"
+
+=== xrefs {"address":"0x14034cbf0"} ok=True ev=ev_0b3bba43631f1503f36e782ef480c8a80e7653607e8d797523296a75a98633a4
+"0x14000483a"
+
+=== search_strings {"pattern":"Cheat","mode":"literal"} ok=True ev=ev_bc3b9aa2c28d8696fddc862db57df3d25e3078f6559a6e40fcd399455138fc1c
+[{"address":"0x140354a70","value":"ETC_EasyAntiCheat"},{"address":"0x1403f76d8","value":".?AVETC_EasyAntiCheat@nxa@@"}]
+
+=== search_strings {"pattern":"Hack","mode":"literal"} ok=True ev=ev_e920a8076c2213aabccd86253b0a6432a0c1b9890907f668eb7249c6ce68ff04
+[{"address":"0x140305520","value":"[TERM] CHackInfo Start"},{"address":"0x140305538","value":"[TERM] CHackInfo End"},{"address":"0x140307af8","value":"BLACKHACK ERROR - Kwang"},{"address":"0x140307b40","value":"Through hack Detected"},{"address":"0x140308170","value":"BackTransform Hack"},{"address":"0x140309328","value":"[ENGINE] clienthack_UnloadWorld"}]
+
+=== close_binary {"snapshot_path":"H:\\SA_Analysis\\evidence\\sa_snapshot7.bin"} ok=True ev=
+(no raw_result)
+
+

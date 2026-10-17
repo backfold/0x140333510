@@ -1,0 +1,28 @@
+﻿=== open_binary {"path":"H:\\SA_Analysis\\target\\suddenattack.exe"} ok=True ev=
+(no raw_result)
+
+=== resolve_containing_procedure {"address":"0x14007b68d"} ok=True ev=ev_5091d1f8efb5481793195b8fae206ed75942efde4ed2e15be687d6425f297a09
+{"query_address":"0x14007b68d","found":true,"procedure":{"address":"0x14007acf0","name":"FUN_14007acf0","classification":{"external":false,"thunk":false,"thunk_target":null,"provenance":"ghidra-function-manager"},"body":{"available":true,"provenance":"ghidra-function-body-address-set","ranges":[{"start":"0x14007acf0","end":"0x14007ba80"}],"total_bytes":3473,"span_bytes":3473,"non_contiguous":false,"contains_entry":true}}}
+
+=== resolve_containing_procedure {"address":"0x14007a99b"} ok=True ev=ev_a557558fe95938a0cd08bc581f414ceb59333da700467727a8ace66082d9b4e7
+{"query_address":"0x14007a99b","found":true,"procedure":{"address":"0x14007a2f0","name":"FUN_14007a2f0","classification":{"external":false,"thunk":false,"thunk_target":null,"provenance":"ghidra-function-manager"},"body":{"available":true,"provenance":"ghidra-function-body-address-set","ranges":[{"start":"0x14007a2f0","end":"0x14007a9d6"}],"total_bytes":1767,"span_bytes":1767,"non_contiguous":false,"contains_entry":true}}}
+
+=== resolve_containing_procedure {"address":"0x14007a485"} ok=True ev=ev_e59c4cb2621030256eb13c5a0dc22ad8dfefd436d7356cd4f9be54062c222483
+{"query_address":"0x14007a485","found":true,"procedure":{"address":"0x14007a2f0","name":"FUN_14007a2f0","classification":{"external":false,"thunk":false,"thunk_target":null,"provenance":"ghidra-function-manager"},"body":{"available":true,"provenance":"ghidra-function-body-address-set","ranges":[{"start":"0x14007a2f0","end":"0x14007a9d6"}],"total_bytes":1767,"span_bytes":1767,"non_contiguous":false,"contains_entry":true}}}
+
+=== xrefs {"address":"0x14030dfc0"} ok=True ev=ev_a198206e62e823c6e6ff73ed57f3aaa76957024a2a11b55df0a44f592ccae579
+["0x1400bef4a","0x1400bef90","0x1400befba","0x1400beffa","0x1400bf069","0x1400d4404"]
+
+=== xrefs {"address":"0x140309ba0"} ok=True ev=ev_101f215f1dfacaa5e19b0ab186ffed9fa381367bdc7fd7728c268165e2f02b3c
+(no raw_result)
+
+=== xrefs {"address":"0x140313d70"} ok=True ev=ev_c511bfce950ed8da080879f1d647e30f47079f9bf3c45517d07c050f2c143cc3
+["0x140131444","0x140131523","0x1401315e0","0x1401316b5"]
+
+=== search_strings {"pattern":"\\.\\?A[UV][A-Za-z0-9_@$?]+@@","mode":"regex"} ok=True ev=ev_ff081938397df97a68777de9446c6b0ffdf1bef1f3612d4cfe39ce5caed8c25b
+[{"address":"0x1403f09c0","value":".?AVruntime_error@std@@"},{"address":"0x1403f09e8","value":".?AVsystem_error@std@@"},{"address":"0x1403f0a10","value":".?AV_System_error@std@@"},{"address":"0x1403f0a38","value":".?AVfilesystem_error@filesystem@std@@"},{"address":"0x1403f0a70","value":".?AVCAtlException@ATL@@"},{"address":"0x1403f0a98","value":".?AVPackage_Exception@LiveAssist@@"},{"address":"0x1403f0ae8","value":".?AVPackageException@Lambda@@"},{"address":"0x1403f0b18","value":".?AVbad_cast@std@@"},{"address":"0x1403f0bf8","value":".?AVFailureException@Lambda@@"},{"address":"0x1403f0c28","value":".?AVbad_alloc@std@@"},{"address":"0x1403f0c50","value":".?AVexception@std@@"},{"address":"0x1403f0c78","value":".?AVbad_array_new_length@std@@"},{"address":"0x1403f0cb0","value":".?AVerror_category@std@@"},{"address":"0x1403f0ce0","value":".?AV_Generic_error_category@std@@"},{"address":"0x1403f0d18","value":".?AV_System_error_category@std@@"},{"address":"0x1403f0d50","value":".?AV_Ref_count_base@std@@"},{"address":"0x1403f0d80","value":".?AV?$_Ref_count_obj2@UFKeyDetails@@@std@@"},{"address":"0x1403f0dc0","value":".?AV?$_Ref_count@UFInputKeyManager@@@std@@"},{"address":"0x1403f0e00","value":".?AVCControlFileMgr@@"},{"address":"0x1403f0e30","value":".?AV?$_Ref_count_obj2@U_Dir_enum_impl@filesystem@std@@@std@@"},{"address":"0x1403f0e80","value":".?AVCWin32Heap@ATL@@"},{"address":"0x1403f0ea8","value":".?AUIAtlMemMgr@ATL@@"},{"address":"0x1403f0ed0","value":".?AUIAtlStringMgr@ATL@@"},{"address":"0x1403f0ef8","value":".?AVCAtlStringMgr@ATL@@"},{"address":"0x1403f0f20","value":".?AVVideoMgr@@"},{"address":"0x1403f0f40","value":".?AVVideoInst@@"},{"address":"0x1403f0f60","value":".?AVBinkVideoInst@@"},{"address":"0x1403f0f88","value":".?AVBinkVideoMgr@@"},{"address":"0x1403f0fb0","value":".?AV?$CAPIHolder@VILTServer@@@@"},{"address":"0x1403f0fe0","value":".?AVCAPIHolderBase@@"},{"address":"0x1403f1008","value":".?AV?$CAPIHolder@VIServerShell@@@@"},{"address":"0x1403f1040","value":".?AV?$CAPIHolder@VICommandLineArgs@@@@"},{"address":"0x1403f1078","value":".?AV?$CAPIHolder@VIClientShell@@@@"},{"address":"0x1403f10b0","value":".?AVIBase@@"},{"address":"0x1403f10d0","value":".?AVPFormat@@"},{"address":"0x1403f10f0","value":".?AVIClientFormatMgr@@"},{"address":"0x1403f1118","value":".?AVCClientFormatMgr@@"},{"address":"0x1403f1140","value":".?AVIClientDebugGraphMgr@@"},{"address":"0x1403f1170","value":".?AVCClientDebugGraphMgr@@"},{"address":"0x1403f11a0","value":".?AV?$CAPIHolder@VIWorldClientBSP@@@@"},{"address":"0x1403f11d8","value":".?AV?$CAPIHolder@VIWorldSharedBSP@@@@"},{"address":"0x1403f1210","value":".?AV?$CAPIHolder@VIClientFileMgr@@@@"},{"address":"0x1403f1248","value":".?AV?$CAPIHolder@VILTClient@@@@"},{"address":"0x1403f1278","value":".?AV?$CAPIHolder@VIWorldBlindObjectData@@@@"},{"address":"0x1403f12b8","value":".?AV?$CAPIHolder@VILTTransform@@@@"},{"address":"0x1403f12f0","value":".?AV?$CAPIHolder@VILTCommon@@@@"},{"address":"0x1403f1320","value":"...[cut]
+
+=== close_binary {"snapshot_path":"H:\\SA_Analysis\\evidence\\sa_snapshot3.bin"} ok=True ev=
+(no raw_result)
+
+

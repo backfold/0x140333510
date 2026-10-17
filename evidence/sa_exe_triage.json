@@ -1,0 +1,499 @@
+﻿{
+  "file": "H:\\SA_Analysis\\target\\suddenattack.exe",
+  "size": 8063864,
+  "dos": {
+    "e_lfanew": 352,
+    "stub_entropy": 5.2229277420426365,
+    "rich_offset": 336
+  },
+  "coff": {
+    "machine": "0x8664",
+    "numSections": 14,
+    "timestamp": 1791893985,
+    "timestamp_utc": "2026-10-13T12:19:45.000Z",
+    "timestamp_local": "Tue Oct 13 2026 21:19:45 GMT+0900 (한국 표준시)",
+    "symPtr": 0,
+    "numSyms": 0,
+    "characteristics": "0x22"
+  },
+  "optional": {
+    "magic": "0x20b",
+    "format": "PE32+",
+    "entryPointRva": "0xab3058",
+    "imageBase": "0x140000000",
+    "sizeOfImage": "0xde0000",
+    "sizeOfHeaders": "0x600",
+    "checksum": "0x7bef17",
+    "subsystem": 2
+  },
+  "dataDirectories": [
+    {
+      "index": 0,
+      "name": "Export",
+      "rva": "0x4d3000",
+      "size": 110
+    },
+    {
+      "index": 1,
+      "name": "Import",
+      "rva": "0x4d44a4",
+      "size": 1252
+    },
+    {
+      "index": 2,
+      "name": "Resource",
+      "rva": "0x4d6000",
+      "size": 208440
+    },
+    {
+      "index": 3,
+      "name": "Exception",
+      "rva": "0xa7f9e4",
+      "size": 180984
+    },
+    {
+      "index": 4,
+      "name": "Security",
+      "rva": "0x7ae210",
+      "size": 10600
+    },
+    {
+      "index": 5,
+      "name": "BaseReloc",
+      "rva": "0xddf000",
+      "size": 16
+    },
+    {
+      "index": 6,
+      "name": "Debug",
+      "rva": "0x4d2000",
+      "size": 84
+    },
+    {
+      "index": 9,
+      "name": "TLS",
+      "rva": "0x4d5018",
+      "size": 40
+    }
+  ],
+  "sections": [
+    {
+      "name": ".text",
+      "virtualSize": 3132647,
+      "virtualAddress": "0x1000",
+      "rawSize": 3132928,
+      "rawPointer": 1536,
+      "entropy": 6.457,
+      "flags": "0x60000020",
+      "flagsHuman": "CODE|EXEC|READ"
+    },
+    {
+      "name": ".rdata",
+      "virtualSize": 896560,
+      "virtualAddress": "0x2fe000",
+      "rawSize": 897024,
+      "rawPointer": 3134464,
+      "entropy": 6.019,
+      "flags": "0x40000040",
+      "flagsHuman": "IDATA|READ"
+    },
+    {
+      "name": ".data",
+      "virtualSize": 553292,
+      "virtualAddress": "0x3d9000",
+      "rawSize": 124928,
+      "rawPointer": 4031488,
+      "entropy": 3.622,
+      "flags": "0xc0000040",
+      "flagsHuman": "IDATA|READ|WRITE"
+    },
+    {
+      "name": ".pdata",
+      "virtualSize": 177252,
+      "virtualAddress": "0x461000",
+      "rawSize": 177664,
+      "rawPointer": 4156416,
+      "entropy": 6.426,
+      "flags": "0x40000040",
+      "flagsHuman": "IDATA|READ"
+    },
+    {
+      "name": "        ",
+      "virtualSize": 254048,
+      "virtualAddress": "0x48d000",
+      "rawSize": 157184,
+      "rawPointer": 4334080,
+      "entropy": 7.999,
+      "flags": "0x40000040",
+      "flagsHuman": "IDATA|READ"
+    },
+    {
+      "name": ".reloc",
+      "virtualSize": 23900,
+      "virtualAddress": "0x4cc000",
+      "rawSize": 24064,
+      "rawPointer": 4491264,
+      "entropy": 5.457,
+      "flags": "0x40000040",
+      "flagsHuman": "IDATA|READ"
+    },
+    {
+      "name": ".debug",
+      "virtualSize": 4096,
+      "virtualAddress": "0x4d2000",
+      "rawSize": 1536,
+      "rawPointer": 4515328,
+      "entropy": 4.38,
+      "flags": "0x40000040",
+      "flagsHuman": "IDATA|READ"
+    },
+    {
+      "name": ".edata",
+      "virtualSize": 4096,
+      "virtualAddress": "0x4d3000",
+      "rawSize": 512,
+      "rawPointer": 4516864,
+      "entropy": 1.365,
+      "flags": "0x40000040",
+      "flagsHuman": "IDATA|READ"
+    },
+    {
+      "name": ".idata",
+      "virtualSize": 4096,
+      "virtualAddress": "0x4d4000",
+      "rawSize": 2560,
+      "rawPointer": 4517376,
+      "entropy": 3.953,
+      "flags": "0xc0000040",
+      "flagsHuman": "IDATA|READ|WRITE"
+    },
+    {
+      "name": ".tls",
+      "virtualSize": 4096,
+      "virtualAddress": "0x4d5000",
+      "rawSize": 512,
+      "rawPointer": 4519936,
+      "entropy": 0.285,
+      "flags": "0xc0000000",
+      "flagsHuman": "READ|WRITE"
+    },
+    {
+      "name": ".rsrc",
+      "virtualSize": 208896,
+      "virtualAddress": "0x4d6000",
+      "rawSize": 208896,
+      "rawPointer": 4520448,
+      "entropy": 6.97,
+      "flags": "0x40000040",
+      "flagsHuman": "IDATA|READ"
+    },
+    {
+      "name": ".themida",
+      "virtualSize": 5939200,
+      "virtualAddress": "0x509000",
+      "rawSize": 0,
+      "rawPointer": 4729344,
+      "entropy": 0,
+      "flags": "0xe0000060",
+      "flagsHuman": "CODE|IDATA|EXEC|READ|WRITE"
+    },
+    {
+      "name": ".boot",
+      "virtualSize": 3323904,
+      "virtualAddress": "0xab3000",
+      "rawSize": 3323904,
+      "rawPointer": 4729344,
+      "entropy": 7.96,
+      "flags": "0x60000060",
+      "flagsHuman": "CODE|IDATA|EXEC|READ"
+    },
+    {
+      "name": ".reloc",
+      "virtualSize": 4096,
+      "virtualAddress": "0xddf000",
+      "rawSize": 16,
+      "rawPointer": 8053248,
+      "entropy": 2.475,
+      "flags": "0x40000000",
+      "flagsHuman": "READ"
+    }
+  ],
+  "overlay": {
+    "startOffset": 8053264,
+    "size": 10600
+  },
+  "entryInSection": ".boot",
+  "imports": [
+    {
+      "dll": "kernel32.dll",
+      "count": 1,
+      "functions": [
+        "GetModuleHandleA"
+      ]
+    },
+    {
+      "dll": "d3dx9_43.dll",
+      "count": 1,
+      "functions": [
+        "D3DXAssembleShader"
+      ]
+    },
+    {
+      "dll": "CrashReporter.dll",
+      "count": 1,
+      "functions": [
+        "CrashReporter_SetPcRoomInfo"
+      ]
+    },
+    {
+      "dll": "WINMM.dll",
+      "count": 1,
+      "functions": [
+        "timeBeginPeriod"
+      ]
+    },
+    {
+      "dll": "WS2_32.dll",
+      "count": 1,
+      "functions": [
+        "ord21"
+      ]
+    },
+    {
+      "dll": "CrashRpt64.dll",
+      "count": 1,
+      "functions": [
+        "MursumUT_MinimizeAllWindows"
+      ]
+    },
+    {
+      "dll": "USER32.dll",
+      "count": 1,
+      "functions": [
+        "BeginPaint"
+      ]
+    },
+    {
+      "dll": "GDI32.dll",
+      "count": 1,
+      "functions": [
+        "CreateDIBSection"
+      ]
+    },
+    {
+      "dll": "ADVAPI32.dll",
+      "count": 1,
+      "functions": [
+        "RegCreateKeyExA"
+      ]
+    },
+    {
+      "dll": "SHELL32.dll",
+      "count": 1,
+      "functions": [
+        "ShellExecuteA"
+      ]
+    },
+    {
+      "dll": "ole32.dll",
+      "count": 1,
+      "functions": [
+        "CoUninitialize"
+      ]
+    },
+    {
+      "dll": "MSVCP140.dll",
+      "count": 1,
+      "functions": [
+        "?id@?$codecvt@DDU_Mbstatet@@@std@@2V0locale@2@A"
+      ]
+    },
+    {
+      "dll": "wevtapi.dll",
+      "count": 1,
+      "functions": [
+        "EvtQuery"
+      ]
+    },
+    {
+      "dll": "VERSION.dll",
+      "count": 1,
+      "functions": [
+        "GetFileVersionInfoSizeA"
+      ]
+    },
+    {
+      "dll": "NGClient64.aes",
+      "count": 1,
+      "functions": [
+        "ord2"
+      ]
+    },
+    {
+      "dll": "RPCRT4.dll",
+      "count": 1,
+      "functions": [
+        "UuidCreate"
+      ]
+    },
+    {
+      "dll": "WININET.dll",
+      "count": 1,
+      "functions": [
+        "FtpSetCurrentDirectoryA"
+      ]
+    },
+    {
+      "dll": "SAShot64.dll",
+      "count": 1,
+      "functions": [
+        "ord1"
+      ]
+    },
+    {
+      "dll": "VCRUNTIME140.dll",
+      "count": 1,
+      "functions": [
+        "__intrinsic_setjmp"
+      ]
+    },
+    {
+      "dll": "VCRUNTIME140_1.dll",
+      "count": 1,
+      "functions": [
+        "__CxxFrameHandler4"
+      ]
+    },
+    {
+      "dll": "api-ms-win-crt-runtime-l1-1-0.dll",
+      "count": 1,
+      "functions": [
+        "_controlfp_s"
+      ]
+    },
+    {
+      "dll": "api-ms-win-crt-heap-l1-1-0.dll",
+      "count": 1,
+      "functions": [
+        "_set_new_mode"
+      ]
+    },
+    {
+      "dll": "api-ms-win-crt-stdio-l1-1-0.dll",
+      "count": 1,
+      "functions": [
+        "ferror"
+      ]
+    },
+    {
+      "dll": "api-ms-win-crt-time-l1-1-0.dll",
+      "count": 1,
+      "functions": [
+        "_mktime64"
+      ]
+    },
+    {
+      "dll": "api-ms-win-crt-string-l1-1-0.dll",
+      "count": 1,
+      "functions": [
+        "_stricmp"
+      ]
+    },
+    {
+      "dll": "api-ms-win-crt-filesystem-l1-1-0.dll",
+      "count": 1,
+      "functions": [
+        "_mkdir"
+      ]
+    },
+    {
+      "dll": "api-ms-win-crt-math-l1-1-0.dll",
+      "count": 1,
+      "functions": [
+        "sqrt"
+      ]
+    },
+    {
+      "dll": "api-ms-win-crt-convert-l1-1-0.dll",
+      "count": 1,
+      "functions": [
+        "atol"
+      ]
+    },
+    {
+      "dll": "api-ms-win-crt-utility-l1-1-0.dll",
+      "count": 1,
+      "functions": [
+        "srand"
+      ]
+    },
+    {
+      "dll": "api-ms-win-crt-multibyte-l1-1-0.dll",
+      "count": 1,
+      "functions": [
+        "_mbsinc"
+      ]
+    },
+    {
+      "dll": "api-ms-win-crt-locale-l1-1-0.dll",
+      "count": 1,
+      "functions": [
+        "_free_locale"
+      ]
+    },
+    {
+      "dll": "d3d9.dll",
+      "count": 1,
+      "functions": [
+        "Direct3DCreate9Ex"
+      ]
+    },
+    {
+      "dll": "OLEAUT32.dll",
+      "count": 1,
+      "functions": [
+        "ord184"
+      ]
+    },
+    {
+      "dll": "SHLWAPI.dll",
+      "count": 1,
+      "functions": [
+        "PathCanonicalizeW"
+      ]
+    }
+  ],
+  "tls": {
+    "startEnd": [
+      5373775872,
+      5373775880
+    ],
+    "indexAddr": "0x1404d5008",
+    "callbacksRva": "0x0",
+    "callbacks": []
+  },
+  "packerMarkerStrings_ascii": [
+    "@.themida",
+    "EnvPanSpeed 0.000500",
+    "TransportDebug",
+    "DrawSurfaceToSurfaceTransparent",
+    "ScaleSurfaceToSurfaceTransparent",
+    "WarpSurfaceToSurfaceTransparent",
+    "TransformSurfaceToSurfaceTransparent",
+    "EnvPanSpeed",
+    "ERROR_UNABLE_TO_INVENTORY_TRANSPORT",
+    "ERROR_TRANSPORT_FULL",
+    "ERROR_IPSEC_TRANSPORT_FILTER_EXISTS",
+    "ERROR_IPSEC_TRANSPORT_FILTER_NOT_FOUND",
+    "ERROR_IPSEC_TRANSPORT_FILTER_PENDING_DELETION",
+    "VFW_E_NO_TRANSPORT",
+    "WBEM_E_TRANSPORT_FAILURE",
+    "WBEM_E_FATAL_TRANSPORT_ERROR",
+    "Current pin connection is not using the IOverlay transport.",
+    "Current pin connection is not using the IMemInputPin transport.",
+    "Pins cannot connect due to not supporting the same transport.",
+    "Invalid number of transparent colors specified",
+    "background color must be supplied to remove alpha/transparency"
+  ],
+  "packerMarkerStrings_utf16": []
+}

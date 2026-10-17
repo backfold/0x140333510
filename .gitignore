@@ -1,0 +1,5 @@
+# Full copies of Nexon game binaries — excluded from publication (personal study only)
+/target/
+
+# Toolchain installs and download archives (Ghidra, JDK, MinGit, gh CLI)
+/tools/

@@ -1,0 +1,8 @@
+﻿node : [init] {"name":"rea","version":"6.5.0"}
+At line:1 char:302
++ ... tch {} } }; node 'H:\SA_Analysis\scripts\mcp-client.js' 'H:\SA_Analys ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([init] {"name":"rea","version":"6.5.0"}:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+[mcp exit 0]

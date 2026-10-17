@@ -1,0 +1,1307 @@
+﻿0000004d	a	!This program cannot be run in DOS mode.
+00000237	a	`.rdata
+0000025f	a	@.data
+00000288	a	.pdata
+000002af	a	@.rsrc
+000002d7	a	@.reloc
+00000701	a	L$ SVWH
+00000757	a	L$ SUVWH
+00000fd0	a	@USVWAVH
+00001200	a	A^_^[]
+00001f30	a	@UVWATAUAVAWH
+000020bc	a	A_A^A]A\_^]
+0000230b	a	\$hH+\$`
+000023d3	a	VWATAVAWH
+0000254d	a	A_A^A\_^
+000028a3	a	UVWATAUAVAWH
+000029ec	a	fD+w8fD
+00002a23	a	PA_A^A]A\_^]
+00002e30	a	@UVWAVAWH
+00003222	a	A_A^_^]
+00003630	a	@UVWAVAWH
+00003d33	a	A_A^_^]
+00004530	a	@UVWATAUAVAWH
+000048f5	a	A_A^A]A\_^]
+00004910	a	@UATAUAVAWH
+000064f1	a	A_A^A]A\]
+00006dc1	a	|$ AVH
+00006fd3	a	UVWAVH
+000082a3	a	UVWATAUAVAWH
+00008564	a	A_A^A]A\_^]
+00008583	a	UVWATAUAVAWH
+00008840	a	A_A^A]A\_^]
+00008ce0	a	@USVWATAUAVAWH
+00009037	a	C@H90t%H
+000090e7	a	A_A^A]A\_^[]
+00009110	a	@SVWAVAWH
+00009158	a	 A_A^_^[
+00009255	a	 A_A^_^[
+00009270	a	@SVWAVAWH
+000092b0	a	 A_A^_^[
+000093ac	a	 A_A^_^[
+000096b0	a	@UVWATAUAVAWH
+000099fb	a	C@H98t%H
+00009c5b	a	C@H90t%H
+00009d5f	a	A_A^A]A\_^]
+00009d80	a	@UVWATAUAVAWH
+0000a13b	a	C@H98t%H
+0000a3b7	a	C@L90t%H
+0000a4bd	a	A_A^A]A\_^]
+0000aa20	a	@VWATAVAWH
+0000ac6d	a	A_A^A\_^
+0000ae87	a	L$ SUVWH
+0000af90	a	@SVAVH
+0000b4c0	a	@SVAVAWH
+0000b605	a	8A_A^^[
+0000b620	a	@UVWAUH
+0000b7a3	a	HA]_^]
+0000b7c0	a	@SVATAUH
+0000b92f	a	8A]A\^[
+0000b950	a	@SVAVAWH
+0000baf2	a	HA_A^^[
+0000bde7	a	WAVAWH
+0000bfa0	a	@VWATAVAWH
+0000c1f0	a	A_A^A\_^
+0000c250	a	@SUVWAVAWH
+0000c34e	a	A_A^_^][
+0000c5c0	a	@USVWATAUAVAWH
+0000cd56	a	A_A^A]A\_^[]
+0000cd70	a	@UVWATAUAVAWH
+0000cf87	a	A_A^A]A\_^]
+0000cfa3	a	UATAUAVAWH
+0000d259	a	A_A^A]A\]
+0000d270	a	@SUVWATAUAVAWH
+0000d378	a	(A_A^A]A\_^][
+0000d390	a	@USVWATAVAWH
+0000d5f9	a	A_A^A\_^[]
+0000d69f	a	SVWAVH
+0000d6f4	a	8A^_^[
+0000d70b	a	WAVAWH
+0000db8b	a	WAVAWH
+0000dbe1	a	0A_A^_
+0000dc44	a	|$ AVH
+0000e6da	a	 H3E H3E
+0000e8f9	a	x ATAVAWH
+0000ea2d	a	 A_A^A\
+0000ead8	a	ug8Y$t
+0000ed65	a	D8K|t.L9
+0000f0e5	a	tpH91uk
+0000f53b	a	t$ UWAVH
+0000f71b	a	taL9Chu
+0000f813	a	L90u H
+0000fadc	a	M7H;M?s H
+000109e7	a	l$ VWAVH
+00011029	a	x ATAVAWH
+000110a1	a	0A_A^A\
+000112cc	a	@UAVAWH
+000114ec	a	H!T$0D
+00011501	a	!T$(H!T$ 
+0001158f	a	WAVAWH
+00011606	a	 A_A^_
+00011a0e	a	VWATAVAWH
+00011ac3	a	 A_A^A\_^
+00011adf	a	UVWATAUAVAWH
+00011c16	a	@A_A^A]A\_^]
+00011d9e	a	H;xXu5
+00011ec7	a	WATAUAVAWH
+000120b9	a	A_A^A]A\_
+00012392	a	t<ffff
+00012591	a	fffffff
+00012f63	a	AUAVAWH
+000130d5	a	;I9}(tiH
+00013129	a	0A_A^A]
+0001321f	a	VWATAVAWH
+000132d8	a	A_A^A\_^
+000132f3	a	UVWATAUAVAWH
+0001370f	a	A_A^A]A\_^]
+00013757	a	UVWATAUAVAWH
+00013964	a	A_A^A]A\_^]
+00013c38	a	ri9O vdH
+00013d64	a	@SVWATAUAVAWH
+00013d87	a	L!|$(L!
+00013f29	a	D$0HcH
+00013f41	a	pA_A^A]A\_^[
+00013f87	a	B(I9A(u
+00013fe7	a	SVWATAUAVAWH
+00014152	a	0A_A^A]A\_^[
+00014213	a	WATAUAVAWH
+000142c9	a	 A_A^A]A\_
+000144ab	a	WATAUAVAWH
+00014667	a	 A_A^A]A\_
+00014cf5	a	UVWAVAWH
+00014e6d	a	A_A^_^]
+00015446	a	D$@H;G
+00015500	a	S,, <Zw
+000155e3	a	CA< t(<#t
+00015705	a	S,, <Zw
+000157eb	a	CA< t(<#t
+00015b1d	a	<htr<jtb<lt6<tt&<wt
+00015c02	a	!,X< w
+00015c99	a	<htr<jtb<lt6<tt&<wt
+00015d7e	a	!,X< w
+00015db4	a	t$ WAVAWH
+00015f6d	a	s4+sP+
+0001601a	a	0A_A^_
+00016030	a	t$ WAVAWH
+000161e9	a	s4+sP+
+00016296	a	0A_A^_
+00016b47	a	WAVAWH
+00016c26	a	 A_A^_
+00016c41	a	x ATAVAWH
+00016ce2	a	 A_A^A\
+00016d87	a	WATAWH
+00016ecd	a	0A_A\_
+00017118	a	|$ UATAUAVAWH
+00017415	a	A_A^A]A\]
+0001742c	a	t$ WATAUAVAWH
+00017a0e	a	'D8l$@
+00017a54	a	t)D8l$@t
+00017a7e	a	WD8l$@t
+00017ab1	a	D8l$@t
+00017aea	a	A_A^A]A\_
+00018137	a	u3HcH<H
+0001835d	a	x ATAVAWH
+00018500	a	 A_A^A\
+00018571	a	UVWAVAWH
+000186d9	a	0A_A^_^]
+0001875f	a	WAVAWH
+000187aa	a	A86taH
+0001882f	a	0A_A^_
+00018950	a	L$ WATAUAVAWH
+00018ad8	a	@A_A^A]A\_
+00018af5	a	x ATAVAWH
+00018cb6	a	 A_A^A\
+0001919b	a	WAVAWH
+0001926d	a	@A_A^_
+0001958b	a	L$ UVWATAUAVAWH
+000195cf	a	0A_A^A]A\_^]
+00019c33	a	WATAUAVAWH
+00019c7f	a	 A_A^A]A\_
+0001a278	a	|$ AUAVAWH
+0001a42e	a	@A_A^A]
+0001a6e9	a	s WATAUAVAWH
+0001a8d6	a	9t$P~58
+0001aca6	a	A_A^A]A\_
+0001b771	a	fffffff
+0001b791	a	fffffff
+0001bcd1	a	fffffff
+0001bd91	a	fffffff
+0001be22	a	ffffff
+0001c211	a	fffffff
+0001c2e1	a	fffffff
+0001c301	a	fffffff
+0001c7e1	a	fffffff
+0001c872	a	ffffff
+0001d1d2	a	ffffff
+0001d512	a	ffffff
+0001dff3	a	WATAUAVAWH
+0001e179	a	 A_A^A]A\_
+0001e9bd	a	fD9t$b
+0001eec7	a	D82u&H
+0001efc6	a	D8t$Ht
+0001f7b1	a	x ATAVAWH
+0001fa94	a	gfffffffH
+0001fac9	a	D8d$ht
+0001faf6	a	A_A^A\
+0002017f	a	WATAUAVAWH
+000203a7	a	A_A^A]A\_
+0002085b	a	WAVAWH
+00020891	a	fE98t'
+000209a6	a	0A_A^_
+00020ac4	a	@USVWATAUAVAWH
+00020b2d	a	A_A^A]A\_^[]
+00020b8f	a	?Cu0f9w
+00020c9c	a	fD9<Xu
+00020d6d	a	fD9?t&
+00020dd9	a	fA9<\u
+00020ecc	a	L$ SUVWH
+00020fd3	a	WATAUAVAWH
+0002100f	a	0A_A^A]A\_
+000211ae	a	\$ UVWATAUAVAWH
+00021293	a	fD9,Au
+0002132b	a	^fD9+t
+0002136f	a	A_A^A]A\_^]
+00021436	a	\$ UVWATAUAVAWH
+000214ce	a	A_A^A]A\_^]
+00021582	a	f9\$bu
+00021700	a	H9L$Ht?H
+0002199a	a	u1!D$0H
+00021a49	a	UVWATAUAVAWH
+00021c9c	a	0A_A^A]A\_^]
+000223a2	a	UVWATAUAVAWH
+0002257f	a	`A_A^A]A\_^]
+000225b5	a	x ATAVAWH
+00022607	a	0A_A^A\
+000226b6	a	\$ UVWAVAWH
+000227d5	a	A_A^_^]
+000227fb	a	@8|$^t
+0002311b	a	l$ VWATAVAWH
+000231d9	a	L$&@8t$&t0@8q
+000232d2	a	A81t@@8r
+000233b2	a	A_A^A\_^
+000234ae	a	fD94Fu
+000237bb	a	SVWATAUAWH
+00023a46	a	HA_A]A\_^[
+00023be9	a	UVWATAUAVAWH
+00023de0	a	A_A^A]A\_^]
+0002401a	a	VWATAVAW
+00024179	a	A_A^A\_^
+00024192	a	WATAUAVAWH
+00024265	a	 A_A^A]A\_
+00024272	a	\$ UVWATAUAVAWH
+00024491	a	H!D$ E
+00024544	a	`A_A^A]A\_^]
+000247c0	a	D$0HcH
+000248e3	a	WATAUAVAWH
+000249f5	a	D$PHcX H
+00024a3c	a	 A_A^A]A\_
+00024a52	a	UVWATAUAVAW
+00024aec	a	J;D10t
+00024bb1	a	A_A^A]A\_^]
+00024dbc	a	@SUVWATAUAVAWH
+00024ed0	a	D88Hte
+00024fdb	a	8A_A^A]A\_^][
+00024ff5	a	SUVWATAUAVAWH
+000250e7	a	D88Ht!
+00025220	a	D98Ht;H
+000252db	a	8A_A^A]A\_^][
+000252f5	a	VATAUAVAWH
+000253f8	a	 A_A^A]A\^
+0002540e	a	UVWATAUAVAWH
+000255be	a	D(8Ht}
+0002585c	a	`A_A^A]A\_^]
+0002587a	a	WATAUAVAWH
+00025951	a	 A_A^A]A\_
+00025a7d	a	x ATAVAWH
+00025b76	a	D8&t4H
+00025c13	a	D8d$Ht
+00025c41	a	A_A^A\
+00025c57	a	ATAVAWH
+00025d49	a	D8d$8t
+00025d70	a	@A_A^A\
+00025d9a	a	\$ UVWATAUAVAWH
+000260be	a	A_A^A]A\_^]
+000261b8	a	@UAVAWH
+0002634d	a	e0A_A^]
+00026358	a	@SUVWATAVAWH
+00026500	a	A_A^A\_^][
+00026520	a	@UATAUAVAWH
+000266c5	a	e0A_A^A]A\]
+000266d4	a	@UATAUAVAWH
+00026992	a	H!T$0D
+000269a5	a	uf!T$(H!T$ 
+00026a03	a	A_A^A]A\]
+00026fbd	a	@8l$8t
+00027a28	a	@USVWATAUAVAWH
+00028cf6	a	D8l$ht
+00028d1d	a	A_A^A]A\_^[]
+00028f0f	a	UATAUAVAWH
+0002942e	a	A_A^A]A\]
+000294b3	a	WATAUAVAWH
+00029778	a	A_A^A]A\_
+000297e8	a	|$ UATAUAVAWH
+00029b1e	a	A_A^A]A\]
+00029eeb	a	fB9<Hu
+00029f7d	a	fB9<@u
+0002a031	a	fB9<Bu
+0002a187	a	fB9,Nu
+0002a1de	a	fB9,Nu
+0002a21f	a	fB9,Nu
+0002a345	a	fA9,Au
+0002a35d	a	f9)uTH
+0002a391	a	f9)u H
+0002a4e7	a	fB94Ou
+0002a56e	a	tVf91tQH
+0002a681	a	x ATAVAWH
+0002a701	a	 A_A^A\
+0002a71d	a	x ATAVAWH
+0002a781	a	fD9 tMH
+0002a83e	a	fG9$Ou
+0002a90c	a	0A_A^A\
+0002aa40	a	fB9<Hu
+0002aa5a	a	fB9<@u
+0002ab0d	a	fB9<Bu
+0002ab8a	a	WAVAWH
+0002ac94	a	fD9<Au
+0002ad43	a	fF9<qu
+0002af2a	a	tSf91tNH
+0002b007	a	S;\$0tH
+0002b0f8	a	@USVWATAVAWH
+0002b18d	a	tyfD9 tsH
+0002b20e	a	tQfD9 tK
+0002b22c	a	fD9$Hu
+0002b379	a	@A_A^A\_^[]
+0002b50e	a	D8t$8t
+0002b5ab	a	l$ WAVAWH
+0002b665	a	 A_A^_
+0002b670	a	@UATAVH
+0002be17	a	USVWAVH
+0002bf34	a	A^_^[]
+0002bf3f	a	USVWAVH
+0002c068	a	A^_^[]
+0002c472	a	ffffff
+0002c831	a	fffffff
+0002c8b5	a	@8|$Pt
+0002cb2c	a	|$ ATAVAWH
+0002ccc1	a	\$@@8=
+0002cdae	a	 A_A^A\
+0002d070	a	LcA<E3
+0002d118	a	u HcA<H
+00030298	a	bad allocation
+000302c0	a	bad array new length
+00030320	a	unknown error
+00031090	a	address family not supported
+000310b0	a	address in use
+000310c0	a	address not available
+000310d8	a	already connected
+000310f0	a	argument list too long
+00031108	a	argument out of domain
+00031120	a	bad address
+00031130	a	bad file descriptor
+00031148	a	bad message
+00031158	a	broken pipe
+00031168	a	connection aborted
+00031180	a	connection already in progress
+000311a0	a	connection refused
+000311b8	a	connection reset
+000311d0	a	cross device link
+000311e8	a	destination address required
+00031208	a	device or resource busy
+00031220	a	directory not empty
+00031238	a	executable format error
+00031250	a	file exists
+00031260	a	file too large
+00031270	a	filename too long
+00031288	a	function not supported
+000312a0	a	host unreachable
+000312b8	a	identifier removed
+000312d0	a	illegal byte sequence
+000312e8	a	inappropriate io control operation
+00031310	a	interrupted
+00031320	a	invalid argument
+00031338	a	invalid seek
+00031348	a	io error
+00031358	a	is a directory
+00031368	a	message size
+00031378	a	network down
+00031388	a	network reset
+00031398	a	network unreachable
+000313b0	a	no buffer space
+000313c0	a	no child process
+000313d8	a	no link
+000313e0	a	no lock available
+000313f8	a	no message available
+00031410	a	no message
+00031420	a	no protocol option
+00031438	a	no space on device
+00031450	a	no stream resources
+00031468	a	no such device or address
+00031488	a	no such device
+00031498	a	no such file or directory
+000314b8	a	no such process
+000314c8	a	not a directory
+000314d8	a	not a socket
+000314e8	a	not a stream
+000314f8	a	not connected
+00031508	a	not enough memory
+00031520	a	not supported
+00031530	a	operation canceled
+00031548	a	operation in progress
+00031560	a	operation not permitted
+00031578	a	operation not supported
+00031590	a	operation would block
+000315a8	a	owner dead
+000315b8	a	permission denied
+000315d0	a	protocol error
+000315e0	a	protocol not supported
+000315f8	a	read only file system
+00031610	a	resource deadlock would occur
+00031630	a	resource unavailable try again
+00031650	a	result out of range
+00031668	a	state not recoverable
+00031680	a	stream timeout
+00031690	a	text file busy
+000316a0	a	timed out
+000316b0	a	too many files open in system
+000316d0	a	too many files open
+000316e8	a	too many links
+000316f8	a	too many symbolic link levels
+00031718	a	value too large
+00031728	a	wrong protocol type
+00031760	a	FlsAlloc
+00031770	a	FlsFree
+00031778	a	FlsGetValue
+00031788	a	FlsSetValue
+00031798	a	InitializeCriticalSectionEx
+000317b8	a	InitOnceExecuteOnce
+000317d0	a	CreateEventExW
+000317e0	a	CreateSemaphoreW
+000317f8	a	CreateSemaphoreExW
+00031810	a	CreateThreadpoolTimer
+00031828	a	SetThreadpoolTimer
+00031840	a	WaitForThreadpoolTimerCallbacks
+00031860	a	CloseThreadpoolTimer
+00031878	a	CreateThreadpoolWait
+00031890	a	SetThreadpoolWait
+000318a8	a	CloseThreadpoolWait
+000318c0	a	FlushProcessWriteBuffers
+000318e0	a	FreeLibraryWhenCallbackReturns
+00031900	a	GetCurrentProcessorNumber
+00031920	a	CreateSymbolicLinkW
+00031938	a	GetCurrentPackageId
+00031950	a	GetTickCount64
+00031960	a	GetFileInformationByHandleEx
+00031980	a	SetFileInformationByHandle
+000319a0	a	GetSystemTimePreciseAsFileTime
+000319c0	a	InitializeConditionVariable
+000319e0	a	WakeConditionVariable
+000319f8	a	WakeAllConditionVariable
+00031a18	a	SleepConditionVariableCS
+00031a38	a	InitializeSRWLock
+00031a50	a	AcquireSRWLockExclusive
+00031a68	a	TryAcquireSRWLockExclusive
+00031a88	a	ReleaseSRWLockExclusive
+00031aa0	a	SleepConditionVariableSRW
+00031ac0	a	CreateThreadpoolWork
+00031ad8	a	SubmitThreadpoolWork
+00031af0	a	CloseThreadpoolWork
+00031b08	a	CompareStringEx
+00031b18	a	GetLocaleInfoEx
+00031b28	a	LCMapStringEx
+00031c50	a	0123456789abcdefghijklmnopqrstuvwxyz
+00031ca0	a	0123456789abcdefghijklmnopqrstuvwxyz
+00035140	a	bad exception
+00035588	a	__based(
+00035598	a	__cdecl
+000355a0	a	__pascal
+000355b0	a	__stdcall
+000355c0	a	__thiscall
+000355d0	a	__fastcall
+000355e0	a	__vectorcall
+000355f0	a	__clrcall
+000355fc	a	__eabi
+00035608	a	__swift_1
+00035618	a	__swift_2
+00035628	a	__ptr64
+00035630	a	__restrict
+00035640	a	__unaligned
+00035650	a	restrict(
+00035668	a	 delete
+00035690	a	operator
+00035710	a	`vftable'
+00035720	a	`vbtable'
+00035730	a	`vcall'
+00035738	a	`typeof'
+00035748	a	`local static guard'
+00035760	a	`string'
+00035770	a	`vbase destructor'
+00035788	a	`vector deleting destructor'
+000357a8	a	`default constructor closure'
+000357c8	a	`scalar deleting destructor'
+000357e8	a	`vector constructor iterator'
+00035808	a	`vector destructor iterator'
+00035828	a	`vector vbase constructor iterator'
+00035850	a	`virtual displacement map'
+00035870	a	`eh vector constructor iterator'
+00035898	a	`eh vector destructor iterator'
+000358b8	a	`eh vector vbase constructor iterator'
+000358e0	a	`copy constructor closure'
+00035900	a	`udt returning'
+00035920	a	`local vftable'
+00035930	a	`local vftable constructor closure'
+00035954	a	 new[]
+00035960	a	 delete[]
+00035970	a	`omni callsig'
+00035980	a	`placement delete closure'
+000359a0	a	`placement delete[] closure'
+000359c0	a	`managed vector constructor iterator'
+000359e8	a	`managed vector destructor iterator'
+00035a10	a	`eh vector copy constructor iterator'
+00035a38	a	`eh vector vbase copy constructor iterator'
+00035a68	a	`dynamic initializer for '
+00035a88	a	`dynamic atexit destructor for '
+00035ab0	a	`vector copy constructor iterator'
+00035ad8	a	`vector vbase copy constructor iterator'
+00035b08	a	`managed vector copy constructor iterator'
+00035b38	a	`local static thread guard'
+00035b58	a	operator "" 
+00035b68	a	operator co_await
+00035b80	a	 Type Descriptor'
+00035b98	a	 Base Class Descriptor at (
+00035bb8	a	 Base Class Array'
+00035bd0	a	 Class Hierarchy Descriptor'
+00035bf0	a	 Complete Object Locator'
+00035c49	a	`h````
+00035c51	a	xpxxxx
+00035cb0	a	`h`hhh
+00035cb9	a	xwpwpp
+00035ccc	a	(null)
+00035f60	a	CorExitProcess
+00036400	a	 !"#$%&'()*+,-./0123456789:;<=>?@abcdefghijklmnopqrstuvwxyz[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+00036580	a	 !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
+000369bc	a	[aOni*{
+00036b9d	a	~ $s%r
+00036bac	a	@b;zO]
+00036f87	a	v2!L.2
+00037450	a	UUUUUU
+00037480	a	UUUUUU
+00037d6d	a	"e?<<<<<<l?
+00037eed	a	Il?333333c?
+00037f85	a	.i?0@I
+00037f8e	a	d?000000`?
+0003806c	a	)|B?d!
+000380ee	a	L?UUUUUUU?
+000381ae	a	&?PPPPPPP?
+00038203	a	0X8b?~
+0003821b	a	%GoU?*
+0003828d	a	(T?j?Y
+0003839a	a	Zod(^?
+000383d4	a	D W?{W
+0003847b	a	qS>g?h3
+0003849e	a	c?FA@s}
+000385c0	a	UUUUUU
+000385d0	a	UUUUUU
+00038614	a	UUUUUU
+0003863b	a	?UUUUUU
+00038b0f	a	?kxG2)
+00038b97	a	?TY,>5
+00038c4f	a	?!5WOo
+00038c97	a	?E=$% B
+00038d07	a	?49HoKC
+000394d8	a	CompareStringEx
+000394f0	a	EnumSystemLocalesEx
+00039510	a	FlsAlloc
+00039528	a	FlsFree
+00039538	a	FlsGetValue
+00039550	a	FlsSetValue
+00039568	a	GetCurrentPackageId
+00039588	a	GetLocaleInfoEx
+000395a0	a	GetUserDefaultLocaleName
+000395c8	a	InitializeCriticalSectionEx
+000395f0	a	IsValidLocaleName
+00039610	a	LCMapStringEx
+00039628	a	LCIDToLocaleName
+00039648	a	LocaleNameToLCID
+00039670	a	NAN(SNAN)
+00039680	a	nan(snan)
+00039690	a	NAN(IND)
+000396a0	a	nan(ind)
+000397ef	a	 !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+00039b5c	a	Sunday
+00039b64	a	Monday
+00039b70	a	Tuesday
+00039b78	a	Wednesday
+00039b88	a	Thursday
+00039b94	a	Friday
+00039ba0	a	Saturday
+00039be0	a	January
+00039be8	a	February
+00039c14	a	August
+00039c20	a	September
+00039c30	a	October
+00039c38	a	November
+00039c48	a	December
+00039c60	a	MM/dd/yy
+00039c70	a	dddd, MMMM dd, yyyy
+00039c88	a	HH:mm:ss
+0003a160	a	_hypot
+0003a190	a	_nextafter
+0003ab9c	a	A03>A|
+0003abb1	a	Q5rHg,>
+0003ac8d	a	j>>A?1
+0003acd6	a	.>PJ;I:qE>
+0003ad16	a	:>t6k'
+0003ad83	a	])6M>&
+0003ad94	a	CWD>~3
+0003adbc	a	_oD>Kg
+0003af46	a	N>O=I9
+0003af66	a	F>qUxv
+0003afb3	a	/2GG>!B
+0003b10c	a	zY;>u:m
+0003b126	a	P>q_Y~
+0003b146	a	0><[cZUg^>
+0003b1e3	a	Y>kX>M
+0003b21d	a	H[><y5
+0003b4b2	a	[*ncd>0
+0003b4ce	a	S>$hkDh$h>[2
+0003b575	a	UA>N0Wl
+0003b62e	a	9>powf
+0003b69f	a	?8bunz8
+0003b82f	a	?@En[vP
+0003bc3f	a	?UUUUUU
+0003c027	a	?7zQ6$
+0003f350	a	1#QNAN
+0003f358	a	1#SNAN
+00040490	a	UUUUUU
+000404c0	a	UUUUUU
+00040ddf	a	=imb;D
+00040f8e	a	/>58d%
+00040fd7	a	>jtm}S
+0004102e	a	)>6{1n
+0004104c	a	+f)>0'
+000410cc	a	;H9>&X
+000410f2	a	*StO9>T
+0004113c	a	n03>Pu
+00041212	a	K~Je#>!
+000412eb	a	bp(=>?g
+000413ac	a	BC?>6t9^
+00041415	a	K&>.yC
+0004142c	a	.xJ>Hf
+00041433	a	y\PD>!
+00041442	a	|b=})>
+00041453	a	c [1>H'
+00041492	a	uzKs@>
+000414ae	a	3>N;kU
+000414dd	a	kE>fvw
+00041524	a	V6E>`"(5
+000415c7	a	>Unknown exception
+000415e0	a	bad cast
+000415f0	a	bad locale name
+00041618	a	iostream
+00041628	a	iostream stream error
+00041640	a	ios_base::badbit set
+00041658	a	ios_base::failbit set
+00041670	a	ios_base::eofbit set
+00041688	a	invalid stoi argument
+000416a0	a	stoi argument out of range
+000416c0	a	invalid json object
+000416d8	a	value is not number
+000416f0	a	value is not string
+00041708	a	value is not a container
+00041728	a	value is not a list
+00041740	a	list out of bound
+00041758	a	value is not an object
+00041770	a	cannot find key
+000417b0	a	NPS_NO_ERROR
+000417c0	a	IE_CANNOT_FOUND
+000417d0	a	IE_CALL_TIMEOUT
+000417e0	a	COM_INIT_ERROR
+000417f0	a	POST_DATA_MAKE_FAIL
+00041808	a	REQUEST_SEND_FAIL
+00041820	a	RESPONSE_JSON_FORMAT_FAIL
+00041840	a	NOT_SUPPORT_OS
+00041850	a	INVALID_ARGUMENTS
+00041868	a	UNKNOWN_EXCEPTION
+00041880	a	"%s":%d
+00041888	a	"%s":"%s"
+00041b40	a	ShellExecuteEx failed with error %d
+00041b89	a	HTTP Request Parameters : 
+00041c30	a	Error %u in WinHttpQueryDataAvailable.
+00041c58	a	Error %u in WinHttpReadData.
+00041cb0	a	  API : 
+00041cc8	a	 URL : 
+00041d00	a	HTTP Response Body : 
+00041d20	a	Height
+00041d28	a	ContentsName
+00041d38	a	PopupUrl
+00041d80	a	 height : 
+00041d90	a	Window width : 
+00041da0	a	Survey URL : 
+00041db0	a	Survey Param : 
+00041dc0	a	Survey window popup failed!
+00041de0	a	serviceId
+00041df0	a	placementIdx
+00041e00	a	memberSN
+00041e10	a	memberType
+00041e28	a	invalid string position
+00041e40	a	string too long
+000442ac	a	RSDSCG
+000442c4	a	D:\GitLabRepos\basetech_cpp_nps\NpsSdk\Release_Win64\nps64.pdb
+00044324	a	.text$di
+00044338	a	.text$mn
+0004434c	a	.text$mn$00
+00044360	a	.text$x
+00044370	a	.text$yd
+00044384	a	.idata$5
+00044398	a	.00cfg
+000443a8	a	.CRT$XCA
+000443bc	a	.CRT$XCC
+000443d0	a	.CRT$XCL
+000443e4	a	.CRT$XCU
+000443f8	a	.CRT$XCZ
+0004440c	a	.CRT$XIA
+00044420	a	.CRT$XIC
+00044434	a	.CRT$XIZ
+00044448	a	.CRT$XPA
+0004445c	a	.CRT$XPX
+00044470	a	.CRT$XPXA
+00044484	a	.CRT$XPZ
+00044498	a	.CRT$XTA
+000444ac	a	.CRT$XTZ
+000444c0	a	.rdata
+000444d0	a	.rdata$r
+000444e4	a	.rdata$zzzdbg
+000444fc	a	.rtc$IAA
+00044510	a	.rtc$IZZ
+00044524	a	.rtc$TAA
+00044538	a	.rtc$TZZ
+0004454c	a	.xdata
+0004455c	a	.xdata$x
+00044570	a	.edata
+00044580	a	.idata$2
+00044594	a	.idata$3
+000445a8	a	.idata$4
+000445bc	a	.idata$6
+000445e0	a	.data$r
+00044600	a	.pdata
+00044610	a	.rsrc$01
+00044624	a	.rsrc$02
+00049ae8	a	nps64.dll
+00049af2	a	AddSurveyParameterA
+00049b06	a	AddSurveyParameterW
+00049b1a	a	GetLastErrorCode
+00049b2b	a	GetLastErrorMsg
+00049b3b	a	OpenSurveyWindowA
+00049b4d	a	OpenSurveyWindowW
+00049b5f	a	SetDebugMode
+00049b6c	a	SetRunMode
+00049f3a	a	GetVersion
+00049f48	a	MultiByteToWideChar
+00049f5e	a	GetLastError
+00049f6e	a	WideCharToMultiByte
+00049f82	a	KERNEL32.dll
+00049f92	a	GetDesktopWindow
+00049fa6	a	wsprintfW
+00049fb2	a	WaitForInputIdle
+00049fc6	a	GetWindowRect
+00049fd4	a	USER32.dll
+00049fe2	a	ShellExecuteExW
+00049ff2	a	SHELL32.dll
+0004a000	a	CoInitialize
+0004a010	a	CoUninitialize
+0004a020	a	ole32.dll
+0004a02a	a	OLEAUT32.dll
+0004a03a	a	WinHttpQueryDataAvailable
+0004a056	a	WinHttpConnect
+0004a068	a	WinHttpSetTimeouts
+0004a07e	a	WinHttpSendRequest
+0004a094	a	WinHttpCloseHandle
+0004a0aa	a	WinHttpOpenRequest
+0004a0c0	a	WinHttpReadData
+0004a0d2	a	WinHttpOpen
+0004a0e0	a	WinHttpReceiveResponse
+0004a0f8	a	WINHTTP.dll
+0004a106	a	RtlCaptureContext
+0004a11a	a	RtlLookupFunctionEntry
+0004a134	a	RtlVirtualUnwind
+0004a148	a	UnhandledExceptionFilter
+0004a164	a	SetUnhandledExceptionFilter
+0004a182	a	GetCurrentProcess
+0004a196	a	TerminateProcess
+0004a1aa	a	IsProcessorFeaturePresent
+0004a1c6	a	IsDebuggerPresent
+0004a1da	a	GetStartupInfoW
+0004a1ec	a	GetModuleHandleW
+0004a200	a	QueryPerformanceCounter
+0004a21a	a	GetCurrentProcessId
+0004a230	a	GetCurrentThreadId
+0004a246	a	GetSystemTimeAsFileTime
+0004a260	a	InitializeSListHead
+0004a276	a	EnterCriticalSection
+0004a28e	a	LeaveCriticalSection
+0004a2a6	a	DeleteCriticalSection
+0004a2be	a	SetLastError
+0004a2ce	a	InitializeCriticalSectionAndSpinCount
+0004a2f6	a	SwitchToThread
+0004a308	a	TlsAlloc
+0004a314	a	TlsGetValue
+0004a322	a	TlsSetValue
+0004a330	a	TlsFree
+0004a33a	a	GetProcAddress
+0004a34c	a	EncodePointer
+0004a35c	a	DecodePointer
+0004a36c	a	LCMapStringW
+0004a37c	a	GetLocaleInfoW
+0004a38e	a	GetStringTypeW
+0004a3a0	a	GetCPInfo
+0004a3ac	a	LocalFree
+0004a3b8	a	RtlUnwindEx
+0004a3c6	a	RtlPcToFileHeader
+0004a3da	a	RaiseException
+0004a3ec	a	InterlockedFlushSList
+0004a404	a	FreeLibrary
+0004a412	a	LoadLibraryExW
+0004a424	a	ExitProcess
+0004a432	a	GetModuleHandleExW
+0004a448	a	GetModuleFileNameA
+0004a45e	a	HeapAlloc
+0004a46a	a	HeapFree
+0004a476	a	IsValidLocale
+0004a486	a	GetUserDefaultLCID
+0004a49c	a	EnumSystemLocalesW
+0004a4b2	a	GetStdHandle
+0004a4c2	a	GetFileType
+0004a4d0	a	CloseHandle
+0004a4de	a	GetACP
+0004a4e8	a	FindClose
+0004a4f4	a	FindFirstFileExA
+0004a508	a	FindNextFileA
+0004a518	a	IsValidCodePage
+0004a52a	a	GetOEMCP
+0004a536	a	GetCommandLineA
+0004a548	a	GetCommandLineW
+0004a55a	a	GetEnvironmentStringsW
+0004a574	a	FreeEnvironmentStringsW
+0004a58e	a	GetProcessHeap
+0004a5a0	a	FlushFileBuffers
+0004a5b4	a	WriteFile
+0004a5c0	a	GetConsoleCP
+0004a5d0	a	GetConsoleMode
+0004a5e2	a	ReadFile
+0004a5ee	a	ReadConsoleW
+0004a5fe	a	SetFilePointerEx
+0004a612	a	HeapReAlloc
+0004a620	a	SetStdHandle
+0004a630	a	CreateFileW
+0004a63e	a	HeapSize
+0004a64a	a	WriteConsoleW
+0004a65a	a	RtlUnwind
+0004a840	a	Copyright (c) by P.J. Plauger, licensed by Dinkumware, Ltd. ALL RIGHTS RESERVED.
+0004acfa	a	                          
+0004adda	a	abcdefghijklmnopqrstuvwxyz
+0004adfa	a	ABCDEFGHIJKLMNOPQRSTUVWXYZ
+0004b012	a	                          
+0004b101	a	abcdefghijklmnopqrstuvwxyz
+0004b121	a	ABCDEFGHIJKLMNOPQRSTUVWXYZ
+0004b410	a	.?AVtype_info@@
+0004b430	a	.?AVbad_alloc@std@@
+0004b458	a	.?AVbad_array_new_length@std@@
+0004b488	a	.?AVios_base@std@@
+0004b4b0	a	.?AV?$_Iosb@H@std@@
+0004b4d8	a	.?AV?$basic_ios@DU?$char_traits@D@std@@@std@@
+0004b520	a	.?AV?$basic_streambuf@DU?$char_traits@D@std@@@std@@
+0004b570	a	.?AV?$basic_ostream@DU?$char_traits@D@std@@@std@@
+0004b5c0	a	.?AV?$basic_filebuf@DU?$char_traits@D@std@@@std@@
+0004b608	a	.?AVcodecvt_base@std@@
+0004b630	a	.?AV?$codecvt@DDU_Mbstatet@@@std@@
+0004b668	a	.?AV_Locimp@locale@std@@
+0004b698	a	.?AVinvalid_argument@std@@
+0004b6c8	a	.?AVlogic_error@std@@
+0004b6f0	a	.?AVlength_error@std@@
+0004b718	a	.?AVout_of_range@std@@
+0004b740	a	.?AVbad_exception@std@@
+0004b768	a	.?AVfailure@ios_base@std@@
+0004b798	a	.?AVruntime_error@std@@
+0004b7c0	a	.?AVerror_category@std@@
+0004b7f0	a	.?AV?$ctype@D@std@@
+0004b818	a	.?AVsystem_error@std@@
+0004b840	a	.?AV_Facet_base@std@@
+0004b868	a	.?AV_Generic_error_category@std@@
+0004b8a0	a	.?AV?$_Ref_count@D@std@@
+0004b8d0	a	.?AU_Crt_new_delete@std@@
+0004b900	a	.?AV?$numpunct@D@std@@
+0004b928	a	.?AV_Iostream_error_category@std@@
+0004b960	a	.?AVbad_cast@std@@
+0004b988	a	.?AUctype_base@std@@
+0004b9b0	a	.?AVfacet@locale@std@@
+0004b9d8	a	.?AV_com_error@@
+0004ba00	a	.?AV_Ref_count_base@std@@
+0004ba30	a	.?AV_System_error@std@@
+0004ba58	a	.?AVexception@std@@
+0004ba80	a	.?AV?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@
+0004e980	a	<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+0004e9b9	a	<assembly xmlns='urn:schemas-microsoft-com:asm.v1' manifestVersion='1.0'>
+0004ea04	a	  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v3">
+0004ea3c	a	    <security>
+0004ea4c	a	      <requestedPrivileges>
+0004ea69	a	        <requestedExecutionLevel level='asInvoker' uiAccess='false' />
+0004eab1	a	      </requestedPrivileges>
+0004eacf	a	    </security>
+0004eae0	a	  </trustInfo>
+0004eaf0	a	</assembly>
+0004fac9	a	Symantec Corporation1
+0004fae8	a	Symantec Trust Network100.
+0004fb08	a	'Symantec Class 3 SHA256 Code Signing CA0
+0004fb34	a	200204000000Z
+0004fb43	a	220505235959Z0
+0004fb6a	a	Gyeonggi-do1
+0004fb80	a	Seongnam-si1!0
+0004fb96	a	NEXON Korea Corporation.1!0
+0004fbb9	a	NEXON Korea Corporation.0
+0004fc03	a	Dyu:~!
+0004fd2d	a	http://sv.symcb.com/sv.crl0a
+0004fd6c	a	https://d.symcb.com/cps0%
+0004fd93	a	https://d.symcb.com/rpa0
+0004fddd	a	http://sv.symcd.com0&
+0004fdfe	a	http://sv.symcb.com/sv.crt0
+0004ffb5	a	VeriSign, Inc.1
+0004ffce	a	VeriSign Trust Network1:08
+0004ffee	a	1(c) 2006 VeriSign, Inc. - For authorized use only1E0C
+0005002a	a	<VeriSign Class 3 Public Primary Certification Authority - G50
+0005006b	a	131210000000Z
+0005007a	a	231209235959Z0
+000500a1	a	Symantec Corporation1
+000500c0	a	Symantec Trust Network100.
+000500e0	a	'Symantec Class 3 SHA256 Code Signing CA0
+000501fd	a	+ojr\`
+00050254	a	http://s2.symcb.com0
+000502a5	a	http://www.symauth.com/cps0(
+000502cf	a	http://www.symauth.com/rpa00
+000502fc	a	http://s1.symcb.com/pca3-g5.crl0
+00050364	a	SymantecPKI-1-5670
+000504f1	a	Symantec Corporation1
+00050510	a	Symantec Trust Network100.
+00050530	a	'Symantec Class 3 SHA256 Code Signing CA
+00050797	a	20210419013328Z
+000507f2	a	DigiCert Inc1
+00050809	a	www.digicert.com110/
+00050823	a	(DigiCert SHA2 Assured ID Timestamping CA0
+00050850	a	210101000000Z
+0005085f	a	310106000000Z0H1
+00050886	a	DigiCert, Inc.1 0
+0005089f	a	DigiCert Timestamp 20210
+00050a42	a	http://www.digicert.com/CPS0
+00050aaf	a	,http://crl3.digicert.com/sha2-assured-ts.crl02
+00050ae3	a	,http://crl4.digicert.com/sha2-assured-ts.crl0
+00050b2f	a	http://ocsp.digicert.com0O
+00050b54	a	Chttp://cacerts.digicert.com/DigiCertSHA2AssuredIDTimestampingCA.crt0
+00050bf1	a	QJxy6z'
+00050c13	a	dwc_#Ri
+00050cf4	a	DigiCert Inc1
+00050d0b	a	www.digicert.com1$0"
+00050d26	a	DigiCert Assured ID Root CA0
+00050d45	a	160107120000Z
+00050d54	a	310107120000Z0r1
+00050d7b	a	DigiCert Inc1
+00050d92	a	www.digicert.com110/
+00050dac	a	(DigiCert SHA2 Assured ID Timestamping CA0
+00050ea8	a	fnVa')
+00050f9a	a	http://ocsp.digicert.com0C
+00050fbf	a	7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0
+0005100a	a	4http://crl4.digicert.com/DigiCertAssuredIDRootCA.crl0:
+00051046	a	4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0P
+000510a4	a	https://www.digicert.com/CPS0
+00051153	a	8aMbF$
+000511d1	a	V3"/"6
+00051209	a	DigiCert Inc1
+00051220	a	www.digicert.com110/
+0005123a	a	(DigiCert SHA2 Assured ID Timestamping CA
+000512b4	a	210419013328Z0+
+00051372	a	$f)%8K
+0005151b	a	Symantec Corporation1
+0005153a	a	Symantec Trust Network100.
+0005155a	a	'Symantec Class 3 SHA256 Code Signing CA0
+00051586	a	200204000000Z
+00051595	a	220505235959Z0
+000515bc	a	Gyeonggi-do1
+000515d2	a	Seongnam-si1!0
+000515e8	a	NEXON Korea Corporation.1!0
+0005160b	a	NEXON Korea Corporation.0
+00051655	a	Dyu:~!
+0005177f	a	http://sv.symcb.com/sv.crl0a
+000517be	a	https://d.symcb.com/cps0%
+000517e5	a	https://d.symcb.com/rpa0
+0005182f	a	http://sv.symcd.com0&
+00051850	a	http://sv.symcb.com/sv.crt0
+00051a07	a	VeriSign, Inc.1
+00051a20	a	VeriSign Trust Network1:08
+00051a40	a	1(c) 2006 VeriSign, Inc. - For authorized use only1E0C
+00051a7c	a	<VeriSign Class 3 Public Primary Certification Authority - G50
+00051abd	a	131210000000Z
+00051acc	a	231209235959Z0
+00051af3	a	Symantec Corporation1
+00051b12	a	Symantec Trust Network100.
+00051b32	a	'Symantec Class 3 SHA256 Code Signing CA0
+00051c4f	a	+ojr\`
+00051ca6	a	http://s2.symcb.com0
+00051cf7	a	http://www.symauth.com/cps0(
+00051d21	a	http://www.symauth.com/rpa00
+00051d4e	a	http://s1.symcb.com/pca3-g5.crl0
+00051db6	a	SymantecPKI-1-5670
+00051f43	a	Symantec Corporation1
+00051f62	a	Symantec Trust Network100.
+00051f82	a	'Symantec Class 3 SHA256 Code Signing CA
+0005208f	a	9cAQwV
+0005221e	a	20210419013328Z
+00052279	a	DigiCert Inc1
+00052290	a	www.digicert.com110/
+000522aa	a	(DigiCert SHA2 Assured ID Timestamping CA0
+000522d7	a	210101000000Z
+000522e6	a	310106000000Z0H1
+0005230d	a	DigiCert, Inc.1 0
+00052326	a	DigiCert Timestamp 20210
+000524c9	a	http://www.digicert.com/CPS0
+00052536	a	,http://crl3.digicert.com/sha2-assured-ts.crl02
+0005256a	a	,http://crl4.digicert.com/sha2-assured-ts.crl0
+000525b6	a	http://ocsp.digicert.com0O
+000525db	a	Chttp://cacerts.digicert.com/DigiCertSHA2AssuredIDTimestampingCA.crt0
+00052678	a	QJxy6z'
+0005269a	a	dwc_#Ri
+0005277b	a	DigiCert Inc1
+00052792	a	www.digicert.com1$0"
+000527ad	a	DigiCert Assured ID Root CA0
+000527cc	a	160107120000Z
+000527db	a	310107120000Z0r1
+00052802	a	DigiCert Inc1
+00052819	a	www.digicert.com110/
+00052833	a	(DigiCert SHA2 Assured ID Timestamping CA0
+0005292f	a	fnVa')
+00052a21	a	http://ocsp.digicert.com0C
+00052a46	a	7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0
+00052a91	a	4http://crl4.digicert.com/DigiCertAssuredIDRootCA.crl0:
+00052acd	a	4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0P
+00052b2b	a	https://www.digicert.com/CPS0
+00052bda	a	8aMbF$
+00052c58	a	V3"/"6
+00052c90	a	DigiCert Inc1
+00052ca7	a	www.digicert.com110/
+00052cc1	a	(DigiCert SHA2 Assured ID Timestamping CA
+00052d3b	a	210419013328Z0+
+00031740	u	kernel32.dll
+00033988	u	zh-CHS
+00033e08	u	az-AZ-Latn
+00033f10	u	uz-UZ-Latn
+00033ff8	u	kok-IN
+00034008	u	syr-SY
+00034018	u	div-MV
+00034028	u	quz-BO
+000340f8	u	sr-SP-Latn
+00034120	u	az-AZ-Cyrl
+00034158	u	uz-UZ-Cyrl
+00034170	u	quz-EC
+000341e0	u	sr-SP-Cyrl
+00034208	u	quz-PE
+00034288	u	smj-NO
+000342f8	u	bs-BA-Latn
+00034310	u	smj-SE
+00034360	u	sr-BA-Latn
+00034378	u	sma-NO
+000343b8	u	sr-BA-Cyrl
+000343d0	u	sma-SE
+00034410	u	sms-FI
+00034450	u	smn-FI
+000345c0	u	zh-CHT
+000346e8	u	az-az-cyrl
+00034700	u	az-az-latn
+00034748	u	bs-ba-latn
+000347f0	u	div-mv
+00034bd0	u	kok-in
+00034d20	u	quz-bo
+00034d30	u	quz-ec
+00034d40	u	quz-pe
+00034dd0	u	sma-no
+00034de0	u	sma-se
+00034df0	u	smj-no
+00034e00	u	smj-se
+00034e10	u	smn-fi
+00034e20	u	sms-fi
+00034e40	u	sr-ba-cyrl
+00034e58	u	sr-ba-latn
+00034e70	u	sr-sp-cyrl
+00034e88	u	sr-sp-latn
+00034ed0	u	syr-sy
+00034f60	u	uz-uz-cyrl
+00034f78	u	uz-uz-latn
+00034fb0	u	zh-chs
+00034fc0	u	zh-cht
+00035168	u	api-ms-win-core-fibers-l1-1-1
+000351a8	u	api-ms-win-core-synch-l1-2-0
+000351e8	u	kernel32
+00035200	u	api-ms-
+00035210	u	ext-ms-
+00035cd8	u	(null)
+00035f48	u	mscoree.dll
+00036160	u	         (((((                  H
+00036662	u	         (((((                  H
+00036760	u	      (                          
+00038f90	u	api-ms-win-appmodel-runtime-l1-1-1
+00038fe0	u	api-ms-win-core-datetime-l1-1-1
+00039020	u	api-ms-win-core-fibers-l1-1-1
+00039060	u	api-ms-win-core-file-l2-1-1
+000390a0	u	api-ms-win-core-localization-l1-2-1
+000390f0	u	api-ms-win-core-localization-obsolete-l1-2-0
+00039150	u	api-ms-win-core-processthreads-l1-1-2
+000391a0	u	api-ms-win-core-string-l1-1-0
+000391e0	u	api-ms-win-core-synch-l1-2-0
+00039220	u	api-ms-win-core-sysinfo-l1-2-1
+00039260	u	api-ms-win-core-winrt-l1-1-0
+000392a0	u	api-ms-win-core-xstate-l2-1-0
+000392e0	u	api-ms-win-rtcore-ntuser-window-l1-1-0
+00039330	u	api-ms-win-security-systemfunctions-l1-1-0
+00039390	u	ext-ms-win-kernel32-package-current-l1-1-0
+000393f0	u	ext-ms-win-ntuser-dialogbox-l1-1-0
+00039440	u	ext-ms-win-ntuser-windowstation-l1-1-0
+00039490	u	advapi32
+000394a8	u	kernel32
+000394c0	u	user32
+00039750	u	LC_ALL
+00039760	u	LC_COLLATE
+00039778	u	LC_CTYPE
+00039790	u	LC_MONETARY
+000397a8	u	LC_NUMERIC
+000397c0	u	LC_TIME
+00039cd0	u	Sunday
+00039ce0	u	Monday
+00039cf0	u	Tuesday
+00039d00	u	Wednesday
+00039d18	u	Thursday
+00039d30	u	Friday
+00039d40	u	Saturday
+00039db8	u	January
+00039dc8	u	February
+00039e20	u	August
+00039e30	u	September
+00039e48	u	October
+00039e58	u	November
+00039e70	u	December
+00039e98	u	MM/dd/yy
+00039eb0	u	dddd, MMMM dd, yyyy
+00039ed8	u	HH:mm:ss
+0003cea8	u	zh-CHS
+0003d2f0	u	az-AZ-Latn
+0003d3f8	u	uz-UZ-Latn
+0003d4e0	u	kok-IN
+0003d4f0	u	syr-SY
+0003d500	u	div-MV
+0003d510	u	quz-BO
+0003d5d0	u	sr-SP-Latn
+0003d5f8	u	az-AZ-Cyrl
+0003d630	u	uz-UZ-Cyrl
+0003d648	u	quz-EC
+0003d6b8	u	sr-SP-Cyrl
+0003d6e0	u	quz-PE
+0003d760	u	smj-NO
+0003d7d0	u	bs-BA-Latn
+0003d7e8	u	smj-SE
+0003d838	u	sr-BA-Latn
+0003d850	u	sma-NO
+0003d890	u	sr-BA-Cyrl
+0003d8a8	u	sma-SE
+0003d8e8	u	sms-FI
+0003d928	u	smn-FI
+0003da98	u	zh-CHT
+0003ea00	u	az-az-cyrl
+0003ea18	u	az-az-latn
+0003ea60	u	bs-ba-latn
+0003eb08	u	div-mv
+0003eed8	u	kok-in
+0003f038	u	quz-bo
+0003f048	u	quz-ec
+0003f058	u	quz-pe
+0003f0e8	u	sma-no
+0003f0f8	u	sma-se
+0003f108	u	smj-no
+0003f118	u	smj-se
+0003f128	u	smn-fi
+0003f138	u	sms-fi
+0003f158	u	sr-ba-cyrl
+0003f170	u	sr-ba-latn
+0003f188	u	sr-sp-cyrl
+0003f1a0	u	sr-sp-latn
+0003f1e8	u	syr-sy
+0003f278	u	uz-uz-cyrl
+0003f290	u	uz-uz-latn
+0003f2c8	u	zh-chs
+0003f2d8	u	zh-cht
+0003f908	u	american
+0003f920	u	american english
+0003f948	u	american-english
+0003f970	u	australian
+0003f988	u	belgian
+0003f998	u	canadian
+0003f9c0	u	chinese
+0003f9d0	u	chinese-hongkong
+0003f9f8	u	chinese-simplified
+0003fa20	u	chinese-singapore
+0003fa48	u	chinese-traditional
+0003fa70	u	dutch-belgian
+0003fa90	u	english-american
+0003fab8	u	english-aus
+0003fad0	u	english-belize
+0003faf0	u	english-can
+0003fb08	u	english-caribbean
+0003fb30	u	english-ire
+0003fb48	u	english-jamaica
+0003fb68	u	english-nz
+0003fb80	u	english-south africa
+0003fbb0	u	english-trinidad y tobago
+0003fbe8	u	english-uk
+0003fc00	u	english-us
+0003fc18	u	english-usa
+0003fc30	u	french-belgian
+0003fc50	u	french-canadian
+0003fc70	u	french-luxembourg
+0003fc98	u	french-swiss
+0003fcb8	u	german-austrian
+0003fcd8	u	german-lichtenstein
+0003fd00	u	german-luxembourg
+0003fd28	u	german-swiss
+0003fd48	u	irish-english
+0003fd68	u	italian-swiss
+0003fd88	u	norwegian
+0003fda0	u	norwegian-bokmal
+0003fdc8	u	norwegian-nynorsk
+0003fdf0	u	portuguese-brazilian
+0003fe20	u	spanish-argentina
+0003fe48	u	spanish-bolivia
+0003fe68	u	spanish-chile
+0003fe88	u	spanish-colombia
+0003feb0	u	spanish-costa rica
+0003fed8	u	spanish-dominican republic
+0003ff10	u	spanish-ecuador
+0003ff30	u	spanish-el salvador
+0003ff58	u	spanish-guatemala
+0003ff80	u	spanish-honduras
+0003ffa8	u	spanish-mexican
+0003ffc8	u	spanish-modern
+0003ffe8	u	spanish-nicaragua
+00040010	u	spanish-panama
+00040030	u	spanish-paraguay
+00040058	u	spanish-peru
+00040078	u	spanish-puerto rico
+000400a0	u	spanish-uruguay
+000400c0	u	spanish-venezuela
+000400e8	u	swedish-finland
+00040128	u	america
+00040138	u	britain
+00040168	u	england
+00040178	u	great britain
+00040198	u	holland
+000401a8	u	hong-kong
+000401c0	u	new-zealand
+000401e0	u	pr china
+000401f8	u	pr-china
+00040210	u	puerto-rico
+00040228	u	slovak
+00040238	u	south africa
+00040258	u	south korea
+00040270	u	south-africa
+00040290	u	south-korea
+000402a8	u	trinidad & tobago
+000402d0	u	united-kingdom
+000402f0	u	united-states
+000405a0	u	CONOUT$
+000418a0	u	Survey Window
+000418c0	u	/contents/target/getList
+000418f8	u	external-api.cem.nexon.com
+00041930	u	Y2VtLWFwaWRhcmVkZXZTREtwcm9kdWN0aW9u
+00041980	u	Y2VtLWFwaTIxMzE17KCE67SJ7LKgU0RLcHJvZHVjdGlvbg==
+000419f0	u	stage-external-api.cem.nexon.com
+00041a40	u	Y2VtLWFwaWRhcmVkZXZTREtzdGFnZQ==
+00041a90	u	Y2VtLWFwaTIxMzE17KCE67SJ7LKgU0RLc3RhZ2U=
+00041ae8	u	dev-external-api.cem.nexon.com
+00041b68	u	WinHTTP
+00041bb0	u	Content-Type: application/json
+00041bf0	u	accessKey: %s
+00041c0e	u	secretKey: %s
+0004e6a6	u	VS_VERSION_INFO
+0004e702	u	StringFileInfo
+0004e726	u	041204b0
+0004e73e	u	CompanyName
+0004e758	u	Nexon Corporation
+0004e782	u	FileDescription
+0004e7a4	u	Nexon NPS DLL
+0004e7c6	u	FileVersion
+0004e7e0	u	2.3.0.0
+0004e7f6	u	InternalName
+0004e810	u	nps.dll
+0004e826	u	LegalCopyright
+0004e844	u	Copyright (C) 2019, Nexon Corporation
+0004e896	u	OriginalFilename
+0004e8b8	u	nps.dll
+0004e8ce	u	ProductName
+0004e8e8	u	Nexon NPS DLL
+0004e90a	u	ProductVersion
+0004e928	u	2.3.0.0
+0004e93e	u	VarFileInfo
+0004e95e	u	Translation

@@ -1,0 +1,17 @@
+[
+  { "tool": "open_binary", "args": { "path": "H:\\SA_Analysis\\target\\suddenattack.exe" }, "timeoutMs": 900000 },
+  { "tool": "read_bytes", "args": { "address": "0x1403d5b28", "length": 16 } },
+  { "tool": "read_bytes", "args": { "address": "0x1403d7838", "length": 16 } },
+  { "tool": "read_bytes", "args": { "address": "0x1404d4000", "length": 4096 } },
+  { "tool": "xrefs", "args": { "address": "0x140354a70" } },
+  { "tool": "xrefs", "args": { "address": "0x1403f76d8" } },
+  { "tool": "xrefs", "args": { "address": "0x1403f7698" } },
+  { "tool": "procedure_pseudo_code", "args": { "procedure": "0x1402644b8" }, "timeoutMs": 300000 },
+  { "tool": "procedure_pseudo_code", "args": { "procedure": "0x140078f60" }, "timeoutMs": 300000 },
+  { "tool": "address_to_file_offset", "args": { "address": "0x140ab3058" } },
+  { "tool": "address_to_file_offset", "args": { "address": "0x14007acf0" } },
+  { "tool": "address_to_file_offset", "args": { "address": "0x1400bef00" } },
+  { "tool": "address_to_file_offset", "args": { "address": "0x140131010" } },
+  { "tool": "address_to_file_offset", "args": { "address": "0x1402644b8" } },
+  { "tool": "close_binary", "args": { "snapshot_path": "H:\\SA_Analysis\\evidence\\sa_snapshot5.bin" } }
+]

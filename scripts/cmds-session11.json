@@ -1,0 +1,11 @@
+[
+  { "tool": "open_binary", "args": { "path": "H:\\SA_Analysis\\target\\suddenattack.exe", "snapshot_path": "H:\\SA_Analysis\\evidence\\sa_snapshot8.bin" }, "timeoutMs": 1800000 },
+  { "tool": "search_strings", "args": { "pattern": "LoadIndexTable", "mode": "literal" }, "timeoutMs": 300000 },
+  { "tool": "search_strings", "args": { "pattern": "LoadEncryptData", "mode": "literal" }, "timeoutMs": 300000 },
+  { "tool": "search_strings", "args": { "pattern": "LoadMaskedData", "mode": "literal" }, "timeoutMs": 300000 },
+  { "tool": "search_strings", "args": { "pattern": "OpenFile", "mode": "literal" }, "timeoutMs": 300000 },
+  { "tool": "search_strings", "args": { "pattern": "invalid package file data", "mode": "literal" }, "timeoutMs": 300000 },
+  { "tool": "search_strings", "args": { "pattern": "sa_text_00000", "mode": "literal" }, "timeoutMs": 300000 },
+  { "tool": "search_procedures", "args": { "pattern": "Package", "mode": "literal" }, "timeoutMs": 300000 },
+  { "tool": "close_binary", "args": { "snapshot_path": "H:\\SA_Analysis\\evidence\\sa_snapshot11.bin" } }
+]

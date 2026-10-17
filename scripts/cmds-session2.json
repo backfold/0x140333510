@@ -1,0 +1,18 @@
+[
+  { "tool": "open_binary", "args": { "path": "H:\\SA_Analysis\\target\\suddenattack.exe" }, "timeoutMs": 900000 },
+  { "tool": "xrefs", "args": { "address": "0x140305330" } },
+  { "tool": "xrefs", "args": { "address": "0x140304a00" } },
+  { "tool": "xrefs", "args": { "address": "0x1403048d8" } },
+  { "tool": "search_strings", "args": { "pattern": "RenderDll", "mode": "literal" } },
+  { "tool": "search_strings", "args": { "pattern": "d3d9.dll", "mode": "literal" } },
+  { "tool": "search_strings", "args": { "pattern": "Direct3DCreate9", "mode": "literal" } },
+  { "tool": "search_strings", "args": { "pattern": "s_net.cpp", "mode": "literal" } },
+  { "tool": "search_strings", "args": { "pattern": "cshell.dll", "mode": "literal" } },
+  { "tool": "search_strings", "args": { "pattern": "NXGSM", "mode": "literal" } },
+  { "tool": "search_strings", "args": { "pattern": "HackShield", "mode": "literal" } },
+  { "tool": "search_strings", "args": { "pattern": "EasyAntiCheat", "mode": "literal" } },
+  { "tool": "search_strings", "args": { "pattern": "BlackCipher", "mode": "literal" } },
+  { "tool": "search_strings", "args": { "pattern": "fcrc", "mode": "literal" } },
+  { "tool": "search_strings", "args": { "pattern": "WinMain", "mode": "literal" } },
+  { "tool": "close_binary", "args": { "snapshot_path": "H:\\SA_Analysis\\evidence\\sa_snapshot2.bin" } }
+]

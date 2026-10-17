@@ -1,0 +1,7 @@
+[
+  { "tool": "open_binary", "args": { "path": "H:\\SA_Analysis\\target\\machineidlib.dll" }, "timeoutMs": 900000 },
+  { "tool": "binary_overview", "args": {}, "timeoutMs": 300000 },
+  { "tool": "search_procedures", "args": { "pattern": "MachineId", "mode": "literal" }, "timeoutMs": 300000 },
+  { "tool": "search_strings", "args": { "pattern": "MIDLib", "mode": "literal" }, "timeoutMs": 300000 },
+  { "tool": "close_binary", "args": { "snapshot_path": "H:\\SA_Analysis\\evidence\\machineidlib_snapshot1.bin" } }
+]

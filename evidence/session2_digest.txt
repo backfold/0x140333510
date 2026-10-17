@@ -1,0 +1,49 @@
+﻿=== open_binary {"path":"H:\\SA_Analysis\\target\\suddenattack.exe"} ok=True ev=
+(no raw_result)
+
+=== xrefs {"address":"0x140305330"} ok=True ev=ev_01c0ffe42f4cf17ba48e30bc622caddf4e4daeed226cb72d056092c78809d0c2
+"0x14007b68d"
+
+=== xrefs {"address":"0x140304a00"} ok=True ev=ev_aab069fb45aa9beaa94e9db5ef66421435c5e7687d8709b6c04d293cd584631b
+"0x14007a99b"
+
+=== xrefs {"address":"0x1403048d8"} ok=True ev=ev_ceb7b67c593954d0a1898f29352ac92270b8ac5715a9509aeb26898eb0b08130
+["0x14007a485","0x14007a48c"]
+
+=== search_strings {"pattern":"RenderDll","mode":"literal"} ok=True ev=ev_89b60316b52eddbfe67f91984a3ca69039426b3709d8db28e8ea16c0450ef624
+[{"address":"0x140309ba0","value":"RenderDll d3d.ren"},{"address":"0x14030bfb8","value":"renderDLL %s"},{"address":"0x140313898","value":"LT_ERRORLOADINGRENDERDLL"}]
+
+=== search_strings {"pattern":"d3d9.dll","mode":"literal"} ok=True ev=ev_a60fceda28dde9198df0035b45a65a7fb985baf79b3f87b39a2e7a9735187f48
+{"address":"0x1404d445a","value":"d3d9.dll"}
+
+=== search_strings {"pattern":"Direct3DCreate9","mode":"literal"} ok=True ev=ev_dfb0f0ac3b9d075c50b82971290f5b0df2740e1fc28a01a29cf35993d8047f0a
+{"address":"0x1404d4465","value":"Direct3DCreate9Ex"}
+
+=== search_strings {"pattern":"s_net.cpp","mode":"literal"} ok=True ev=ev_51970b56ed79598ef7ed98a8786621f47a70544ec584eb8f8a0288913131a1f4
+{"address":"0x140313d70","value":"D:\\Jenkins\\workspace\\workspace\\SA_QA_FINAL_BUILD\\svn_source\\Engine\\Runtime\\server\\src\\s_net.cpp"}
+
+=== search_strings {"pattern":"cshell.dll","mode":"literal"} ok=True ev=ev_d217041e1db3f569b03c196b66340975e7f8b46af535bf2e747d1fb9a20a106e
+{"address":"0x14030dfc0","value":"cshell.dll"}
+
+=== search_strings {"pattern":"NXGSM","mode":"literal"} ok=True ev=ev_805398d575f716ccc37419c504ddb11164e609478c834fa3d98e2561fa56dfc7
+[{"address":"0x1403076c8","value":"assigning NXGSM instance to CShell."},{"address":"0x1403f7698","value":".?AVINXGSM@@"},{"address":"0x1403f76b8","value":".?AVTiNXGSM@@"}]
+
+=== search_strings {"pattern":"HackShield","mode":"literal"} ok=True ev=ev_d267b02aa592fc291f7182d17b68e1db34abcce70ae431435f8d20e800998df2
+(no raw_result)
+
+=== search_strings {"pattern":"EasyAntiCheat","mode":"literal"} ok=True ev=ev_d0b94a55b8304c99c2f1f12c788e4cb2979b24fd21aa6e703987824f6e6056f7
+[{"address":"0x140354a70","value":"ETC_EasyAntiCheat"},{"address":"0x1403f76d8","value":".?AVETC_EasyAntiCheat@nxa@@"}]
+
+=== search_strings {"pattern":"BlackCipher","mode":"literal"} ok=True ev=ev_414ed002a2f8c031baf40fc97dc903dc797a50e5ac9a3d2534617fdd4a8cf25c
+(no raw_result)
+
+=== search_strings {"pattern":"fcrc","mode":"literal"} ok=True ev=ev_e36d48c2a4d0a77695da5c6afd11ba741477de92470753eaf869e31328927bd5
+(no raw_result)
+
+=== search_strings {"pattern":"WinMain","mode":"literal"} ok=True ev=ev_3512f5ecef0e986138233f330bd2a58d250196cb5026351ff57b25692c8b324b
+(no raw_result)
+
+=== close_binary {"snapshot_path":"H:\\SA_Analysis\\evidence\\sa_snapshot2.bin"} ok=True ev=
+(no raw_result)
+
+

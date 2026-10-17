@@ -1,0 +1,332 @@
+﻿0000004d	a	!This program cannot be run in DOS mode.
+00000237	a	`.rdata
+0000025f	a	@.data
+00000288	a	.pdata
+000002af	a	@.rsrc
+000002d7	a	@.reloc
+00000719	a	=dataw.tL=fmt t
+00000729	a	=WAVEt
+00000730	a	=RIFFuRH
+0000074e	a	=guidt
+00000755	a	=wavht
+0000075c	a	=factu&
+0000086a	a	SVWATAUAVAWH
+000009d3	a	 A_A^A]A\_^[
+00000a05	a	SVWATAUAVAWH
+00000b33	a	t$xLit$ 
+00000c0e	a	0A_A^A]A\_^[
+00000c3a	a	SVWATAUAVAWH
+00000da2	a	 A_A^A]A\_^[
+0000170f	a	|$@H;S(t
+00001866	a	t0H9o L
+00003322	a	\$ UVWATAUAVAWH
+0000354d	a	A_A^A]A\_^]
+0000398c	a	|$ AVH
+00003ef0	a	@USVWAVH
+0000400c	a	A^_^[]
+0000412f	a	WATAUAVAWH
+000041e1	a	@A_A^A]A\_
+00004376	a	RIFFuM
+0000437d	a	{ WAVEuDH
+0000455c	a	t$ WATAUAVAWH
+000046df	a	A_A^A]A\_
+00004810	a	@SUVWATAVAWH
+00004964	a	A_A^A\_^][
+00004970	a	@SUVWATAUAVAWH
+00004a52	a	t$ fff
+00004c47	a	A_A^A]A\_^][
+00004cbc	a	|$ AVH
+000053e4	a	UATAUAVAWH
+000055e9	a	A_A^A]A\]
+000056ef	a	WATAUAVAWH
+00005881	a	@A_A^A]A\_
+0000671c	a	u:H9?u
+00006757	a	JH9?uRH9
+00006a7c	a	|$ AVH
+00006bff	a	 A^_^H
+000071da	a	VWATAVAWH
+000073b9	a	A_A^A\_^
+00007ab3	a	WAVAWH
+00007b09	a	0A_A^_
+00007b27	a	SVWAVH
+00007b7c	a	8A^_^[
+00007bdb	a	WAVAWH
+00008294	a	|$ AVH
+00008b89	a	u0HcH<H
+00008ebf	a	D$H9D$ s"
+0000902c	a	 H3E H3E
+000090b2	a	 H3E H3E
+00009c6e	a	4CDirectSound ( DirectX 8 )
+00009ce8	a	Unknown exception
+00009d30	a	bad array new length
+0000a4c0	a	DSERR_ALLOCATED
+0000a4d0	a	DSERR_ALREADYINITIALIZED
+0000a4f0	a	DSERR_BADFORMAT
+0000a500	a	DSERR_BUFFERLOST
+0000a518	a	DSERR_CONTROLUNAVAIL
+0000a530	a	DSERR_GENERIC
+0000a540	a	DSERR_INVALIDCALL
+0000a558	a	DSERR_INVALIDPARAM
+0000a570	a	DSERR_NOAGGREGATION
+0000a588	a	DSERR_NODRIVER
+0000a598	a	DSERR_NOINTERFACE
+0000a5b0	a	DSERR_OTHERAPPHASPRIO
+0000a5c8	a	DSERR_OUTOFMEMORY
+0000a5e0	a	DSERR_PRIOLEVELNEEDED
+0000a5f8	a	DSERR_UNINITIALIZED
+0000a610	a	DSERR_UNSUPPORTED
+0000a628	a	unrecognized error
+0000a640	a	__GH_Sudden_Attack__
+0000a658	a	__NM_Sudden_Attack__
+0000a670	a	IMAADP32.ACM
+0000a680	a	DriverProc
+0000a690	a	L3CODECA.ACM
+0000a6a0	a	Fraunhofer IIS
+0000a6b0	a	Max samples
+0000a6c0	a	DirectSound Software
+0000a6d8	a	DirectSound Hardware
+0000a6f0	a	DirectSound Default
+0000a708	a	vector too long
+0000a7a2	a	]$C9"D
+0000ac09	a	3!XI-X
+0000ac7c	a	3]X+1 
+0000ad89	a	1"EYg-
+0000c8e0	a	23L\M4<H
+0000caca	a	'+?2LF
+0000cc48	a	bad allocation
+0000d3c4	a	D:\Jenkins\workspace\workspace\SA_QA_FINAL_BUILD\svn_source\Built\Final\bins\Client\SndDrv.pdb
+0000d444	a	.text$di
+0000d458	a	.text$mn
+0000d46c	a	.text$mn$00
+0000d480	a	.text$x
+0000d490	a	.text$yd
+0000d4a4	a	.idata$5
+0000d4b8	a	.00cfg
+0000d4c8	a	.CRT$XCA
+0000d4dc	a	.CRT$XCU
+0000d4f0	a	.CRT$XCZ
+0000d504	a	.CRT$XIA
+0000d518	a	.CRT$XIZ
+0000d52c	a	.CRT$XPA
+0000d540	a	.CRT$XPZ
+0000d554	a	.CRT$XTA
+0000d568	a	.CRT$XTZ
+0000d57c	a	.rdata
+0000d58c	a	.rdata$CastGuardVftablesA
+0000d5b0	a	.rdata$CastGuardVftablesC
+0000d5d4	a	.rdata$r
+0000d5e8	a	.rdata$voltmd
+0000d600	a	.rdata$zzzdbg
+0000d618	a	.rtc$IAA
+0000d62c	a	.rtc$IZZ
+0000d640	a	.rtc$TAA
+0000d654	a	.rtc$TZZ
+0000d668	a	.xdata
+0000d678	a	.xdata$x
+0000d68c	a	.edata
+0000d69c	a	.idata$2
+0000d6b0	a	.idata$3
+0000d6c4	a	.idata$4
+0000d6d8	a	.idata$6
+0000d6fc	a	.data$r
+0000d70c	a	.data$rs
+0000d730	a	.pdata
+0000d740	a	.rsrc$01
+0000d754	a	.rsrc$02
+0000eae6	a	SndDrv.dll
+0000eaf1	a	SoundSysCheck
+0000eaff	a	SoundSysDesc
+0000eb0c	a	SoundSysMake
+0000ef6a	a	mmioOpenA
+0000ef76	a	mmioClose
+0000ef82	a	mmioRead
+0000ef8e	a	mmioSeek
+0000ef9a	a	mmioGetInfo
+0000efa8	a	mmioSetInfo
+0000efb6	a	mmioAdvance
+0000efc4	a	mmioDescend
+0000efd2	a	mmioAscend
+0000efe0	a	timeGetTime
+0000efec	a	WINMM.dll
+0000eff8	a	acmMetrics
+0000f006	a	acmDriverAddA
+0000f016	a	acmDriverOpen
+0000f026	a	acmDriverClose
+0000f038	a	acmDriverDetailsA
+0000f04c	a	acmFormatEnumA
+0000f05e	a	acmStreamOpen
+0000f06e	a	acmStreamClose
+0000f080	a	acmStreamConvert
+0000f094	a	acmStreamPrepareHeader
+0000f0ae	a	acmStreamUnprepareHeader
+0000f0c8	a	MSACM32.dll
+0000f0d6	a	CloseHandle
+0000f0e4	a	InitializeCriticalSection
+0000f100	a	EnterCriticalSection
+0000f118	a	LeaveCriticalSection
+0000f130	a	DeleteCriticalSection
+0000f148	a	SetEvent
+0000f154	a	ResetEvent
+0000f162	a	WaitForSingleObject
+0000f178	a	CreateEventA
+0000f188	a	WaitForMultipleObjects
+0000f1a2	a	CreateThread
+0000f1b2	a	TerminateThread
+0000f1c4	a	FreeLibrary
+0000f1d2	a	GetProcAddress
+0000f1e4	a	LoadLibraryA
+0000f1f4	a	MulDiv
+0000f1fc	a	KERNEL32.dll
+0000f20c	a	GetForegroundWindow
+0000f222	a	FindWindowA
+0000f22e	a	USER32.dll
+0000f23c	a	CoUninitialize
+0000f24e	a	CoCreateInstance
+0000f262	a	CoInitialize
+0000f270	a	ole32.dll
+0000f27c	a	?_Xlength_error@std@@YAXPEBD@Z
+0000f29c	a	MSVCP140.dll
+0000f2ac	a	_purecall
+0000f2b8	a	strstr
+0000f2c2	a	__std_exception_copy
+0000f2da	a	__std_exception_destroy
+0000f2f4	a	_CxxThrowException
+0000f30a	a	__CxxFrameHandler4
+0000f320	a	memcpy
+0000f32a	a	memmove
+0000f334	a	memset
+0000f33e	a	__C_specific_handler
+0000f356	a	__current_exception
+0000f36c	a	__current_exception_context
+0000f38a	a	__std_type_info_destroy_list
+0000f3a8	a	VCRUNTIME140.dll
+0000f3ba	a	VCRUNTIME140_1.dll
+0000f3d8	a	_invalid_parameter_noinfo_noreturn
+0000f40e	a	strcmp
+0000f420	a	malloc
+0000f42a	a	realloc
+0000f434	a	terminate
+0000f440	a	_callnewh
+0000f44c	a	_seh_filter_dll
+0000f45e	a	_configure_narrow_argv
+0000f478	a	_initialize_narrow_environment
+0000f49a	a	_initialize_onexit_table
+0000f4b6	a	_register_onexit_function
+0000f4d2	a	_execute_onexit_table
+0000f4ea	a	_crt_atexit
+0000f4f8	a	_crt_at_quick_exit
+0000f50e	a	_cexit
+0000f518	a	_initterm
+0000f524	a	_initterm_e
+0000f530	a	api-ms-win-crt-math-l1-1-0.dll
+0000f550	a	api-ms-win-crt-runtime-l1-1-0.dll
+0000f572	a	api-ms-win-crt-string-l1-1-0.dll
+0000f594	a	api-ms-win-crt-heap-l1-1-0.dll
+0000f5b6	a	RtlCaptureContext
+0000f5ca	a	RtlLookupFunctionEntry
+0000f5e4	a	RtlVirtualUnwind
+0000f5f8	a	IsDebuggerPresent
+0000f60c	a	UnhandledExceptionFilter
+0000f628	a	SetUnhandledExceptionFilter
+0000f646	a	GetStartupInfoW
+0000f658	a	IsProcessorFeaturePresent
+0000f674	a	GetModuleHandleW
+0000f688	a	GetCurrentProcess
+0000f69c	a	TerminateProcess
+0000f6b0	a	QueryPerformanceCounter
+0000f6ca	a	GetCurrentProcessId
+0000f6e0	a	GetCurrentThreadId
+0000f6f6	a	GetSystemTimeAsFileTime
+0000f710	a	InitializeSListHead
+0000f998	a	.?AVbad_array_new_length@std@@
+0000f9c8	a	.?AVbad_alloc@std@@
+0000f9f0	a	.?AVexception@std@@
+0000fa18	a	.?AVILTSoundSys@@
+0000fa40	a	.?AVCDx8SoundSys@@
+0000fa68	a	.?AVI3DObject@@
+0000fa88	a	.?AVC3DListener@@
+0000fab0	a	.?AVCSample@@
+0000fad0	a	.?AVC3DSample@@
+0000faf0	a	.?AVCStream@@
+0000fb10	a	.?AVtype_info@@
+00010a60	a	<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+00010a99	a	<assembly xmlns='urn:schemas-microsoft-com:asm.v1' manifestVersion='1.0'>
+00010ae4	a	  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v3">
+00010b1c	a	    <security>
+00010b2c	a	      <requestedPrivileges>
+00010b49	a	        <requestedExecutionLevel level='asInvoker' uiAccess='false' />
+00010b91	a	      </requestedPrivileges>
+00010baf	a	    </security>
+00010bc0	a	  </trustInfo>
+00010bd0	a	</assembly>
+000110dd	a	DigiCert Inc1
+000110f4	a	www.digicert.com1!0
+0001110f	a	DigiCert Trusted Root G40
+0001112b	a	210429000000Z
+0001113a	a	360428235959Z0i1
+00011161	a	DigiCert, Inc.1A0?
+00011179	a	8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA10
+0001136a	a	[K]taM?
+000113bf	a	SA|X=G
+00011477	a	http://ocsp.digicert.com0A
+0001149c	a	5http://cacerts.digicert.com/DigiCertTrustedRootG4.crt0C
+000114e4	a	2http://crl3.digicert.com/DigiCertTrustedRootG4.crl0
+000116fb	a	jj@0HK4
+00011791	a	DigiCert, Inc.1A0?
+000117a9	a	8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA10
+000117e6	a	250325000000Z
+000117f5	a	280503235959Z0x1
+0001181c	a	Seoul1
+0001182c	a	Gangnam District1
+00011847	a	NEXON Games Co., Ltd.1
+00011867	a	NEXON Games Co., Ltd.0
+00011b0f	a	http://www.digicert.com/CPS0
+00011b64	a	Mhttp://crl3.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crl0S
+00011bb9	a	Mhttp://crl4.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crl0
+00011c28	a	http://ocsp.digicert.com0\
+00011c4d	a	Phttp://cacerts.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crt0
+00011ee4	a	DigiCert, Inc.1A0?
+00011efc	a	8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1
+00012153	a	)#$0Us
+000121e0	a	*B:;A9
+00012294	a	20261013122518Z
+000122ef	a	DigiCert, Inc.1A0?
+00012307	a	8DigiCert Trusted G4 TimeStamping RSA4096 SHA256 2025 CA10
+00012344	a	260805000000Z
+00012353	a	371104235959Z0c1
+0001237a	a	DigiCert, Inc.1;09
+00012392	a	2DigiCert SHA256 RSA4096 Timestamp Responder 2026 10
+000125df	a	@!z\0%=
+0001268a	a	http://ocsp.digicert.com0]
+000126af	a	Qhttp://cacerts.digicert.com/DigiCertTrustedG4TimeStampingRSA4096SHA2562025CA1.crt0_
+00012713	a	Nhttp://crl3.digicert.com/DigiCertTrustedG4TimeStampingRSA4096SHA2562025CA1.crl0 
+000127e8	a	kxXgMt
+000129e0	a	DigiCert Inc1
+000129f7	a	www.digicert.com1!0
+00012a12	a	DigiCert Trusted Root G40
+00012a2e	a	250507000000Z
+00012a3d	a	380114235959Z0i1
+00012a64	a	DigiCert, Inc.1A0?
+00012a7c	a	8DigiCert Trusted G4 TimeStamping RSA4096 SHA256 2025 CA10
+00012d7a	a	http://ocsp.digicert.com0A
+00012d9f	a	5http://cacerts.digicert.com/DigiCertTrustedRootG4.crt0C
+00012de7	a	2http://crl3.digicert.com/DigiCertTrustedRootG4.crl0 
+00012f7b	a	:U|r*C
+00013098	a	DigiCert Inc1
+000130af	a	www.digicert.com1$0"
+000130ca	a	DigiCert Assured ID Root CA0
+000130e9	a	220801000000Z
+000130f8	a	311109235959Z0b1
+0001311f	a	DigiCert Inc1
+00013136	a	www.digicert.com1!0
+00013151	a	DigiCert Trusted Root G40
+00013192	a	]J<0"0i3
+000132b4	a	v=Y]Bv
+00013416	a	http://ocsp.digicert.com0C
+0001343b	a	7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
+00013485	a	4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0
+000135b8	a	~qj#k"
+00013608	a	DigiCert, Inc.1A0?
+00013620	a	8DigiCert Trusted G4 TimeStamping RSA4096 SHA256 2025 CA1
+000136aa	a	261013122518Z0+
+00013723	a	/1(0&0$0"

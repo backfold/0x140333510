@@ -1,0 +1,1486 @@
+﻿0000004d	a	!This program cannot be run in DOS mode.
+0000008e	a	KZUaH[
+00000096	a	KZUaN[
+000000be	a	KZUaO[
+000000c6	a	KZUaM[
+000000ce	a	KZUaJ[
+000000fe	a	KZRich
+0000024f	a	`.rdata
+00000277	a	@.data
+000002a0	a	.pdata
+000002c7	a	@.rsrc
+00000497	a	t$ UWAVH
+00000c81	a	|$ AVH
+00001020	a	@VWAVH
+000012bc	a	|$ AVH
+0000179f	a	WAVAWH
+0000184d	a	 A_A^_
+00001920	a	@VWAVH
+00001ee1	a	|$ AVH
+0000201f	a	WAVAWH
+000020cb	a	 A_A^_
+000021df	a	WAVAWH
+00002232	a	 A_A^_
+000027ff	a	UATAUAVAWH
+00002b24	a	A_A^A]A\]
+00003000	a	@SUVWATAVAWH
+00003339	a	A_A^A\_^][
+0000337c	a	|$ UATAUAVAWH
+000033dc	a	T$HH9T$@
+000033ef	a	H;T$Pt
+00003860	a	A_A^A]A\]
+000039cc	a	|$ UATAUAVAWH
+00003f12	a	G@H;GHt
+00003fe6	a	A_A^A]A\]
+00004475	a	UVWATAWH
+0000450f	a	t$-fA#
+000045a8	a	@A_A\_^]
+000047f0	a	|$@fA#
+00004a10	a	@VWAUAVAWH
+00004b6e	a	 A_A^A]_^
+00004b90	a	@UVATAUAVH
+00004d7f	a	 A^A]A\^]
+00004dc9	a	p UWAVH
+00004fa1	a	l$ UAVAWH
+00005014	a	@@I+@8H
+0000507e	a	@@I+@8H
+000050f1	a	@@I+@8H
+0000513f	a	@@I+@8H
+000053f3	a	@@I+@8H
+000055c3	a	@A_A^]
+00005661	a	L$ UATAUAVAWH
+00005921	a	A_A^A]A\]
+0000593f	a	UVWATAUAVAWH
+00005a40	a	Y<0|UH
+00005f38	a	C@H+C8H
+00006114	a	PA_A^A]A\_^]
+00006151	a	|$ AVH
+00006600	a	@UWAUH
+00006831	a	|$ ATAVAWH
+00006923	a	 A_A^A\
+0000694a	a	VWATAVAWH
+00006a98	a	0A_A^A\_^
+00006b1c	a	L$ SVWH
+00006b75	a	UVWATAUAVAWH
+00006d83	a	fG9<Fu
+00006e46	a	fF9<Cu
+00006e93	a	fF9<@u
+00007154	a	A_A^A]A\_^]
+00007187	a	t$ UWAVH
+000071e5	a	nu'fD9
+00007223	a	fD94Fu
+00007323	a	fF94@u
+00007363	a	fF94@u
+000073a3	a	fD94Xu
+000075e3	a	H;T$@t
+00007907	a	L$ SUVH
+000079cc	a	t$ WATAUAVAWH
+00007b42	a	0A_A^A]A\_
+00007c20	a	@SUVWATAVAWH
+00007dfc	a	A_A^A\_^][
+00007fac	a	|$ UATAUAVAWH
+000083be	a	A_A^A]A\]
+00008570	a	@UVATAWH
+000085d8	a	HA_A\^]
+00008733	a	HA_A\^]
+0000877c	a	t$ AVH
+00008882	a	L$ SVAUAVH
+00008a65	a	8A^A]^[
+00008a82	a	\$ VAVAWH
+00008bc7	a	 A_A^^
+00008bea	a	SVWATAUAVAWH
+00008dc1	a	@A_A^A]A\_^[
+00008fa2	a	\$ UVWATAUAVAWH
+0000947a	a	@A_A^A]A\_^]
+000096cc	a	t$ WATAUAVAWH
+00009a02	a	f9l$@t
+00009d3c	a	A_A^A]A\_
+0000a432	a	\$ UWAVH
+0000ae55	a	UVWATAUAVAWH
+0000b02c	a	D9l$@t
+0000b073	a	fF9,@u
+0000b5f4	a	A_A^A]A\_^]
+0000b6a0	a	@USVWAVH
+0000b9f2	a	A^_^[]
+0000ba25	a	UVWATAUAVAWH
+0000bab4	a	fF9,Cu
+0000bc54	a	A_A^A]A\_^]
+0000c0b5	a	UVWATAUAVAWH
+0000c3e5	a	A_A^A]A\_^]
+0000c6ac	a	t$ WATAUAVAWH
+0000c87d	a	A_A^A]A\_
+0000cb7f	a	WAVAWH
+0000cc74	a	 A_A^_
+0000cd31	a	|$ AVH
+0000cf00	a	@VWAUAVH
+0000cf21	a	HA^A]_^
+0000d103	a	HA^A]_^
+0000d4f7	a	t$ WATAUAVAWH
+0000d8b1	a	D$ ;D$(u
+0000d9e7	a	D$ ;D$(
+0000da6f	a	t$ ;t$Pu,H
+0000db37	a	A_A^A]A\_
+0000db67	a	t$ WATAUAVAW
+0000dc7e	a	A_A^A]A\_
+0000dfb1	a	t$ AWH
+0000e2f0	a	@SWAWH
+0000e470	a	@SWAWH
+0000e5dc	a	|$ UATAUAVAWH
+0000ec2a	a	A_A^A]A\]
+0000ec60	a	@SVWATAVAW
+0000f1ce	a	A_A^A\_^[
+0000f21c	a	|$ ATAVAWH
+0000f75f	a	4CD9|$0
+0000f8f2	a	A_A^A\
+0000f96e	a	SUVWATAWH
+0000fb86	a	8A_A\_^][
+0000fbb0	a	@UWAUAWH
+0000fd28	a	(A_A]_]
+0000fd61	a	|$ ATAVAWH
+0000fe58	a	 A_A^A\
+00010199	a	SVWATAUAVAWH
+000102e0	a	A_A^A]A\_^[
+00010359	a	D$XH9D$P
+000104b0	a	D$XH9D$Pt
+000104ec	a	|$ UATAUAVAWH
+00010876	a	;D$@~_H
+00010df8	a	A_A^A]A\]
+00010e77	a	t$ WATAUAVAW
+000110b4	a	fF9$@u
+00011155	a	\$(D;{
+000112e5	a	A_A^A]A\_
+00011552	a	\$ VWATAVAWH
+00011919	a	A_A^A\_^
+000119b5	a	SVWATAUAVAWH
+00011b4c	a	 A_A^A]A\_^[
+00011d9f	a	WATAUAVAWH
+00011f30	a	0A_A^A]A\_
+00011fa7	a	L$ SUVWH
+00012011	a	L$ SWH
+000120fc	a	|$ UATAUAVAWH
+000124ed	a	A_A^A]A\]
+00012611	a	L$ SVWH
+00012864	a	UVWATAUAVAWH
+00012c61	a	PA_A^A]A\_^]
+00012cac	a	|$ UAVAWH
+000130e7	a	;^Xu&H
+00013ea9	a	u/HcH<H
+000144d3	a	D8L$0u`A
+0001465e	a	VWATAVAWH
+0001471a	a	 A_A^A\_^
+00014757	a	WATAUAVAWH
+00014869	a	A_A^A]A\_
+00014e1e	a	H;xXu5
+000151cb	a	fA;0t(fA9
+0001521b	a	WATAUAVAWH
+00015419	a	A_A^A]A\_
+00015d3b	a	AUAVAWH
+00015e79	a	u4I9}(
+00015eae	a	;I9}(tiH
+00015f02	a	0A_A^A]
+00015f3b	a	AUAVAWH
+0001607c	a	u4I9}(
+000160b1	a	;I9}(tiH
+00016105	a	0A_A^A]
+000162bf	a	UVWATAUAVAWH
+00016378	a	`A_A^A]A\_^]
+00016393	a	UVWATAUAVAWH
+0001644c	a	`A_A^A]A\_^]
+0001645c	a	@USVWATAUAVAWH
+000168d1	a	A_A^A]A\_^[]
+0001692c	a	@USVWATAUAVAWH
+00016c55	a	d$dD;d$l
+00016dd8	a	A_A^A]A\_^[]
+00016e3f	a	UVWATAUAVAWH
+0001708b	a	A_A^A]A\_^]
+000170a0	a	@USVWATAUAVAWH
+00017381	a	A_A^A]A\_^[]
+000174e3	a	WAVAWH
+00017618	a	 A_A^_
+00017867	a	WAVAWH
+00017d04	a	@SVWATAUAVAWH
+00017d27	a	L!|$(L!
+00017ec9	a	D$0HcH
+00017ee1	a	pA_A^A]A\_^[
+00017ef3	a	SVWATAUAWH
+00017f16	a	L!d$(L!d$@D
+00017fcd	a	D$HL9gXt
+0001812c	a	A_A]A\_^[
+00018309	a	B(I9A(u
+00018397	a	SVWATAUAVAWH
+000184f9	a	0A_A^A]A\_^[
+00018517	a	SVWATAUAVAWH
+00018809	a	A_A^A]A\_^[
+000188c0	a	t$ WATAUAVAWH
+00018990	a	 A_A^A]A\_
+00018af3	a	UVWATAUAVAWH
+00018ba5	a	 A_A^A]A\_^]
+00018bf9	a	D$ I;R
+00018c28	a	D$ I9P
+00018d93	a	L$ SUVWH
+00018df3	a	WATAUAVAWH
+00018eea	a	 A_A^A]A\_
+00019283	a	D$0@8{
+0001992f	a	WATAUAVAWH
+00019c02	a	0A_A^A]A\_
+00019c1a	a	UVWATAUAVAWH
+00019f58	a	rsf;\$d
+00019f6c	a	r_f;\$l
+00019f80	a	rKf;\$t
+00019f94	a	r7f;\$|
+0001a13d	a	f;\$4r
+0001a151	a	f;\$<r
+0001a1bf	a	rvf;\$d
+0001a1d3	a	rbf;\$l
+0001a1e7	a	rNf;\$t
+0001a1fb	a	r:f;\$|
+0001a39e	a	A_A^A]A\_^]
+0001a590	a	@USVWATAVAWH
+0001a71f	a	A_A^A\_^[]
+0001a8eb	a	WATAUAVAWH
+0001ab84	a	0A_A^A]A\_
+0001ab9a	a	UVWATAUAVAWH
+0001aeb4	a	ryf;\$l
+0001aec8	a	ref;\$t
+0001aedc	a	rQf;\$|
+0001b07e	a	f;\$4r
+0001b092	a	f;\$<r
+0001b0a6	a	f;\$Dr
+0001b114	a	r|f;\$l
+0001b128	a	rhf;\$t
+0001b13c	a	rTf;\$|
+0001b2f9	a	A_A^A]A\_^]
+0001b493	a	S(HcS0
+0001b697	a	S(HcS0
+0001b8a3	a	S(HcS0
+0001baa7	a	S(HcS0
+0001bcb3	a	S(HcS0
+0001beb7	a	S(HcS0
+0001c659	a	x UAVAWH
+0001c837	a	D$@H;F
+0001c8c8	a	D$@H;F
+0001cb2d	a	kL@8o(u
+0001ce9d	a	kL@8o(u
+0001d640	a	<htl<jt\<lt4<tt$<wt
+0001d7c8	a	<htl<jt\<lt4<tt$<wt
+0001da86	a	UWATAVAWH
+0001deaa	a	A_A^A\_]
+0001dec0	a	|$ UATAUAVAWH
+0001e2ab	a	A_A^A]A\]
+0001e2c4	a	t$ WATAUAVAWH
+0001e4b0	a	|T4fD;
+0001e5f5	a	c@D9kHtkH
+0001e610	a	l$0Lc@
+0001e712	a	A_A^A]A\_
+0001edeb	a	D$18F(u
+0001f228	a	WAVAWH
+0001f2ae	a	 A_A^_
+0001f2c7	a	WAVAWH
+0001f37d	a	 A_A^_
+0001f4a8	a	@USVWATAVAWH
+0001f6ee	a	A_A^A\_^[]
+0001f6fc	a	@USVWATAVAWH
+0001f94a	a	A_A^A\_^[]
+0001fee2	a	u3HcH<H
+00020613	a	WAVAWH
+0002072e	a	@A_A^_
+00020747	a	WAVAWH
+00020765	a	D8|$`t
+00020815	a	 A_A^_
+000209fd	a	x ATAVAWH
+00020b35	a	@A_A^A\
+00020bd5	a	SUVWATAVAWH
+00021061	a	A_A^A\_^][
+000217a1	a	UVWAVAWH
+00021915	a	0A_A^_^]
+0002199f	a	WAVAWH
+000219ce	a	fA9,@u
+00021a19	a	fA9,vu
+00021a91	a	0A_A^_
+00021bfb	a	WAVAWH
+00021d95	a	 A_A^_
+00021dab	a	WAVAWH
+00021eb5	a	 A_A^_
+000222f7	a	p0R^G'
+00022748	a	u$D8r(t
+0002276e	a	D81uUL9r
+00022777	a	uED8r(t
+00022808	a	vAD8s(t
+000233e8	a	t$ WATAUAVAWH
+00023720	a	gfffffffH
+00023769	a	A_A^A]A\_
+00023881	a	{ AUAVAWH
+000238f0	a	0A_A^A]
+00023902	a	t$xt*3
+00023b3b	a	WAVAWH
+00023c7b	a	 A_A^_
+00023de9	a	x ATAVAWH
+00023ee6	a	 A_A^A\
+000241e5	a	L$ VWAVH
+00024442	a	fD94H}aD
+000246d5	a	fD9t$b
+00024a96	a	T$`fA;
+00024fe3	a	WATAUAVAWH
+0002512b	a	 A_A^A]A\_
+0002520f	a	p0R^G'
+000255c7	a	L$ VWAVH
+000258c9	a	UVWATAUAVAWH
+00025b0f	a	H;\$8u
+00025b43	a	H;\$8u
+00025b73	a	fE9$Iu
+00025c92	a	A_A^A]A\_^]
+00025cc3	a	WATAUAVAWH
+00025d10	a	0A_A^A]A\_
+00025d7f	a	H9>u+A
+000266bf	a	l$ VWATAVAWH
+0002679f	a	L$&8\$&t,8Y
+0002696c	a	A_A^A\_^
+00026d27	a	t$ WATAUAVAWH
+00026d3c	a	D!|$xA
+00026dc7	a	A_A^A]A\_
+0002725b	a	ATAVAWH
+00027382	a	0A_A^A\
+00027790	a	@UATAUAVAWH
+00027913	a	e0A_A^A]A\]
+00027d2c	a	@USVWATAUAVAWH
+0002805d	a	xA_A^A]A\_^[]
+00028108	a	@UATAUAVAWH
+0002842f	a	A_A^A]A\]
+0002870c	a	@USVWATAVAWH
+00029979	a	A_A^A\_^[]
+00029a8e	a	WATAUAVAWH
+00029c1b	a	0A_A^A]A\_
+00029d87	a	D$0H9D$8
+0002a29f	a	WAVAWH
+0002a30b	a	 A_A^_
+0002a613	a	UVWATAUAVAWH
+0002a8b3	a	fB9<I}1L
+0002aa79	a	A_A^A]A\_^]
+0002acb2	a	VWATAVAW
+0002ae0f	a	A_A^A\_^
+0002aebe	a	VATAUAVAWH
+0002aefb	a	0A_A^A]A\^
+0002afd0	a	@USVWATAUAVAWH
+0002b21e	a	H!D$ H
+0002b2c8	a	xA_A^A]A\_^[]
+0002b2e0	a	ATAUAVH
+0002b372	a	L$ fff
+0002b64d	a	L$ |+L;
+0002b6e7	a	A^A]A\
+0002b7fd	a	UVWATAUAVAWH
+0002b93f	a	@A_A^A]A\_^]
+0002bcc2	a	ffffff
+0002c081	a	fffffff
+0002c108	a	@SUVWATAVAWH
+0002c2d5	a	@A_A^A\_^][
+0002c2f2	a	VATAUAVAWH
+0002c330	a	0A_A^A]A\^
+0002c5f2	a	\$ UVWATAUAVAWH
+0002c688	a	s2fE9)I
+0002c6a0	a	fE9)fA
+0002c6ff	a	D$pfA;
+0002c73d	a	0fD9l$pu
+0002c75e	a	fD9l$pt
+0002c785	a	0A_A^A]A\_^]
+0002c7b7	a	l$ VWATAVAWH
+0002ca6c	a	0A_A^A\_^
+0002ca8a	a	AUAVAWH
+0002caca	a	 A_A^A]
+0002cba2	a	UVWATAUAVAWH
+0002cee6	a	@8t$HtzL
+0002cfd8	a	`A_A^A]A\_^]
+0002d49e	a	ATAVAWH
+0002d726	a	 A_A^A\
+0002d857	a	USVWAVH
+0002d974	a	A^_^[]
+0002dd1c	a	t$ ATAVAWH
+0002df6c	a	 A_A^A\
+0002e331	a	|$ AVH
+0002e40d	a	C8H9s0t}H
+0002e59f	a	WATAUAVAWH
+0002e70c	a	 A_A^A]A\_
+0002f124	a	SUVWATAUAVAWH
+0002f71d	a	MP;H(s
+0002f7bd	a	MP;H8s
+0002faa3	a	]Lu*A;|$
+0002fbe5	a	L$@E)}P
+0002fc90	a	A;Exse
+0003055e	a	A;M8v#A
+000305f2	a	L$@A9MP
+0003075a	a	tDE;u$t>H
+000307f0	a	T$8E+T$
+000308c2	a	XA_A^A]A\_^][
+00030a38	a	I@L9{8u
+00030a8e	a	t$HL9{0
+00030b21	a	~0L9{0
+00030b68	a	x<L9{0
+00030cb6	a	@<L9A0
+00030e80	a	@SWAWH
+0003116f	a	WATAUAVAWH
+0003120f	a	D9o@tA
+00031316	a	 A_A^A]A\_
+00031450	a	@SUVWATAVH
+00031503	a	fD9dDpuO
+0003150e	a	fD9dDpuA
+00031518	a	fD9dDpu1
+00031523	a	fD9dDpu 
+0003152e	a	fD9dDpu
+000315a2	a	D$rfD9 u
+000319d3	a	A^A\_^][
+000319f5	a	SUVWATAUAVAWH
+00031ed8	a	8A_A^A]A\_^][
+00031ef4	a	SVWATAUH
+000320dc	a	t$pD+p
+00032368	a	0A]A\_^[
+00032385	a	VWATAUAWH
+00032760	a	 A_A]A\_^
+0003283a	a	VWATAUAWH
+00032b84	a	 A_A]A\_^
+00032e86	a	k@9s(t
+00033288	a	C09p<t
+00033311	a	C(9p<t
+0003337f	a	C(9p<t
+000337cb	a	C,9s(@
+00033915	a	WATAUAVAWH
+00033973	a	K H9K0u
+00033988	a	C0H9K8u
+00033af7	a	L9vPt\L9v`tVL9vhtPH
+00033b4e	a	 A_A^A]A\_
+00033b8e	a	 A_A^A]A\_
+00033d40	a	@SATAVH
+00033eb6	a	 A^A\[
+00033f94	a	SUWATAUH
+00034323	a	 A]A\_][
+0003463c	a	t$ WATAUAVAWD
+000347e5	a	A_A^A]A\_
+00034faf	a	WAVAWH
+000351d1	a	 A_A^_
+00035640	a	@UVWAUAWH
+000357d8	a	thHc\$0
+00035844	a	\$8A_A]_^]
+00035d7f	a	WAVAWH
+00035fe3	a	 A_A^_
+000366c0	a	LcA<E3
+00036949	a	t#HcL$`H
+000369f9	a	t#HcL$`H
+00036a4d	a	s WAVAWH
+00036ca4	a	0A_A^_
+00036e30	a	u~9t$Xt
+00037103	a	UATAUAVAWH
+000374d5	a	A_A^A]A\]
+00037695	a	x ATAVAWH
+00037754	a	 @8~8t
+00037795	a	@8~0tM
+0003780f	a	 A_A^A\
+00037cd1	a	fffffff
+00037e71	a	fffffff
+00037fa1	a	fffffff
+00038062	a	ffffff
+00038221	a	vKfffff
+00039303	a	tJLcM`I
+00039d48	a	bad allocation
+0003a550	a	success
+0003a558	a	address family not supported
+0003a578	a	address in use
+0003a588	a	address not available
+0003a5a0	a	already connected
+0003a5b8	a	argument list too long
+0003a5d0	a	argument out of domain
+0003a5e8	a	bad address
+0003a5f8	a	bad file descriptor
+0003a610	a	bad message
+0003a620	a	broken pipe
+0003a630	a	connection aborted
+0003a648	a	connection already in progress
+0003a668	a	connection refused
+0003a680	a	connection reset
+0003a698	a	cross device link
+0003a6b0	a	destination address required
+0003a6d0	a	device or resource busy
+0003a6e8	a	directory not empty
+0003a700	a	executable format error
+0003a718	a	file exists
+0003a728	a	file too large
+0003a738	a	filename too long
+0003a750	a	function not supported
+0003a768	a	host unreachable
+0003a780	a	identifier removed
+0003a798	a	illegal byte sequence
+0003a7b0	a	inappropriate io control operation
+0003a7d8	a	interrupted
+0003a7e8	a	invalid argument
+0003a800	a	invalid seek
+0003a810	a	io error
+0003a820	a	is a directory
+0003a830	a	message size
+0003a840	a	network down
+0003a850	a	network reset
+0003a860	a	network unreachable
+0003a878	a	no buffer space
+0003a888	a	no child process
+0003a8a0	a	no link
+0003a8a8	a	no lock available
+0003a8c0	a	no message available
+0003a8d8	a	no message
+0003a8e8	a	no protocol option
+0003a900	a	no space on device
+0003a918	a	no stream resources
+0003a930	a	no such device or address
+0003a950	a	no such device
+0003a960	a	no such file or directory
+0003a980	a	no such process
+0003a990	a	not a directory
+0003a9a0	a	not a socket
+0003a9b0	a	not a stream
+0003a9c0	a	not connected
+0003a9d0	a	not enough memory
+0003a9e8	a	not supported
+0003a9f8	a	operation canceled
+0003aa10	a	operation in progress
+0003aa28	a	operation not permitted
+0003aa40	a	operation not supported
+0003aa58	a	operation would block
+0003aa70	a	owner dead
+0003aa80	a	permission denied
+0003aa98	a	protocol error
+0003aaa8	a	protocol not supported
+0003aac0	a	read only file system
+0003aad8	a	resource deadlock would occur
+0003aaf8	a	resource unavailable try again
+0003ab18	a	result out of range
+0003ab30	a	state not recoverable
+0003ab48	a	stream timeout
+0003ab58	a	text file busy
+0003ab68	a	timed out
+0003ab78	a	too many files open in system
+0003ab98	a	too many files open
+0003abb0	a	too many links
+0003abc0	a	too many symbolic link levels
+0003abe0	a	value too large
+0003abf0	a	wrong protocol type
+0003ad18	a	0123456789abcdefghijklmnopqrstuvwxyz
+0003ad68	a	0123456789abcdefghijklmnopqrstuvwxyz
+0003af38	a	bad exception
+0003b660	a	__based(
+0003b670	a	__cdecl
+0003b678	a	__pascal
+0003b688	a	__stdcall
+0003b698	a	__thiscall
+0003b6a8	a	__fastcall
+0003b6b8	a	__vectorcall
+0003b6c8	a	__clrcall
+0003b6d4	a	__eabi
+0003b6e0	a	__swift_1
+0003b6f0	a	__swift_2
+0003b700	a	__swift_3
+0003b710	a	__ptr64
+0003b718	a	__restrict
+0003b728	a	__unaligned
+0003b738	a	restrict(
+0003b750	a	 delete
+0003b778	a	operator
+0003b7f8	a	`vftable'
+0003b808	a	`vbtable'
+0003b818	a	`vcall'
+0003b820	a	`typeof'
+0003b830	a	`local static guard'
+0003b848	a	`string'
+0003b858	a	`vbase destructor'
+0003b870	a	`vector deleting destructor'
+0003b890	a	`default constructor closure'
+0003b8b0	a	`scalar deleting destructor'
+0003b8d0	a	`vector constructor iterator'
+0003b8f0	a	`vector destructor iterator'
+0003b910	a	`vector vbase constructor iterator'
+0003b938	a	`virtual displacement map'
+0003b958	a	`eh vector constructor iterator'
+0003b980	a	`eh vector destructor iterator'
+0003b9a0	a	`eh vector vbase constructor iterator'
+0003b9c8	a	`copy constructor closure'
+0003b9e8	a	`udt returning'
+0003ba08	a	`local vftable'
+0003ba18	a	`local vftable constructor closure'
+0003ba3c	a	 new[]
+0003ba48	a	 delete[]
+0003ba58	a	`omni callsig'
+0003ba68	a	`placement delete closure'
+0003ba88	a	`placement delete[] closure'
+0003baa8	a	`managed vector constructor iterator'
+0003bad0	a	`managed vector destructor iterator'
+0003baf8	a	`eh vector copy constructor iterator'
+0003bb20	a	`eh vector vbase copy constructor iterator'
+0003bb50	a	`dynamic initializer for '
+0003bb70	a	`dynamic atexit destructor for '
+0003bb98	a	`vector copy constructor iterator'
+0003bbc0	a	`vector vbase copy constructor iterator'
+0003bbf0	a	`managed vector copy constructor iterator'
+0003bc20	a	`local static thread guard'
+0003bc40	a	operator "" 
+0003bc50	a	operator co_await
+0003bc68	a	operator<=>
+0003bc78	a	 Type Descriptor'
+0003bc90	a	 Base Class Descriptor at (
+0003bcb0	a	 Base Class Array'
+0003bcc8	a	 Class Hierarchy Descriptor'
+0003bce8	a	 Complete Object Locator'
+0003bd08	a	`anonymous namespace'
+0003bde8	a	FlsAlloc
+0003be00	a	FlsFree
+0003be10	a	FlsGetValue
+0003be28	a	FlsSetValue
+0003be40	a	InitializeCriticalSectionEx
+0003c1e0	a	(null)
+0003c250	a	CorExitProcess
+0003c3bc	a	[aOni*{
+0003c59d	a	~ $s%r
+0003c5ac	a	@b;zO]
+0003c987	a	v2!L.2
+0003d210	a	 !"#$%&'()*+,-./0123456789:;<=>?@abcdefghijklmnopqrstuvwxyz[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+0003d390	a	 !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
+0003d95c	a	Sunday
+0003d964	a	Monday
+0003d970	a	Tuesday
+0003d978	a	Wednesday
+0003d988	a	Thursday
+0003d994	a	Friday
+0003d9a0	a	Saturday
+0003d9e0	a	January
+0003d9e8	a	February
+0003da14	a	August
+0003da20	a	September
+0003da30	a	October
+0003da38	a	November
+0003da48	a	December
+0003da60	a	MM/dd/yy
+0003da70	a	dddd, MMMM dd, yyyy
+0003da88	a	HH:mm:ss
+0003dd90	a	NAN(SNAN)
+0003dda0	a	nan(snan)
+0003ddb0	a	NAN(IND)
+0003ddc0	a	nan(ind)
+0003e340	a	AreFileApisANSI
+0003e360	a	LCMapStringEx
+0003e378	a	LocaleNameToLCID
+0003e390	a	AppPolicyGetProcessTerminationMethod
+0003e428	a	1#QNAN
+0003e430	a	1#SNAN
+000418a0	a	UUUUUU
+000418d0	a	UUUUUU
+000421df	a	=imb;D
+0004238e	a	/>58d%
+000423d7	a	>jtm}S
+0004242e	a	)>6{1n
+0004244c	a	+f)>0'
+000424cc	a	;H9>&X
+000424f2	a	*StO9>T
+0004253c	a	n03>Pu
+00042612	a	K~Je#>!
+000426eb	a	bp(=>?g
+000427ac	a	BC?>6t9^
+00042815	a	K&>.yC
+0004282c	a	.xJ>Hf
+00042833	a	y\PD>!
+00042842	a	|b=})>
+00042853	a	c [1>H'
+00042892	a	uzKs@>
+000428ae	a	3>N;kU
+000428dd	a	kE>fvw
+00042924	a	V6E>`"(5
+00042dcf	a	?UUUUUU
+000431b7	a	?7zQ6$
+000431f8	a	out of memory
+00043208	a	%s%s%s
+00043210	a	1.2.13
+00043218	a	unexpected end of file
+00043230	a	internal error: inflate stream corrupt
+00043258	a	compressed data error
+00043270	a	request does not fit in an int
+000433d1	a	Qkkbal
+000438b9	a	mj>zjZ
+00043a28	a	IiGM>nw
+000446f7	a	v$F}%g
+00044b1b	a	=}9i~]
+00044b9e	a	>p.NB;
+00044efd	a	t/v2Z%
+00044f5d	a	c9JxM3.
+000463b8	a	incorrect header check
+000463d0	a	unknown compression method
+000463f0	a	invalid window size
+00046408	a	unknown header flags set
+00046428	a	header crc mismatch
+00046440	a	invalid block type
+00046458	a	invalid stored block lengths
+00046478	a	too many length or distance symbols
+000464a0	a	invalid code lengths set
+000464c0	a	invalid bit length repeat
+000464e0	a	invalid code -- missing end-of-block
+00046508	a	invalid literal/lengths set
+00046528	a	invalid distances set
+00046540	a	invalid literal/length code
+00046560	a	invalid distance code
+00046578	a	invalid distance too far back
+00046598	a	incorrect data check
+000465b0	a	incorrect length check
+000465c8	a	internal error: deflate stream corrupt
+00046640	a	need dictionary
+00046650	a	stream end
+00046660	a	file error
+00046670	a	stream error
+00046680	a	data error
+00046690	a	insufficient memory
+000466a8	a	buffer error
+000466b8	a	incompatible version
+000466d0	a	 inflate 1.2.13 Copyright 1995-2022 Mark Adler 
+00046800	a	 deflate 1.2.13 Copyright 1995-2022 Jean-loup Gailly and Mark Adler 
+000468f0	a	1.2.13
+000473f0	a	Visual C++ CRT: Not enough memory to complete call to strerror.
+000476f0	a	No error
+00047700	a	Operation not permitted
+00047718	a	No such file or directory
+00047738	a	No such process
+00047748	a	Interrupted function call
+00047768	a	Input/output error
+00047780	a	No such device or address
+000477a0	a	Arg list too long
+000477b8	a	Exec format error
+000477d0	a	Bad file descriptor
+000477e8	a	No child processes
+00047800	a	Resource temporarily unavailable
+00047828	a	Not enough space
+00047840	a	Permission denied
+00047858	a	Bad address
+00047868	a	Unknown error
+00047878	a	Resource device
+00047888	a	File exists
+00047898	a	Improper link
+000478a8	a	No such device
+000478b8	a	Not a directory
+000478c8	a	Is a directory
+000478d8	a	Invalid argument
+000478f0	a	Too many open files in system
+00047910	a	Too many open files
+00047928	a	Inappropriate I/O control operation
+00047950	a	File too large
+00047960	a	No space left on device
+00047978	a	Invalid seek
+00047988	a	Read-only file system
+000479a0	a	Too many links
+000479b0	a	Broken pipe
+000479c0	a	Domain error
+000479d0	a	Result too large
+000479e8	a	Resource deadlock avoided
+00047a08	a	Filename too long
+00047a20	a	No locks available
+00047a38	a	Function not implemented
+00047a58	a	Directory not empty
+00047a70	a	Illegal byte sequence
+00047b80	a	CrashReporter_Init
+00047b98	a	CrashReporter_IsInit
+00047bb0	a	CrashReporter_PlayTimeRecorderInit
+00047bd8	a	CrashReporter_RegisterLogFile
+00047bf8	a	CrashReporter_RegisterCallback_BeforeDump
+00047c28	a	CrashReporter_RegisterCallback_AfterDump
+00047c58	a	CrashReporter_RegisterClientModule
+00047c80	a	CrashReporter_SetReceiveServerRegion
+00047ca8	a	CrashReporter_SetClientExit
+00047cc8	a	CrashReporter_SetSendDump
+00047ce8	a	CrashReporter_SetDumpFileName
+00047d08	a	CrashReporter_SetFullDumpPath
+00047d28	a	CrashReporter_SetSSL
+00047d40	a	CrashReporter_SetGatherCrashScreenShot
+00047d68	a	CrashReporter_SetUnrealEnsureExceptionCode
+00047d98	a	CrashReporter_SetPrivacyProtection
+00047dc0	a	CrashReporter_ClearUnrealEnsureExceptionCode
+00047df0	a	CrashReporter_SetStrInfoW
+00047e10	a	CrashReporter_SetStrInfoA
+00047e30	a	CrashReporter_SetBoolInfo
+00047e50	a	CrashReporter_SetIntInfo
+00047e70	a	CrashReporter_SetInt64Info
+00047e90	a	CrashReporter_SetUintInfo
+00047eb0	a	CrashReporter_SetFloatInfo
+00047ed0	a	CrashReporter_SetDoubleInfo
+00047ef0	a	CrashReporter_SetJsonInfoW
+00047f10	a	CrashReporter_SetJsonInfoA
+00047f30	a	CrashReporter_SetAdditionalCallStack
+00047f58	a	CrashReporter_ClearAdditionalCallStack
+00047f80	a	CrashReporter_GetInfoW
+00047f98	a	CrashReporter_GetInfoA
+00047fb0	a	CrashReporter_SendCurrentState
+00048240	a	Unknown exception
+00048258	a	bad array new length
+00048270	a	string too long
+00048380	a	NGM64_update_list
+00048400	a	vector too long
+00048623	a	9Y>)F$
+00048a3d	a	s\ax}?
+00048aab	a	tC7Ddx
+00048dbf	a	xg^Jp5|
+00048e06	a	{zel#|67
+000490d8	a	NGMMainWideCharArg
+00049120	a	NGMMain
+00049398	a	invalid string position
+00049a88	a	RtlGetVersion
+00049a98	a	AllocateAndInitializeSid Error %u
+00049ac0	a	ConvertStringSecurityDescriptorToSecurityDescriptorW
+00049b18	a	ConvertStringSecurityDescriptorToSecurityDescriptor Error %u
+00049b58	a	GetProcAddress() Error %u
+00049b78	a	LoadLibrary("Advapi32.dll") Error %u
+00049ba0	a	GetSecurityDescriptorSacl Error %u
+00049bc8	a	SetEntriesInAcl Error %u
+00049be8	a	LocalAlloc Error %u
+00049c00	a	InitializeSecurityDescriptor Error %u
+00049c28	a	SetSecurityDescriptorDacl Error %u
+00049c50	a	SetSecurityDescriptorSacl Error %u
+0004af50	a	C:\Gitlab-Runner\builds\p3_obpxJ\0\platform\ngm\ngm\Output\x64\Release\NGM64.pdb
+0004afc4	a	.text$di
+0004afd8	a	.text$mn
+0004afec	a	.text$mn$00
+0004b000	a	.text$mn$21
+0004b014	a	.text$x
+0004b024	a	.text$yd
+0004b038	a	.idata$5
+0004b04c	a	.00cfg
+0004b05c	a	.CRT$XCA
+0004b070	a	.CRT$XCAA
+0004b084	a	.CRT$XCC
+0004b098	a	.CRT$XCL
+0004b0ac	a	.CRT$XCU
+0004b0c0	a	.CRT$XCZ
+0004b0d4	a	.CRT$XIA
+0004b0e8	a	.CRT$XIAA
+0004b0fc	a	.CRT$XIAC
+0004b110	a	.CRT$XIC
+0004b124	a	.CRT$XIZ
+0004b138	a	.CRT$XLA
+0004b14c	a	.CRT$XLZ
+0004b160	a	.CRT$XPA
+0004b174	a	.CRT$XPX
+0004b188	a	.CRT$XPXA
+0004b19c	a	.CRT$XPZ
+0004b1b0	a	.CRT$XTA
+0004b1c4	a	.CRT$XTZ
+0004b1d8	a	.rdata
+0004b1e8	a	.rdata$00
+0004b1fc	a	.rdata$T
+0004b210	a	.rdata$r
+0004b224	a	.rdata$voltmd
+0004b23c	a	.rdata$zzzdbg
+0004b254	a	.rtc$IAA
+0004b268	a	.rtc$IZZ
+0004b27c	a	.rtc$TAA
+0004b290	a	.rtc$TZZ
+0004b2c4	a	.tls$ZZZ
+0004b2d8	a	.xdata
+0004b2e8	a	.xdata$x
+0004b2fc	a	.idata$2
+0004b310	a	.idata$3
+0004b324	a	.idata$4
+0004b338	a	.idata$6
+0004b35c	a	.data$r
+0004b36c	a	.data$rs
+0004b390	a	.pdata
+0004b3a0	a	.rsrc$01
+0004b3b4	a	.rsrc$02
+0004f3ea	a	WideCharToMultiByte
+0004f400	a	SizeofResource
+0004f412	a	LockResource
+0004f422	a	LoadResource
+0004f432	a	FindResourceW
+0004f442	a	FindResourceExW
+0004f454	a	HeapDestroy
+0004f462	a	HeapSize
+0004f46e	a	HeapReAlloc
+0004f47c	a	HeapFree
+0004f488	a	HeapAlloc
+0004f494	a	GetProcessHeap
+0004f4a6	a	MultiByteToWideChar
+0004f4bc	a	GetLastError
+0004f4cc	a	LoadLibraryW
+0004f4dc	a	GetProcAddress
+0004f4ee	a	FindFirstFileW
+0004f500	a	DeleteFileW
+0004f50e	a	FindNextFileW
+0004f51e	a	FindClose
+0004f52a	a	GetModuleFileNameW
+0004f540	a	WaitForSingleObject
+0004f556	a	CloseHandle
+0004f564	a	FreeLibrary
+0004f572	a	FormatMessageW
+0004f584	a	InitializeCriticalSectionEx
+0004f5a2	a	DecodePointer
+0004f5b2	a	DeleteCriticalSection
+0004f5c8	a	KERNEL32.dll
+0004f5d8	a	MessageBoxW
+0004f5e6	a	GetForegroundWindow
+0004f5fc	a	SetForegroundWindow
+0004f612	a	GetDesktopWindow
+0004f624	a	USER32.dll
+0004f632	a	ShellExecuteExW
+0004f642	a	SHELL32.dll
+0004f650	a	PathCombineW
+0004f660	a	PathGetDriveNumberW
+0004f676	a	PathFileExistsW
+0004f688	a	PathRemoveFileSpecW
+0004f69c	a	SHLWAPI.dll
+0004f6aa	a	FreeAddrInfoW
+0004f6ba	a	GetAddrInfoW
+0004f6ca	a	WSACloseEvent
+0004f6da	a	WSASocketW
+0004f6e8	a	WSAConnect
+0004f6f6	a	WSAEnumNetworkEvents
+0004f70e	a	WSAResetEvent
+0004f71e	a	WSASend
+0004f728	a	WSAGetOverlappedResult
+0004f742	a	WSARecv
+0004f74c	a	WSACreateEvent
+0004f75e	a	WSASetEvent
+0004f76c	a	WSAEventSelect
+0004f77c	a	WS2_32.dll
+0004f78a	a	InternetOpenW
+0004f79a	a	InternetSetOptionW
+0004f7b0	a	InternetCloseHandle
+0004f7c6	a	InternetConnectW
+0004f7da	a	InternetReadFile
+0004f7ee	a	InternetGetLastResponseInfoW
+0004f80e	a	HttpOpenRequestW
+0004f822	a	HttpSendRequestW
+0004f836	a	InternetQueryDataAvailable
+0004f854	a	HttpQueryInfoW
+0004f866	a	InternetQueryOptionW
+0004f87c	a	WININET.dll
+0004f88a	a	CreateMutexW
+0004f89a	a	ReleaseMutex
+0004f8aa	a	GetCurrentProcess
+0004f8be	a	EnterCriticalSection
+0004f8d6	a	LeaveCriticalSection
+0004f8ee	a	CreateFileW
+0004f8fc	a	ReadFile
+0004f908	a	WriteFile
+0004f914	a	MoveFileW
+0004f920	a	TerminateProcess
+0004f934	a	CreateDirectoryW
+0004f948	a	GetFileAttributesW
+0004f95e	a	MoveFileExW
+0004f974	a	SetFileAttributesW
+0004f98a	a	SetFilePointerEx
+0004f99e	a	GetFileSizeEx
+0004f9ae	a	LoadLibraryExW
+0004f9c0	a	GetModuleHandleExW
+0004f9d6	a	GetCurrentThreadId
+0004f9ec	a	GetCommandLineW
+0004f9fe	a	LocalAlloc
+0004fa0c	a	LocalFree
+0004fa18	a	IsDebuggerPresent
+0004fa2c	a	OutputDebugStringW
+0004fa42	a	RaiseException
+0004fa54	a	ReleaseSRWLockExclusive
+0004fa6e	a	AcquireSRWLockExclusive
+0004fa88	a	WakeAllConditionVariable
+0004faa4	a	SleepConditionVariableSRW
+0004fac0	a	RtlCaptureContext
+0004fad4	a	RtlLookupFunctionEntry
+0004faee	a	RtlVirtualUnwind
+0004fb02	a	UnhandledExceptionFilter
+0004fb1e	a	SetUnhandledExceptionFilter
+0004fb3c	a	IsProcessorFeaturePresent
+0004fb58	a	GetStartupInfoW
+0004fb6a	a	GetModuleHandleW
+0004fb7e	a	QueryPerformanceCounter
+0004fb98	a	GetCurrentProcessId
+0004fbae	a	GetSystemTimeAsFileTime
+0004fbc8	a	InitializeSListHead
+0004fbde	a	GetStringTypeW
+0004fbf0	a	EncodePointer
+0004fc00	a	GetCPInfo
+0004fc0c	a	RtlUnwindEx
+0004fc1a	a	RtlPcToFileHeader
+0004fc2e	a	SetLastError
+0004fc3e	a	InitializeCriticalSectionAndSpinCount
+0004fc66	a	TlsAlloc
+0004fc72	a	TlsGetValue
+0004fc80	a	TlsSetValue
+0004fc8e	a	TlsFree
+0004fc98	a	ExitProcess
+0004fca6	a	GetStdHandle
+0004fcb6	a	GetFileType
+0004fcc4	a	FlsAlloc
+0004fcd0	a	FlsGetValue
+0004fcde	a	FlsSetValue
+0004fcec	a	FlsFree
+0004fcf6	a	LCMapStringW
+0004fd06	a	FindFirstFileExW
+0004fd1a	a	IsValidCodePage
+0004fd2c	a	GetACP
+0004fd36	a	GetOEMCP
+0004fd42	a	GetCommandLineA
+0004fd54	a	GetEnvironmentStringsW
+0004fd6e	a	FreeEnvironmentStringsW
+0004fd88	a	SetStdHandle
+0004fd98	a	FlushFileBuffers
+0004fdac	a	GetConsoleOutputCP
+0004fdc2	a	GetConsoleMode
+0004fdd4	a	ReadConsoleW
+0004fde4	a	WriteConsoleW
+0004fdf4	a	RegCloseKey
+0004fe02	a	RegOpenKeyExW
+0004fe12	a	RegQueryValueExW
+0004fe26	a	AllocateAndInitializeSid
+0004fe42	a	GetSecurityDescriptorSacl
+0004fe5e	a	SetEntriesInAclW
+0004fe72	a	InitializeSecurityDescriptor
+0004fe92	a	SetSecurityDescriptorDacl
+0004feae	a	SetSecurityDescriptorSacl
+0004feca	a	FreeSid
+0004fed2	a	ADVAPI32.dll
+0004fee2	a	SHGetSpecialFolderPathW
+0004fefc	a	CoInitialize
+0004ff0c	a	CoUninitialize
+0004ff1e	a	CoCreateInstance
+0004ff30	a	ole32.dll
+0004ff3c	a	SetEndOfFile
+000504da	a	                          
+000505ba	a	abcdefghijklmnopqrstuvwxyz
+000505da	a	ABCDEFGHIJKLMNOPQRSTUVWXYZ
+000506f2	a	                          
+000507e1	a	abcdefghijklmnopqrstuvwxyz
+00050801	a	ABCDEFGHIJKLMNOPQRSTUVWXYZ
+00050e20	a	.?AVlogic_error@std@@
+00050e48	a	.?AVlength_error@std@@
+00050e70	a	.?AVout_of_range@std@@
+00050e98	a	.?AVbad_exception@std@@
+00050ec0	a	.?AVCAtlException@ATL@@
+00050ee8	a	.?AVbad_alloc@std@@
+00050f10	a	.?AVbad_array_new_length@std@@
+00050f40	a	.?AVexception@std@@
+00050f70	a	.?AVtype_info@@
+00050f90	a	.?AVCWin32Heap@ATL@@
+00050fb8	a	.?AUIAtlMemMgr@ATL@@
+00050fe0	a	.?AVCAtlStringMgr@ATL@@
+00051008	a	.?AUIAtlStringMgr@ATL@@
+00051030	a	.?AV?$Singleton2@VCCrashReporterManager@@@@
+00051070	a	.?AVCCrashReporterManager@@
+000510a0	a	.?AVModuleUpdater@@
+000510c8	a	.?AVHolder@CInterProcLock@@
+000510f8	a	.?AVCInterProcLock@@
+00051120	a	.?AVZEvtSyncSocket@ATL@@
+00051150	a	.?AV?$CAtlHttpClientT@VZEvtSyncSocket@ATL@@@ATL@@
+00051198	a	.?AVCSocketAddr@ATL@@
+000511c0	a	.?AV?$Singleton@VURLConverter@@@@
+000511f8	a	.?AVURLConverter@@
+00051220	a	.?AV?$Singleton2@VCDefaultSecurity@@@@
+00051258	a	.?AVCDefaultSecurity@@
+00051280	a	.?AVCHTTPClient@@
+000512a8	a	.?AV?$Singleton2@VCFileSecurity@@@@
+000512e0	a	.?AVCFileSecurity@@
+00054c29	a	UUUUUUUUUUUUUUP
+00054c39	a	ffffffffffffffP
+00054c49	a	ffffffffffffffP
+00054c59	a	fffffffFffffffP
+00054c69	a	fffffdDDFfffffP
+00054c79	a	ffffDDDDDFffffP
+00054c89	a	ffDDDDDDDDFfffP
+00054c99	a	f4DDDDDDDDDFffP
+00054ca9	a	f34DDDDDDDDDFfP
+00054cb9	a	f334DDDDDDDDDfP
+00054cc9	a	f3334DDDDDDFffP
+00054cd9	a	f33334DDDDffffP
+00054ce9	a	f33333DDffffffP
+00054cf9	a	f33332
+00054d00	a	fffffffP
+00054d10	a	fffffffP
+00054d20	a	fffffffP
+00054d30	a	fffffffP
+00054d40	a	fffffffP
+00054d50	a	fffffffP
+00054d60	a	fffffffP
+00054d70	a	fffffffP
+00054d80	a	fffffffP
+00054d90	a	fffffffP
+00054da0	a	fffffffP
+00054db0	a	fffffffP
+00054dc0	a	fffffffP
+00054dc9	a	ffffff
+00054dd0	a	fffffffP
+00054dd9	a	ffffffffffffffP
+00054de9	a	ffffffffffffffP
+00054df9	a	UUUUUUUUUUUUUUP
+00058118	a	<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+00058151	a	<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0"> 
+0005819d	a	  <assemblyIdentity version="1.0.0.3"
+000581c4	a	     processorArchitecture="*"
+000581e4	a	     name="NGM"
+000581f5	a	     type="win32"/> 
+0005820b	a	  <description> Nexon Game Manager </description> 
+0005823f	a	  <!-- Identify the application security requirements. -->
+0005827b	a	  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+000582c2	a	<application>
+000582d2	a	<!--The ID below indicates application support for Windows Vista -->
+0005831a	a	<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}"/>
+00058357	a	<!--The ID below indicates application support for Windows 7 -->
+0005839b	a	<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/>
+000583d8	a	</application>
+000583e8	a	  </compatibility>
+000583fc	a	  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v2">
+00058434	a	    <security>
+00058444	a	      <requestedPrivileges>
+00058461	a	        <requestedExecutionLevel
+00058483	a	          level="asInvoker"
+000584a0	a	          uiAccess="false"/>
+000584be	a	      </requestedPrivileges>
+000584dc	a	    </security>
+000584ed	a	  </trustInfo>
+000584fd	a	  <dependency>
+0005850d	a	    <dependentAssembly>
+00058526	a	      <assemblyIdentity
+0005853f	a	        type='win32'
+00058555	a	        name='Microsoft.Windows.Common-Controls'
+00058587	a	        version='6.0.0.0'
+000585a2	a	        processorArchitecture='*'
+000585c5	a	        publicKeyToken='6595b64144ccf1df'
+000585f0	a	        language='*'/>
+00058608	a	    </dependentAssembly>
+00058622	a	  </dependency>
+00058633	a	</assembly>
+00058876	a	^Wbe%lC
+000588c9	a	DigiCert Inc1
+000588e0	a	www.digicert.com1!0
+000588fb	a	DigiCert Trusted Root G40
+00058917	a	210429000000Z
+00058926	a	360428235959Z0i1
+0005894d	a	DigiCert, Inc.1A0?
+00058965	a	8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA10
+00058b56	a	[K]taM?
+00058bab	a	SA|X=G
+00058c63	a	http://ocsp.digicert.com0A
+00058c88	a	5http://cacerts.digicert.com/DigiCertTrustedRootG4.crt0C
+00058cd0	a	2http://crl3.digicert.com/DigiCertTrustedRootG4.crl0
+00058ee7	a	jj@0HK4
+00058f7d	a	DigiCert, Inc.1A0?
+00058f95	a	8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA10
+00058fd2	a	220518000000Z
+00058fe1	a	250505235959Z0
+00059008	a	Gyeonggi-do1
+0005901e	a	Seongnam-si1!0
+00059034	a	NEXON Korea Corporation.1!0
+00059057	a	NEXON Korea Corporation.0
+00059137	a	8kHtRX
+00059317	a	Mhttp://crl3.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crl0S
+0005936c	a	Mhttp://crl4.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crl0>
+000593df	a	http://www.digicert.com/CPS0
+0005941b	a	http://ocsp.digicert.com0\
+00059440	a	Phttp://cacerts.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crt0
+00059556	a	uz\4)a
+00059687	a	LUP/H4
+000596da	a	DigiCert, Inc.1A0?
+000596f2	a	8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1
+00059851	a	*-zBKb
+00059946	a	TBC.|i
+00059a6b	a	20240924010037Z
+00059ac6	a	DigiCert, Inc.1;09
+00059ade	a	2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
+00059b15	a	230714000000Z
+00059b24	a	341013235959Z0H1
+00059b4b	a	DigiCert, Inc.1 0
+00059b64	a	DigiCert Timestamp 20230
+00059e53	a	Ihttp://crl3.digicert.com/DigiCertTrustedG4RSA4096SHA256TimeStampingCA.crl0
+00059ebe	a	http://ocsp.digicert.com0X
+00059ee3	a	Lhttp://cacerts.digicert.com/DigiCertTrustedG4RSA4096SHA256TimeStampingCA.crt0
+0005a120	a	l2|X/gGe
+0005a15e	a	(f*^[0
+0005a18c	a	DigiCert Inc1
+0005a1a3	a	www.digicert.com1!0
+0005a1be	a	DigiCert Trusted Root G40
+0005a1da	a	220323000000Z
+0005a1e9	a	370322235959Z0c1
+0005a210	a	DigiCert, Inc.1;09
+0005a228	a	2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
+0005a520	a	http://ocsp.digicert.com0A
+0005a545	a	5http://cacerts.digicert.com/DigiCertTrustedRootG4.crt0C
+0005a58d	a	2http://crl3.digicert.com/DigiCertTrustedRootG4.crl0 
+0005a83e	a	DigiCert Inc1
+0005a855	a	www.digicert.com1$0"
+0005a870	a	DigiCert Assured ID Root CA0
+0005a88f	a	220801000000Z
+0005a89e	a	311109235959Z0b1
+0005a8c5	a	DigiCert Inc1
+0005a8dc	a	www.digicert.com1!0
+0005a8f7	a	DigiCert Trusted Root G40
+0005a938	a	]J<0"0i3
+0005aa5a	a	v=Y]Bv
+0005abbc	a	http://ocsp.digicert.com0C
+0005abe1	a	7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
+0005ac2b	a	4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0
+0005ad5e	a	~qj#k"
+0005adae	a	DigiCert, Inc.1;09
+0005adc6	a	2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
+0005ae4a	a	240924010037Z0+
+0005aec3	a	/1(0&0$0"
+0005aed8	a	@WhA6o
+0005af2d	a	|s$SJQ
+0005afdd	a	UTU/7J!
+0005b1ea	a	DigiCert Inc1
+0005b201	a	www.digicert.com1!0
+0005b21c	a	DigiCert Trusted Root G40
+0005b238	a	210429000000Z
+0005b247	a	360428235959Z0i1
+0005b26e	a	DigiCert, Inc.1A0?
+0005b286	a	8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA10
+0005b477	a	[K]taM?
+0005b4cc	a	SA|X=G
+0005b584	a	http://ocsp.digicert.com0A
+0005b5a9	a	5http://cacerts.digicert.com/DigiCertTrustedRootG4.crt0C
+0005b5f1	a	2http://crl3.digicert.com/DigiCertTrustedRootG4.crl0
+0005b808	a	jj@0HK4
+0005b89e	a	DigiCert, Inc.1A0?
+0005b8b6	a	8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA10
+0005b8f3	a	220518000000Z
+0005b902	a	250505235959Z0
+0005b929	a	Gyeonggi-do1
+0005b93f	a	Seongnam-si1!0
+0005b955	a	NEXON Korea Corporation.1!0
+0005b978	a	NEXON Korea Corporation.0
+0005ba58	a	8kHtRX
+0005bc38	a	Mhttp://crl3.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crl0S
+0005bc8d	a	Mhttp://crl4.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crl0>
+0005bd00	a	http://www.digicert.com/CPS0
+0005bd3c	a	http://ocsp.digicert.com0\
+0005bd61	a	Phttp://cacerts.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crt0
+0005be77	a	uz\4)a
+0005bfa8	a	LUP/H4
+0005bffb	a	DigiCert, Inc.1A0?
+0005c013	a	8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1
+0005c28f	a	.A):z`#'
+0005c3c0	a	20240924010038Z
+0005c41b	a	DigiCert, Inc.1;09
+0005c433	a	2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
+0005c46a	a	230714000000Z
+0005c479	a	341013235959Z0H1
+0005c4a0	a	DigiCert, Inc.1 0
+0005c4b9	a	DigiCert Timestamp 20230
+0005c7a8	a	Ihttp://crl3.digicert.com/DigiCertTrustedG4RSA4096SHA256TimeStampingCA.crl0
+0005c813	a	http://ocsp.digicert.com0X
+0005c838	a	Lhttp://cacerts.digicert.com/DigiCertTrustedG4RSA4096SHA256TimeStampingCA.crt0
+0005ca75	a	l2|X/gGe
+0005cab3	a	(f*^[0
+0005cae1	a	DigiCert Inc1
+0005caf8	a	www.digicert.com1!0
+0005cb13	a	DigiCert Trusted Root G40
+0005cb2f	a	220323000000Z
+0005cb3e	a	370322235959Z0c1
+0005cb65	a	DigiCert, Inc.1;09
+0005cb7d	a	2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
+0005ce75	a	http://ocsp.digicert.com0A
+0005ce9a	a	5http://cacerts.digicert.com/DigiCertTrustedRootG4.crt0C
+0005cee2	a	2http://crl3.digicert.com/DigiCertTrustedRootG4.crl0 
+0005d193	a	DigiCert Inc1
+0005d1aa	a	www.digicert.com1$0"
+0005d1c5	a	DigiCert Assured ID Root CA0
+0005d1e4	a	220801000000Z
+0005d1f3	a	311109235959Z0b1
+0005d21a	a	DigiCert Inc1
+0005d231	a	www.digicert.com1!0
+0005d24c	a	DigiCert Trusted Root G40
+0005d28d	a	]J<0"0i3
+0005d3af	a	v=Y]Bv
+0005d511	a	http://ocsp.digicert.com0C
+0005d536	a	7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
+0005d580	a	4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0
+0005d6b3	a	~qj#k"
+0005d703	a	DigiCert, Inc.1;09
+0005d71b	a	2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
+0005d79f	a	240924010038Z0+
+0005d818	a	/1(0&0$0"
+0005d82d	a	@WhA6o
+00039c50	u	ERROR : Unable to initialize critical section in CAtlBaseModule
+0003bd38	u	api-ms-win-core-fibers-l1-1-1
+0003bd78	u	api-ms-win-core-synch-l1-2-0
+0003bdb8	u	kernel32
+0003bdd0	u	api-ms-
+0003c1d0	u	(null)
+0003c238	u	mscoree.dll
+0003cf70	u	         (((((                  H
+0003d472	u	         (((((                  H
+0003d570	u	      (                          
+0003dad0	u	Sunday
+0003dae0	u	Monday
+0003daf0	u	Tuesday
+0003db00	u	Wednesday
+0003db18	u	Thursday
+0003db30	u	Friday
+0003db40	u	Saturday
+0003dbb8	u	January
+0003dbc8	u	February
+0003dc20	u	August
+0003dc30	u	September
+0003dc48	u	October
+0003dc58	u	November
+0003dc70	u	December
+0003dc98	u	MM/dd/yy
+0003dcb0	u	dddd, MMMM dd, yyyy
+0003dcd8	u	HH:mm:ss
+0003de90	u	api-ms-win-core-datetime-l1-1-1
+0003ded0	u	api-ms-win-core-file-l1-2-4
+0003df08	u	api-ms-win-core-file-l1-2-2
+0003df40	u	api-ms-win-core-localization-l1-2-1
+0003df90	u	api-ms-win-core-localization-obsolete-l1-2-0
+0003dff0	u	api-ms-win-core-processthreads-l1-1-2
+0003e040	u	api-ms-win-core-string-l1-1-0
+0003e080	u	api-ms-win-core-sysinfo-l1-2-1
+0003e0c0	u	api-ms-win-core-winrt-l1-1-0
+0003e100	u	api-ms-win-core-xstate-l2-1-0
+0003e140	u	api-ms-win-rtcore-ntuser-window-l1-1-0
+0003e190	u	api-ms-win-security-systemfunctions-l1-1-0
+0003e1f0	u	ext-ms-win-ntuser-dialogbox-l1-1-0
+0003e240	u	ext-ms-win-ntuser-windowstation-l1-1-0
+0003e290	u	advapi32
+0003e2a8	u	kernelbase
+0003e2d0	u	api-ms-win-appmodel-runtime-l1-1-2
+0003e318	u	user32
+0003e328	u	ext-ms-
+0003f2a8	u	zh-CHS
+0003f6d8	u	az-AZ-Latn
+0003f7e0	u	uz-UZ-Latn
+0003f8c8	u	kok-IN
+0003f8d8	u	syr-SY
+0003f8e8	u	div-MV
+0003f8f8	u	quz-BO
+0003f9b8	u	sr-SP-Latn
+0003f9e0	u	az-AZ-Cyrl
+0003fa18	u	uz-UZ-Cyrl
+0003fa30	u	quz-EC
+0003faa0	u	sr-SP-Cyrl
+0003fac8	u	quz-PE
+0003fb48	u	smj-NO
+0003fbb8	u	bs-BA-Latn
+0003fbd0	u	smj-SE
+0003fc20	u	sr-BA-Latn
+0003fc38	u	sma-NO
+0003fc78	u	sr-BA-Cyrl
+0003fc90	u	sma-SE
+0003fcd0	u	sms-FI
+0003fd10	u	smn-FI
+0003fe80	u	zh-CHT
+00040df0	u	az-az-cyrl
+00040e08	u	az-az-latn
+00040e50	u	bs-ba-latn
+00040ef8	u	div-mv
+000412c8	u	kok-in
+00041428	u	quz-bo
+00041438	u	quz-ec
+00041448	u	quz-pe
+000414d8	u	sma-no
+000414e8	u	sma-se
+000414f8	u	smj-no
+00041508	u	smj-se
+00041518	u	smn-fi
+00041528	u	sms-fi
+00041548	u	sr-ba-cyrl
+00041560	u	sr-ba-latn
+00041578	u	sr-sp-cyrl
+00041590	u	sr-sp-latn
+000415d8	u	syr-sy
+00041668	u	uz-uz-cyrl
+00041680	u	uz-uz-latn
+000416b8	u	zh-chs
+000416c8	u	zh-cht
+000431e0	u	CONOUT$
+00046720	u	#+3;CScs
+00047a98	u	://launch
+00047ab0	u	C:\ProgramData\NexonJP
+00047ae0	u	.exe" 
+00047b60	u	NEXON_PASSPORT
+00047fd0	u	CrashReporter_64.dll
+00048000	u	Error!
+00048010	u	ngm_kr
+00048020	u	NGM.log
+00048030	u	-token:
+00048040	u	-game:
+00048050	u	CommandLine
+00048068	u	GameCode
+000480b0	u	https://platform.nexon.com/NGM/Json/NGMUpdateInfo.json
+00048150	u	https://platform-test.nexon.com/NGM/Json/urlinfo.json
+000481c0	u	HKLM\SOFTWARE\Nexon\NGM\NxDownload
+00048208	u	HKLM\SOFTWARE\Nexon\Shared
+0004827e	u	gNGM64.exe
+00048298	u	NGMDll64.dll
+000482c0	u	Global\_UPDATE_INSTANCE_{7CD10F87-B120-4B7F-B4B7-BCD2FC2B5800}
+00048350	u	%s is not exist
+00048370	u	\*.tmp
+000483a8	u	$NexonRoot$
+000483c8	u	%s_%u.tmp
+000483e0	u	%s\%s_%u.tmp
+00048ef8	u	Argument Length is Too Long!
+00048f50	u	NGM Execute Failed! (error code=%d)
+00048fa0	u	ERROR!
+00048fb0	u	torbjorn64.dll
+00048fd0	u	HKLM\SOFTWARE\Nexon\NGM\Special\NoDownload
+00049038	u	No Download NGMDll
+00049070	u	GetModuleFileName
+00049098	u	Cannot find NGM Directory!
+000490f0	u	Load Library Failed!
+00049126	u	nGetProcAddress Failed
+00049158	u	-use_local_dll
+00049178	u	-load_from_local
+000491a0	u	-test_env
+000491c0	u	%s (error code=%d) : Unknown Error!
+00049208	u	%s (error code=%d) : %s
+00049238	u	www-authenticate
+00049260	u	proxy-authenticate
+000493c0	u	gopher
+00049410	u	mailto
+00049440	u	%s\NGM
+00049450	u	%s\Nexon\NGM
+00049470	u	%s\Nexon
+000494c8	u	Invalid URL - %s
+000494f0	u	Httpclient Init Fail - %s
+00049528	u	Httpclient Connect Fail - %s
+00049568	u	Httpclient OpenFile Fail - %s
+000495a8	u	Invalid HttpStatus - %s:%d
+000495e0	u	CreateFile Fail - %s(%d)
+00049618	u	RemoteFile Read Fail - %s%s
+00049650	u	WriteFile Fail - %s(%d)
+00049680	u	AtlHttp Navigate Fail - %s
+000496b8	u	Cannot Make Path : %s
+000496f6	u	9gzopen : %s
+00049710	u	CreateFile : %s(%d)
+00049738	u	WriteFile : %s(%d)
+00049760	u	MoveFile : %s(%d)
+00049798	u	 HTTP/1.1
+000497b0	u	Host: %s:%d
+000497d0	u	Host: %s
+000497e8	u	Content-Length: %d
+00049818	u	Content-Type: 
+00049840	u	User-Agent: Microsoft-ATL-Native/14.00
+00049898	u	Connection
+000498b0	u	keep-alive
+000498d8	u	Location
+000498f0	u	Content-Length
+00049910	u	Transfer-Encoding
+00049938	u	chunked
+00049948	u	Trailer
+00049960	u	set-cookie
+000499c0	u	Advapi32.dll
+00049a70	u	NTDLL.DLL
+00049af8	u	S:(ML;;NW;;;LW)
+00049ca0	u	NexonHttpClient
+00049cc0	u	Session not initialized!
+00049d00	u	/%s/%s
+00054256	u	VS_VERSION_INFO
+000542b2	u	StringFileInfo
+000542d6	u	040904b0
+000542ee	u	CompanyName
+0005431a	u	FileDescription
+0005433c	u	Nexon Game Manager
+0005436a	u	FileVersion
+00054384	u	1, 2024, 0924, 0955
+000543b2	u	InternalName
+000543da	u	LegalCopyright
+000543f8	u	(C) NEXON All Rights Reserved.
+0005443e	u	OriginalFilename
+00054460	u	NGM.exe
+00054476	u	ProductName
+00054490	u	Nexon Game Manager
+000544be	u	ProductVersion
+000544dc	u	1, 2024, 0924, 0955
+0005450a	u	VarFileInfo
+0005452a	u	Translation

@@ -1,0 +1,724 @@
+﻿0000004d	a	!This program cannot be run in DOS mode.
+00000100	a	RichqJ
+0000023f	a	`.rdata
+00000267	a	@.data
+00000290	a	.pdata
+000002b7	a	@.rsrc
+000002df	a	@.reloc
+0000069a	a	VWATAVAWH
+00000850	a	0A_A^A\_^
+0000154c	a	|$ ATAVAWH
+00002027	a	A_A^A\
+000021d5	a	UVWAVAWH
+00002628	a	A_A^_^]
+00002981	a	|$ ATAVAWH
+000029e1	a	 A_A^A\
+00002c70	a	@UWAUAVAWH
+00002dc2	a	 A_A^A]_]
+00002de0	a	@VWAUAVH
+00002f83	a	(A^A]_^
+00003830	a	@USVWATAVAWH
+00003f06	a	A_A^A\_^[]
+00004035	a	SVWAVAWH
+000041bc	a	A_A^_^[
+000042b5	a	UVWATAUAVAWH
+00004371	a	D$pHcH
+00004386	a	D$pHcP
+000048cf	a	D$pHcH
+000048e4	a	D$pHcH
+0000496e	a	A_A^A]A\_^]
+000049ea	a	UWATAVAWH
+00004d12	a	A_A^A\_]
+00005591	a	|$ ATAVAWH
+000055c3	a	AXHc8H
+00005769	a	 A_A^A\
+00005b2a	a	}@HcL$,H
+00005b39	a	HcL$(H
+00005b9a	a	VWATAVAWH
+00005d45	a	0A_A^A\_^
+00005d50	a	@SVAVH
+00006495	a	SUVWAVH
+000065a8	a	0A^_^][
+000066ba	a	SUVWATAUAVAWH
+00006838	a	HA_A^A]A\_^][
+0000685a	a	VWATAVAWH
+000069af	a	@A_A^A\_^
+00006a6f	a	VWATAVAWH
+00006b97	a	0A_A^A\_^
+00006c8c	a	L$ VWAVH
+00006f15	a	SUVWAVH
+00006f5a	a	0A^_^][
+00007018	a	0A^_^][
+000073a7	a	t$ AUAVAWH
+000074ab	a	0A_A^A]
+0000768c	a	L$ VWAUAVAWH
+000077c4	a	0A_A^A]_^
+000078ac	a	t$ WATAUAVAWH
+00007a1d	a	A_A^A]A\_
+00007e6f	a	VWATAVAWH
+00007f2f	a	0A_A^A\_^
+00008741	a	|$ AVH
+0000ac8a	a	VWATAVAWH
+0000ad87	a	A_A^A\_^
+0000b0fc	a	t$ WAVAWH
+0000bbe0	a	@UWAUAWH
+0000bd5f	a	(A_A]_]
+0000c17b	a	H;t$@r
+0000c455	a	SUVWAVH
+0000c497	a	 A^_^][
+0000c55d	a	 A^_^][
+0000c588	a	 A^_^][
+0000ccc1	a	|$ AVH
+0000d25a	a	UVWAVAWH
+0000d386	a	 A_A^_^]
+0000d3b9	a	 A_A^_^]
+0000d63a	a	UVWAVAWH
+0000d766	a	 A_A^_^]
+0000d799	a	 A_A^_^]
+0000d89a	a	UVWAVAWH
+0000d9c6	a	 A_A^_^]
+0000d9f9	a	 A_A^_^]
+0000deb5	a	SUVWAVH
+0000dfc3	a	 A^_^][
+0000dfee	a	 A^_^][
+0000e011	a	|$ AVH
+0000e281	a	|$ AVH
+0000e3e1	a	|$ AVH
+0000e541	a	|$ AVH
+0000e761	a	|$ AVH
+0000e8c1	a	|$ AVH
+0000ea21	a	|$ AVH
+0000f041	a	|$ AVH
+0000f261	a	|$ AVH
+0000f415	a	SUVWAVH
+0000f453	a	 A^_^][
+0000f4e3	a	 A^_^][
+0000f4ff	a	 A^_^][
+0000f791	a	|$ AVH
+0000f931	a	|$ AVH
+0000faf1	a	|$ AVH
+000103c1	a	|$ AVH
+00010aff	a	UVWATAUAVAWH
+00010d34	a	@A_A^A]A\_^]
+00010d57	a	L$ UVWAVAWH
+00010e76	a	0A_A^_^]
+00010ea9	a	0A_A^_^]
+00010f45	a	SUVWAVH
+00011034	a	0A^_^][
+00011063	a	0A^_^][
+0001107f	a	VWAUAVAWH
+00011200	a	0A_A^A]_^
+0001141f	a	WATAUAVAWH
+0001164e	a	@A_A^A]A\_
+0001167a	a	VWATAVAWH
+000116a0	a	d$8D8c
+00011734	a	3333333
+000117d5	a	A_A^A\_^
+00011d9f	a	WATAUAVAWH
+00011ed9	a	@A_A^A]A\_
+00011f9a	a	UVWATAUAVAWH
+000121d0	a	A_A^A]A\_^]
+0001228a	a	USVWATAUAVAWH
+00012500	a	3333333
+000125d2	a	A_A^A]A\_^[]
+00012eec	a	|$ UATAUAVAWH
+000130d0	a	A_A^A]A\]
+000137a0	a	t!D8sHt
+000137ce	a	t!D8s0t
+00013b31	a	|$ AVH
+00013c91	a	|$ AVH
+00013df1	a	|$ AVH
+0001439f	a	UVWAVAWH
+00014532	a	@A_A^_^]
+00014691	a	|$ AVH
+000149b1	a	|$ AVH
+00014d4a	a	UVWAVAWH
+00014d95	a	 A_A^_^]
+00014e72	a	 A_A^_^]
+00015735	a	SUVWAVH
+00015777	a	 A^_^][
+00015850	a	 A^_^][
+0001587b	a	 A^_^][
+000158e5	a	SUVWAVH
+00015927	a	 A^_^][
+00015a00	a	 A^_^][
+00015a2b	a	 A^_^][
+00015af5	a	SUVWAVH
+00015b37	a	 A^_^][
+00015c10	a	 A^_^][
+00015c3b	a	 A^_^][
+00015d92	a	\$ UVWH
+00016040	a	@SUVWH
+000166fa	a	VWATAVAWH
+00016816	a	A_A^A\_^
+0001682c	a	t$ WAVAWH
+00016bca	a	UVWATAUAVAWH
+00016d2a	a	A_A^A]A\_^]
+00016d4c	a	t$ WAVAWH
+00016fdc	a	|$ UATAUAVAWH
+0001721e	a	A_A^A]A\]
+0001747c	a	t$ WAVAWH
+0001768c	a	|$ UATAUAVAWH
+000177eb	a	A_A^A]A\]
+0001831c	a	t$ WAVAWH
+000183df	a	t#@8t$@t
+0001847c	a	t$ WATAUAVAWH
+000185d8	a	A_A^A]A\_
+000185fc	a	t$ WAVAWH
+000186f0	a	@SVAUAWH
+00018706	a	gfffffffH
+000187ee	a	gfffffffH
+00018812	a	gfffffff
+0001893d	a	(A_A]^[
+00018a07	a	gfffffffH+
+00018c60	a	@SUVWAVH
+00018dc1	a	gfffffffH
+00018e26	a	A^_^][
+00018eb0	a	@SUVWAVH
+00018f9a	a	pA^_^][
+0001962c	a	t$ WAVAWH
+0001986a	a	VWAUAVAWH
+000199ab	a	A_A^A]_^
+000199cc	a	|$ UATAUAVAWH
+00019bdd	a	A_A^A]A\]
+00019c80	a	@SUVWH
+00019d60	a	@SUVWAVH
+00019e6f	a	A^_^][
+0001a102	a	\$ UVWATAUAVAWH
+0001a1d1	a	A_A^A]A\_^]
+0001aa6a	a	UWATAVAWH
+0001abec	a	A_A^A\_]
+0001b04c	a	t$ WATAUAVAWH
+0001b1ba	a	A_A^A]A\_
+0001b1da	a	VWATAVAWH
+0001b318	a	A_A^A\_^
+0001b8ac	a	|$ UATAUAVAWH
+0001ba17	a	A_A^A]A\]
+0001bb82	a	\$ ATAVAWH
+0001bd4a	a	 A_A^A\
+0001c192	a	\$ UVWH
+0001c272	a	\$ UVWH
+0001c37a	a	VWATAVAWH
+0001c47b	a	A_A^A\_^
+0001c552	a	\$ UVWH
+0001c622	a	\$ UVWAVAWH
+0001c7ab	a	pA_A^_^]
+0001c7c0	a	@SUVWAVH
+0001c93d	a	pA^_^][
+0001c952	a	\$ UVWAVAWH
+0001cb02	a	A_A^_^]
+0001d13f	a	WATAUAVAWH
+0001d34a	a	 A_A^A]A\_
+0001d8fc	a	|$ UATAUAVAWH
+0001db3a	a	A_A^A]A\]
+0001db5c	a	|$ UATAUAVAWH
+0001dda8	a	A_A^A]A\]
+0001ddcc	a	t$ WAVAWH
+0001defc	a	t$ WATAUAVAWH
+0001e06d	a	A_A^A]A\_
+0001e10c	a	t$ WAVAWH
+0001e37a	a	USVWAUAVAWH
+0001e5c3	a	A_A^A]_^[]
+0001ee15	a	SUVWAVH
+0001ee51	a	 A^_^][
+0001ef17	a	 A^_^][
+0001ef42	a	 A^_^][
+0001f481	a	|$ AVH
+0001f94a	a	UVWAVAWH
+0001fa6b	a	 A_A^_^]
+0001fa9c	a	 A_A^_^]
+0001fb2a	a	UVWAVAWH
+0001fc4b	a	 A_A^_^]
+0001fc7c	a	 A_A^_^]
+0001ff6a	a	UVWAVAWH
+0002008b	a	 A_A^_^]
+000200bc	a	 A_A^_^]
+0002037a	a	VWATAVAWH
+0002047f	a	A_A^A\_^
+0002066c	a	t$ WATAUAVAWH
+000207d0	a	A_A^A]A\_
+000207ec	a	|$ UATAUAVAWH
+0002085a	a	A_A^A]A\]
+00020ad0	a	@USVWATAUAVAWH
+00020b81	a	A_A^A]A\_^[]
+00020eec	a	t0H;D$Pt-H
+00021647	a	L$ UVWAVAWH
+00021748	a	0A_A^_^]
+00021779	a	0A_A^_^]
+000218ec	a	L$ VWAUAVAWH
+00021a3f	a	0A_A^A]_^
+00021b3c	a	L$ VWAVH
+00021d85	a	SUVWAVH
+00021e92	a	0A^_^][
+00021eaf	a	USVWATAUAVAWH
+00022189	a	XA_A^A]A\_^[]
+00022cbc	a	t$ WAVAWH
+00022dbc	a	t$ WAVAWH
+00022ebc	a	t$ WAVAWH
+00022faa	a	VWATAVAWH
+000230a4	a	A_A^A\_^
+000230ba	a	UVWATAUAVAWH
+00023207	a	A_A^A]A\_^]
+00023c8a	a	WAVAWH
+00023d5b	a	PA_A^_
+00023d7a	a	WAVAWH
+00023e4b	a	PA_A^_
+00024021	a	|$ AVH
+00024271	a	|$ AVH
+00024441	a	|$ AVH
+00024601	a	|$ AVH
+000247d7	a	L$ UVWAVAWH
+0002489d	a	0A_A^_^]
+000248d2	a	0A_A^_^]
+00024e2f	a	VWAUAVAWH
+00024f71	a	0A_A^A]_^
+00024f8f	a	UVWATAUAVAWH
+00024fcd	a	I98u&H
+00025219	a	PA_A^A]A\_^]
+00025401	a	|$ AVH
+00025681	a	|$ AVH
+000266ec	a	|$ UATAUAVAWH
+000268aa	a	A_A^A]A\]
+00026fbf	a	UVWATAUAVAWH
+0002727b	a	PA_A^A]A\_^]
+000273d5	a	SUVWAVH
+00027409	a	 A^_^][
+000274cf	a	 A^_^][
+000274fa	a	 A^_^][
+000278e1	a	|$ AVH
+00027a41	a	|$ AVH
+000283d1	a	|$ AVH
+00028541	a	|$ AVH
+00029f61	a	|$ AVH
+0002a161	a	|$ AVH
+0002a945	a	SUVWAVH
+0002a981	a	 A^_^][
+0002aa55	a	 A^_^][
+0002ac60	a	@SUVATH
+0002ae27	a	(A\^][
+0002afd0	a	@SWAVH
+0002b0da	a	D$PH;S
+0002b0fd	a	H;|$@r
+0002b367	a	l$ AVH
+0002b75d	a	p WAVAWH
+0002b91d	a	p WAVAWH
+0002badc	a	|$ UATAUAVAWH
+0002bc9a	a	A_A^A]A\]
+0002bcba	a	VWATAVAWH
+0002bdc7	a	A_A^A\_^
+0002bddb	a	VWATAVAWH
+0002bedc	a	A_A^A\_^
+0002befa	a	VWATAVAWH
+0002c01b	a	A_A^A\_^
+0002c03c	a	t$ WATAUAVAWH
+0002c1a8	a	A_A^A]A\_
+0002c1ca	a	VWATAVAWH
+0002c2d5	a	A_A^A\_^
+0002c7b5	a	SUVWAVH
+0002c8ba	a	 A^_^][
+0002cabf	a	WATAUAVAWH
+0002ccba	a	 A_A^A]A\_
+0002ce45	a	UVWAVAWH
+0002cfb8	a	H;|$Pr
+0002cfcf	a	 A_A^_^]
+0002d0a5	a	UVWAVAWH
+0002d218	a	H;|$Pr
+0002d22f	a	 A_A^_^]
+0002d745	a	SUVWAVH
+0002d84a	a	 A^_^][
+0002db1c	a	|$ UATAUAVAWH
+0002dce2	a	A_A^A]A\]
+0002e201	a	T$(H;T$0t)H
+0002e3b1	a	T$(H;T$0t)H
+0002e58c	a	t$ WAVAWH
+0002e8d5	a	SUVWAVH
+0002e911	a	 A^_^][
+0002e9ea	a	 A^_^][
+0002ea15	a	 A^_^][
+0002ec3a	a	UVWAVAWH
+0002ed58	a	 A_A^_^]
+0002ed8b	a	 A_A^_^]
+0002ef11	a	|$ AVH
+0002f1c1	a	|$ AVH
+0002f321	a	|$ AVH
+0002f6b5	a	SUVWAVH
+0002f6f1	a	 A^_^][
+0002f7b7	a	 A^_^][
+0002f7e2	a	 A^_^][
+0002fa81	a	|$ AVH
+0002fbe1	a	|$ AVH
+000303f1	a	|$ AVH
+00030621	a	|$ AVH
+00030781	a	|$ AVH
+00030cd5	a	UVWAVAWH
+00030e68	a	H;|$Pr
+00030e7f	a	 A_A^_^]
+00031421	a	|$ AVH
+00031945	a	SUVWAVH
+00031981	a	 A^_^][
+00031a47	a	 A^_^][
+00031a72	a	 A^_^][
+00031d5c	a	|$ UATAUAVAWH
+00031f05	a	A_A^A]A\]
+00031f1c	a	|$ UATAUAVAWH
+0003208a	a	A_A^A]A\]
+0003213c	a	t$ WAVAWH
+00033574	a	|$ AVH
+00033e2e	a	 H3E H3E
+00035f40	a	b6865f1992a10dcefc0bbc450cf296b648003271
+00036a10	a	map/set too long
+00039678	a	SleepConditionVariableCS
+00039698	a	WakeAllConditionVariable
+00039728	a	bad allocation
+00039750	a	call CDLL_Interface::Initialize()!
+00039780	a	E:\NexonGames\work\PatchSystem\SA_Source\Engine\Runtime\SACefDll\main.cpp
+00039830	a	call SACefApp::OnBeforeCommandLineProcessing()!
+00039860	a	E:\NexonGames\work\PatchSystem\SA_Source\Engine\Runtime\SACefDll\SACefApp.cpp
+000398b0	a	disable-gpu
+000398c0	a	disable-gpu-compositing
+000398d8	a	disable-gpu-shader-disk-cache
+000398f8	a	enable-begin-frame-scheduling
+00039918	a	disable-direct-composition
+00039940	a	use-angle
+00039958	a	log-severity
+00039968	a	no-user-gesture-required
+00039988	a	autoplay-policy
+00039998	a	call SACefApp::OnRegisterCustomSchemes()!
+00039b50	a	Unknown exception
+00039b68	a	bad array new length
+00039b80	a	string too long
+00039b90	a	call Constructor SACefBrowserSingleton()!
+00039bc0	a	E:\NexonGames\work\PatchSystem\SA_Source\Engine\Runtime\SACefDll\SACefBrowserSingleton.cpp
+00039cc8	a	CefInitialize() failed!
+00039ce0	a	Error: 
+00039ce8	a	\SACefProcess.exe
+00039d00	a	\debug.log
+00039ea0	a	MessageToBrowser
+00039eb8	a	movieclose
+00039ec8	a	wicclose
+00039ed8	a	wicopenurl
+00039ee8	a	).</h2></body></html>
+00039f08	a	 with error 
+00039f18	a	<html><body bgcolor="white"><h2>Failed to load URL 
+00039f50	a	data:text/html;charset=utf-8;base64,
+00039f78	a	list too long
+00039f88	a	vector too long
+00039f98	a	Check failed: ref_.IsValid(). 
+00039fc0	a	E:\NexonGames\work\PatchSystem\SA_Source\Engine\Libs\ceflib\include\base\cef_weak_ptr.h
+0003bc8c	a	E:\NexonGames\work\PatchSystem\SA_Source\Built\Release\bins\Client\SACefDll.pdb
+0003bcfc	a	.text$di
+0003bd10	a	.text$mn
+0003bd24	a	.text$mn$00
+0003bd38	a	.text$x
+0003bd48	a	.text$yd
+0003bd5c	a	.idata$5
+0003bd70	a	.00cfg
+0003bd80	a	.CRT$XCA
+0003bd94	a	.CRT$XCU
+0003bda8	a	.CRT$XCZ
+0003bdbc	a	.CRT$XIA
+0003bdd0	a	.CRT$XIC
+0003bde4	a	.CRT$XIZ
+0003bdf8	a	.CRT$XLA
+0003be0c	a	.CRT$XLZ
+0003be20	a	.CRT$XPA
+0003be34	a	.CRT$XPZ
+0003be48	a	.CRT$XTA
+0003be5c	a	.CRT$XTZ
+0003be70	a	.rdata
+0003be80	a	.rdata$T
+0003be94	a	.rdata$r
+0003bea8	a	.rdata$voltmd
+0003bec0	a	.rdata$zzzdbg
+0003bed8	a	.rtc$IAA
+0003beec	a	.rtc$IZZ
+0003bf00	a	.rtc$TAA
+0003bf14	a	.rtc$TZZ
+0003bf48	a	.tls$ZZZ
+0003bf5c	a	.xdata
+0003bf6c	a	.xdata$x
+0003bf80	a	.edata
+0003bf90	a	.idata$2
+0003bfa4	a	.idata$3
+0003bfb8	a	.idata$4
+0003bfcc	a	.idata$6
+0003bff0	a	.data$r
+0003c000	a	.data$rs
+0003c024	a	.pdata
+0003c034	a	.rsrc$01
+0003c048	a	.rsrc$02
+0003c1d3	a	@08@HP
+0003c7a0	a	.>0<2D.>0<2
+0003f25d	a	 (08@HPXb
+0003f2e6	a	 P0"280D"y
+0003f2f1	a	 t4H"J4D"
+0003fa57	a	< "", B
+0003fdfd	a	 (08@HPZ
+0003fe52	a	b$2& (
+00041962	a	SACefDll.dll
+0004196f	a	GetInterface
+00041eea	a	cef_get_min_log_level
+00041f02	a	cef_string_utf16_clear
+00041f1c	a	cef_string_utf8_to_utf16
+00041f38	a	cef_string_utf16_set
+00041f50	a	cef_string_utf16_cmp
+00041f68	a	cef_string_utf16_to_utf8
+00041f84	a	cef_string_utf8_clear
+00041f9a	a	libcef.dll
+00041fa8	a	Process32First
+00041fba	a	TerminateProcess
+00041fce	a	GetCurrentDirectoryA
+00041fe6	a	GetModuleHandleA
+00041ffa	a	OpenProcess
+00042008	a	CreateToolhelp32Snapshot
+00042024	a	DeleteFileA
+00042032	a	Process32Next
+00042042	a	CloseHandle
+00042050	a	GetCurrentDirectoryW
+00042068	a	GetLastError
+00042078	a	SetLastError
+00042086	a	KERNEL32.dll
+00042096	a	GetClientRect
+000420a6	a	GetParent
+000420b2	a	SetParent
+000420be	a	SendMessageA
+000420ce	a	SetFocus
+000420da	a	IsChild
+000420e4	a	GetFocus
+000420ee	a	USER32.dll
+000420fc	a	SHGetKnownFolderPath
+00042112	a	SHELL32.dll
+00042120	a	CoTaskMemFree
+0004212e	a	ole32.dll
+0004213a	a	?uncaught_exception@std@@YA_NXZ
+0004215c	a	?_Osfx@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAXXZ
+0004219a	a	?flush@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV12@XZ
+000421de	a	?sputn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QEAA_JPEBD_J@Z
+00042226	a	?setstate@?$basic_ios@DU?$char_traits@D@std@@@std@@QEAAXH_N@Z
+00042266	a	?sputc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QEAAHD@Z
+000422a8	a	?_Xlength_error@std@@YAXPEBD@Z
+000422ca	a	??0?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEAA@XZ
+00042306	a	?_Pninc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEAAPEADXZ
+0004234a	a	??0?$basic_ios@DU?$char_traits@D@std@@@std@@IEAA@XZ
+00042380	a	??0?$basic_iostream@DU?$char_traits@D@std@@@std@@QEAA@PEAV?$basic_streambuf@DU?$char_traits@D@std@@@1@@Z
+000423ec	a	??1?$basic_streambuf@DU?$char_traits@D@std@@@std@@UEAA@XZ
+00042428	a	?_Lock@?$basic_streambuf@DU?$char_traits@D@std@@@std@@UEAAXXZ
+00042468	a	?_Unlock@?$basic_streambuf@DU?$char_traits@D@std@@@std@@UEAAXXZ
+000424aa	a	?showmanyc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAA_JXZ
+000424f0	a	?uflow@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAAHXZ
+00042530	a	?xsgetn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAA_JPEAD_J@Z
+00042578	a	?xsputn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAA_JPEBD_J@Z
+000425c0	a	?setbuf@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAAPEAV12@PEAD_J@Z
+0004260e	a	?sync@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAAHXZ
+0004264e	a	?imbue@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAAXAEBVlocale@2@@Z
+0004269c	a	??1?$basic_ios@DU?$char_traits@D@std@@@std@@UEAA@XZ
+000426d2	a	??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@H@Z
+00042714	a	??1?$basic_iostream@DU?$char_traits@D@std@@@std@@UEAA@XZ
+00042750	a	??0?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@PEAV?$basic_streambuf@DU?$char_traits@D@std@@@1@_N@Z
+000427bc	a	??1?$basic_ostream@DU?$char_traits@D@std@@@std@@UEAA@XZ
+000427f4	a	MSVCP140.dll
+00042804	a	__CxxFrameHandler4
+0004281a	a	__std_terminate
+0004282c	a	_purecall
+00042838	a	__std_exception_destroy
+00042852	a	__std_exception_copy
+0004286a	a	memcpy
+00042874	a	memmove
+0004287e	a	memset
+00042888	a	__C_specific_handler
+000428a0	a	_CxxThrowException
+000428b6	a	__std_type_info_destroy_list
+000428d4	a	VCRUNTIME140_1.dll
+000428e8	a	VCRUNTIME140.dll
+000428fc	a	_stricmp
+00042908	a	_invalid_parameter_noinfo_noreturn
+0004292e	a	strcmp
+00042938	a	_callnewh
+00042944	a	malloc
+0004294e	a	_seh_filter_dll
+00042960	a	_configure_narrow_argv
+0004297a	a	_initialize_narrow_environment
+0004299c	a	_initialize_onexit_table
+000429b8	a	_register_onexit_function
+000429d4	a	_execute_onexit_table
+000429ec	a	_crt_atexit
+000429fa	a	_cexit
+00042a04	a	_initterm
+00042a10	a	_initterm_e
+00042a24	a	api-ms-win-crt-string-l1-1-0.dll
+00042a46	a	api-ms-win-crt-runtime-l1-1-0.dll
+00042a68	a	api-ms-win-crt-heap-l1-1-0.dll
+00042a8a	a	cef_log
+00042a94	a	cef_string_list_alloc
+00042aac	a	cef_string_list_free
+00042ac4	a	cef_browser_host_create_browser_sync
+00042aec	a	cef_string_userfree_utf16_free
+00042b0e	a	cef_currently_on
+00042b22	a	cef_post_task
+00042b32	a	cef_initialize
+00042b44	a	cef_shutdown
+00042b54	a	cef_do_message_loop_work
+00042b70	a	cef_base64encode
+00042b84	a	cef_api_hash
+00042b94	a	cef_enable_highdpi_support
+00042bb2	a	cef_string_list_size
+00042bca	a	cef_string_list_value
+00042be2	a	cef_string_list_append
+00042bfc	a	cef_string_map_size
+00042c12	a	cef_string_map_key
+00042c28	a	cef_string_map_value
+00042c40	a	cef_string_map_append
+00042c58	a	cef_string_multimap_size
+00042c74	a	cef_string_multimap_key
+00042c8e	a	cef_string_multimap_value
+00042caa	a	cef_string_multimap_append
+00042cc8	a	cef_string_map_alloc
+00042ce0	a	cef_string_map_free
+00042cf6	a	cef_string_multimap_alloc
+00042d12	a	cef_string_multimap_free
+00042d2e	a	EnterCriticalSection
+00042d46	a	LeaveCriticalSection
+00042d5e	a	InitializeCriticalSectionAndSpinCount
+00042d86	a	DeleteCriticalSection
+00042d9e	a	SetEvent
+00042daa	a	ResetEvent
+00042db8	a	WaitForSingleObjectEx
+00042dd0	a	CreateEventW
+00042de0	a	GetModuleHandleW
+00042df4	a	GetProcAddress
+00042e06	a	RtlCaptureContext
+00042e1a	a	RtlLookupFunctionEntry
+00042e34	a	RtlVirtualUnwind
+00042e48	a	UnhandledExceptionFilter
+00042e64	a	SetUnhandledExceptionFilter
+00042e82	a	GetCurrentProcess
+00042e96	a	IsProcessorFeaturePresent
+00042eb2	a	IsDebuggerPresent
+00042ec6	a	QueryPerformanceCounter
+00042ee0	a	GetCurrentProcessId
+00042ef6	a	GetCurrentThreadId
+00042f0c	a	GetSystemTimeAsFileTime
+00042f26	a	InitializeSListHead
+00043240	a	.?AVbad_alloc@std@@
+00043268	a	.?AVexception@std@@
+00043290	a	.?AVbad_array_new_length@std@@
+000432c0	a	.?AVtype_info@@
+000432e0	a	.?AVCDLL_Interface@@
+00043308	a	.?AVCefBaseRefCounted@@
+00043330	a	.?AVSACefApp@@
+00043350	a	.?AV?$CefStringBase@UCefStringTraitsUTF16@@@@
+00043390	a	.?AVCefApp@@
+000433b0	a	.?AU_cef_browser_settings_t@@
+000433e0	a	.?AVSACefBrowserSingleton@@
+00043410	a	.?AV?$CefStructBase@UCefBrowserSettingsTraits@@@@
+00043458	a	.?AU_cef_window_info_t@@
+00043488	a	.?AV?$CefStructBase@UCefSettingsTraits@@@@
+000434c8	a	.?AVCefWindowInfo@@
+000434f0	a	.?AV?$CefStructBase@UCefWindowInfoTraits@@@@
+00043530	a	.?AU_cef_settings_t@@
+00043558	a	.?AVCNotifyClass@SACefClientHandler@@
+00043590	a	.?AVSACefClientHandler@@
+000435c0	a	.?AVCefRequestHandler@@
+000435f0	a	.?AV?$basic_ostream@DU?$char_traits@D@std@@@std@@
+00043638	a	.?AVCefKeyboardHandler@@
+00043670	a	.?AV?$basic_stringstream@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@
+000436c8	a	.?AVCefLoadHandler@@
+000436f0	a	.?AV?$basic_stringbuf@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@
+00043748	a	.?AVios_base@std@@
+00043770	a	.?AVCefDisplayHandler@@
+00043798	a	.?AVCefLifeSpanHandler@@
+000437d0	a	.?AV?$basic_iostream@DU?$char_traits@D@std@@@std@@
+00043818	a	.?AV?$_Iosb@H@std@@
+00043840	a	.?AV?$basic_streambuf@DU?$char_traits@D@std@@@std@@
+00043888	a	.?AVCefClient@@
+000438b0	a	.?AV?$basic_istream@DU?$char_traits@D@std@@@std@@
+000438f8	a	.?AV?$basic_ios@DU?$char_traits@D@std@@@std@@
+00047860	a	<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+00047899	a	<assembly xmlns='urn:schemas-microsoft-com:asm.v1' manifestVersion='1.0'>
+000478e4	a	  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v3">
+0004791c	a	    <security>
+0004792c	a	      <requestedPrivileges>
+00047949	a	        <requestedExecutionLevel level='asInvoker' uiAccess='false' />
+00047991	a	      </requestedPrivileges>
+000479af	a	    </security>
+000479c0	a	  </trustInfo>
+000479d0	a	</assembly>
+00048cdd	a	DigiCert Inc1
+00048cf4	a	www.digicert.com1!0
+00048d0f	a	DigiCert Trusted Root G40
+00048d2b	a	210429000000Z
+00048d3a	a	360428235959Z0i1
+00048d61	a	DigiCert, Inc.1A0?
+00048d79	a	8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA10
+00048f6a	a	[K]taM?
+00048fbf	a	SA|X=G
+00049077	a	http://ocsp.digicert.com0A
+0004909c	a	5http://cacerts.digicert.com/DigiCertTrustedRootG4.crt0C
+000490e4	a	2http://crl3.digicert.com/DigiCertTrustedRootG4.crl0
+000492fb	a	jj@0HK4
+00049391	a	DigiCert, Inc.1A0?
+000493a9	a	8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA10
+000493e6	a	250325000000Z
+000493f5	a	280503235959Z0x1
+0004941c	a	Seoul1
+0004942c	a	Gangnam District1
+00049447	a	NEXON Games Co., Ltd.1
+00049467	a	NEXON Games Co., Ltd.0
+0004970f	a	http://www.digicert.com/CPS0
+00049764	a	Mhttp://crl3.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crl0S
+000497b9	a	Mhttp://crl4.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crl0
+00049828	a	http://ocsp.digicert.com0\
+0004984d	a	Phttp://cacerts.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crt0
+00049ae4	a	DigiCert, Inc.1A0?
+00049afc	a	8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1
+00049e95	a	20250826113019Z
+00049ef0	a	DigiCert, Inc.1A0?
+00049f08	a	8DigiCert Trusted G4 TimeStamping RSA4096 SHA256 2025 CA10
+00049f45	a	250604000000Z
+00049f54	a	360903235959Z0c1
+00049f7b	a	DigiCert, Inc.1;09
+00049f93	a	2DigiCert SHA256 RSA4096 Timestamp Responder 2025 10
+0004a076	a	p%w+q4
+0004a28b	a	http://ocsp.digicert.com0]
+0004a2b0	a	Qhttp://cacerts.digicert.com/DigiCertTrustedG4TimeStampingRSA4096SHA2562025CA1.crt0_
+0004a314	a	Nhttp://crl3.digicert.com/DigiCertTrustedG4TimeStampingRSA4096SHA2562025CA1.crl0 
+0004a3f9	a	r&fR{a|
+0004a5e1	a	DigiCert Inc1
+0004a5f8	a	www.digicert.com1!0
+0004a613	a	DigiCert Trusted Root G40
+0004a62f	a	250507000000Z
+0004a63e	a	380114235959Z0i1
+0004a665	a	DigiCert, Inc.1A0?
+0004a67d	a	8DigiCert Trusted G4 TimeStamping RSA4096 SHA256 2025 CA10
+0004a97b	a	http://ocsp.digicert.com0A
+0004a9a0	a	5http://cacerts.digicert.com/DigiCertTrustedRootG4.crt0C
+0004a9e8	a	2http://crl3.digicert.com/DigiCertTrustedRootG4.crl0 
+0004ab7c	a	:U|r*C
+0004ac99	a	DigiCert Inc1
+0004acb0	a	www.digicert.com1$0"
+0004accb	a	DigiCert Assured ID Root CA0
+0004acea	a	220801000000Z
+0004acf9	a	311109235959Z0b1
+0004ad20	a	DigiCert Inc1
+0004ad37	a	www.digicert.com1!0
+0004ad52	a	DigiCert Trusted Root G40
+0004ad93	a	]J<0"0i3
+0004aeb5	a	v=Y]Bv
+0004b017	a	http://ocsp.digicert.com0C
+0004b03c	a	7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
+0004b086	a	4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0
+0004b1b9	a	~qj#k"
+0004b209	a	DigiCert, Inc.1A0?
+0004b221	a	8DigiCert Trusted G4 TimeStamping RSA4096 SHA256 2025 CA1
+0004b2ab	a	250826113019Z0+
+0004b324	a	/1(0&0$0"
+0004b465	a	/\^Ww@
+0004b50c	a	vTl9\GF
+00039610	u	api-ms-win-core-synch-l1-2-0.dll
+00039658	u	kernel32.dll
+00039c20	u	\SACefProcess.exe
+00039c48	u	\Resources
+00039c60	u	\locales
+00039c78	u	\cef.log
+00039c90	u	\CEF\Cache
+00039ca8	u	\DefaultCache

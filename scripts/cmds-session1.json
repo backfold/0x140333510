@@ -1,0 +1,14 @@
+[
+  { "tool": "open_binary", "args": { "path": "H:\\SA_Analysis\\target\\suddenattack.exe" }, "timeoutMs": 900000 },
+  { "tool": "binary_session" },
+  { "tool": "procedure_info", "args": { "procedure": "0x140ab3058" } },
+  { "tool": "procedure_assembly", "args": { "procedure": "0x140ab3058" } },
+  { "tool": "read_bytes", "args": { "address": "0x1404d3000", "length": 512 } },
+  { "tool": "search_procedures", "args": { "pattern": "WinMain", "mode": "literal" } },
+  { "tool": "search_strings", "args": { "pattern": "LithTech", "mode": "literal" } },
+  { "tool": "search_strings", "args": { "pattern": "engine.rez", "mode": "literal" } },
+  { "tool": "search_strings", "args": { "pattern": "SuddenAttack V2.0", "mode": "literal" } },
+  { "tool": "search_strings", "args": { "pattern": "NGClient", "mode": "literal" } },
+  { "tool": "search_strings", "args": { "pattern": "themida", "mode": "literal", "case_sensitive": false } },
+  { "tool": "close_binary", "args": { "snapshot_path": "H:\\SA_Analysis\\evidence\\sa_snapshot.bin" } }
+]

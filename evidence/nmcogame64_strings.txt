@@ -1,0 +1,1584 @@
+﻿0000004d	a	!This program cannot be run in DOS mode.
+0000011f	a	"Rich>
+0000026f	a	`.rdata
+00000297	a	@.data
+000002c0	a	.pdata
+000002e7	a	@.gfids
+0000035f	a	@.reloc
+000017a6	a	G(L9w tMH
+00001856	a	u8D9w`u
+0000185e	a	D9w<u!D
+000019a8	a	GxD9wxu
+000019cb	a	GxD9wxu
+000019ee	a	GxD9wxu
+00001a11	a	GxD9wxu
+00001a34	a	GxD9wxu
+00001a65	a	l$@D9wxu
+00001a9d	a	GpD9wxu
+00001b86	a	tFD9wxu
+00001ba9	a	GxD9wxu
+00001ee1	a	|$ AVH
+00001f52	a	D9s8uy
+00001f89	a	C89{8r
+00002020	a	@SUAVH
+0000207c	a	D9a\t!
+000021d7	a	\$0tPH
+0000278e	a	i H9i0u
+000027a3	a	A0H9i8u
+0000291d	a	C4;C,A
+0000292a	a	C0;C,s
+00002e8b	a	A)|$HA
+00002eee	a	L$H;H(s
+00002f9e	a	L$H;H8s
+00003317	a	E)l$HL
+000033c0	a	A9D$|s_
+0000341c	a	D$|A;D$pr
+000034eb	a	D$tA9D$|
+00003d04	a	A;L$0v#A
+00004803	a	|$89i\t
+0000498e	a	USVWATAUAVH
+00004e4d	a	A^A]A\_^[]
+00005036	a	q L9q0u
+0000504b	a	A0L9q8u
+00005165	a	L9wPtaL9w`t[L9whtUH
+000052ee	a	\$0)p(H
+00005320	a	@SWAVH
+000055ae	a	C09p<t(H
+000056ee	a	S(9C8sv
+000056ff	a	C09p<t#A;
+0000576d	a	C09p<t$D
+000057bf	a	C0H9p 
+000057da	a	C09p<t&A;
+00005849	a	C09p<t&
+00005890	a	C0H9p0
+000058aa	a	C09p<t&A;
+00005919	a	C09p<t&
+00005957	a	l$@uRH
+0000595e	a	C09p<tB
+000059ae	a	9s(t)H
+00005c03	a	C,9s(@
+00006002	a	\$ ATAVAWH
+000060fe	a	F()h(H
+00006105	a	N(D9q(u
+000061a4	a	F()h(H
+000061ab	a	N(D9q(u
+000061e1	a	 A_A^A\
+0000626e	a	F(D9p(u
+000062c5	a	WATAUAVAWH
+00006622	a	F()h(H
+00006629	a	N(D9q(u
+0000665a	a	 A_A^A]A\_
+000066e5	a	F(D9p(u
+0000673f	a	WATAUAVAWH
+00006a72	a	F()h(H
+00006a79	a	N(D9q(u
+00006aaa	a	 A_A^A]A\_
+00006cc1	a	F(D9p(u
+00006d00	a	@WATAUAVAWH
+00006f9f	a	F()h(H
+00006fa6	a	N(D9q(u
+00006fd7	a	 A_A^A]A\_
+0000705b	a	F()h(H
+00007062	a	V(D9r(u
+000070b0	a	@SUAWH
+000071c7	a	F(D)p(H
+000071cf	a	N(9i(u
+00007291	a	F(9h(u
+000074f7	a	l$ VWATAUAWH
+00007671	a	tmLc\$0
+000076e7	a	l$HA_A]A\_^
+0000770f	a	WATAUAVAWH
+00007751	a	~:fD9,
+000079b7	a	@A_A^A]A\_
+000079d0	a	@SUAUH
+00008721	a	|$ AVH
+000091af	a	TUUUUUU
+000095ad	a	A9q }EI
+0000965b	a	A;q }?I
+000097ec	a	9C }(H
+0000994c	a	9C s(H
+00009ac1	a	9A }.H
+00009dd5	a	USVWATAUAVAWH
+0000c58d	a	A_A^A]A\_^[]
+0000c5a5	a	USVWAVH
+0000c813	a	A^_^[]
+0000c825	a	USVWATAUAVAWH
+0000d512	a	A_A^A]A\_^[]
+0000d525	a	USVWATAUAVAWH
+0000e036	a	A_A^A]A\_^[]
+0000e055	a	USVWAVAWH
+0000e351	a	A_A^_^[]
+0000e365	a	USVWATAUAVAWH
+0000ee5f	a	A_A^A]A\_^[]
+0000f289	a	gfffffffL+
+0000f4dc	a	gfffffffH
+0000fa51	a	|$ AVH
+0000fbbc	a	t$ ATAVAWH
+0000fbc8	a	 Hcl$`M
+0000fc62	a	 A_A^A\
+0000ffcf	a	WAVAWH
+0001005b	a	 A_A^_
+00010870	a	\$HHc{
+000108e3	a	\$HHcC
+00010a12	a	L$ WAVAWH
+00010b0d	a	0A_A^_
+00011320	a	;S }>H
+0001179a	a	SVWAVAWH
+000117f7	a	gfffffffI
+00011873	a	@A_A^_^[
+00011892	a	gfffffffL
+000118c8	a	fffffff
+000119c2	a	fffffff
+00011b36	a	fffffff
+00011c5f	a	D$@L;D$Hu
+0001211f	a	D$@L;D$Hu
+0001220f	a	D$PL;D$Xu
+00012650	a	gfffffffH
+00012b20	a	@WAVAWH
+00012ca9	a	0A_A^_
+00013170	a	@VWAVH
+00013360	a	@WAVAWH
+00013469	a	0A_A^_
+000137a0	a	@UVWAVAWH
+00013a8c	a	@A_A^_^]
+00013b80	a	@UVWAVAWH
+00013f39	a	PA_A^_^]
+0001403c	a	t$ WAVAWH
+00014063	a	tfL9?tTH
+0001411a	a	@A_A^_
+000141d0	a	@WAVAWH
+00014315	a	\$XHc{
+00014406	a	0A_A^_
+00014470	a	@UVWATAUAVAWH
+00014503	a	fD94Cu
+00014aa3	a	A_A^A]A\_^]
+00014ab2	a	\$ VWAVH
+00014c1a	a	SVWATAVAWH
+00014ce2	a	HA_A^A\_^[
+00014e3f	a	TUUUUUU
+000151dd	a	8C s(H
+0001545a	a	VAVAWH
+00015557	a	 A_A^^
+0001557c	a	t$ AVH
+00015bff	a	D$@L;D$Hu
+00015e2c	a	L$ SVWH
+000162f5	a	WAVAWH
+00016509	a	@A_A^_
+00016782	a	l$ VWAWH
+000168f9	a	|$hLcx
+00016bc0	a	@SVWATAUAVAW
+00016dbc	a	A_A^A]A\_^[
+00017230	a	@SUVWAV
+00017478	a	A^_^][
+00017700	a	@UVWAVAWH
+00017a57	a	A_A^_^]
+00017ac0	a	@SUVWAVAWH
+00017de5	a	A_A^_^][
+00017df0	a	@VWAVH
+00018190	a	@VATAVH
+000181ae	a	0A^A\^
+0001829f	a	0A^A\^
+000182c2	a	l$ VATAVH
+000182e9	a	@A^A\^
+000183f7	a	@A^A\^
+00018563	a	WATAUAVAWH
+00018a14	a	A_A^A]A\_
+00018a20	a	@UVWATAUAVAWH
+00019370	a	A_A^A]A\_^]
+00019870	a	@UVWATAUAVAWH
+00019c63	a	A_A^A]A\_^]
+0001a085	a	L$0HcQ
+0001a31a	a	USVWATAUAVAWH
+0001a9c0	a	A_A^A]A\_^[]
+0001abdf	a	D$PL;D$Xu
+0001ac05	a	VAVAWH
+0001b020	a	 A_A^^
+0001b638	a	H+D$(A;
+0001b676	a	H9|$(t
+0001ba61	a	asm686 with masm, optimised assembly code from Brian Raiter, written 1998, converted to amd 64 by Gilles Vollant 2005
+0001bc49	a	\$899@
+0001bc60	a	@SUVWAVH
+0001be64	a	A^_^][
+0001c117	a	l$ ATAVAWH
+0001c1f3	a	 A_A^A\
+0001c2a1	a	|$ AVH
+0001c880	a	@VWAVH
+0001c9ee	a	<A"uQA
+0001d28f	a	USVWATAUAVAWH
+0001d918	a	xA_A^A]A\_^[]
+0001e231	a	|$`H;y
+0001e280	a	@UVWAVAWH
+0001e335	a	|$XH9C
+0001e4c7	a	A_A^_^]
+0001ea40	a	@SVWATAUAVAW
+0001eac3	a	fD94yu
+0001ec6a	a	A_A^A]A\_^[
+0001ec80	a	@VWAVH
+0001ef10	a	@SVWATAUAVAW
+0001f580	a	A_A^A]A\_^[
+0001f5d0	a	@WATAUAVAW
+0001fa52	a	A_A^A]A\_
+0001feb0	a	@SWAUAV
+0002022a	a	A^A]_[
+00020280	a	@VWAVH
+00020720	a	@UATAUAVAWH
+000209fe	a	ePA_A^A]A\]
+00020b18	a	_@H;W(s
+00020bea	a	_@H;W(s
+000211b1	a	t$ AWH
+00021281	a	|$ AVH
+00021340	a	@VWATAVAWH
+0002167c	a	A_A^A\_^
+000217e0	a	@WATAUAVAW
+00021c0b	a	A_A^A]A\_
+00021c25	a	WAVAWH
+00021d7e	a	@A_A^_
+00021f23	a	WATAUAVAWH
+000223d1	a	$CD9|$(
+00022563	a	A_A^A]A\_
+00022919	a	SVWATAUAVAWH
+00022baa	a	D$HH9D$@
+00022bc3	a	D$HH9D$@t
+00022bf2	a	A_A^A]A\_^[
+00022c0c	a	|$ UATAUAVAWH
+00022f0e	a	Lct$(E
+00022f25	a	;D$8~pI
+000232b3	a	A_A^A]A\]
+0002339c	a	t$ WAVAWH
+00023575	a	 A_A^_
+000239e7	a	H9)tDH
+00023a3f	a	9o0u|3
+00023b17	a	H9)tDH
+00023b6f	a	9o0u|3
+00023d45	a	WATAUAVAWH
+00023e86	a	0A_A^A]A\_
+00023fa2	a	\$ UWAVH
+000241d9	a	D$@;D$ uQH
+00024338	a	D$P;D$ uEH
+0002478f	a	WAVAWH
+0002482d	a	 A_A^_
+000248a0	a	@SUVWATAVAWH
+000248f8	a	@A_A^A\_^][
+0002494b	a	@A_A^A\_^][
+00024969	a	@A_A^A\_^][
+00024986	a	@A_A^A\_^][
+00024a16	a	@A_A^A\_^][
+00024b8c	a	@A_A^A\_^][
+00024c10	a	@VWATAUAVAWH
+00024e0a	a	HA_A^A]A\_^
+00025070	a	@SUVWATAUAVAWH
+00025243	a	A_A^A]A\_^][
+00025261	a	|$ AVH
+000252fc	a	|$ ATAVAWH
+00025342	a	\$@uDf
+000253b9	a	 A_A^A\
+00025491	a	L$ SWH
+00025597	a	L$ SUVWH
+000255f7	a	L$ SUVWH
+00025d7f	a	WAVAWH
+00025e08	a	 A_A^_
+00026330	a	@UVWAVAWH
+0002638a	a	F0H+F(H
+000264d7	a	F0H+F(H
+000265b5	a	0A_A^_^]
+00026a11	a	L$ SVWH
+00026a71	a	L$ SVWH
+00026ac3	a	UATAUAVAWH
+00026ed3	a	A_A^A]A\]
+00027253	a	VWATAVAWH
+0002749c	a	A_A^A\_^
+000284c5	a	UVWATAUAVAW
+000286a7	a	A_A^A]A\_^]
+0002878f	a	Hc|$hH
+00028fca	a	USVWATAUAVAWH
+00029424	a	XA_A^A]A\_^[]
+00029440	a	@UVWATAUAVAWH
+000298cb	a	@A_A^A]A\_^]
+00029a7c	a	L$ SVWH
+00029ac0	a	@SUVWATAUAVAWH
+00029df3	a	A_A^A]A\_^][
+00029ee8	a	H9{Ht L
+00029fdc	a	L$ USVWATAUAVAWH
+0002a04e	a	D$vA9E0
+0002a336	a	A_A^A]A\_^[]
+0002a3bc	a	L$ SVWH
+0002a617	a	;^Xu&H
+0002b210	a	|$ AVH
+0002bc7e	a	 H3E H3E
+0002bec3	a	VWATAVAWH
+0002bf70	a	A_A^A\_^
+0002bfbb	a	B(I9A(
+0002c017	a	UATAUAVAWH
+0002c41c	a	L9`8tA
+0002c47a	a	A_A^A]A\]
+0002c4de	a	UVWATAUAVAWH
+0002c72b	a	pA_A^A]A\_^]
+0002c74f	a	WATAUAVAWH
+0002c801	a	 A_A^A]A\_
+0002c92b	a	AUAVAWH
+0002ca95	a	I9}(t9H
+0002caf4	a	0A_A^A]
+0002cafc	a	@SVWATAUAVAWH
+0002cb1f	a	L!|$(L!
+0002ccc1	a	D$0HcH
+0002ccd9	a	pA_A^A]A\_^[
+0002cd47	a	SVWATAUAVAWH
+0002ceba	a	0A_A^A]A\_^[
+0002ced7	a	WATAUAVAWH
+0002d009	a	r 9_ t
+0002d04d	a	ri9V vdH
+0002d108	a	A_A^A]A\_
+0002d80e	a	VWATAVAWH
+0002d8c3	a	 A_A^A\_^
+0002d8e1	a	x ATAVAWH
+0002d9df	a	 A_A^A\
+0002dbce	a	H;xXu9
+0002dea2	a	ffffff
+0002e154	a	fA;8utI
+0002e27c	a	fA;0t)fA98t
+0002e54f	a	WATAUAVAWH
+0002e731	a	A_A^A]A\_
+0002e74b	a	WATAUAVAWH
+0002e8f9	a	 A_A^A]A\_
+0002f7b8	a	@UAVAWH
+0002faa5	a	UVWAVAWH
+0002fc1d	a	A_A^_^]
+0002fc4f	a	t$ UWATAVAWH
+0002fd9b	a	D8d$pt
+0002fdd2	a	A_A^A\_]
+000305ce	a	D$@H;G
+00030650	a	D$0H;G
+00030708	a	S,, <Zw
+000307eb	a	CA< t(<#t
+0003090d	a	S,, <Zw
+000309f3	a	CA< t(<#t
+000314a1	a	<htr<jtb<lt6<tt&<wt
+00031586	a	!,X< w
+0003161d	a	<htr<jtb<lt6<tt&<wt
+00031702	a	!,X< w
+00031a80	a	t$ WAVAWH
+00031c39	a	s4+sP+
+00031ce6	a	0A_A^_
+00031cfc	a	t$ WAVAWH
+00031eb5	a	s4+sP+
+00031f62	a	0A_A^_
+00031f78	a	t$ WATAUAVAWH
+0003216c	a	s4+sP+
+0003222b	a	A_A^A]A\_
+00032244	a	t$ WATAUAVAWH
+00032438	a	s4+sP+
+000324f7	a	A_A^A]A\_
+000333bb	a	WAVAWH
+0003349a	a	 A_A^_
+000334b0	a	t$ WAVAWH
+000335a6	a	 A_A^_
+000335c1	a	x ATAVAWH
+00033662	a	 A_A^A\
+0003367b	a	WATAUAVAWH
+00033720	a	 A_A^A]A\_
+000338af	a	t$ UWATAVAWH
+00033a6d	a	D8d$Ht
+00033a9f	a	D8d$Ht
+00033ad6	a	A_A^A\_]
+00033c88	a	|$ UATAUAVAWH
+00033f85	a	A_A^A]A\]
+00033f9c	a	t$ WATAUAVAWH
+0003457e	a	'D8l$@
+000345c4	a	t)D8l$@t
+000345ee	a	WD8l$@t
+00034621	a	D8l$@t
+0003465a	a	A_A^A]A\_
+00034670	a	t$ WATAUAVAWH
+00034855	a	f;\$ts
+0003497f	a	rsf;\$ 
+00034993	a	r_f;\$,
+000349a7	a	rKf;\$<
+000349bb	a	r7f;\$L
+000349cf	a	r#f;\$\s
+000349dd	a	f;\$ds
+00034b96	a	f;\$(r
+00034baa	a	f;\$0r
+00034c00	a	rvf;\$ 
+00034c14	a	rbf;\$,
+00034c28	a	rNf;\$<
+00034c3c	a	r:f;\$L
+00034c50	a	r&f;\$\s
+00034c5e	a	f;\$ds
+00034e12	a	A_A^A]A\_
+0003503d	a	@8|$Pt
+00035288	a	|$ AVH
+0003568d	a	@8l$8t
+00035b7c	a	@UAVAWH
+00035ed4	a	@UAVAWH
+00035ff0	a	epA_A^]
+0003670e	a	USVWATAUAVAWH
+000378ef	a	hA_A^A]A\_^[]
+00037b13	a	WAVAWH
+00037d2f	a	?)tuf97tf
+00037dbf	a	@A_A^_
+00038124	a	t$ WATAUAVAWH
+000384f2	a	rsf;\$(
+00038506	a	r_f;\$8
+0003851a	a	rKf;\$H
+0003852e	a	r7f;\$X
+00038542	a	r#f;\$hs
+00038550	a	f;\$ps
+0003874b	a	f;\$Tr
+000387d1	a	rzf;\$(
+000387e5	a	rff;\$8
+000387f9	a	rRf;\$H
+0003880d	a	r>f;\$X
+00038821	a	r*f;\$hs#
+0003882f	a	f;\$ps
+00038a59	a	A_A^A]A\_
+00038aa7	a	@8|$PtE
+00038ab1	a	t@@8{<t
+00038b43	a	@8|$PtG
+00038b4d	a	tB@8{<t
+00038ba5	a	UVWATAUAVAWH
+00038bbc	a	@8q<u;H
+00038d73	a	0A_A^A]A\_^]
+00038d8c	a	t$ WATAUAVAWH
+00038da6	a	8Q<u;H
+00038e94	a	 t38S<u
+00038f34	a	 A_A^A]A\_
+0003903b	a	y0f98u
+0003912a	a	@HcC(H
+00039211	a	UVWATAUAVAWH
+000395ae	a	0A_A^A]A\_^]
+000395cb	a	WATAUAVAWH
+00039737	a	0A_A^A]A\_
+0003974d	a	UVWATAUAVAWH
+0003a2f4	a	D$XD8p
+0003a377	a	L$D;L$T
+0003a881	a	L$P+L$8
+0003aa41	a	D$XD90}
+0003ae80	a	L$P+L$H
+0003b4fe	a	A_A^A]A\_^]
+0003bf53	a	f;S8tDH;C
+0003c414	a	L$0H;K
+0003c5ac	a	t$ WATAUAVAWH
+0003c5f3	a	L9&u'H
+0003c772	a	 A_A^A]A\_
+0003c8d3	a	LHcL$PH
+0003c9c3	a	UAVAWH
+0003ca14	a	fD9<Zu
+0003cc3f	a	WAVAWH
+0003cd11	a	@A_A^_
+0003cfc3	a	u3HcH<H
+0003d1e9	a	x ATAVAWH
+0003d38c	a	 A_A^A\
+0003d3fd	a	UVWAVAWH
+0003d565	a	0A_A^_^]
+0003d5eb	a	WAVAWH
+0003d636	a	A86taH
+0003d6bb	a	0A_A^_
+0003d7dc	a	L$ WATAUAVAWH
+0003d964	a	@A_A^A]A\_
+0003d981	a	x ATAVAWH
+0003db42	a	 A_A^A\
+0003dea8	a	@SUVWATAUAVAWH
+0003dfbc	a	D88Hte
+0003e0c7	a	8A_A^A]A\_^][
+0003e0e1	a	SUVWATAUAVAWH
+0003e1d3	a	D88Ht!
+0003e30c	a	D98Ht;H
+0003e3c7	a	8A_A^A]A\_^][
+0003e3e1	a	VATAUAVAWH
+0003e4e4	a	 A_A^A]A\^
+0003e4fa	a	UVWATAUAVAWH
+0003e6aa	a	D(8Ht}
+0003e948	a	`A_A^A]A\_^]
+0003eb9b	a	t#HcL$`H
+0003ecd1	a	s WAVAWH
+0003ef3a	a	0A_A^_
+0003f2eb	a	UATAUAVAWH
+0003f6c1	a	A_A^A]A\]
+0003f70e	a	WATAUAVAWH
+0003f7e1	a	 A_A^A]A\_
+0003f7fa	a	WATAUAVAWH
+0003f8d1	a	 A_A^A]A\_
+0003fac1	a	UVWATAUAVAWH
+0003fcb8	a	A_A^A]A\_^]
+0003fef2	a	VWATAVAW
+00040051	a	A_A^A\_^
+0004006a	a	WATAUAVAWH
+0004013d	a	 A_A^A]A\_
+0004014a	a	\$ UVWATAUAVAWH
+00040369	a	H!D$ E
+0004041c	a	`A_A^A]A\_^]
+00040e83	a	D82u&H
+00040f82	a	D8t$Ht
+000411b5	a	x ATAVAWH
+00041498	a	gfffffffH
+000414cd	a	D8d$ht
+000414fa	a	A_A^A\
+00041b83	a	WATAUAVAWH
+00041dab	a	A_A^A]A\_
+00041ec7	a	I9\$ ~@H
+000420c1	a	fD9t$b
+00042b30	a	@UATAUAVAWH
+00042dee	a	H!T$0D
+00042e01	a	uf!T$(H!T$ 
+00042e5f	a	A_A^A]A\]
+00042f5b	a	WATAUAVAWH
+000430e1	a	 A_A^A]A\_
+00043916	a	UVWATAUAVAWH
+00043af3	a	`A_A^A]A\_^]
+00043b29	a	x ATAVAWH
+00043b7b	a	0A_A^A\
+00043c2a	a	\$ UVWAVAWH
+00043d49	a	A_A^_^]
+00043d6f	a	@8|$^t
+0004468f	a	l$ VWATAVAWH
+0004474d	a	L$&@8t$&t0@8q
+00044846	a	A81t@@8r
+00044926	a	A_A^A\_^
+00044a22	a	fD94Fu
+00044c67	a	SVWATAUAWH
+00044ef2	a	HA_A]A\_^[
+00045287	a	ATAVAWH
+0004539f	a	0A_A^A\
+000455fb	a	WAVAWH
+000456db	a	0A_A^_
+000456f3	a	WAVAWH
+000457dd	a	 A_A^_
+00045fd4	a	@UATAUAVAWH
+00046179	a	e0A_A^A]A\]
+00046248	a	@USVWATAUAVAWH
+00047516	a	D8l$ht
+0004753d	a	A_A^A]A\_^[]
+00047b1e	a	D8t$8t
+00047d5b	a	l$ WAVAWH
+00047e15	a	 A_A^_
+00047e20	a	@UATAVH
+00048612	a	ffffff
+000489d1	a	fffffff
+00048af0	a	|$ ATAVAWH
+00048c85	a	\$@@8=
+00048d72	a	 A_A^A\
+00048f07	a	USVWAVH
+00049024	a	A^_^[]
+000495d0	a	LcA<E3
+0004aeeb	a	UPHkE`
+0004b8e1	a	t"HcM`H
+0004e820	a	vector<T> too long
+0004e838	a	map/set<T> too long
+0004ebf8	a	RegOpenKeyTransactedW
+00050098	a	NMCO_MemoryFree
+000500a8	a	NMCO_CallNMFunc2
+000500c0	a	NMCO_CallNMFunc
+000519b0	a	CSLock_Event_
+000519c0	a	CSLock_MMF_
+00051ef8	a	getaddrinfo
+00051f08	a	getnameinfo
+00051f18	a	freeaddrinfo
+00051f28	a	\ws2_32
+00051f30	a	\wship6
+00052478	a	 %s="%s"
+000524f0	a	AllocateAndInitializeSid Error %u
+00052518	a	ConvertStringSecurityDescriptorToSecurityDescriptorW
+00052570	a	ConvertStringSecurityDescriptorToSecurityDescriptor Error %u
+000525b0	a	GetProcAddress() Error %u
+000525d0	a	LoadLibrary("Advapi32.dll") Error %u
+000525f8	a	GetSecurityDescriptorSacl Error %u
+00052620	a	SetEntriesInAcl Error %u
+00052640	a	LocalAlloc Error %u
+00052658	a	InitializeSecurityDescriptor Error %u
+00052680	a	SetSecurityDescriptorDacl Error %u
+000526a8	a	SetSecurityDescriptorSacl Error %u
+00052e78	a	CSGlobalLockWatcher_MMF
+00053250	a	Unknown exception
+00053280	a	bad allocation
+000532e0	a	InitializeConditionVariable
+00053300	a	SleepConditionVariableCS
+00053320	a	WakeAllConditionVariable
+00053380	a	bad array new length
+000533e0	a	bad exception
+000535a0	a	FlsAlloc
+000535b8	a	FlsFree
+000535c8	a	FlsGetValue
+000535e0	a	FlsSetValue
+000535f8	a	InitializeCriticalSectionEx
+00053940	a	__based(
+00053950	a	__cdecl
+00053958	a	__pascal
+00053968	a	__stdcall
+00053978	a	__thiscall
+00053988	a	__fastcall
+00053998	a	__vectorcall
+000539a8	a	__clrcall
+000539b4	a	__eabi
+000539c0	a	__ptr64
+000539c8	a	__restrict
+000539d8	a	__unaligned
+000539e8	a	restrict(
+00053a00	a	 delete
+00053a28	a	operator
+00053ab0	a	`vftable'
+00053ac0	a	`vbtable'
+00053ad0	a	`vcall'
+00053ad8	a	`typeof'
+00053ae8	a	`local static guard'
+00053b00	a	`string'
+00053b10	a	`vbase destructor'
+00053b28	a	`vector deleting destructor'
+00053b48	a	`default constructor closure'
+00053b68	a	`scalar deleting destructor'
+00053b88	a	`vector constructor iterator'
+00053ba8	a	`vector destructor iterator'
+00053bc8	a	`vector vbase constructor iterator'
+00053bf0	a	`virtual displacement map'
+00053c10	a	`eh vector constructor iterator'
+00053c38	a	`eh vector destructor iterator'
+00053c58	a	`eh vector vbase constructor iterator'
+00053c80	a	`copy constructor closure'
+00053ca0	a	`udt returning'
+00053cc0	a	`local vftable'
+00053cd0	a	`local vftable constructor closure'
+00053cf4	a	 new[]
+00053d00	a	 delete[]
+00053d10	a	`omni callsig'
+00053d20	a	`placement delete closure'
+00053d40	a	`placement delete[] closure'
+00053d60	a	`managed vector constructor iterator'
+00053d88	a	`managed vector destructor iterator'
+00053db0	a	`eh vector copy constructor iterator'
+00053dd8	a	`eh vector vbase copy constructor iterator'
+00053e08	a	`dynamic initializer for '
+00053e28	a	`dynamic atexit destructor for '
+00053e50	a	`vector copy constructor iterator'
+00053e78	a	`vector vbase copy constructor iterator'
+00053ea8	a	`managed vector copy constructor iterator'
+00053ed8	a	`local static thread guard'
+00053ef8	a	operator "" 
+00053f08	a	 Type Descriptor'
+00053f20	a	 Base Class Descriptor at (
+00053f40	a	 Base Class Array'
+00053f58	a	 Class Hierarchy Descriptor'
+00053f78	a	 Complete Object Locator'
+00054149	a	`h````
+00054151	a	xpxxxx
+000541b0	a	`h`hhh
+000541b9	a	xwpwpp
+000541cc	a	(null)
+000541f0	a	Visual C++ CRT: Not enough memory to complete call to strerror.
+0005437c	a	[aOni*{
+0005455d	a	~ $s%r
+0005456c	a	@b;zO]
+00054947	a	v2!L.2
+00054f50	a	CorExitProcess
+0005532c	a	Sunday
+00055334	a	Monday
+00055340	a	Tuesday
+00055348	a	Wednesday
+00055358	a	Thursday
+00055364	a	Friday
+00055370	a	Saturday
+000553b0	a	January
+000553b8	a	February
+000553e4	a	August
+000553f0	a	September
+00055400	a	October
+00055408	a	November
+00055418	a	December
+00055430	a	MM/dd/yy
+00055440	a	dddd, MMMM dd, yyyy
+00055458	a	HH:mm:ss
+000556d0	a	NAN(SNAN)
+000556e0	a	nan(snan)
+000556f0	a	NAN(IND)
+00055700	a	nan(ind)
+00055ac0	a	 !"#$%&'()*+,-./0123456789:;<=>?@abcdefghijklmnopqrstuvwxyz[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+00055c40	a	 !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
+000560c0	a	No error
+000560d0	a	Operation not permitted
+000560e8	a	No such file or directory
+00056108	a	No such process
+00056118	a	Interrupted function call
+00056138	a	Input/output error
+00056150	a	No such device or address
+00056170	a	Arg list too long
+00056188	a	Exec format error
+000561a0	a	Bad file descriptor
+000561b8	a	No child processes
+000561d0	a	Resource temporarily unavailable
+000561f8	a	Not enough space
+00056210	a	Permission denied
+00056228	a	Bad address
+00056238	a	Unknown error
+00056248	a	Resource device
+00056258	a	File exists
+00056268	a	Improper link
+00056278	a	No such device
+00056288	a	Not a directory
+00056298	a	Is a directory
+000562a8	a	Invalid argument
+000562c0	a	Too many open files in system
+000562e0	a	Too many open files
+000562f8	a	Inappropriate I/O control operation
+00056320	a	File too large
+00056330	a	No space left on device
+00056348	a	Invalid seek
+00056358	a	Read-only file system
+00056370	a	Too many links
+00056380	a	Broken pipe
+00056390	a	Domain error
+000563a0	a	Result too large
+000563b8	a	Resource deadlock avoided
+000563d8	a	Filename too long
+000563f0	a	No locks available
+00056408	a	Function not implemented
+00056428	a	Directory not empty
+00056440	a	Illegal byte sequence
+00056998	a	AreFileApisANSI
+000569d0	a	GetCurrentPackageId
+000569f8	a	LCMapStringEx
+00056a10	a	LocaleNameToLCID
+00056a28	a	RoInitialize
+00056a40	a	RoUninitialize
+00056a58	a	SetThreadStackGuarantee
+00056a9c	a	1#QNAN
+00056aa4	a	1#SNAN
+000588a0	a	UUUUUU
+000588d0	a	UUUUUU
+000591ef	a	=imb;D
+0005939e	a	/>58d%
+000593e7	a	>jtm}S
+0005943e	a	)>6{1n
+0005945c	a	+f)>0'
+000594dc	a	;H9>&X
+00059502	a	*StO9>T
+0005954c	a	n03>Pu
+00059622	a	K~Je#>!
+000596fb	a	bp(=>?g
+000597bc	a	BC?>6t9^
+00059825	a	K&>.yC
+0005983c	a	.xJ>Hf
+00059843	a	y\PD>!
+00059852	a	|b=})>
+00059863	a	c [1>H'
+000598a2	a	uzKs@>
+000598be	a	3>N;kU
+000598ed	a	kE>fvw
+00059934	a	V6E>`"(5
+00059ddf	a	?UUUUUU
+0005a1c7	a	?7zQ6$
+0005a218	a	out of memory
+0005a228	a	unknown compression method
+0005a248	a	unknown header flags set
+0005a268	a	unexpected end of file
+0005a280	a	internal error: inflate stream corrupt
+0005a2a8	a	compressed data error
+0005a2c0	a	incorrect data check
+0005a2d8	a	incorrect length check
+0005a2f0	a	requested length does not fit in int
+0005a320	a	incorrect header check
+0005a338	a	invalid window size
+0005a350	a	header crc mismatch
+0005a368	a	invalid block type
+0005a380	a	invalid stored block lengths
+0005a3a0	a	too many length or distance symbols
+0005a3c8	a	invalid code lengths set
+0005a3e8	a	invalid bit length repeat
+0005a408	a	invalid code -- missing end-of-block
+0005a430	a	invalid literal/lengths set
+0005a450	a	invalid distances set
+0005a468	a	invalid literal/length code
+0005a488	a	invalid distance code
+0005a4a0	a	invalid distance too far back
+0005aeb1	a	Qkkbal
+0005b63d	a	[-&LMb#{'
+0005b683	a	w+OQvr
+0005b766	a	)\ZEo^m/
+0005ba37	a	H*0"ZOW
+0005bf99	a	mj>zjZ
+0005c108	a	IiGM>nw
+0005c32d	a	ewh/?y
+0005ca1a	a	OZw3(?
+0005cb9a	a	V_:X1:
+0005d9d8	a	internal error: deflate stream corrupt
+0005da00	a	need dictionary
+0005da10	a	stream end
+0005da20	a	file error
+0005da30	a	stream error
+0005da40	a	data error
+0005da50	a	insufficient memory
+0005da68	a	buffer error
+0005da78	a	incompatible version
+0005f174	a	E:\Work\PlatformDev\_release\NexonTalk\20210518_nmconew\PlatformSDK\x64\Release\nmcogame64.pdb
+0005f1f4	a	.text$di
+0005f208	a	.text$mn
+0005f21c	a	.text$mn$00
+0005f230	a	.text$x
+0005f240	a	.text$yd
+0005f254	a	.idata$5
+0005f268	a	.00cfg
+0005f278	a	.CRT$XCA
+0005f28c	a	.CRT$XCL
+0005f2a0	a	.CRT$XCU
+0005f2b4	a	.CRT$XCZ
+0005f2c8	a	.CRT$XIA
+0005f2dc	a	.CRT$XIC
+0005f2f0	a	.CRT$XIZ
+0005f304	a	.CRT$XLA
+0005f318	a	.CRT$XLZ
+0005f32c	a	.CRT$XPA
+0005f340	a	.CRT$XPX
+0005f354	a	.CRT$XPXA
+0005f368	a	.CRT$XPZ
+0005f37c	a	.CRT$XTA
+0005f390	a	.CRT$XTZ
+0005f3a4	a	.rdata
+0005f3b4	a	.rdata$T
+0005f3c8	a	.rdata$r
+0005f3dc	a	.rdata$zzzdbg
+0005f3f4	a	.rtc$IAA
+0005f408	a	.rtc$IZZ
+0005f41c	a	.rtc$TAA
+0005f430	a	.rtc$TZZ
+0005f444	a	.xdata
+0005f454	a	.xdata$x
+0005f468	a	.edata
+0005f478	a	.idata$2
+0005f48c	a	.idata$3
+0005f4a0	a	.idata$4
+0005f4b4	a	.idata$6
+0005f4d8	a	.data$r
+0005f4f8	a	.pdata
+0005f508	a	.gfids$x
+0005f51c	a	.gfids$y
+0005f550	a	.tls$ZZZ
+0005f564	a	.rsrc$01
+0005f578	a	.rsrc$02
+00067294	a	nmcogame64.dll
+000672a3	a	NMCO_CallNMFunction
+000672b7	a	NMCO_MemoryFree
+000672c7	a	NMCO_SetLocaleAndRegion
+000672df	a	NMCO_SetPatchOption
+000672f3	a	NMCO_SetVersionFileUrlA
+0006730b	a	NMCO_SetVersionFileUrlW
+000679d2	a	LockResource
+000679e2	a	HeapDestroy
+000679f0	a	HeapAlloc
+000679fc	a	HeapReAlloc
+00067a0a	a	HeapFree
+00067a16	a	HeapSize
+00067a22	a	GetProcessHeap
+00067a34	a	LoadResource
+00067a44	a	SizeofResource
+00067a56	a	FindResourceW
+00067a66	a	FindResourceExW
+00067a78	a	MultiByteToWideChar
+00067a8e	a	WideCharToMultiByte
+00067aac	a	ReadFile
+00067ab8	a	FindClose
+00067ac4	a	CloseHandle
+00067ad2	a	GetPrivateProfileStringW
+00067aee	a	CreateFileW
+00067afc	a	FindFirstFileW
+00067b0e	a	FreeLibrary
+00067b1c	a	GetProcAddress
+00067b2e	a	LocalFree
+00067b3a	a	GetCurrentProcessId
+00067b50	a	GetLastError
+00067b60	a	SetFilePointer
+00067b72	a	FormatMessageW
+00067b84	a	LoadLibraryExW
+00067b96	a	GetModuleFileNameW
+00067bac	a	GetModuleHandleW
+00067bc0	a	CreateDirectoryW
+00067bd4	a	GetTickCount
+00067be4	a	GetLocalTime
+00067bf4	a	DeleteFileW
+00067c02	a	WriteFile
+00067c0e	a	SetFileAttributesW
+00067c24	a	GetFileAttributesW
+00067c3a	a	FindNextFileW
+00067c4a	a	CopyFileW
+00067c56	a	LoadLibraryW
+00067c66	a	RaiseException
+00067c78	a	InitializeCriticalSectionAndSpinCount
+00067ca0	a	DeleteCriticalSection
+00067cb6	a	KERNEL32.dll
+00067cc4	a	USER32.dll
+00067cd2	a	RegCloseKey
+00067ce0	a	RegOpenKeyExW
+00067cf0	a	RegQueryValueExW
+00067d02	a	ADVAPI32.dll
+00067d12	a	SHGetSpecialFolderPathW
+00067d2a	a	SHELL32.dll
+00067d38	a	PathAppendW
+00067d46	a	PathFileExistsW
+00067d58	a	StrToIntExW
+00067d66	a	PathCanonicalizeW
+00067d7a	a	PathGetDriveNumberW
+00067d90	a	PathRemoveBackslashW
+00067da8	a	PathRemoveBlanksW
+00067dbc	a	PathRemoveFileSpecW
+00067dd2	a	PathFindExtensionW
+00067de8	a	PathRemoveExtensionW
+00067dfe	a	SHLWAPI.dll
+00067e0c	a	InternetOpenW
+00067e1c	a	InternetCloseHandle
+00067e32	a	InternetConnectW
+00067e46	a	InternetReadFile
+00067e5a	a	InternetSetFilePointer
+00067e74	a	InternetSetOptionW
+00067e8a	a	InternetGetLastResponseInfoW
+00067eaa	a	InternetOpenUrlW
+00067ebe	a	InternetQueryDataAvailable
+00067edc	a	HttpOpenRequestW
+00067ef0	a	HttpSendRequestW
+00067f04	a	HttpQueryInfoW
+00067f14	a	WININET.dll
+00067f22	a	WSACloseEvent
+00067f32	a	WSAConnect
+00067f40	a	WSACreateEvent
+00067f52	a	WSAEnumNetworkEvents
+00067f6a	a	WSAEventSelect
+00067f7c	a	WSAGetOverlappedResult
+00067f96	a	WSARecv
+00067fa0	a	WSAResetEvent
+00067fb0	a	WSASend
+00067fba	a	WSASetEvent
+00067fc8	a	WSASocketW
+00067fd4	a	WS2_32.dll
+00067fe2	a	GetFileVersionInfoSizeA
+00067ffc	a	GetFileVersionInfoA
+00068012	a	VerQueryValueA
+00068022	a	VERSION.dll
+00068030	a	GetCurrentThreadId
+00068046	a	SetEvent
+00068052	a	WaitForSingleObject
+00068068	a	GetSystemInfo
+00068078	a	MapViewOfFile
+00068088	a	UnmapViewOfFile
+0006809a	a	CreateEventA
+000680aa	a	CreateEventW
+000680ba	a	CreateFileMappingA
+000680d0	a	EnterCriticalSection
+000680e8	a	LeaveCriticalSection
+00068100	a	LoadLibraryA
+00068110	a	GetSystemDirectoryA
+00068126	a	LocalAlloc
+00068134	a	GetVersionExW
+00068144	a	IsDebuggerPresent
+00068158	a	OutputDebugStringW
+0006816e	a	ResetEvent
+0006817c	a	WaitForSingleObjectEx
+00068194	a	RtlCaptureContext
+000681a8	a	RtlLookupFunctionEntry
+000681c2	a	RtlVirtualUnwind
+000681d6	a	UnhandledExceptionFilter
+000681f2	a	SetUnhandledExceptionFilter
+00068210	a	GetCurrentProcess
+00068224	a	TerminateProcess
+00068238	a	IsProcessorFeaturePresent
+00068254	a	GetStartupInfoW
+00068266	a	QueryPerformanceCounter
+00068280	a	GetSystemTimeAsFileTime
+0006829a	a	InitializeSListHead
+000682b0	a	RtlPcToFileHeader
+000682c4	a	EncodePointer
+000682d4	a	RtlUnwindEx
+000682e2	a	TlsAlloc
+000682ee	a	TlsGetValue
+000682fc	a	TlsSetValue
+0006830a	a	TlsFree
+00068314	a	InterlockedFlushSList
+0006832c	a	SetLastError
+0006833c	a	VirtualAlloc
+0006834c	a	VirtualProtect
+0006835e	a	VirtualQuery
+0006836e	a	CreateThread
+0006837e	a	ExitThread
+0006838c	a	FreeLibraryAndExitThread
+000683a8	a	GetModuleHandleExW
+000683be	a	ExitProcess
+000683cc	a	GetModuleFileNameA
+000683e2	a	GetConsoleMode
+000683f4	a	ReadConsoleW
+00068404	a	GetFileType
+00068412	a	SetFilePointerEx
+00068426	a	GetConsoleCP
+00068436	a	GetACP
+00068440	a	GetStdHandle
+00068450	a	GetStringTypeW
+00068462	a	LCMapStringW
+00068472	a	FlushFileBuffers
+00068486	a	FindFirstFileExA
+0006849a	a	FindNextFileA
+000684aa	a	IsValidCodePage
+000684bc	a	GetOEMCP
+000684c8	a	GetCPInfo
+000684d4	a	GetCommandLineA
+000684e6	a	GetCommandLineW
+000684f8	a	GetEnvironmentStringsW
+00068512	a	FreeEnvironmentStringsW
+0006852c	a	SetStdHandle
+0006853c	a	SetEndOfFile
+0006854c	a	WriteConsoleW
+0006855c	a	wsprintfA
+00068568	a	AllocateAndInitializeSid
+00068584	a	FreeSid
+0006858e	a	InitializeSecurityDescriptor
+000685ae	a	SetSecurityDescriptorDacl
+000685ca	a	SetSecurityDescriptorSacl
+000685e6	a	GetSecurityDescriptorSacl
+00068602	a	SetEntriesInAclW
+00068616	a	CoInitialize
+00068626	a	CoUninitialize
+00068638	a	CoCreateInstance
+0006864a	a	ole32.dll
+00068efa	a	                          
+00068fda	a	abcdefghijklmnopqrstuvwxyz
+00068ffa	a	ABCDEFGHIJKLMNOPQRSTUVWXYZ
+00069212	a	                          
+00069301	a	abcdefghijklmnopqrstuvwxyz
+00069321	a	ABCDEFGHIJKLMNOPQRSTUVWXYZ
+00069510	a	.?AVCAtlException@ATL@@
+00069538	a	.?AVCWin32Heap@ATL@@
+00069560	a	.?AUIAtlMemMgr@ATL@@
+00069588	a	.?AUIAtlStringMgr@ATL@@
+000695b0	a	.?AVCAtlStringMgr@ATL@@
+000695d8	a	.?AUCNMLocaleInfo@@
+00069600	a	.?AVCNMLocaleManager@@
+00069628	a	.?AV?$AtomicSingleton@VCNMLocaleManager@@@@
+00069668	a	.?AUCNMLocaleInfo_KR@?A0x25315604@@
+000696a0	a	.?AUCNMLocaleInfo_JP@?A0x25315604@@
+000696d8	a	.?AUCNMLocaleInfo_TW_Gamania@?A0x25315604@@
+00069718	a	.?AUCNMLocaleInfo_TW_Nexon@?A0x25315604@@
+00069758	a	.?AUCNMLocaleInfo_CN@?A0x25315604@@
+00069790	a	.?AUCNMLocaleInfo_US@?A0x25315604@@
+000697c8	a	.?AVCStreamCryptor@@
+000697f0	a	.?AVCStreamCryptor_v0@@
+00069818	a	.?AVCStreamCryptor_v1@@
+00069840	a	.?AVCDynamicFunctionBase@@
+00069870	a	.?AV?$CDynamicFunctionT@P6AHIPEAEPEAPEAEAEAI@Z@@
+000698c0	a	.?AV?$CDynamicFunctionT@P6AHIPEAEIPEAPEAEAEAI@Z@@
+00069908	a	.?AV?$CDynamicFunctionT@P6AXPEAX@Z@@
+00069940	a	.?AVCSimpleXmlParser@@
+00069968	a	.?AVCSimpleAjaxConnector@@
+00069998	a	.?AVCSocketAddr@ATL@@
+000699c0	a	.?AV?$CAtlHttpClientT@VZEvtSyncSocket@ATL@@@ATL@@
+00069a08	a	.?AVZEvtSyncSocket@ATL@@
+00069a38	a	.?AVCSimpleXmlException@@
+00069a68	a	.?AVCSimpleXmlNode@@
+00069a90	a	.?AVCDefaultSecurity@@
+00069ab8	a	.?AV?$Singleton2@VCDefaultSecurity@@@@
+00069af0	a	.?AVCInetClient@@
+00069b18	a	.?AVCHTTPClient@@
+00069b40	a	.?AVCCSLockWatcher@@
+00069b68	a	.?AVCLocalCSLockWatcher@@
+00069b98	a	.?AV?$Singleton@VCLocalCSLockWatcher@@@@
+00069bd8	a	.?AVCGlobalCSLockWatcher@@
+00069c08	a	.?AV?$Singleton@VCGlobalCSLockWatcher@@@@
+00069c48	a	.?AVCLogFile@@
+00069c68	a	.?AVBaseLogFile@@
+00069c90	a	.?AVbad_alloc@std@@
+00069cb8	a	.?AVexception@std@@
+00069ce0	a	.?AVlogic_error@std@@
+00069d08	a	.?AVlength_error@std@@
+00069d30	a	.?AVtype_info@@
+00069d50	a	.?AVbad_array_new_length@std@@
+00069d80	a	.?AVbad_exception@std@@
+0006e5b8	a	<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+0006e5f1	a	<assembly xmlns='urn:schemas-microsoft-com:asm.v1' manifestVersion='1.0'>
+0006e63c	a	  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v3">
+0006e674	a	    <security>
+0006e684	a	      <requestedPrivileges>
+0006e6a1	a	        <requestedExecutionLevel level='asInvoker' uiAccess='false' />
+0006e6e9	a	      </requestedPrivileges>
+0006e707	a	    </security>
+0006e718	a	  </trustInfo>
+0006e728	a	</assembly>
+0006f2c9	a	Symantec Corporation1
+0006f2e8	a	Symantec Trust Network100.
+0006f308	a	'Symantec Class 3 SHA256 Code Signing CA0
+0006f334	a	200204000000Z
+0006f343	a	220505235959Z0
+0006f36a	a	Gyeonggi-do1
+0006f380	a	Seongnam-si1!0
+0006f396	a	NEXON Korea Corporation.1!0
+0006f3b9	a	NEXON Korea Corporation.0
+0006f403	a	Dyu:~!
+0006f52d	a	http://sv.symcb.com/sv.crl0a
+0006f56c	a	https://d.symcb.com/cps0%
+0006f593	a	https://d.symcb.com/rpa0
+0006f5dd	a	http://sv.symcd.com0&
+0006f5fe	a	http://sv.symcb.com/sv.crt0
+0006f7b5	a	VeriSign, Inc.1
+0006f7ce	a	VeriSign Trust Network1:08
+0006f7ee	a	1(c) 2006 VeriSign, Inc. - For authorized use only1E0C
+0006f82a	a	<VeriSign Class 3 Public Primary Certification Authority - G50
+0006f86b	a	131210000000Z
+0006f87a	a	231209235959Z0
+0006f8a1	a	Symantec Corporation1
+0006f8c0	a	Symantec Trust Network100.
+0006f8e0	a	'Symantec Class 3 SHA256 Code Signing CA0
+0006f9fd	a	+ojr\`
+0006fa54	a	http://s2.symcb.com0
+0006faa5	a	http://www.symauth.com/cps0(
+0006facf	a	http://www.symauth.com/rpa00
+0006fafc	a	http://s1.symcb.com/pca3-g5.crl0
+0006fb64	a	SymantecPKI-1-5670
+0006fcf1	a	Symantec Corporation1
+0006fd10	a	Symantec Trust Network100.
+0006fd30	a	'Symantec Class 3 SHA256 Code Signing CA
+0006ff97	a	20211026090346Z
+0006fff2	a	DigiCert Inc1
+00070009	a	www.digicert.com110/
+00070023	a	(DigiCert SHA2 Assured ID Timestamping CA0
+00070050	a	210101000000Z
+0007005f	a	310106000000Z0H1
+00070086	a	DigiCert, Inc.1 0
+0007009f	a	DigiCert Timestamp 20210
+00070242	a	http://www.digicert.com/CPS0
+000702af	a	,http://crl3.digicert.com/sha2-assured-ts.crl02
+000702e3	a	,http://crl4.digicert.com/sha2-assured-ts.crl0
+0007032f	a	http://ocsp.digicert.com0O
+00070354	a	Chttp://cacerts.digicert.com/DigiCertSHA2AssuredIDTimestampingCA.crt0
+000703f1	a	QJxy6z'
+00070413	a	dwc_#Ri
+000704f4	a	DigiCert Inc1
+0007050b	a	www.digicert.com1$0"
+00070526	a	DigiCert Assured ID Root CA0
+00070545	a	160107120000Z
+00070554	a	310107120000Z0r1
+0007057b	a	DigiCert Inc1
+00070592	a	www.digicert.com110/
+000705ac	a	(DigiCert SHA2 Assured ID Timestamping CA0
+000706a8	a	fnVa')
+0007079a	a	http://ocsp.digicert.com0C
+000707bf	a	7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0
+0007080a	a	4http://crl4.digicert.com/DigiCertAssuredIDRootCA.crl0:
+00070846	a	4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0P
+000708a4	a	https://www.digicert.com/CPS0
+00070953	a	8aMbF$
+000709d1	a	V3"/"6
+00070a09	a	DigiCert Inc1
+00070a20	a	www.digicert.com110/
+00070a3a	a	(DigiCert SHA2 Assured ID Timestamping CA
+00070ab4	a	211026090346Z0+
+00070b2d	a	/1(0&0$0"
+00070c54	a	ttLAD=
+00070d54	a	Symantec Corporation1
+00070d73	a	Symantec Trust Network100.
+00070d93	a	'Symantec Class 3 SHA256 Code Signing CA0
+00070dbf	a	200204000000Z
+00070dce	a	220505235959Z0
+00070df5	a	Gyeonggi-do1
+00070e0b	a	Seongnam-si1!0
+00070e21	a	NEXON Korea Corporation.1!0
+00070e44	a	NEXON Korea Corporation.0
+00070e8e	a	Dyu:~!
+00070fb8	a	http://sv.symcb.com/sv.crl0a
+00070ff7	a	https://d.symcb.com/cps0%
+0007101e	a	https://d.symcb.com/rpa0
+00071068	a	http://sv.symcd.com0&
+00071089	a	http://sv.symcb.com/sv.crt0
+00071240	a	VeriSign, Inc.1
+00071259	a	VeriSign Trust Network1:08
+00071279	a	1(c) 2006 VeriSign, Inc. - For authorized use only1E0C
+000712b5	a	<VeriSign Class 3 Public Primary Certification Authority - G50
+000712f6	a	131210000000Z
+00071305	a	231209235959Z0
+0007132c	a	Symantec Corporation1
+0007134b	a	Symantec Trust Network100.
+0007136b	a	'Symantec Class 3 SHA256 Code Signing CA0
+00071488	a	+ojr\`
+000714df	a	http://s2.symcb.com0
+00071530	a	http://www.symauth.com/cps0(
+0007155a	a	http://www.symauth.com/rpa00
+00071587	a	http://s1.symcb.com/pca3-g5.crl0
+000715ef	a	SymantecPKI-1-5670
+0007177c	a	Symantec Corporation1
+0007179b	a	Symantec Trust Network100.
+000717bb	a	'Symantec Class 3 SHA256 Code Signing CA
+00071a57	a	20211026090347Z
+00071ab2	a	DigiCert Inc1
+00071ac9	a	www.digicert.com110/
+00071ae3	a	(DigiCert SHA2 Assured ID Timestamping CA0
+00071b10	a	210101000000Z
+00071b1f	a	310106000000Z0H1
+00071b46	a	DigiCert, Inc.1 0
+00071b5f	a	DigiCert Timestamp 20210
+00071d02	a	http://www.digicert.com/CPS0
+00071d6f	a	,http://crl3.digicert.com/sha2-assured-ts.crl02
+00071da3	a	,http://crl4.digicert.com/sha2-assured-ts.crl0
+00071def	a	http://ocsp.digicert.com0O
+00071e14	a	Chttp://cacerts.digicert.com/DigiCertSHA2AssuredIDTimestampingCA.crt0
+00071eb1	a	QJxy6z'
+00071ed3	a	dwc_#Ri
+00071fb4	a	DigiCert Inc1
+00071fcb	a	www.digicert.com1$0"
+00071fe6	a	DigiCert Assured ID Root CA0
+00072005	a	160107120000Z
+00072014	a	310107120000Z0r1
+0007203b	a	DigiCert Inc1
+00072052	a	www.digicert.com110/
+0007206c	a	(DigiCert SHA2 Assured ID Timestamping CA0
+00072168	a	fnVa')
+0007225a	a	http://ocsp.digicert.com0C
+0007227f	a	7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0
+000722ca	a	4http://crl4.digicert.com/DigiCertAssuredIDRootCA.crl0:
+00072306	a	4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0P
+00072364	a	https://www.digicert.com/CPS0
+00072413	a	8aMbF$
+00072491	a	V3"/"6
+000724c9	a	DigiCert Inc1
+000724e0	a	www.digicert.com110/
+000724fa	a	(DigiCert SHA2 Assured ID Timestamping CA
+00072574	a	211026090347Z0+
+000725ed	a	/1(0&0$0"
+0007268f	a	~]!,ZY
+0004d350	u	http://platform.nexon.com
+0004d3a0	u	sso.nexon.com
+0004d3c0	u	218.145.45.11
+0004d3e0	u	218.145.45.12
+0004d400	u	218.145.45.13
+0004d420	u	218.145.45.14
+0004d440	u	218.145.45.51
+0004d460	u	218.145.45.52
+0004d480	u	Common
+0004d490	u	http://platform.nexon.com/Messenger/version.xml
+0004d500	u	http://note.nexon.com/ajax/default.aspx
+0004d550	u	http://platform.nexon.com/common/pfrpt_config.xml
+0004d5c0	u	http://pfrpt.nexon.com/ifc/msg.aspx
+0004d608	u	218.145.45.70
+0004d628	u	218.145.45.71
+0004d648	u	218.145.45.72
+0004d668	u	218.145.45.73
+0004d688	u	https://socialapi.nexon.com
+0004d6c0	u	75DD8DBD-0DCA-492A-862B-DC0720AD8865
+0004d710	u	430012389
+0004d728	u	https://livelog.nexon.com
+0004d7a0	u	http://platform.nexon.co.jp/Auth
+0004d7e8	u	NexonJP
+0004d800	u	sso.nexon.co.jp
+0004d830	u	http://platform.nexon.co.jp/Auth/Messenger508/version.xml
+0004d900	u	http://tw.patch.ggm.beanfun.com
+0004d940	u	beanfun!
+0004d960	u	210.208.95.176
+0004d980	u	210.208.95.177
+0004d9a0	u	210.208.95.178
+0004d9c0	u	210.208.95.179
+0004d9e0	u	210.208.95.180
+0004da00	u	112.121.65.153
+0004da20	u	112.121.65.154
+0004da40	u	112.121.65.152
+0004da60	u	112.121.65.156
+0004da80	u	112.121.65.157
+0004daa0	u	112.121.65.158
+0004dac0	u	112.121.65.159
+0004dae0	u	112.121.65.160
+0004db00	u	112.121.65.162
+0004db20	u	112.121.65.163
+0004db40	u	112.121.65.164
+0004db70	u	http://112.121.65.155/ajax/default.aspx
+0004dbf8	u	tw-sso.nexon.io
+0004dc18	u	34.80.6.123
+0004dc68	u	http://platform.tiancity.com
+0004dca8	u	Tiancity
+0004dcc8	u	auth.tiancity.com
+0004dcf0	u	61.164.61.97
+0004dd10	u	61.164.61.98
+0004dd30	u	61.164.61.99
+0004dd50	u	61.164.61.100
+0004dd70	u	61.164.61.101
+0004dd90	u	61.164.61.102
+0004ddb0	u	61.164.61.103
+0004ddd0	u	61.164.61.104
+0004ddf0	u	61.164.61.105
+0004de10	u	61.164.61.106
+0004de30	u	sso.auth.tiancity.com
+0004de60	u	60.191.86.210
+0004de80	u	60.191.86.211
+0004dea0	u	60.191.86.212
+0004dec0	u	60.191.86.213
+0004dee0	u	60.191.86.214
+0004df00	u	60.191.86.215
+0004df20	u	http://60.191.86.210/ajax/default.aspx
+0004df70	u	121.14.44.232
+0004df90	u	121.14.44.233
+0004dfb0	u	121.14.44.234
+0004dfd0	u	121.14.44.235
+0004dff0	u	121.14.44.236
+0004e010	u	http://121.14.44.232/ajax/default.aspx
+0004e060	u	124.129.16.93
+0004e080	u	124.129.16.94
+0004e0a0	u	124.129.16.95
+0004e0c0	u	124.129.16.96
+0004e0e0	u	124.129.16.97
+0004e100	u	124.129.16.98
+0004e120	u	124.129.16.99
+0004e140	u	124.129.16.100
+0004e160	u	124.129.16.101
+0004e180	u	124.129.16.102
+0004e1a0	u	124.129.17.65
+0004e1c0	u	124.129.17.66
+0004e1e0	u	124.129.17.67
+0004e200	u	124.129.17.68
+0004e220	u	124.129.17.69
+0004e240	u	http://124.129.17.65/ajax/default.aspx
+0004e290	u	119.147.162.16
+0004e2b0	u	119.147.162.17
+0004e2d0	u	119.167.202.144
+0004e2f0	u	119.167.202.145
+0004e310	u	60.191.86.16
+0004e330	u	60.191.86.17
+0004e350	u	114.80.82.144
+0004e370	u	114.80.82.145
+0004e390	u	61.240.31.67
+0004e3b0	u	61.240.31.68
+0004e408	u	http://ngm.nexon.net/ngm
+0004e440	u	NexonUS
+0004e458	u	us-sso.nexon.io
+0004e478	u	34.218.192.56
+0004e498	u	34.218.83.44
+0004e4b8	u	Vindictus East
+0004e4d8	u	54.70.122.245
+0004e4f8	u	Vindictus Staging
+0004e520	u	3.124.221.41
+0004e540	u	?_vb=GetNoteUserInfo&_cs=0
+0004e580	u	?_vb=SendNote2&_cs=0&gc=%d&cif=%s&cit=%s&nt=%d&nst=%d&mm=%s&am=%s&cd=%s
+0004e610	u	?_vb=%s&_cs=0&ps=%d&pn=%d
+0004e648	u	?_vb=%s&_cs=0&nts=%d&rcu=%d
+0004e680	u	?_vb=%s&_cs=0&nts=%d
+0004e6b0	u	?_vb=GetRejectedUserList&_cs=0
+0004e6f0	u	?_vb=CreateRejectedUser&_cs=0&gc=%d&cib=%s&me=%s
+0004e760	u	?_vb=RemoveRejectedUser&_cs=0&gc=%d&csb=%d&cib=%s
+0004e7d0	u	?_vb=CreateReport&nts=%u&rrc=%d&rre=%s
+0004e8f8	u	nmconew.cfg
+0004e910	u	nmconew.ini
+0004e928	u	NMService.ini
+0004ebd8	u	Advapi32.dll
+0004ec10	u	SOFTWARE\%s\Shared
+0004ec40	u	nmconew64.dll
+0004ee38	u	%s\nmcogame.log
+0004ee60	u	%04d/%02d/%02d %02d:%02d:%02d, %s
+0004efa8	u	version
+0004efc8	u	LocalFolder
+0004efe0	u	LocalPath
+0004eff8	u	FileName
+0004f010	u	RemoteFilePath
+0004f030	u	Rename
+0004f048	u	Delete
+0004f658	u	gopher
+0004f6a8	u	mailto
+0004f6d2	u	Failed: there is no root node : %s
+0004f722	u	ajaxConnector.Open("%s") = FALSE
+0004f76c	u	Error: %s
+0004f780	u	CModuleUpdater::GetLocalFilePath
+0004f7d0	u	%s, SHGetSpecialFolderPath() failed!
+0004f81c	u	CSIDL: 0x%08x
+0004f83a	u	Last error: %d
+0004f860	u	%s, GetModuleFileName() failed!
+0004f8a2	u	Last error: %d
+0004f8c0	u	%s, GetNexonSharedPath() failed!
+0004f904	u	Last error: %d
+0004f928	u	CModuleUpdater::IsNeedUpdate
+0004f968	u	%s, Local file not exist: %s
+0004f9a8	u	%s, Local file low version: %s
+0004f9f0	u	%s, Local file crc mismatch: %s
+0004fa30	u	%s, Local file size mismatch: %s
+0004fa78	u	_%02d%02d.%02d%02d%02d.%08X%s
+0004fac0	u	Find file name: %s
+0004fafa	u	Delete Temp File: %s
+0004fb28	u	CModuleUpdater::Download
+0004fb60	u	%s, Failed!
+0004fb7a	u	httpClient.Connect("%s") = FALSE
+0004fbc2	u	pHttpClient->OpenFile("%s") = FALSE
+0004fc12	u	Failed to find or create target folder: %s
+0004fc72	u	Failed to create file: %s
+0004fca8	u	Error code: %d
+0004fcd2	u	gzopen("%s") Failed!
+0004fd02	u	Failed to create target file: %s
+0004fd46	u	Last error: %d
+0004fd72	u	Failed to write target file: %s
+0004fdb4	u	Last error: %d
+0004fde0	u	Failed to delete file: %s
+0004fe16	u	Last error: %d
+0004fe50	u	Failed to copy file: %s
+0004fe82	u	Last error: %d
+0004fea0	u	Failed to set file attributes: %s
+0004fee6	u	Last error: %d
+00050010	u	nmcogame.ini
+00050030	u	MessengerModule
+00050050	u	VersionFileUrl
+00050070	u	VersionFileUrl: %s
+000500ce	u	cFail to load messenger module!
+00050110	u	Version file URL: %s
+0005013c	u	PlatformModule path: %s
+0005016e	u	Error: %d, %d
+00050190	u	Fail to load messenger module!
+000501d0	u	NMCO_SetLocaleAndRegion( %d, %d ): ID & Code are not valid!
+00050260	u	zh-CHS
+000506e0	u	az-AZ-Latn
+000507e8	u	uz-UZ-Latn
+000508d0	u	kok-IN
+000508e0	u	syr-SY
+000508f0	u	div-MV
+00050900	u	quz-BO
+000509d0	u	sr-SP-Latn
+000509f8	u	az-AZ-Cyrl
+00050a30	u	uz-UZ-Cyrl
+00050a48	u	quz-EC
+00050ab8	u	sr-SP-Cyrl
+00050ae0	u	quz-PE
+00050b60	u	smj-NO
+00050bd0	u	bs-BA-Latn
+00050be8	u	smj-SE
+00050c38	u	sr-BA-Latn
+00050c50	u	sma-NO
+00050c90	u	sr-BA-Cyrl
+00050ca8	u	sma-SE
+00050ce8	u	sms-FI
+00050d28	u	smn-FI
+00050e98	u	zh-CHT
+00050fc0	u	az-az-cyrl
+00050fd8	u	az-az-latn
+00051020	u	bs-ba-latn
+000510c8	u	div-mv
+00051498	u	kok-in
+000515f8	u	quz-bo
+00051608	u	quz-ec
+00051618	u	quz-pe
+000516a8	u	sma-no
+000516b8	u	sma-se
+000516c8	u	smj-no
+000516d8	u	smj-se
+000516e8	u	smn-fi
+000516f8	u	sms-fi
+00051718	u	sr-ba-cyrl
+00051730	u	sr-ba-latn
+00051748	u	sr-sp-cyrl
+00051760	u	sr-sp-latn
+000517a8	u	syr-sy
+00051838	u	uz-uz-cyrl
+00051850	u	uz-uz-latn
+00051888	u	zh-chs
+00051898	u	zh-cht
+00051b38	u	"utf-8"
+00051b48	u	www-authenticate
+00051b70	u	proxy-authenticate
+00051fa8	u	Parse Xml Failed
+00051fd0	u	Can not find body
+00052000	u	ErrorCode = %d, Status Code = %d
+00052048	u	Connection
+00052060	u	keep-alive
+00052088	u	Location
+000520a0	u	 HTTP/1.1
+000520b8	u	Host: %s:%d
+000520d8	u	Host: %s
+000520f0	u	Content-Length: %d
+00052120	u	Content-Type: 
+00052150	u	User-Agent: Microsoft-ATL-Native/14.00
+000521a8	u	Content-Length
+000521c8	u	Transfer-Encoding
+000521f0	u	chunked
+00052200	u	Trailer
+00052210	u	set-cookie
+00052410	u	%s.%s not exist!
+00052438	u	%s[%d] is out of index!
+00052550	u	S:(ML;;NW;;;LW)
+00052788	u	Session not initialized!
+00052878	u	NexonHttpClient
+000528a0	u	/%s/%s
+000528b0	u	Range:bytes=%I64u-
+000528d8	u	http://%s/%s
+000528f8	u	http://%s/%s/%s
+00052a30	u	CSLockWatch
+00052a50	u	This thread already waits lock! ThreadID = %d, CSLockID = %d
+00052ad0	u	There is no space to register this item! (Function WaitLock())
+00052b50	u	Attempt to enter lock which is already owned! ThreadID = %d, CSLockID = %d
+00052bf0	u	There is no space to register this item! (Function EnterLock())
+00052c70	u	Attemp to leave not owned lock! CSLockID = %d
+00052cd0	u	Cannot create WatchEvent!
+00052d08	u	Cannot make WatchThread!
+00052d40	u	DeadLock Detected!
+00052d68	u	[%d:%d]->
+00052d80	u	Thread %d is waiting lock which is not owned by anyone!
+00052df0	u	Thread %d which waits CSLock %d is starving now! (waits for %d ms)
+00053030	u	%s.%s.log
+00053048	u	%s.log
+00053058	u	%s.%d.log
+00053080	u	%s.%04d.%02d.%02d.log
+000530c0	u	%04d/%02d/%02d %02d:%02d:%02d.%03d, %s
+00053110	u	[%02d/%02d %02d:%02d:%02d] %s
+00053158	u	Log Flushed!
+000531b0	u	ERROR : Unable to initialize critical section in CAtlBaseModule
+000532c0	u	kernel32.dll
+000534e8	u	advapi32
+00053500	u	api-ms-win-core-fibers-l1-1-1
+00053540	u	api-ms-win-core-synch-l1-2-0
+00053580	u	kernel32
+000541d8	u	(null)
+00054c00	u	minkernel\crts\ucrt\inc\corecrt_internal_strtox.h
+00054c70	u	__crt_strtox::floating_point_value::as_double
+00054cd0	u	_is_double
+00054cf0	u	__crt_strtox::floating_point_value::as_float
+00054d50	u	!_is_double
+00054e48	u	IND)ind)
+00054f38	u	mscoree.dll
+000554a0	u	Sunday
+000554b0	u	Monday
+000554c0	u	Tuesday
+000554d0	u	Wednesday
+000554e8	u	Thursday
+00055500	u	Friday
+00055510	u	Saturday
+00055588	u	January
+00055598	u	February
+000555f0	u	August
+00055600	u	September
+00055618	u	October
+00055628	u	November
+00055640	u	December
+00055668	u	MM/dd/yy
+00055680	u	dddd, MMMM dd, yyyy
+000556a8	u	HH:mm:ss
+00055820	u	         (((((                  H
+00055d22	u	         (((((                  H
+00055e20	u	      (                          
+00055f40	u	UTF-16LEUNICODE
+00056500	u	api-ms-win-appmodel-runtime-l1-1-1
+00056550	u	api-ms-win-core-datetime-l1-1-1
+00056590	u	api-ms-win-core-file-l2-1-1
+000565d0	u	api-ms-win-core-localization-l1-2-1
+00056620	u	api-ms-win-core-localization-obsolete-l1-2-0
+00056680	u	api-ms-win-core-processthreads-l1-1-2
+000566d0	u	api-ms-win-core-string-l1-1-0
+00056710	u	api-ms-win-core-sysinfo-l1-2-1
+00056750	u	api-ms-win-core-winrt-l1-1-0
+00056790	u	api-ms-win-core-xstate-l2-1-0
+000567d0	u	api-ms-win-rtcore-ntuser-window-l1-1-0
+00056820	u	api-ms-win-security-systemfunctions-l1-1-0
+00056880	u	ext-ms-win-kernel32-package-current-l1-1-0
+000568e0	u	ext-ms-win-ntuser-dialogbox-l1-1-0
+00056930	u	ext-ms-win-ntuser-windowstation-l1-1-0
+00056980	u	user32
+00058740	u	CONOUT$
+0005ce60	u	#+3;CScs
+0006e2a6	u	VS_VERSION_INFO
+0006e302	u	StringFileInfo
+0006e326	u	000004b0
+0006e33e	u	CompanyName
+0006e358	u	Nexon Corp.
+0006e376	u	FileDescription
+0006e398	u	NexonMessenger Game Service
+0006e3d6	u	FileVersion
+0006e3f0	u	2.5.29.3
+0006e40a	u	InternalName
+0006e424	u	nmcogame
+0006e43e	u	LegalCopyright
+0006e45c	u	(C) NEXON All rights reserved.
+0006e4a2	u	OriginalFilename
+0006e4c4	u	nmcogame.dll
+0006e4e6	u	ProductName
+0006e500	u	NexonMessenger Game Service
+0006e53e	u	ProductVersion
+0006e55c	u	2.5.29.3
+0006e576	u	VarFileInfo
+0006e596	u	Translation

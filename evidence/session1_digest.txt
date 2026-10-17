@@ -1,0 +1,37 @@
+﻿=== open_binary {"path":"H:\\SA_Analysis\\target\\suddenattack.exe"} ok=True ev=
+(no raw_result)
+
+=== binary_session  ok=True ev=
+(no raw_result)
+
+=== procedure_info {"procedure":"0x140ab3058"} ok=True ev=ev_c72654d79c1dedbc15644e55a3ad7c71c36e8f80a904a03ce67fe6cfd4c04278
+{"value":{"name":"entry","entrypoint":"0x140ab3058","basicblock_count":51,"length":391,"body":{"available":true,"provenance":"ghidra-function-body-address-set","ranges":[{"start":"0x140ab3058","end":"0x140ab31de"}],"total_bytes":391,"span_bytes":391,"non_contiguous":false,"contains_entry":true},"signature":"undefined entry()","locals":[{"description":"undefined8 local_8 @ Stack[-0x8]:8","provenance":"ghidra-function-database"},{"description":"undefined8 local_res18 @ Stack[0x18]:8","provenance":"ghidra-function-database"},{"description":"undefined8 local_res8 @ Stack[0x8]:8","provenance":"ghidra-function-database"}],"classification":{"external":false,"thunk":false,"thunk_target":null,"provenance":"ghidra-function-manager"}},"limitations":[]}
+
+=== procedure_assembly {"procedure":"0x140ab3058"} ok=True ev=ev_d1fe6a116b0756cd69863c84d310cdcd35191104456e8910dd20a7c173586220
+{"value":"0x140ab3058: CALL 0x140ab31df\n0x140ab305d: PUSH R10\n0x140ab305f: MOV R10, RSP\n0x140ab3062: PUSH R10\n0x140ab3064: MOV RSI, qword ptr [R10 + 0x10]\n0x140ab3068: MOV RDI, qword ptr [R10 + 0x20]\n0x140ab306c: CLD\n0x140ab306d: MOV DL, 0x80\n0x140ab306f: MOV AL, byte ptr [RSI]\n0x140ab3071: INC RSI\n0x140ab3074: MOV byte ptr [RDI], AL\n0x140ab3076: INC RDI\n0x140ab3079: MOV EBX, 0x2\n0x140ab307e: ADD DL, DL\n0x140ab3080: JNZ 0x140ab3089\n0x140ab3082: MOV DL, byte ptr [RSI]\n0x140ab3084: INC RSI\n0x140ab3087: ADC DL, DL\n0x140ab3089: JNC 0x140ab306f\n0x140ab308b: ADD DL, DL\n0x140ab308d: JNZ 0x140ab3096\n0x140ab308f: MOV DL, byte ptr [RSI]\n0x140ab3091: INC RSI\n0x140ab3094: ADC DL, DL\n0x140ab3096: JNC 0x140ab30f6\n0x140ab3098: XOR EAX, EAX\n0x140ab309a: ADD DL, DL\n0x140ab309c: JNZ 0x140ab30a5\n0x140ab309e: MOV DL, byte ptr [RSI]\n0x140ab30a0: INC RSI\n0x140ab30a3: ADC DL, DL\n0x140ab30a5: JNC 0x140ab31ad\n0x140ab30ab: ADD DL, DL\n0x140ab30ad: JNZ 0x140ab30b6\n0x140ab30af: MOV DL, byte ptr [RSI]\n0x140ab30b1: INC RSI\n0x140ab30b4: ADC DL, DL\n0x140ab30b6: ADC EAX, EAX\n0x140ab30b8: ADD DL, DL\n0x140ab30ba: JNZ 0x140ab30c3\n0x140ab30bc: MOV DL, byte ptr [RSI]\n0x140ab30be: INC RSI\n0x140ab30c1: ADC DL, DL\n0x140ab30c3: ADC EAX, EAX\n0x140ab30c5: ADD DL, DL\n0x140ab30c7: JNZ 0x140ab30d0\n0x140ab30c9: MOV DL, byte ptr [RSI]\n0x140ab30cb: INC RSI\n0x140ab30ce: ADC DL, DL\n0x140ab30d0: ADC EAX, EAX\n0x140ab30d2: ADD DL, DL\n0x140ab30d4: JNZ 0x140ab30dd\n0x140ab30d6: MOV DL, byte ptr [RSI]\n0x140ab30d8: INC RSI\n0x140ab30db: ADC DL, DL\n0x140ab30dd: ADC EAX, EAX\n0x140ab30df: JZ 0x140ab30ea\n0x140ab30e1: PUSH RDI\n0x140ab30e2: MOV EAX, EAX\n0x140ab30e4: SUB RDI, RAX\n0x140ab30e7: MOV AL, byte ptr [RDI]\n0x140ab30e9: POP RDI\n0x140ab30ea: MOV byte ptr [RDI], AL\n0x140ab30ec: INC RDI\n0x140ab30ef: MOV EBX, 0x2\n0x140ab30f4: JMP 0x140ab307e\n0x140ab30f6: MOV EAX, 0x1\n0x140ab30fb: ADD DL, DL\n0x140ab30fd: JNZ 0x140ab3106\n0x140ab30ff: MOV DL, byte ptr [RSI]\n0x140ab3101: INC RSI\n0x140ab3104: ADC DL, DL\n0x140ab3106: ADC EAX, EAX\n0x140ab3108: ADD DL, DL\n0x140ab310a: JNZ 0x140ab3113\n0x140ab310c: MOV DL, byte ptr [RSI]\n0x140ab310e: INC RSI\n0x140ab3111: ADC DL, DL\n0x140ab3113: JC 0x140ab30fb\n0x140ab3115: SUB EAX, EBX\n0x140ab3117: MOV EBX, 0x1\n0x140ab311c: JNZ 0x140ab314c\n0x140ab311e: MOV ECX, 0x1\n0x140ab3123: ADD DL, DL\n0x140ab3125: JNZ 0x140ab312e\n0x140ab3127: MOV DL, byte ptr [RSI]\n0x140ab3129: INC RSI\n0x140ab312c: ADC DL, DL\n0x140ab312e: ADC ECX, ECX\n0x140ab3130: ADD DL, DL\n0x140ab3132: JNZ 0x140ab313b\n0x140ab3134: MOV DL, byte ptr [RSI]\n0x140ab3136: INC RSI\n0x140ab3139: ADC DL, DL\n0x140ab313b: JC 0x140ab3123\n0x140ab313d: PUSH RSI\n0x140ab313e: MOV RSI, RDI\n0x140ab3141: SUB RSI, RBP\n0x140ab3144: MOVSB.REP RDI, RSI\n0x140ab3146: POP RSI\n0x140ab3147: JMP 0x140ab307e\n0x140ab314c: DEC EAX\n0x140ab314e: SHL EAX, 0x8\n0x140ab3151: MOV AL, byte ptr [RSI]\n0x140ab3153: INC RSI\n0x140ab3156: MOV EBP, EAX\n0x140ab3158: MOV ECX, ...[cut]
+
+=== read_bytes {"address":"0x1404d3000","length":512} ok=True ev=ev_99ff1fa4735e3bbffce8588d3f9685f2cb95390505ee0e68b56e82e35af3199e
+{"address":"0x1404d3000","requested_bytes":512,"returned_bytes":512,"bytes_hex":"00000000ffffffff0000000028304d000100000002000000020000005e304d0066304d005a304d0053756464656e41747461636b2e657865004c54476574494c544d656d6f7279005365744d617374657244617461626173650000000100e0f00d00405e0e0039304d0048304d00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000","complete":true}
+
+=== search_procedures {"pattern":"WinMain","mode":"literal"} ok=True ev=ev_f841e72d6634f27f252fc14a2eef1dcf9e73098b00b0104856aa2d4e3da84d4f
+(no raw_result)
+
+=== search_strings {"pattern":"LithTech","mode":"literal"} ok=True ev=ev_01cf3f0e7bf8a6a494b7205c0cadbb86d070e9dee817342f4b30e0e8ba7fe381
+[{"address":"0x140304a00","value":"LithTech build %s initialized in %.2f seconds.\n"},{"address":"0x140309118","value":"LithTech Session"},{"address":"0x14030d948","value":"Internal LithTech error: %1!d!."},{"address":"0x140508d58","value":"Lithtech.EXE"}]
+
+=== search_strings {"pattern":"engine.rez","mode":"literal"} ok=True ev=ev_3087ca78611febe88d9f62e40bc89fd23be058b3d26ec8225c918a25d7f2ba9c
+{"address":"0x1403048d8","value":"engine.rez"}
+
+=== search_strings {"pattern":"SuddenAttack V2.0","mode":"literal"} ok=True ev=ev_03628920e6c331482403de133b97a0b2db821a71248aede03f60bb8c48e03a01
+{"address":"0x140305330","value":"[CLIENT INIT] Start SuddenAttack V2.0 - %d/%02d/%02d %02d:%02d:%02d.%03d"}
+
+=== search_strings {"pattern":"NGClient","mode":"literal"} ok=True ev=ev_21288d948813166ad7bcfc493d8cac3c099c33a63ebe491d254025f17c3e7d90
+{"address":"0x1404d41cd","value":"NGClient64.aes"}
+
+=== search_strings {"pattern":"themida","mode":"literal","case_sensitive":false} ok=True ev=ev_a5f2e85f86f63db640bdbb03fb191ade8427380d48f7b4e16531af3334d0e7e6
+(no raw_result)
+
+=== close_binary {"snapshot_path":"H:\\SA_Analysis\\evidence\\sa_snapshot.bin"} ok=True ev=
+(no raw_result)
+
+

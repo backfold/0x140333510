@@ -1,0 +1,30 @@
+﻿node : [init] {"name":"rea","version":"6.5.0"}
+At line:1 char:302
++ ... tch {} } }; node 'H:\SA_Analysis\scripts\mcp-client.js' 'H:\SA_Analys ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([init] {"name":"rea","version":"6.5.0"}:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+[mcp-err] {"level":30,"time":1792256834567,"application":"rea","mode":"mcp","layer":"server","tool":"open_binary","dura
+tionMs":106.94,"status":"ok","msg":"MCP tool execution completed"}
+[mcp-err] {"level":30,"time":1792256965660,"application":"rea","mode":"mcp","layer":"server","tool":"procedure_pseudo_c
+ode","durationMs":131088.04,"status":"ok","msg":"MCP tool execution completed"}
+[mcp-err] {"level":30,"time":1792256965816,"application":"rea","mode":"mcp","layer":"server","tool":"procedure_pseudo_c
+ode","durationMs":148.87,"status":"ok","msg":"MCP tool execution completed"}
+[mcp-err] {"level":30,"time":1792256965941,"application":"rea","mode":"mcp","layer":"server","tool":"procedure_pseudo_c
+ode","durationMs":122.53,"status":"ok","msg":"MCP tool execution completed"}
+[mcp-err] {"level":30,"time":1792256965945,"application":"rea","mode":"mcp","layer":"server","tool":"xrefs","durationMs
+":1.22,"status":"ok","msg":"MCP tool execution completed"}
+[mcp-err] {"level":30,"time":1792256965999,"application":"rea","mode":"mcp","layer":"server","tool":"search_strings","d
+urationMs":50.02,"status":"ok","msg":"MCP tool execution completed"}
+[mcp-err] {"level":30,"time":1792256966007,"application":"rea","mode":"mcp","layer":"server","tool":"search_strings","d
+urationMs":3.71,"status":"ok","msg":"MCP tool execution completed"}
+[mcp-err] {"level":30,"time":1792256966013,"application":"rea","mode":"mcp","layer":"server","tool":"search_strings","d
+urationMs":3.36,"status":"ok","msg":"MCP tool execution completed"}
+[mcp-err] {"level":30,"time":1792256966020,"application":"rea","mode":"mcp","layer":"server","tool":"search_strings","d
+urationMs":5.27,"status":"ok","msg":"MCP tool execution completed"}
+[mcp-err] {"level":30,"time":1792256966027,"application":"rea","mode":"mcp","layer":"server","tool":"procedure_callers"
+,"durationMs":2.92,"status":"ok","msg":"MCP tool execution completed"}
+[mcp-err] {"level":30,"time":1792256966306,"application":"rea","mode":"mcp","layer":"server","tool":"close_binary","dur
+ationMs":275.88,"status":"ok","msg":"MCP tool execution completed"}
+[mcp exit 0]
