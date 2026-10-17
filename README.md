@@ -57,13 +57,30 @@
   suite is **KISA SEED (RFC 4269)** — SS-boxes byte-exact in `cshell.dll`
   `.rdata`, JS reimplementation KAT-clean (4/4 RFC vectors). Full-decode log
   of all 83,071 frames produced (`scripts/py/decode-all.js`).
+- **Config-path crypto closed, wire 2nd stage pinned as VM-only (sessions 34–35)**:
+  static-init thunks copy `.rdata` constants into globals — base64 alphabet,
+  key `c9x6zoVPQL1y00oPpGZ6/A==` → `73dc7ace854f40bd72d34a0fa4667afc`, IV
+  `"SDAT.NEXON.COM.."` — and `0x1801a9fa0 = b64enc(SEED-CFB-Dec(key, IV, in))`
+  is a static-key string-decrypt helper for config data, **proven unrelated to
+  the wire** (all decrypt batteries on captured frames fail; wrapperEnc has
+  **0** plain-`.text` callers). The remaining opaque frames (0x42/0x51/0xca/
+  0xf7/0x37/…) are handled only from VLizer VM bytecode. Raw-stream replay of
+  `s2c.bin` = 83,117 frames, zero desyncs (framing was never broken).
+- **Layer-3 content mapped (latest pass)**: post-login the client is silent —
+  the server pushes a one-way state stream (0x8e = 65% of frames; C2S sent 1
+  frame in the whole 83k-frame session). Plain-family messages are padded to
+  198 B with per-type period-2/3 filler runs; 0x8e has two sub-classes
+  (`c8 c8 01 49 7f` trailer, byte-0 families) and high-entropy 8-byte-record
+  variants; 0xbe carries template+variable record streams with early-login
+  clean text (`-10;6713`, `(9,-1,+422`). Full per-type classification:
+  `logs/layer3-classify.txt`, notes in `evidence/notes/protocol-layer3.md`.
 - **cshell.dll (session 10)**: 33 MB, VLizer VM sections (`.vm_sec`/`.vlizer`) but intact
   21 MB `.text` — Ghidra recovers 74,642 procedures. Drives the EAC/EOS anti-cheat client
   session, game socket I/O (WS2_32), and `CSAGameClientShell` game logic. No plaintext
   `CMSG_*` network message names.
 - OEP chain (statically identified): Themida stub (entry `0x140ab3058`) →
   `mainCRTStartup` `0x1402644b8` → `WinMain` `0x14007acf0`.
-- Full evidence trail: `evidence\session1..28.jsonl` (REA MCP raw results),
+- Full evidence trail: `evidence\session1..33.jsonl` (REA MCP raw results),
   `evidence\evidence_index.tsv` (tool call → evidence_id index),
   `evidence\snow2_identification.md` (cipher/container validation),
   `evidence\network_crypto_identification.md` (wire crypto), decompiled
