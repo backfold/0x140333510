@@ -1,0 +1,5 @@
+[
+  { "tool": "open_binary", "args": { "path": "H:\\SA_Analysis\\target\\cshell.dll" } },
+  { "tool": "batch_decompile", "args": { "addresses": ["0x1801aac80"] } },
+  { "tool": "batch_decompile", "args": { "addresses": ["0x1801aa8a0"] } }
+]

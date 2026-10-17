@@ -794,15 +794,26 @@ an anti-debug check. *(correction, documented to keep the evidence trail honest)
   the wire's opaque frames (CFB×2/CBC/ECB on frames #3/#4/#26/#27: all noise)
   and the wire masks are not `E/D` of any observed 16-byte material under it —
   the wire session key remains handshake-derived (state, not bytes on disk).
-- **Connection crypto objects** (callsite `0x18018ae96` decode): `ctor_3340d0`
-  is pure zero-init (vptr `0x1814977b8`, two `std::string` members at
-  `+0x210/+0x230`, zeroed through `+0x2A0`) — no key setup; right after, the
-  ctx at `conn+0xC90` is initialized via **`0x1803342e0(ctx, 0, 0x232, 0x100,
-  0x40)`** (a crypto-framework dispatcher: virtual calls `+0xa8/+0xa0/+0x88/
-  +0x80/+0xb8`, registry data `0x1814979e8`, tail into `0x180d4cf20` near the
-  XTEA cluster), and a second 0x298-byte object at `conn+0xCF0` via
-  `0x180b2eaf0(obj, 0, 8, 0x33, 0x200, 0x40, 0x200, 0x40)`. These two init
-  calls are the wire key-agreement entry points — next decompile targets.
+- **Connection crypto objects** *(corrected 2026-10-18, see below — this was a
+  UI object, not a cipher ctx)*: callsite `0x18018ae96` decode showed
+  `ctor_3340d0` (zero-init, vptr `0x1814977b8`) then
+  `0x1803342e0(obj, 0, 0x232, 0x100, 0x40)`. **Correction**: `0x1803342e0`
+  passes `"sa_interface2\menu\main\renew\ServerNameBack.dtx"` and converts
+  0x100/0x40 to *floats* (256.0×64.0) for virtual calls — it is a **UI texture
+  initializer**, and `0x180d4cf20` is a 5,153-callsite generic helper, so the
+  "+0xC90 SEED ctx" reading is **retracted**. A plain-.text call census
+  (`find-callers2.js`) then showed the **entire crypto surface in plain code**:
+  `wrapper_332ee0` 1 caller (the config path), `wrapper_332b40` **0 callers**,
+  XTEA enc/dec 1 caller each (the value codec itself), checksum `0x181272bc0`
+  2 callers (v1 enc/dec) — the wire's 2nd stage has **no plain-.text entry**,
+  matching the earlier VM-dispatch finding (VM bytecode at `0x18188be20+`
+  references `0x181272bc0`/`0x181272fa0`). Decompile attempts of the two big
+  callers (`0x1801a9fa0`, `0x180189760`) hit the provider's 330 s/item limit
+  even as single-address requests — hand analysis is the final source.
+- **Config-path pipeline fully closed**: stage-2 `0x1801aac80` is a
+  **base64 encoder** (3→4 bit packing, alphabet-global lookups), so
+  `0x1801a9fa0(in) = b64encode(SEED-CFB-Dec(key=73dc7ace…, IV="SDAT.NEXON.COM..", in))`
+  — a static-key string-decrypt helper, proven unrelated to the wire.
 
 ## 10. Open Questions
 
