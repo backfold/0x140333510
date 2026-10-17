@@ -58,3 +58,35 @@
 2. 인클로징 함수 0x1801a9fa0/0x180189760 디컴파일(session34 후보) → 와이어 send/recv 지점 및 ctx 보관소.
 3. seedInit에 넘어가는 key16 인자 값 — 세션 키 후보 = 로그인 0x3d 패킷 ~0x86 오프셋 16B blob(`c0e98d1f c0479aff c0319038…`).
 4. M_c2s/M_s2c가 IV 그 자체인지 E(K,IV)인지 — key16을 알면 solve-mask.js 배터리 재실행으로 판정.
+
+## 추가 관측 (2026-10-18 후반 — 수동 디코드 계속)
+
+### 래퍼 인자 셋업 (seedInit 호출부 직전 바이트)
+- **wrapper_332b40**: `seedInit(ctx=[rsp+40], id=0, key16=arg4(r13), state16=arg2(r12))` — `xor edx,edx`@0x180332bea.
+- **wrapper_332ee0**: `seedInit(ctx=[rsp+40], id=1, key16=arg1(r15), state16=arg2(r14))` — `lea edx,[r12+1]`@0x180332f5c.
+- id=0 → path B(E 기반), id=1 → path A(D 기반) = B의 역변환. **332b40=CFB 암호화, 332ee0=CFB 복호화**로 짝.
+- 두 래퍼 모두 진입부에서 `cdq/and 0Fh/add/sar 4`로 ceil16 블록수 계산, `operator new`로 패딩 버퍼 확보 후 memcpy.
+
+### wrapper_332b40 후반부 (0x180332c40~0x180332ed5) — PKCS#7 확정
+- `cmp dword [rsp+40h],1` (ctx->id) 로 A/B 루프 분기 — 0x180333250 method와 동일한 id 게이트.
+- 루프 A: `mov eax,[rcx](마스크) ^ src → dst`, `lea r8,[rsp+54h]`(라운드키), `call 0x180331bb0`(D) 인플레이스, 마스크=직후 출력. 미러 인덱싱 `41 8b 44 3f fc` = `[rdi+r15-4]` — 버퍼 뒤집힘(와이어 reverse) 관련.
+- 루프 B(0x180332d20): `lea rdi,[r15+rbx]` … `call 0x180330d10`(E) 후 `xor [rbx],eax` 4dword — `c=E(p)^mask`.
+- **언패드 꼬리**: `0f b6 5d f7 movzx ebx,byte [rbp-9]`(복호화된 마지막 블록 첫 바이트=패딩길이) → `test/1..16 범위검사(83 fb 10)` → `sub rdi,rbx`로 패딩 제거. **PKCS#7**(패딩 1..16, 정렬시 +1 풀블록 → `(len/16+1)*16`의 실체).
+- 332ee0에도 동일 구조(미러 주소).
+
+### 외부 호출부 인자 (0x1801a9fa0 내 0x1801aa456 직전)
+- `wrapper_332ee0(rcx=[rbp+8](키), rdx=std::string@rbp-0x78(IV/상태), r8=std::string src, r9d=[rbp-8](len), [rsp+20]=[rbp+0x120] 256B 출력버퍼)`.
+- 직전에 256B 버퍼 2개 초기화(0x100 크기 생성 호출 ×2), 호출 직후 `call 0x1801aac80`(2단 변환) — **다단 파이프라인**. IV가 std::string 세션 상태에서 옴 = 세션 키/IV는 연결 객체가 들고 있음.
+- 0x180189760의 ctor_3340d0 호출부: `b9 a0 02 00 00 mov ecx,0x2A0; call operator new` 후 ctor — **ctx 크기 = 0x2A0(672B)** 객체를 힙에 만들어 `[rsi+0xC90]`에 저장 → 연결 객체의 SEED ctx 보관소 후보.
+
+### 와이어 시퀀스 (decoded.log 기준, 로그인 시퀀스 캡처 확인)
+```
+#1  S2C 0x0d plen=28  90fc4958b2acba5406687df4d6536870 7deb5ee2edc15a78572e00b1  ← 서버 헬로/세션시드 후보
+#2  C2S 0x3d plen=198 '8'패딩 + 0x70에 c0e98d1fc0479affc03190(11B) + 0x9d에 9152a360×2(8B)
+#3  C2S 0x42 plen=198 전체 불투명(고엔트로피)
+#4  C2S 0x51 plen=198 전체 불투명
+#5~ C2S 0x08 하트비트(key 동일 7회 → key 교체 2회)
+#14~ S2C 0xbe/0xbc 채널목록(텍스트) → 0x8e 하트비트 → 0x37/0xca/0xf7 소형(4/19/21B, 고엔트로피) → 벌크
+```
+- M_c2s/M_s2c 16B 패턴은 cshell.dll/suddenattack.exe 어디에도 없음(검색 0건) — 하드코딩 아님, 세션 파생 확정.
+- 0x42/0x51에 대한 SEED-CFB/ECB 브루트(키·IV 후보 8×5 × fb 2 × ED 2 = 관측재료 전부) 전부 탈락 — 세션 키는 관측 바이트 밖(연결 상태)에서 유도됨. solve-login.js 참조.
