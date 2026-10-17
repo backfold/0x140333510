@@ -1,0 +1,8 @@
+[
+  { "tool": "open_binary", "args": { "path": "H:\\SA_Analysis\\target\\cshell.dll" } },
+  { "tool": "xrefs", "args": { "address": "0x1803333f0" } },
+  { "tool": "resolve_containing_procedure", "args": { "address": "0x180333510" } },
+  { "tool": "resolve_containing_procedure", "args": { "address": "0x180333252" } },
+  { "tool": "procedure_callers", "args": { "address": "0x1803333f0" } },
+  { "tool": "procedure_callees", "args": { "address": "0x1803333f0" } }
+]
