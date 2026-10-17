@@ -45,6 +45,13 @@
   XTEA-32 value codec with hardcoded key `"156def789023abc4"` (hex+`"SA"` wrapper),
   plus `CPHObject` header XORs. Working decryptors (Python+Node, KAT-verified) and a
   MITM capture proxy with automatic de-obfuscation logging under `scripts\py\`.
+- **Live-wire MITM capture done (sessions 29–30)**: an `ngm://` protocol-handler
+  shim redirects the game's server IP to a local proxy (full launcher/anticheat
+  chain preserved), yielding **17.24 MB / 83,130 frames** of real 175.207.21.11:12000
+  traffic. Wire framing `[u16le LEN][BODY]` chain-validated; the port-12000 codec is
+  a **VM-dispatched variant** of the v1 core (per-packet TYPE byte, constant
+  `0x1010` trailer, rolling-XOR key still travels in-packet — proxy decrypts
+  160,192 frames). Inner payload layer remains unsolved (§9, Q10).
 - **cshell.dll (session 10)**: 33 MB, VLizer VM sections (`.vm_sec`/`.vlizer`) but intact
   21 MB `.text` — Ghidra recovers 74,642 procedures. Drives the EAC/EOS anti-cheat client
   session, game socket I/O (WS2_32), and `CSAGameClientShell` game logic. No plaintext
@@ -705,6 +712,25 @@ an anti-debug check. *(correction, documented to keep the evidence trail honest)
     XOR_2 `[this+0x40]^[this+0x38]^[this+8]` (raw machine-code read). *(fact)*
   - Correction: the earlier "XXTEA" identification was wrong — the constant +
     unroll pattern is textbook **XTEA** on a 64-bit block.
+- **Live-wire capture (sessions 29–30) — the port-12000 codec is NOT v1**:
+  a full MITM capture (ngm protocol-handler shim → local proxy → real server;
+  17.24 MB / 83,130 frames / 13 s, `evidence/session30_wire_capture.md`) shows
+  framing `[u16le LEN][BODY]` (chain-validated across the whole C2S stream), and
+  BODY = `reverse(H)||0x1010` where `H = {rand, TYPE, rand, key32, rand}` +
+  the same rolling-XOR core — but `H[1]` varies per packet (message type:
+  0x3d/0x42/0x51 login, 0x8 heartbeat C2S, 0x8e bulk S2C …) while v1's tag
+  getter returns constant 1, and the 2-byte trailer is the constant `10 10`
+  on every frame (impossible for v1's content-dependent checksum
+  `FUN_181272bc0`). Alignment brute-force found no v1 block inside any frame.
+  The actual decrypt dispatcher is **VM bytecode in `.rdata` 0x18188be20+**
+  (instruction stream with RVA operands pointing at `0x181272bc0` checksum,
+  `0x181272fa0` v1-decrypt core, self-referencing jumps) — the `.vlizer` VM
+  wraps the native v1 routines with its own header/trailer layout. Rolling-XOR
+  parameters (key-in-packet, prev reset per packet) were verified against
+  identical-payload heartbeats. Inner payload layer: still unresolved
+  (16-byte quasi-periodic structure; XTEA-ECB and simple-XOR-keystream
+  hypotheses tested and not confirmed). *(fact up to the VM conclusion,
+  which is inference from the bytecode's RVA operands)*
 - Working Python/Node implementations + KAT: `scripts/py/sa_net_crypto.py`
   (validated via Node mirror, `scripts/py/sa-proxy.js --selftest`), and a
   capture proxy with automatic de-obfuscation logging:
@@ -725,7 +751,8 @@ an anti-debug check. *(correction, documented to keep the evidence trail honest)
 | Q6 | PDB symbols | Referenced PDB `SuddenAttack.pdb` GUID 6c56246a-9feb-4a5e-b74a-c9543885c781 not on disk; symbol servers are public infrastructure, not used here (local-only rule) | None planned (would require network symbol lookup, outside the local-only constraint if interpreted strictly) |
 | Q7 | ~~Anti-cheat interaction order/IPC at runtime~~ **largely RESOLVED statically** (§6.10) | cshell.dll's import table shows it drives the EOS/EAC anti-cheat client session + machine-ID + socket I/O, while the exe starts NGS. Exact call ordering still needs runtime/decompile follow-up. External module enumeration of the live process returns 0 modules (protection blocks handle queries — observed during the 2026-10-18 launch) | Optional: decompile the `EOS_AntiCheatClient_*` call sites in cshell.dll |
 | Q8 | ~~Role confirmation for support DLLs~~ **largely RESOLVED** (see §6.9) | Roles identified via strings/PDB paths + REA session 9 (machineidlib); deep REA passes on the remaining modules not done | Optional: full `open_binary` → pseudo-code workflow per module as needed |
-| Q9 | ~~TCP message crypto location~~ **RESOLVED** (2026-10-18, sessions 27–28, §9) | Located in `cshell.dll` (not the exe): `CStreamCryptor` v1 packet obfuscation (rolling XOR + reverse + u16 cksum, **key embedded per packet**) + XTEA-32 fixed-key `"156def789023abc4"` value codec + CPHObject header XORs. Ready-made decryptors + MITM capture proxy under `scripts/py/`. Remaining: checksum body (0x181272bc0), v1 tag byte, and confirmation of which codec is actually used on the 175.207.21.11:12000 wire | Session 29 decompiles + first live proxy capture; optionally decompile the `.vlizer` callers |
+| Q9 | ~~TCP message crypto location~~ **RESOLVED, then refined by live capture** (sessions 27–30, §9) | Located in `cshell.dll` (not the exe): `CStreamCryptor` v1 packet obfuscation (rolling XOR + reverse + u16 cksum, **key embedded per packet**) + XTEA-32 fixed-key `"156def789023abc4"` value codec + CPHObject header XORs. Sessions 29–30 added the checksum decompile (`FUN_181272bc0` = SIMD add+xor fold), the v1 tag getter (`return 1`), and a **17 MB live MITM capture**: the port-12000 wire uses the v1 rolling-XOR core but a **VM-dispatched variant** (per-packet TYPE byte at H[1], constant `0x1010` trailer — v1's tag/checksum don't fit; dispatcher = `.rdata` VM bytecode 0x18188be20+ referencing 0x181272bc0/0x181272fa0). Inner payload layer unresolved | Recapture a longer session; decode the VM bytecode at 0x18188be20+ |
+| Q10 | Inner payload layer of port-12000 frames | Obf-deobfuscated payloads still show 16-byte quasi-periodic structure with per-position variations; XTEA-ECB (fixed key) and 16-byte XOR-keystream hypotheses both tested against captured login/heartbeat packets and **not confirmed** (no tokens/ASCII structure emerged) | Longer capture through login→lobby; or devirtualize the VM dispatcher; S2C frame #0 (38 B) may carry a session seed |
 
 ## 11. Evidence & Limitations
 
