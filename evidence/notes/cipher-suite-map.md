@@ -90,3 +90,35 @@
 ```
 - M_c2s/M_s2c 16B 패턴은 cshell.dll/suddenattack.exe 어디에도 없음(검색 0건) — 하드코딩 아님, 세션 파생 확정.
 - 0x42/0x51에 대한 SEED-CFB/ECB 브루트(키·IV 후보 8×5 × fb 2 × ED 2 = 관측재료 전부) 전부 탈락 — 세션 키는 관측 바이트 밖(연결 상태)에서 유도됨. solve-login.js 참조.
+
+## 추가 관측 (2026-10-18 session33/34 사이 — 정적 키·커넥션 객체 확정)
+
+### 정적 초기화 썽크 → 전역 문자열 3개가 전부 .rdata 상수에서 복사됨 (사실)
+- `0x18000cb90` → 글로벌 `0x1818bc670`: SSE 원본 `0x18144c3a0`, 64+1B, **표준 base64 알파벳** `A-Za-z0-9+/` (size=0x40, cap=0x4f, operator new 0x50).
+- `0x18000cc00` → 글로벌 `0x1818bc6b0`: SSE 원본 `0x18145eae0`, 16B **`SDAT.NEXON.COM..`** (size=0x10, cap=0x1f, new 0x20).
+- `0x18000cc50` → 글로벌 `0x1818bc690`: SSE 원본 `0x18145eac0`, 24B **`c9x6zoVPQL1y00oPpGZ6/A==`** (size=0x18, cap=0x1f, new 0x20).
+- 각 썽크 끝의 `lea rcx,[0x1814252d0/340/3b0]`는 atexit 파괴자 콜백 포인터(문자열 데이터 아님 — 처음에 착각).
+
+### 0x1801a9fa0 = 정적 키 설정/문자열 복호화기 (사실, 수동 디코드)
+- `0x1801aa02c`: `lea r8,[rbp+8]`(키 출력), `mov edx,eax`(strlen), 소스=글로벌 `0x1818bc690` → `call 0x1801aa8a0` = **base64 디코더**(`cmp bl,0x3d '='` 패딩 분기, `sub bl,0x2b '+'`, 4자 그룹 `cmp r14,4`, 알파벳 strchr 0x181375398×3).
+- → **key16 = b64dec("c9x6zoVPQL1y00oPpGZ6/A==") = `73dc7ace854f40bd72d34a0fa4667afc`**.
+- `0x1801aa452`: `wrapper_332ee0(rcx=rbp+8 key, rdx=std::string@rbp-0x78 ← 글로벌 "SDAT.NEXON.COM..", r8=src@rbp-0x18, r9d=len, [rsp+20]=256B out@rbp+0x120)`, 직전 memset(out,0,0x100)×2 (0x18137537a).
+- 호출 직후 `stage2 0x1801aac80(rcx=dec_buf, edx=retlen, r8=src, r9=rsp+0x40)` — 2단 변환 파이프라인.
+- **이 정적 키로는 와이어 불투명 프레임(#3 0x42, #4 0x51, #26 0x34, #27 0xbf)이 풀리지 않음** (solve-real.js: cfbDecStd/cfbDecDbc/cfbEncB/cbcDec/ecbDec 전부 pr≈40% 노이즈). 마스크도 E/D(정적키, 후보 IV 8종) 전부 불일치 (solve-mask2.js). → 와이어 세션 키는 핸드셰이크 파생, 디스크에 없음.
+
+### 커넥션 암호 객체 2개 (0x18018ae96 호출부 디코드, 사실)
+```
+mov ecx,0x2A0; call operator new(0x181371f54); call ctor_3340d0 → [rsi+0xC90]  (SEED ctx)
+call 0x1803342e0(ctx, 0, 0x232, 0x100, 0x40)          ← 초기화(키 설정?) ★신규 함수
+mov ecx,0x298; operator new; call 0x180b2bc40 → [rsi+0xCF0]                      (제2 객체)
+call 0x180b2eaf0(obj2, 0, 8, 0x33, 0x200, 0x40, 0x200, 0x40)                     ← 제2 초기화
+각각 0x180fd8210(manager, obj)로 등록
+```
+- `ctor_3340d0` = 순수 제로 초기화(vptr `0x1814977b8`, std::string 멤버 +0x210/+0x230, +0x2A0까지 0) — **키 설정 없음**. vtable 0x1814977b8 slot0=0x180334220(삭제 소멸자 추정), 0x1814977c0부터는 별개 클래스 vtable.
+- `0x1803342e0` = 암호 프레임워크 디스패처: `mov rax,[rcx]` 가상 호출 +0xa8/+0xa0/+0x88/+0x80/+0xb8, 레지스트리 `0x1814979e8`, 꼬리 `0x180d4cf20`(XTEA 클러스터 0x180d5e9c0/0x180d5ef00 근방). 인자 (0, 0x232, 0x100, 0x40) = 알고리즘/모드/사이즈 지정 추정.
+- **0x1803342e0 + 0x180d4cf20 = 와이어 키 합의 진입점 후보 (다음 디컴파일 타깃)**.
+
+### 도구 노트 (사실)
+- mcp-client의 batch_decompile 결과 문자열은 ~400,014B에서 잘림("...[truncated]") → 다중 주소 요청 시 뒤 항목 소실. **1요청 1주소 원칙**.
+- batch_decompile은 `timeoutMs` 인자 거부(Unrecognized key) — 클라이언트 타임아웃은 별도 경로.
+- session33 기록(항목1~4)은 결과 잘림으로 복구 불가(항목0 provider_timeout만 확인됨).

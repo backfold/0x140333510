@@ -779,6 +779,30 @@ an anti-debug check. *(correction, documented to keep the evidence trail honest)
   hypotheses from key32 alone (SEED/XTEA/RC4/hash battery, 800+ combos incl.
   fixed key `"156def789023abc4"`) are all eliminated — the mask is
   session-state-derived.
+- **Hardcoded SEED key/IV recovered from disk** (2026-10-18, sessions 33–34
+  follow-up): static-init thunks `0x18000cb90/0x18000cc00/0x18000cc50` build
+  three global `std::string`s from `.rdata` constants — base64 alphabet
+  (`0x18144c3a0`, standard `A-Za-z0-9+/`), **`"SDAT.NEXON.COM.."`**
+  (`0x18145eae0` → global `0x1818bc6b0`, used as the wrapper's IV string), and
+  **`"c9x6zoVPQL1y00oPpGZ6/A=="`** (`0x18145eac0` → global `0x1818bc690`).
+  Caller `0x1801a9fa0` runs `0x1801aa8a0` (a **base64 decoder**: `cmp '='`,
+  `sub '+'`, 4-char groups, `strchr` on the alphabet global) over the latter
+  into `rbp+8`, then `wrapper_332ee0(key=rbp+8, IV="SDAT.NEXON.COM..", src,
+  len, out256)` followed by a second-stage transform `0x1801aac80` — i.e.
+  `0x1801a9fa0` is a **static-key config/string decryptor** with
+  `key16 = 73dc7ace854f40bd72d34a0fa4667afc`. This key does **not** decrypt
+  the wire's opaque frames (CFB×2/CBC/ECB on frames #3/#4/#26/#27: all noise)
+  and the wire masks are not `E/D` of any observed 16-byte material under it —
+  the wire session key remains handshake-derived (state, not bytes on disk).
+- **Connection crypto objects** (callsite `0x18018ae96` decode): `ctor_3340d0`
+  is pure zero-init (vptr `0x1814977b8`, two `std::string` members at
+  `+0x210/+0x230`, zeroed through `+0x2A0`) — no key setup; right after, the
+  ctx at `conn+0xC90` is initialized via **`0x1803342e0(ctx, 0, 0x232, 0x100,
+  0x40)`** (a crypto-framework dispatcher: virtual calls `+0xa8/+0xa0/+0x88/
+  +0x80/+0xb8`, registry data `0x1814979e8`, tail into `0x180d4cf20` near the
+  XTEA cluster), and a second 0x298-byte object at `conn+0xCF0` via
+  `0x180b2eaf0(obj, 0, 8, 0x33, 0x200, 0x40, 0x200, 0x40)`. These two init
+  calls are the wire key-agreement entry points — next decompile targets.
 
 ## 10. Open Questions
 
