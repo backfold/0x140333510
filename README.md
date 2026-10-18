@@ -930,7 +930,48 @@ end-to-end extractor works, 22/22 files**):
   (`default.ltb` contains `polySurface1` — Maya-exported mesh data), `*.ltc`
   collision data. Pure Node, no game files required beyond the `.pkg`.
 
+### Session 37 (2026-10-18 13:2x KST) — run2 capture attempt: launch chain mapped, token-TTL diagnosis
+
+Run2 (fresh ngm:// launch to compare layer-2 masks per session) failed twice with
+"서버에 접속할 수 없습니다" (2nd attempt + error code **-10000**). Post-mortem produced
+several new facts — no game traffic was captured in either attempt:
+
+- **Client launch chain (fact, from `launcher.log` of the live install)**:
+  `suddenattack.exe -mode:launch …` acts as the *NGM entry*: VC++/DirectX runtime
+  checks → HTTP fetch of `launcher.gli` (version 300) → version/profile check →
+  `WinExec` of **`eaclaunch.exe +Service "NxK" +ServerIP <passarg[0]> +ServerPort
+  <passarg[1]> +UserAge +MapIndex +VoiceTalk +SessionID +NexonSN`**. The passarg
+  IP substitution therefore propagates verbatim to the real game bootstrap
+  (`+ServerIP "127.0.0.1"` observed). SessionID/NexonSN appear in plaintext on the
+  eaclaunch command line (values are personal — not reproduced here).
+- **Game server speaks first (fact, `scripts/py/probe-banner.js`)**: a bare TCP
+  connect to `175.207.21.11:12000` **or** `175.207.21.12:12000` is answered with an
+  immediate **40-byte banner** `26 00 09 00 01 <28-byte session nonce> … 01 01 0`
+  (u16 length prefix `0x0026`=38 matches the run1 framer; first S2C chunk in run1
+  was likewise 40 B). Both IPs are the same service; the nonce differs per
+  connection — session-key material for the 0xbe/0xbc handshake family.
+- **Token TTL is the run2 blocker (inference, strong)**: both failed launches used
+  ngm URLs that were **~19–20 min old** at launch (URL `-timestamp` vs.
+  `launcher.log`/`meta.json` clock), while run1 (success) launched within minutes
+  of issuance. The web layer (NGM JS, `GenerateArgumentWindows`) stamps
+  `-timestamp` at click time; the browser fires the `ngm://` scheme immediately
+  (hidden-iframe `location.href`), so the token is consumed/aged from the user's
+  click, not from our launch. In both failures the proxy logged **zero** TCP
+  connects (`events.jsonl` empty; `ev:'open'` would be logged for any connect —
+  `sa-proxy.js:189`), i.e. the client aborted **before** dialing the game server.
+- **Client-side logs**: `error.log`/`errorlog\*_PID.log` are plaintext but only
+  cover the DX/gamma init ("[GAME UT]" lines — the engine reached full DX init
+  before failing). `errorlog\SAClient.log` is **encrypted** (high-entropy,
+  repeating-keystream structure) — the client's own obfuscated log, out of scope
+  for now. BlackCipher (`BlackCipher64.log`, `NGClient64.log`, `BlackCall64.log`)
+  updated during boot — anticheat stack active.
+- **Tooling**: `scripts/py/launch-fast.ps1` — one-shot launcher for TTL-critical
+  captures: parses passarg IP, verifies/restarts the proxy (upstream match via
+  `meta.json`), waits for LISTEN, then substitutes and `Start-Process`es the game
+  in a single command.
+
 ## 10. Open Questions
+
 
 | # | Question | Why unresolved | Next experiment |
 |---|---|---|---|
