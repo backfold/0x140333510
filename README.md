@@ -950,25 +950,40 @@ several new facts — no game traffic was captured in either attempt:
   (u16 length prefix `0x0026`=38 matches the run1 framer; first S2C chunk in run1
   was likewise 40 B). Both IPs are the same service; the nonce differs per
   connection — session-key material for the 0xbe/0xbc handshake family.
-- **Token TTL is the run2 blocker (inference, strong)**: both failed launches used
-  ngm URLs that were **~19–20 min old** at launch (URL `-timestamp` vs.
-  `launcher.log`/`meta.json` clock), while run1 (success) launched within minutes
-  of issuance. The web layer (NGM JS, `GenerateArgumentWindows`) stamps
-  `-timestamp` at click time; the browser fires the `ngm://` scheme immediately
-  (hidden-iframe `location.href`), so the token is consumed/aged from the user's
-  click, not from our launch. In both failures the proxy logged **zero** TCP
-  connects (`events.jsonl` empty; `ev:'open'` would be logged for any connect —
-  `sa-proxy.js:189`), i.e. the client aborted **before** dialing the game server.
+- **Token TTL is NOT the blocker (corrected)**: an earlier revision of this block
+  blamed token aging, based on a hand-converted (wrong by ~20 min) timestamp
+  reading. Authoritative conversion (`[DateTimeOffset]::FromUnixTimeMilliseconds`,
+  KST) shows **all four failed launches used URLs issued 1–60 s before launch**
+  (13:22:51→13:22:52, 13:32:35→13:32:36, 13:46:51→13:46:5x, 13:51:46→13:52:15).
+  Token freshness is ruled out; the TTL claim is retracted.
+- **Control experiment (fact, `scripts/py/sockmon.ps1` + `logs` evidence)**: a
+  completely **unmodified** launch (real passarg `175.207.21.12`, proxy entirely
+  out of the path, fresh token) **also fails with -10000**. A 500 ms-resolution
+  socket monitor over the game process family shows the client only ever
+  contacting `43.202.78.169:443` (portal/NGM, AWS) and `104.18.124.108:443`
+  (Cloudflare telemetry) — **it never dials the game server at all**, not even the
+  real IP. run1 (05:25 KST the same day) succeeded through the identical
+  substitution method, so the breakage is **upstream of any interception**:
+  account/session state or server-side (Sunday-peak capacity / possible
+  abnormal-use throttle; no scheduled maintenance on 10/18 — notices show
+  Thursday-morning maintenance cadence). The "-10000" dialog is the client's
+  generic connect-failure (its own help text lists server capacity, firewall,
+  antivirus).
 - **Client-side logs**: `error.log`/`errorlog\*_PID.log` are plaintext but only
   cover the DX/gamma init ("[GAME UT]" lines — the engine reached full DX init
   before failing). `errorlog\SAClient.log` is **encrypted** (high-entropy,
   repeating-keystream structure) — the client's own obfuscated log, out of scope
   for now. BlackCipher (`BlackCipher64.log`, `NGClient64.log`, `BlackCall64.log`)
   updated during boot — anticheat stack active.
-- **Tooling**: `scripts/py/launch-fast.ps1` — one-shot launcher for TTL-critical
-  captures: parses passarg IP, verifies/restarts the proxy (upstream match via
-  `meta.json`), waits for LISTEN, then substitutes and `Start-Process`es the game
-  in a single command.
+- **Tooling**: `scripts/py/launch-fast.ps1` — one-shot launcher (parses passarg IP,
+  verifies/restarts the proxy via `meta.json`, waits for LISTEN, substitutes,
+  launches; `-NoSubstitute` = untouched control launch). `scripts/py/sockmon.ps1`
+  — 500 ms sampler of all TCP connections of the game process family (produced
+  the dial evidence above). `scripts/py/alias-capture.ps1` — **network-layer
+  interception with zero URL modification** (adds the real server IP as a local
+  /32 alias on the default-route interface, firewall rule, proxy bound to the
+  alias, upstream = sibling farm IP; `-Teardown` reverses everything) — the
+  intended run2 capture mode once the upstream issue clears.
 
 ## 10. Open Questions
 
