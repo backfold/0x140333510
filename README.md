@@ -881,13 +881,62 @@ an anti-debug check. *(correction, documented to keep the evidence trail honest)
   - Record semantics stay undecoded without the client parser (VM-only,
     consistent with the callsite census above).
 
+Update (2026-10-18, REA sessions 36 — **`.pkg` per-file encryption FULLY CRACKED;
+end-to-end extractor works, 22/22 files**):
+
+- **Reader pipeline** (`ca20` `FUN_14029ca20`, verbatim): per-file stream = layered
+  wraps dispatched on index `field[1]` bits — `&0x4` → `c4c0` (**block** decrypt),
+  then `&0x2` → `bf30`/`c2a0` (**continuous** decrypt, or segmented if the entry has
+  segment records), `&0x20` → a third `bf30`/`c2a0` wrap with `fnv32(name)`-variant
+  derive, `&0x1` → zlib inflate layer (empirical: decompressed sizes == `field[3]`
+  on all 3 compressed files). Every layer re-reads `spec = {ctx, record,
+  &wrapper+0x74, &wrapper+0x70, &zero, &wrapper+0x78, &wrapper+0x7c}` built by the
+  request path (`c810` `FUN_14029c810`).
+- **Per-file key K (the missing piece)** = `deriveC(ctx, tail16)[0..16]` where
+  `ctx` **= the entry's own filename** and `tail16` = the 16 index tail bytes.
+  Proof chain: the request walker (`140279c00`) passes `&node+0x50` as ctx; the
+  walker tree (`manager+0x78`) is populated at pkg-open (`14027c070` loop) whose
+  insert (`140271be0`) allocates `new(0x70)` nodes `{links, key wstring +0x20,
+  wrapper shared_ptr +0x40, value wstring +0x50}` and fills `+0x50` with
+  `copy(copy(entryName))` — `FUN_1400612f0` and `FUN_140295e10` are both plain
+  wstring copy constructors (verified instruction-by-instruction; no transform).
+  `deriveC` (`FUN_1402a83f0`, verbatim):
+  `t = tail16[j&15] − 5·(j/5) + 2 + j; K[j] = (MOVSX(t)·MOVSX(lowbyte(ctx[j mod len])) + j) & 0xff`
+  for j = 0..15 (of 128), key bytes → `beee0` (`FUN_1402abee0`) with
+  `keylen=0x80` bits = the verified Snow2-128 load (16-byte big-endian words,
+  word/complement initial state).
+- **Why two SUB passes with the SAME K**: `c2a0` wraps **continuous**
+  (`aba0` blockSize arg = 0 → decrypts the whole `[F, F+f4)` window) while `c4c0`
+  wraps **block** (`aba0` blockSize arg = 0x400 → reader `d750` `FUN_14029d750`
+  decrypts only the first `min(0x400, len)` bytes and passes the rest through).
+  Both derive the same K (same spec → same deriveC inputs), both combine by
+  word-wise SUB (`adbe0` `FUN_1402adbe0`, wordSize 4 `cfd0`). Net effect on disk:
+  `plain[0..0x400) = cipher − 2·K`, `plain[0x400..) = cipher − 1·K`
+  (keystream word index continues from word 0x100). This double-layer is why every
+  single-layer attempt failed.
+- **Addressing (confirmed)**: `F = base + field[2]·0x400`, `base` = index end
+  rounded up to 0x400 (`global` 0x400, `texturescripts` 0x800); stored window
+  `[F, F+field[4])` where `field[4] = align4(field[3])` for uncompressed entries;
+  output length = `field[3]` exactly (padding stripped); compressed entries
+  (`&0x1`) inflate to exactly `field[3]` bytes (695/35781/5307 verified).
+- **Field[1] flags (fact)**: bit0 = zlib-compressed, bit1 = continuous Snow2
+  layer, bit2 = block Snow2 layer (0x400 window), bit4 = +32B extra in the index
+  record, bit5 = third layer w/ `fnv32(name)` deriveA variant (no sample among
+  the 22 — untested path).
+- **Extractor**: `scripts/pkg-extract28.js` — 22/22 files from the two sample
+  pkgs, all lengths == `field[3]`, output under `extracted/`: shader scripts
+  (`*.txt` = readable "UserParams RotPerS; Input UV; … BeginScript …" texture
+  scripts), binary `*.tfs` param tables (param names visible), LithTech models
+  (`default.ltb` contains `polySurface1` — Maya-exported mesh data), `*.ltc`
+  collision data. Pure Node, no game files required beyond the `.pkg`.
+
 ## 10. Open Questions
 
 | # | Question | Why unresolved | Next experiment |
 |---|---|---|---|
 | Q1 | ~~`cshell.dll` / `cres.dll` / `ClientFX.fxd` acquisition~~ **RESOLVED** (2026-10-18 02:56) | User launched the game; the watcher captured all three files to `target\` (hash-verified vs. live: cshell.dll `82F0F4E40A21EFCF…`, cres.dll `F17689E3AF722496…`). Deep REA analysis of cshell.dll started (§6.10, session 10) | Continue sessions on cshell.dll / ClientFX.fxd as needed |
 | Q2 | Runtime IAT reconstruction (real import list) | Would require running the client under a debugger (dynamic dump, §5.2) — deliberately not done on this machine to avoid anti-cheat entanglement | Disposable VM + hardware breakpoint on `.rdata` IAT region; dump with Scylla at OEP `0x1402644b8` |
-| Q3 | ~~`.pkg` (SnowCipher) container format~~ **RESOLVED for v1** (2026-10-18, sessions 12–26, §6.5) | Cipher identified as Nexon **Snow2** (MapleStory `.ms` v2 primitive; 6/6 tables byte-exact vs MapleLib). Full v1 container model reversed and **validated with a standalone parser** (`scripts/pkg-parse.js`) on two real packages: masked-key region (`N1 = Σchars mod 312 + 30`) → version byte → length-obfuscated, cycling-XOR-encrypted header string (fixed salt `!dlstps20djr@`) → Snow2 data region (key1, head = `[checksum][count]`) → index region at `dataStart + N2 + 8` (key2), entries `[u32 strlen][UTF-16LE name][6×u32][n×16B][16B]`(+32B if flag&0x10). Both samples parse 100% (6/6 + 16/16 entries, clean filenames). Remaining: per-file data addressing (`field[3]/[4]`, `tail16`) — index parses but data-block layout unconfirmed; v2 header variant has no sample | Decompile the file-read path (CipherStream::Read / `FUN_1402a95f0` callers) to map index fields to absolute data offsets; obtain a v2 sample if one exists in the install |
+| Q3 | ~~`.pkg` (SnowCipher) container format~~ **FULLY RESOLVED incl. per-file data** (2026-10-18, sessions 12–26 + 36, §6.5) | Container header + index: sessions 12–26 (Snow2, standalone parser). Per-file encryption: session 36 — layered reader pipeline (`ca20`), per-file key `K = deriveC(entryName, tail16)[0..16]` (ctx proven = the entry filename via the walker-tree insert chain), double SUB (continuous + 0x400-block, same K), `F = base + field[2]·0x400`, `field[4] = align4(field[3])`, `&0x1` = zlib. **Extractor `scripts/pkg-extract28.js`: 22/22 files, all output lengths == `field[3]`** (see update block above §10). Untested branches (no samples): `&0x20` third layer, segmented `bf30` path, v2 header variant | Run the extractor over all 516 `game\*.pkg`; read `bf30` + the `&0x20` deriveA path if such entries exist |
 
 | Q4 | ~~`engine.rez` header obfuscation~~ **RESOLVED** (see §6.8) | Initial "obfuscated header" hypothesis refuted — it is the standard RezMgr SA-variant layout, fully parseable | Done: `node scripts\rez-parse.js target\engine.rez` |
 | Q5 | Exact Themida version / VM handler layout | No version resource; full VM devirtualization out of scope | Compare `.boot` stub bytes against Oreans SDK samples; or devirtualize the stub's dispatch loop |
@@ -1036,6 +1085,13 @@ Environment: Windows x64, Node 22.19+/24.11+, PowerShell 5.1+, ~10 GB free disk.
     Expected: both files report header string `!dlstps20djr@`, a plausible
     `[checksum][count]` data head, and 6/6 + 16/16 index entries with clean
     filenames (`evidence\pkg_index_dump.json`).
+13b. **Per-file decryption & extraction** (session 36; no Ghidra needed):
+    ```powershell
+    node scripts\pkg-extract28.js [more.pkg paths...]   # default = the two samples
+    ```
+    Expected: `OK=<n> FAIL=0`, files under `extracted\<pkgname>\…` with sizes
+    exactly equal to index `field[3]` (uncompressed entries: `f4 = align4(f3)`;
+    `field[1]&1` entries: zlib-inflated).
 14. **Network-crypto sessions (27–28)** (cshell.dll, same env var as step 10; snapshots
     chain `cshell_snapshot27/28.bin`): local triage first —
     `node scripts\crypto-constants-scan.js target\cshell.dll`,

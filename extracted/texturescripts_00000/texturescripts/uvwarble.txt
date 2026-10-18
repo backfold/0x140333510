@@ -1,0 +1,7 @@
+UserParams XFreq, YFreq, XScale, YScale;
+Input  UV;
+Output TexCoord2;
+BeginScript
+	Mat01 = sin((Time * XFreq) % 6.242) * XScale;
+	Mat10 = cos((Time * YFreq) % 6.242) * YScale;
+EndScript

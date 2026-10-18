@@ -1,0 +1,14 @@
+UserParams RotPerS;
+Input  UV;
+Output TexCoord2;
+BeginScript
+	#calculate the angle
+	Mat11 = (RotPerS * Time * 6.2831853) % 6.2831853;
+	
+	#now fill in the matrix
+	Mat00 = cos(Mat11);
+	Mat01 = sin(Mat11);
+
+	Mat10 = -Mat01;
+	Mat11 = Mat00;
+EndScript

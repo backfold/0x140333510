@@ -1,0 +1,13 @@
+UserParams XSpeed, ZSpeed, XScale, YScale, ZScale;
+Input  WSPos;
+Output TexCoord2;
+BeginScript
+	# Apply the scale on the coordinates
+	Mat00 = XScale;
+	Mat11 = YScale;
+	Mat22 = ZScale;
+
+	# Apply the translation
+	Mat03 = ((Time * XSpeed) % 1.0);
+	Mat13 = ((Time * ZSpeed) % 1.0);
+EndScript

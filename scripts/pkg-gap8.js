@@ -1,0 +1,79 @@
+// pkg-gap8.js — dataStart 뒤 n2바이트 갭 + 8바이트 미확인 영역 덤프
+'use strict';
+const fs = require('fs');
+function charSum(s) { let x = 0; for (const c of s) x = (x + c.charCodeAt(0)) >>> 0; return x; }
+const TABLES = JSON.parse(fs.readFileSync('H:\\SA_Analysis\\evidence\\snow_tables_from_exe.json', 'utf8')).tables;
+const T = { a: TABLES.snow_alpha_mul.words, ai: TABLES.snow_alphainv_mul.words, t0: TABLES.snow_T0.words, t1: TABLES.snow_T1.words, t2: TABLES.snow_T2.words, t3: TABLES.snow_T3.words };
+const a_mul = (w) => (((w << 8) >>> 0) ^ T.a[(w >>> 24) & 0xff]) >>> 0;
+const ainv_mul = (w) => ((w >>> 8) ^ T.ai[w & 0xff]) >>> 0;
+const fsmT = (w) => (T.t0[w & 0xff] ^ T.t1[(w >>> 8) & 0xff] ^ T.t2[(w >>> 16) & 0xff] ^ T.t3[(w >>> 24) & 0xff]) >>> 0;
+class Snow2 {
+  constructor(key16) {
+    this.s = new Uint32Array(16); this.r1 = 0; this.r2 = 0;
+    const b = key16; const sx = (x) => (x & 0x80 ? x - 256 : x) | 0;
+    for (let k = 0; k < 4; k++) {
+      const w = ((sx(b[4*k]) << 24) | (sx(b[4*k+1]) << 16) | (sx(b[4*k+2]) << 8) | sx(b[4*k+3])) >>> 0;
+      this.s[15-k] = w; this.s[11-k] = (~w) >>> 0; this.s[7-k] = w; this.s[3-k] = (~w) >>> 0;
+    }
+    for (let k = 0; k < 32; k++) this.initStep(k % 16);
+    this.refresh();
+  }
+  initStep(k) {
+    const s = this.s;
+    const out = (((this.r1 + s[(k+15)%16]) >>> 0) ^ this.r2) >>> 0;
+    const ns = (a_mul(s[k]) ^ s[(k+2)%16] ^ ainv_mul(s[(k+11)%16]) ^ out) >>> 0;
+    const tmp = (this.r2 + s[(k+5)%16]) >>> 0;
+    s[k] = ns; this.r2 = fsmT(this.r1); this.r1 = tmp;
+  }
+  ksStep(k) {
+    const s = this.s;
+    const ns = (a_mul(s[k]) ^ s[(k+2)%16] ^ ainv_mul(s[(k+11)%16])) >>> 0;
+    const tmp = (this.r2 + s[(k+5)%16]) >>> 0;
+    const old = s[(k+1)%16];
+    s[k] = ns; this.r2 = fsmT(this.r1); this.r1 = tmp;
+    return (((this.r1 + ns) >>> 0) ^ this.r2 ^ old) >>> 0;
+  }
+  refresh() { this.ks = new Uint32Array(16); for (let k = 0; k < 16; k++) this.ks[k] = this.ksStep(k); this.ksPos = 0; }
+  nextWord() { if (this.ksPos >= 16) this.refresh(); return this.ks[this.ksPos++]; }
+}
+for (const f of ['texturescripts_00000.pkg', 'global_00000.pkg']) {
+  const buf = fs.readFileSync(`H:\\SA_Analysis\\target\\pkg_samples\\${f}`);
+  const n1 = (charSum(f) % 312) + 30, n2 = ((charSum(f) * 3) % 212) + 33;
+  const masked = buf.subarray(0, n1);
+  const key0 = Buffer.from(masked); for (let i = 0; i < n1; i++) key0[i] = (masked[i] >> 1) | (masked[i] & 0x80);
+  const len = (buf.readUInt32LE(n1 + 1) ^ (key0[0] & 0x80 ? key0[0] - 256 : key0[0])) >>> 0;
+  let s0 = '';
+  for (let i = 0; i < len; i++) {
+    const k = key0[i % n1] & 0x80 ? key0[i % n1] - 256 : key0[i % n1];
+    s0 += String.fromCharCode(buf.readUInt16LE(n1 + 5 + i * 2) ^ (k & 0xffff));
+  }
+  const dataStart = n1 + 5 + len * 2;
+  console.log(`\n=== ${f}: n1=${n1} n2=${n2} s0=${JSON.stringify(s0)} dataStart=0x${dataStart.toString(16)} indexStart=0x${(dataStart + n2 + 8).toString(16)}`);
+  const region = buf.subarray(dataStart, dataStart + n2 + 8);
+  console.log(`gap+8 raw (${n2 + 8}B):`);
+  for (let i = 0; i < region.length; i += 16) {
+    const row = region.subarray(i, i + 16);
+    console.log(`  +0x${i.toString(16).padStart(3, '0')}: ${row.toString('hex').match(/.{1,2}/g).join(' ')}  |${row.toString('latin1').replace(/[^\x20-\x7e]/g, '.')}|`);
+  }
+  // k1 갭 복호화 시도: 어떤 키로 되는지 — 예전에 검증된 k1 파생 재현 시도
+  // (k1 = 파일명 기반 여러 후보 시험)
+  function tryKey(name, k) {
+    const c = new Snow2(k);
+    const d = Buffer.from(region);
+    for (let i = 0; i + 4 <= d.length; i += 4) d.writeUInt32LE((d.readUInt32LE(i) - c.nextWord()) >>> 0, i);
+    let printable = 0;
+    for (const b of d.subarray(0, n2)) if ((b >= 0x20 && b < 0x7f) || b === 0) printable++;
+    const z = d.subarray(n2); // 마지막 8바이트
+    const zallZero = z.every(x => x === 0);
+    console.log(`  ${name}: gap-printable=${(printable / n2).toFixed(2)} tail8=${z.toString('hex')}${zallZero ? ' (ALL ZERO!)' : ''} dwords=[${[0, 4].map(o => '0x' + z.readUInt32LE(o).toString(16)).join(', ')}]`);
+    if (printable / n2 > 0.8 || zallZero) {
+      console.log(`    FULL DECRYPT: ${d.toString('latin1').replace(/[^\x20-\x7e]/g, '.')}`);
+      return true;
+    }
+    return false;
+  }
+  const str = f + s0, L = str.length;
+  const k2 = Buffer.alloc(16);
+  for (let i = 0; i < 16; i++) k2[i] = ((str.charCodeAt(L - (i % L) - 1) & 0xff) * ((i % 3) + 2) + i) & 0xff;
+  tryKey('k2(file+s0)', k2);
+}

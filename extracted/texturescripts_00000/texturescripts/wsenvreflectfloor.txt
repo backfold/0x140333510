@@ -1,0 +1,14 @@
+UserParams ;
+Input  WSReflection;
+Output TexCoord2;
+
+BeginScript
+	
+	#setup the texture scale
+	Mat00 = 0.5;
+	Mat11 = 0.0;
+	Mat12 = 0.5;
+	Mat03 = 0.5;
+	Mat13 = 0.5;
+
+EndScript

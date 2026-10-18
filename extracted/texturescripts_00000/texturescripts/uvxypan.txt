@@ -1,0 +1,8 @@
+UserParams XSpeed, YSpeed;
+Input UV;
+Output TexCoord2;
+BeginScript
+	Mat33 = 0.0;
+	Mat02 = ((Time*XSpeed) % 1.0);
+	Mat12 = ((Time*YSpeed) % 1.0);
+EndScript

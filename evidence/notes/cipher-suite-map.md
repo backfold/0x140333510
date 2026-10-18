@@ -145,3 +145,6 @@ call 0x180b2eaf0(obj2, 0, 8, 0x33, 0x200, 0x40, 0x200, 0x40)                    
 - 0x1801a9fa0: 1주소 단독 요청에도 항목 provider_timeout(콜 661.19s, 결과 102,954B = 진단 로그) — 함수가 ~0x4b6b+ 바이트 STL 중첩으로 330s 내 분석 불가. **수동 분석이 최종 소스**.
 - 0x180189760: 동일 예상(진행/타임아웃).
 - 소형 함수(0x1801aac80/0x1801aa8a0) 단독 요청은 성공 가능성 있음(session35).
+
+## session34/35 디컴파일 재시도 결과 (2026-10-18)
+- batch_decompile 0x1801a9fa0 / 0x180189760 / 0x1801aac80 / 0x1801aa8a0 — **전부 provider_timeout** ('소형' 함수 2개 포함). cshell.dll 디컴파일 공급자는 사실상 사용 불가; dump-range.js + find-callers2.js 수동 분석이 최종 소스로 확정. config-path 결론(b64enc/dec + SEED-CFB)은 수동 디스어셈블리에 기반하므로 영향 없음.

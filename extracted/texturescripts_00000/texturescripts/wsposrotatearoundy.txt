@@ -1,0 +1,23 @@
+UserParams CenterX, CenterZ, ScaleX, ScaleZ, RotPerS;
+Input  WSPos;
+Output TexCoord2;
+BeginScript
+	# cache the sin and cos calculations
+	Mat30 = cos((Time * RotPerS * 6.242) % 6.242);
+	Mat31 = sin((Time * RotPerS * 6.242) % 6.242);
+
+	#figure out the first row, swapping columns 1 and 2 to move Z into V coord
+	Mat00 = Mat30 * ScaleX;
+	Mat02 = Mat31 * ScaleZ;
+	Mat03 = -Mat30 * CenterX * ScaleX - Mat31 * CenterZ * ScaleZ;
+
+	#figure out the third row, swapping columns 1 and 2 to move Z into V coord
+	Mat10 = -Mat31 * ScaleX;
+	Mat12 = Mat30 * ScaleZ;
+	Mat13 = Mat31 * CenterX * ScaleX - Mat30 * CenterZ * ScaleZ;
+
+	#clear out the temps
+	Mat30 = 0.0;
+	Mat31 = 0.0;
+
+EndScript
